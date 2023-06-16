@@ -1,0 +1,15 @@
+{
+  "UpdateSubcriptions": {
+    "snapshotResponse": true,
+    "toAdd": [
+      {
+        "name": "eventSummaries",
+        "ids": "9549318"
+      },
+      {
+        "name": "marketTypes",
+        "ids": "BASEBALL:FTOT:ML,BASEBALL:FTOT:AHCP_MAIN,BASEBALL:FTOT:OU_MAIN"
+      }
+    ]
+  }
+}

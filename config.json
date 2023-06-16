@@ -1,0 +1,2473 @@
+{
+    "socket": {
+        "url": "wss://sports.mi.foxbet.com/websocket",
+        "payload": "{\"PublicLoginRequest\":{\"application\":\"web-sportsbook-536870916\",\"locale\":\"en-us\",\"channel\":\"MI\",\"apiVersion\":3,\"reqId\":0}}",
+        "send_alive": "{KeepAlive:{reqId:1}}"
+    },
+    "live_events": {
+        "url": "https://sports.mi.foxbet.com/sportsbook/v1/api/getHomeInPlay?channelId=20&locale=en-us&siteId=536870916"
+    },
+    "subscribe": {
+        "path_to_event_id": [
+            "UpdateSubcriptions",
+            "toAdd",
+            0,
+            "ids"
+        ],
+        "path_to_market_ids": [
+            "UpdateSubcriptions",
+            "toAdd",
+            1,
+            "ids"
+        ],
+        "payload": {
+            "UpdateSubcriptions": {
+                "snapshotResponse": true,
+                "toAdd": [
+                    {
+                        "name": "eventSummaries",
+                        "ids": ""
+                    },
+                    {
+                        "name": "marketTypes",
+                        "ids": ""
+                    }
+                ]
+            }
+        }
+    },
+    "sports": [
+        {
+            "code": "BASEBALL",
+            "nodeId": 293198
+        },
+        {
+            "code": "GOLF",
+            "nodeId": 268223
+        },
+        {
+            "code": "SOCCER",
+            "nodeId": 166661
+        },
+        {
+            "code": "TENNIS",
+            "nodeId": 166662
+        },
+        {
+            "code": "BASKETBALL",
+            "nodeId": 226652
+        },
+        {
+            "code": "MMA",
+            "nodeId": 14044688
+        },
+        {
+            "code": "AMERICAN_FOOTBALL",
+            "nodeId": 268246
+        },
+        {
+            "code": "MOTOR_SPORTS",
+            "nodeId": 268224
+        },
+        {
+            "code": "BOXING",
+            "nodeId": 2692996
+        },
+        {
+            "code": "AUSSIE_RULES",
+            "nodeId": 2692989
+        },
+        {
+            "code": "RUGBY_LEAGUE",
+            "nodeId": 2692999
+        }
+    ],
+    "markets_for_sports": {
+        "BASEBALL": {
+            "keyMarkets": {
+                "prematch": [
+                    "BBPS",
+                    "BASEBALL:FTOT:AHCP_MAIN",
+                    "BBML",
+                    "BASEBALL:FTOT:ML",
+                    "BBTS",
+                    "BASEBALL:FTOT:OU_MAIN"
+                ],
+                "inplay": [
+                    "BBPS",
+                    "BASEBALL:FTOT:AHCP_MAIN",
+                    "BBML",
+                    "BASEBALL:FTOT:ML",
+                    "BBTS",
+                    "BASEBALL:FTOT:OU_MAIN"
+                ]
+            }
+        },
+        "MMA": {
+            "keyMarkets": {
+                "prematch": [
+                    "MMA:FT:ML"
+                ],
+                "inplay": [
+                    "MMA:FT:ML"
+                ]
+            }
+        },
+        "AMERICAN_FOOTBALL": {
+            "keyMarkets": {
+                "prematch": [
+                    "AMFOOT:FTOT:SPRD_MAIN",
+                    "AMERICAN_FOOTBALL:FTOT:AHCP_MAIN",
+                    "RAMP_AMFO:FTOT:AHCP_MAIN",
+                    "AMFOOT:FTOT:ML",
+                    "AMERICAN_FOOTBALL:FTOT:ML",
+                    "RAMP_AMFO:FTOT:ML",
+                    "AMFOOT:FTOT:OU_MAIN",
+                    "AMERICAN_FOOTBALL:FTOT:OU_MAIN",
+                    "RAMP_AMFO:FTOT:TPOU_MAIN"
+                ],
+                "inplay": [
+                    "AMFOOT:FTOT:SPRD_MAIN",
+                    "AMERICAN_FOOTBALL:FTOT:AHCP_MAIN",
+                    "RAMP_AMFO:FTOT:AHCP_MAIN",
+                    "AMFOOT:FTOT:ML",
+                    "AMERICAN_FOOTBALL:FTOT:ML",
+                    "RAMP_AMFO:FTOT:ML",
+                    "AMFOOT:FTOT:OU_MAIN",
+                    "AMERICAN_FOOTBALL:FTOT:OU_MAIN",
+                    "RAMP_AMFO:FTOT:TPOU_MAIN"
+                ]
+            }
+        },
+        "MOTOR_SPORTS": {
+            "keyMarkets": {
+                "prematch": [
+                    "MSH2H"
+                ],
+                "inplay": []
+            }
+        },
+        "GOLF": {
+            "keyMarkets": {
+                "prematch": [
+                    "GO3B",
+                    "GO2B"
+                ],
+                "inplay": [
+                    "GO3B",
+                    "GO2B"
+                ]
+            }
+        },
+        "SOCCER": {
+            "keyMarkets": {
+                "prematch": [
+                    "SOCCER:FT:AXB",
+                    "SOCCER:FT:OU",
+                    "SOCCER:FT:BTS",
+                    "SOCCER:FT:SPRD",
+                    "SOCCER:FT:DC",
+                    "SOCCER:OT:AXB"
+                ],
+                "inplay": [
+                    "SOCCER:FT:AXB",
+                    "SOCCER:FT:OU",
+                    "SOCCER:OT:AXB"
+                ]
+            }
+        },
+        "TENNIS": {
+            "keyMarkets": {
+                "prematch": [
+                    "AB",
+                    "TENNIS:FT:MW",
+                    "STWN",
+                    "TENNIS:P:SW"
+                ],
+                "inplay": [
+                    "AB",
+                    "TENNIS:FT:MW",
+                    "GMWN",
+                    "TENNIS:P:GXW"
+                ]
+            }
+        },
+        "BASKETBALL": {
+            "keyMarkets": {
+                "prematch": [
+                    "BASKETBALL:FTOT:AHCP_MAIN",
+                    "BASKETBALL:FTOT:ML",
+                    "BASKETBALL:FTOT:OU_MAIN",
+                    "BHBASK:FTOT:SPRD_MAIN",
+                    "BHBASK:FTOT:ML",
+                    "BHBASK:FTOT:OU_MAIN",
+                    "BASKETBALL:FTOT:AXB$OU"
+                ],
+                "inplay": [
+                    "BASKETBALL:FTOT:AHCP_MAIN",
+                    "BASKETBALL:FTOT:ML",
+                    "BASKETBALL:FTOT:OU_MAIN"
+                ]
+            }
+        },
+        "BOXING": {
+            "keyMarkets": {
+                "prematch": [
+                    "BOXING:FT:ML",
+                    "BOXING:FT:MRES"
+                ],
+                "inplay": [
+                    "BOXING:FT:ML",
+                    "BOXING:FT:MRES"
+                ]
+            }
+        },
+        "AUSSIE_RULES": {
+            "keyMarkets": {
+                "prematch": [
+                    "AUSSIERULES:FT:ML"
+                ],
+                "inplay": [
+                    "AUSSIERULES:FT:ML"
+                ]
+            }
+        },
+        "RUGBY_LEAGUE": {
+            "keyMarkets": {
+                "prematch": [
+                    "RUGBYLEAGUE:FT:MRES",
+                    "RUGBYLEAGUE:FT:EHC",
+                    "RUGBYLEAGUE:FT:TGOU",
+                    "RLMR",
+                    "RLPS",
+                    "RLTO"
+                ],
+                "inplay": [
+                    "RUGBYLEAGUE:FT:MRES",
+                    "RUGBYLEAGUE:FT:AHCP",
+                    "RUGBYLEAGUE:FT:TGOU",
+                    "RLMR",
+                    "RLAH",
+                    "RLTO"
+                ]
+            }
+        }
+    },
+    "odds": [
+        {
+            "decimal": "1.00",
+            "fractional": "0/1",
+            "rootIndex": 0
+        },
+        {
+            "decimal": "1.001",
+            "fractional": "1/1000",
+            "rootIndex": 1
+        },
+        {
+            "decimal": "1.002",
+            "fractional": "1/500",
+            "rootIndex": 2
+        },
+        {
+            "decimal": "1.004",
+            "fractional": "1/250",
+            "rootIndex": 3
+        },
+        {
+            "decimal": "1.005",
+            "fractional": "1/200",
+            "rootIndex": 4
+        },
+        {
+            "decimal": "1.007",
+            "fractional": "1/150",
+            "rootIndex": 5
+        },
+        {
+            "decimal": "1.007",
+            "fractional": "7/1000",
+            "rootIndex": 6
+        },
+        {
+            "decimal": "1.01",
+            "fractional": "1/100",
+            "rootIndex": 7
+        },
+        {
+            "decimal": "1.02",
+            "fractional": "1/50",
+            "rootIndex": 8
+        },
+        {
+            "decimal": "1.03",
+            "fractional": "1/33",
+            "rootIndex": 9
+        },
+        {
+            "decimal": "1.04",
+            "fractional": "1/25",
+            "rootIndex": 10
+        },
+        {
+            "decimal": "1.05",
+            "fractional": "1/20",
+            "rootIndex": 11
+        },
+        {
+            "decimal": "1.06",
+            "fractional": "1/18",
+            "rootIndex": 12
+        },
+        {
+            "decimal": "1.06",
+            "fractional": "1/16",
+            "rootIndex": 13
+        },
+        {
+            "decimal": "1.07",
+            "fractional": "1/14",
+            "rootIndex": 14
+        },
+        {
+            "decimal": "1.08",
+            "fractional": "1/12",
+            "rootIndex": 15
+        },
+        {
+            "decimal": "1.09",
+            "fractional": "1/11",
+            "rootIndex": 16
+        },
+        {
+            "decimal": "1.10",
+            "fractional": "1/10",
+            "rootIndex": 17
+        },
+        {
+            "decimal": "1.11",
+            "fractional": "1/9",
+            "rootIndex": 18
+        },
+        {
+            "decimal": "1.12",
+            "fractional": "1/8",
+            "rootIndex": 19
+        },
+        {
+            "decimal": "1.13",
+            "fractional": "2/15",
+            "rootIndex": 20
+        },
+        {
+            "decimal": "1.14",
+            "fractional": "1/7",
+            "rootIndex": 21
+        },
+        {
+            "decimal": "1.15",
+            "fractional": "3/20",
+            "rootIndex": 22
+        },
+        {
+            "decimal": "1.15",
+            "fractional": "2/13",
+            "rootIndex": 23
+        },
+        {
+            "decimal": "1.16",
+            "fractional": "1/6",
+            "rootIndex": 24
+        },
+        {
+            "decimal": "1.17",
+            "fractional": "17/100",
+            "rootIndex": 25
+        },
+        {
+            "decimal": "1.18",
+            "fractional": "2/11",
+            "rootIndex": 26
+        },
+        {
+            "decimal": "1.19",
+            "fractional": "19/100",
+            "rootIndex": 27
+        },
+        {
+            "decimal": "1.20",
+            "fractional": "1/5",
+            "rootIndex": 28
+        },
+        {
+            "decimal": "1.21",
+            "fractional": "21/100",
+            "rootIndex": 29
+        },
+        {
+            "decimal": "1.22",
+            "fractional": "2/9",
+            "rootIndex": 30
+        },
+        {
+            "decimal": "1.23",
+            "fractional": "23/100",
+            "rootIndex": 31
+        },
+        {
+            "decimal": "1.25",
+            "fractional": "1/4",
+            "rootIndex": 32
+        },
+        {
+            "decimal": "1.26",
+            "fractional": "13/50",
+            "rootIndex": 33
+        },
+        {
+            "decimal": "1.28",
+            "fractional": "2/7",
+            "rootIndex": 34
+        },
+        {
+            "decimal": "1.30",
+            "fractional": "3/10",
+            "rootIndex": 35
+        },
+        {
+            "decimal": "1.32",
+            "fractional": "8/25",
+            "rootIndex": 36
+        },
+        {
+            "decimal": "1.33",
+            "fractional": "1/3",
+            "rootIndex": 37
+        },
+        {
+            "decimal": "1.35",
+            "fractional": "7/20",
+            "rootIndex": 38
+        },
+        {
+            "decimal": "1.36",
+            "fractional": "4/11",
+            "rootIndex": 39
+        },
+        {
+            "decimal": "1.38",
+            "fractional": "19/50",
+            "rootIndex": 40
+        },
+        {
+            "decimal": "1.40",
+            "fractional": "2/5",
+            "rootIndex": 41
+        },
+        {
+            "decimal": "1.42",
+            "fractional": "21/50",
+            "rootIndex": 42
+        },
+        {
+            "decimal": "1.44",
+            "fractional": "4/9",
+            "rootIndex": 43
+        },
+        {
+            "decimal": "1.45",
+            "fractional": "9/20",
+            "rootIndex": 44
+        },
+        {
+            "decimal": "1.47",
+            "fractional": "40/85",
+            "rootIndex": 45
+        },
+        {
+            "decimal": "1.48",
+            "fractional": "12/25",
+            "rootIndex": 46
+        },
+        {
+            "decimal": "1.50",
+            "fractional": "1/2",
+            "rootIndex": 47
+        },
+        {
+            "decimal": "1.51",
+            "fractional": "51/100",
+            "rootIndex": 48
+        },
+        {
+            "decimal": "1.52",
+            "fractional": "13/25",
+            "rootIndex": 49
+        },
+        {
+            "decimal": "1.53",
+            "fractional": "8/15",
+            "rootIndex": 50
+        },
+        {
+            "decimal": "1.55",
+            "fractional": "11/20",
+            "rootIndex": 51
+        },
+        {
+            "decimal": "1.57",
+            "fractional": "4/7",
+            "rootIndex": 52
+        },
+        {
+            "decimal": "1.60",
+            "fractional": "3/5",
+            "rootIndex": 53
+        },
+        {
+            "decimal": "1.62",
+            "fractional": "8/13",
+            "rootIndex": 54
+        },
+        {
+            "decimal": "1.64",
+            "fractional": "16/25",
+            "rootIndex": 55
+        },
+        {
+            "decimal": "1.65",
+            "fractional": "13/20",
+            "rootIndex": 56
+        },
+        {
+            "decimal": "1.67",
+            "fractional": "4/6",
+            "rootIndex": 57
+        },
+        {
+            "decimal": "1.69",
+            "fractional": "69/100",
+            "rootIndex": 58
+        },
+        {
+            "decimal": "1.70",
+            "fractional": "7/10",
+            "rootIndex": 59
+        },
+        {
+            "decimal": "1.72",
+            "fractional": "8/11",
+            "rootIndex": 60
+        },
+        {
+            "decimal": "1.73",
+            "fractional": "73/100",
+            "rootIndex": 61
+        },
+        {
+            "decimal": "1.74",
+            "fractional": "37/50",
+            "rootIndex": 62
+        },
+        {
+            "decimal": "1.75",
+            "fractional": "3/4",
+            "rootIndex": 63
+        },
+        {
+            "decimal": "1.76",
+            "fractional": "19/25",
+            "rootIndex": 64
+        },
+        {
+            "decimal": "1.78",
+            "fractional": "39/50",
+            "rootIndex": 65
+        },
+        {
+            "decimal": "1.80",
+            "fractional": "4/5",
+            "rootIndex": 66
+        },
+        {
+            "decimal": "1.81",
+            "fractional": "81/100",
+            "rootIndex": 67
+        },
+        {
+            "decimal": "1.82",
+            "fractional": "41/50",
+            "rootIndex": 68
+        },
+        {
+            "decimal": "1.83",
+            "fractional": "5/6",
+            "rootIndex": 69
+        },
+        {
+            "decimal": "1.85",
+            "fractional": "17/20",
+            "rootIndex": 70
+        },
+        {
+            "decimal": "1.87",
+            "fractional": "87/100",
+            "rootIndex": 71
+        },
+        {
+            "decimal": "1.89",
+            "fractional": "89/100",
+            "rootIndex": 72
+        },
+        {
+            "decimal": "1.90",
+            "fractional": "9/10",
+            "rootIndex": 73
+        },
+        {
+            "decimal": "1.91",
+            "fractional": "10/11",
+            "rootIndex": 74
+        },
+        {
+            "decimal": "1.92",
+            "fractional": "23/25",
+            "rootIndex": 75
+        },
+        {
+            "decimal": "1.93",
+            "fractional": "93/100",
+            "rootIndex": 76
+        },
+        {
+            "decimal": "1.94",
+            "fractional": "47/50",
+            "rootIndex": 77
+        },
+        {
+            "decimal": "1.95",
+            "fractional": "19/20",
+            "rootIndex": 78
+        },
+        {
+            "decimal": "1.96",
+            "fractional": "24/25",
+            "rootIndex": 79
+        },
+        {
+            "decimal": "1.97",
+            "fractional": "97/100",
+            "rootIndex": 80
+        },
+        {
+            "decimal": "1.98",
+            "fractional": "49/50",
+            "rootIndex": 81
+        },
+        {
+            "decimal": "1.99",
+            "fractional": "99/100",
+            "rootIndex": 82
+        },
+        {
+            "decimal": "2.00",
+            "fractional": "1/1",
+            "rootIndex": 83
+        },
+        {
+            "decimal": "2.01",
+            "fractional": "101/100",
+            "rootIndex": 84
+        },
+        {
+            "decimal": "2.02",
+            "fractional": "51/50",
+            "rootIndex": 85
+        },
+        {
+            "decimal": "2.03",
+            "fractional": "103/100",
+            "rootIndex": 86
+        },
+        {
+            "decimal": "2.04",
+            "fractional": "26/25",
+            "rootIndex": 87
+        },
+        {
+            "decimal": "2.05",
+            "fractional": "21/20",
+            "rootIndex": 88
+        },
+        {
+            "decimal": "2.06",
+            "fractional": "53/50",
+            "rootIndex": 89
+        },
+        {
+            "decimal": "2.07",
+            "fractional": "107/100",
+            "rootIndex": 90
+        },
+        {
+            "decimal": "2.08",
+            "fractional": "27/25",
+            "rootIndex": 91
+        },
+        {
+            "decimal": "2.09",
+            "fractional": "109/100",
+            "rootIndex": 92
+        },
+        {
+            "decimal": "2.10",
+            "fractional": "11/10",
+            "rootIndex": 93
+        },
+        {
+            "decimal": "2.12",
+            "fractional": "28/25",
+            "rootIndex": 94
+        },
+        {
+            "decimal": "2.14",
+            "fractional": "57/50",
+            "rootIndex": 95
+        },
+        {
+            "decimal": "2.15",
+            "fractional": "23/20",
+            "rootIndex": 96
+        },
+        {
+            "decimal": "2.17",
+            "fractional": "117/100",
+            "rootIndex": 97
+        },
+        {
+            "decimal": "2.18",
+            "fractional": "59/50",
+            "rootIndex": 98
+        },
+        {
+            "decimal": "2.20",
+            "fractional": "6/5",
+            "rootIndex": 99
+        },
+        {
+            "decimal": "2.22",
+            "fractional": "61/50",
+            "rootIndex": 100
+        },
+        {
+            "decimal": "2.25",
+            "fractional": "5/4",
+            "rootIndex": 101
+        },
+        {
+            "decimal": "2.28",
+            "fractional": "32/25",
+            "rootIndex": 102
+        },
+        {
+            "decimal": "2.30",
+            "fractional": "13/10",
+            "rootIndex": 103
+        },
+        {
+            "decimal": "2.35",
+            "fractional": "27/20",
+            "rootIndex": 104
+        },
+        {
+            "decimal": "2.38",
+            "fractional": "11/8",
+            "rootIndex": 105
+        },
+        {
+            "decimal": "2.40",
+            "fractional": "7/5",
+            "rootIndex": 106
+        },
+        {
+            "decimal": "2.45",
+            "fractional": "29/20",
+            "rootIndex": 107
+        },
+        {
+            "decimal": "2.50",
+            "fractional": "3/2",
+            "rootIndex": 108
+        },
+        {
+            "decimal": "2.55",
+            "fractional": "31/20",
+            "rootIndex": 109
+        },
+        {
+            "decimal": "2.60",
+            "fractional": "8/5",
+            "rootIndex": 110
+        },
+        {
+            "decimal": "2.63",
+            "fractional": "13/8",
+            "rootIndex": 111
+        },
+        {
+            "decimal": "2.65",
+            "fractional": "33/20",
+            "rootIndex": 112
+        },
+        {
+            "decimal": "2.70",
+            "fractional": "17/10",
+            "rootIndex": 113
+        },
+        {
+            "decimal": "2.75",
+            "fractional": "7/4",
+            "rootIndex": 114
+        },
+        {
+            "decimal": "2.80",
+            "fractional": "9/5",
+            "rootIndex": 115
+        },
+        {
+            "decimal": "2.85",
+            "fractional": "37/20",
+            "rootIndex": 116
+        },
+        {
+            "decimal": "2.88",
+            "fractional": "15/8",
+            "rootIndex": 117
+        },
+        {
+            "decimal": "2.90",
+            "fractional": "19/10",
+            "rootIndex": 118
+        },
+        {
+            "decimal": "2.95",
+            "fractional": "39/20",
+            "rootIndex": 119
+        },
+        {
+            "decimal": "3.00",
+            "fractional": "2/1",
+            "rootIndex": 120
+        },
+        {
+            "decimal": "3.05",
+            "fractional": "41/20",
+            "rootIndex": 121
+        },
+        {
+            "decimal": "3.10",
+            "fractional": "21/10",
+            "rootIndex": 122
+        },
+        {
+            "decimal": "3.15",
+            "fractional": "43/20",
+            "rootIndex": 123
+        },
+        {
+            "decimal": "3.20",
+            "fractional": "11/5",
+            "rootIndex": 124
+        },
+        {
+            "decimal": "3.25",
+            "fractional": "9/4",
+            "rootIndex": 125
+        },
+        {
+            "decimal": "3.30",
+            "fractional": "23/10",
+            "rootIndex": 126
+        },
+        {
+            "decimal": "3.35",
+            "fractional": "47/20",
+            "rootIndex": 127
+        },
+        {
+            "decimal": "3.40",
+            "fractional": "12/5",
+            "rootIndex": 128
+        },
+        {
+            "decimal": "3.45",
+            "fractional": "49/20",
+            "rootIndex": 129
+        },
+        {
+            "decimal": "3.50",
+            "fractional": "5/2",
+            "rootIndex": 130
+        },
+        {
+            "decimal": "3.55",
+            "fractional": "51/20",
+            "rootIndex": 131
+        },
+        {
+            "decimal": "3.60",
+            "fractional": "13/5",
+            "rootIndex": 132
+        },
+        {
+            "decimal": "3.65",
+            "fractional": "53/20",
+            "rootIndex": 133
+        },
+        {
+            "decimal": "3.70",
+            "fractional": "27/10",
+            "rootIndex": 134
+        },
+        {
+            "decimal": "3.75",
+            "fractional": "11/4",
+            "rootIndex": 135
+        },
+        {
+            "decimal": "3.80",
+            "fractional": "14/5",
+            "rootIndex": 136
+        },
+        {
+            "decimal": "3.85",
+            "fractional": "57/20",
+            "rootIndex": 137
+        },
+        {
+            "decimal": "3.90",
+            "fractional": "29/10",
+            "rootIndex": 138
+        },
+        {
+            "decimal": "3.95",
+            "fractional": "59/20",
+            "rootIndex": 139
+        },
+        {
+            "decimal": "4.00",
+            "fractional": "3/1",
+            "rootIndex": 140
+        },
+        {
+            "decimal": "4.05",
+            "fractional": "61/20",
+            "rootIndex": 141
+        },
+        {
+            "decimal": "4.10",
+            "fractional": "31/10",
+            "rootIndex": 142
+        },
+        {
+            "decimal": "4.15",
+            "fractional": "63/20",
+            "rootIndex": 143
+        },
+        {
+            "decimal": "4.20",
+            "fractional": "16/5",
+            "rootIndex": 144
+        },
+        {
+            "decimal": "4.25",
+            "fractional": "13/4",
+            "rootIndex": 145
+        },
+        {
+            "decimal": "4.30",
+            "fractional": "33/10",
+            "rootIndex": 146
+        },
+        {
+            "decimal": "4.33",
+            "fractional": "10/3",
+            "rootIndex": 147
+        },
+        {
+            "decimal": "4.35",
+            "fractional": "67/20",
+            "rootIndex": 148
+        },
+        {
+            "decimal": "4.40",
+            "fractional": "17/5",
+            "rootIndex": 149
+        },
+        {
+            "decimal": "4.45",
+            "fractional": "69/20",
+            "rootIndex": 150
+        },
+        {
+            "decimal": "4.50",
+            "fractional": "7/2",
+            "rootIndex": 151
+        },
+        {
+            "decimal": "4.55",
+            "fractional": "71/20",
+            "rootIndex": 152
+        },
+        {
+            "decimal": "4.60",
+            "fractional": "18/5",
+            "rootIndex": 153
+        },
+        {
+            "decimal": "4.65",
+            "fractional": "73/20",
+            "rootIndex": 154
+        },
+        {
+            "decimal": "4.70",
+            "fractional": "37/10",
+            "rootIndex": 155
+        },
+        {
+            "decimal": "4.75",
+            "fractional": "15/4",
+            "rootIndex": 156
+        },
+        {
+            "decimal": "4.80",
+            "fractional": "19/5",
+            "rootIndex": 157
+        },
+        {
+            "decimal": "4.85",
+            "fractional": "77/20",
+            "rootIndex": 158
+        },
+        {
+            "decimal": "4.90",
+            "fractional": "39/10",
+            "rootIndex": 159
+        },
+        {
+            "decimal": "5.00",
+            "fractional": "4/1",
+            "rootIndex": 160
+        },
+        {
+            "decimal": "5.10",
+            "fractional": "41/10",
+            "rootIndex": 161
+        },
+        {
+            "decimal": "5.20",
+            "fractional": "21/5",
+            "rootIndex": 162
+        },
+        {
+            "decimal": "5.25",
+            "fractional": "17/4",
+            "rootIndex": 163
+        },
+        {
+            "decimal": "5.30",
+            "fractional": "43/10",
+            "rootIndex": 164
+        },
+        {
+            "decimal": "5.40",
+            "fractional": "22/5",
+            "rootIndex": 165
+        },
+        {
+            "decimal": "5.50",
+            "fractional": "9/2",
+            "rootIndex": 166
+        },
+        {
+            "decimal": "5.60",
+            "fractional": "23/5",
+            "rootIndex": 167
+        },
+        {
+            "decimal": "5.70",
+            "fractional": "47/10",
+            "rootIndex": 168
+        },
+        {
+            "decimal": "5.75",
+            "fractional": "19/4",
+            "rootIndex": 169
+        },
+        {
+            "decimal": "5.80",
+            "fractional": "24/5",
+            "rootIndex": 170
+        },
+        {
+            "decimal": "5.90",
+            "fractional": "49/10",
+            "rootIndex": 171
+        },
+        {
+            "decimal": "6.00",
+            "fractional": "5/1",
+            "rootIndex": 172
+        },
+        {
+            "decimal": "6.10",
+            "fractional": "51/10",
+            "rootIndex": 173
+        },
+        {
+            "decimal": "6.20",
+            "fractional": "26/5",
+            "rootIndex": 174
+        },
+        {
+            "decimal": "6.25",
+            "fractional": "21/4",
+            "rootIndex": 175
+        },
+        {
+            "decimal": "6.30",
+            "fractional": "53/10",
+            "rootIndex": 176
+        },
+        {
+            "decimal": "6.40",
+            "fractional": "27/5",
+            "rootIndex": 177
+        },
+        {
+            "decimal": "6.50",
+            "fractional": "11/2",
+            "rootIndex": 178
+        },
+        {
+            "decimal": "6.60",
+            "fractional": "28/5",
+            "rootIndex": 179
+        },
+        {
+            "decimal": "6.70",
+            "fractional": "57/10",
+            "rootIndex": 180
+        },
+        {
+            "decimal": "6.75",
+            "fractional": "23/4",
+            "rootIndex": 181
+        },
+        {
+            "decimal": "6.80",
+            "fractional": "29/5",
+            "rootIndex": 182
+        },
+        {
+            "decimal": "6.90",
+            "fractional": "59/10",
+            "rootIndex": 183
+        },
+        {
+            "decimal": "7.00",
+            "fractional": "6/1",
+            "rootIndex": 184
+        },
+        {
+            "decimal": "7.25",
+            "fractional": "25/4",
+            "rootIndex": 185
+        },
+        {
+            "decimal": "7.50",
+            "fractional": "13/2",
+            "rootIndex": 186
+        },
+        {
+            "decimal": "7.75",
+            "fractional": "27/4",
+            "rootIndex": 187
+        },
+        {
+            "decimal": "8.00",
+            "fractional": "7/1",
+            "rootIndex": 188
+        },
+        {
+            "decimal": "8.25",
+            "fractional": "29/4",
+            "rootIndex": 189
+        },
+        {
+            "decimal": "8.50",
+            "fractional": "15/2",
+            "rootIndex": 190
+        },
+        {
+            "decimal": "8.75",
+            "fractional": "31/4",
+            "rootIndex": 191
+        },
+        {
+            "decimal": "9.00",
+            "fractional": "8/1",
+            "rootIndex": 192
+        },
+        {
+            "decimal": "9.25",
+            "fractional": "33/4",
+            "rootIndex": 193
+        },
+        {
+            "decimal": "9.50",
+            "fractional": "17/2",
+            "rootIndex": 194
+        },
+        {
+            "decimal": "9.75",
+            "fractional": "35/4",
+            "rootIndex": 195
+        },
+        {
+            "decimal": "10.00",
+            "fractional": "9/1",
+            "rootIndex": 196
+        },
+        {
+            "decimal": "10.50",
+            "fractional": "19/2",
+            "rootIndex": 197
+        },
+        {
+            "decimal": "11.00",
+            "fractional": "10/1",
+            "rootIndex": 198
+        },
+        {
+            "decimal": "11.50",
+            "fractional": "21/2",
+            "rootIndex": 199
+        },
+        {
+            "decimal": "12.00",
+            "fractional": "11/1",
+            "rootIndex": 200
+        },
+        {
+            "decimal": "12.50",
+            "fractional": "23/2",
+            "rootIndex": 201
+        },
+        {
+            "decimal": "13.00",
+            "fractional": "12/1",
+            "rootIndex": 202
+        },
+        {
+            "decimal": "13.50",
+            "fractional": "25/2",
+            "rootIndex": 203
+        },
+        {
+            "decimal": "14.00",
+            "fractional": "13/1",
+            "rootIndex": 204
+        },
+        {
+            "decimal": "14.50",
+            "fractional": "27/2",
+            "rootIndex": 205
+        },
+        {
+            "decimal": "15.00",
+            "fractional": "14/1",
+            "rootIndex": 206
+        },
+        {
+            "decimal": "16.00",
+            "fractional": "15/1",
+            "rootIndex": 207
+        },
+        {
+            "decimal": "17.00",
+            "fractional": "16/1",
+            "rootIndex": 208
+        },
+        {
+            "decimal": "18.00",
+            "fractional": "17/1",
+            "rootIndex": 209
+        },
+        {
+            "decimal": "19.00",
+            "fractional": "18/1",
+            "rootIndex": 210
+        },
+        {
+            "decimal": "20.00",
+            "fractional": "19/1",
+            "rootIndex": 211
+        },
+        {
+            "decimal": "21.00",
+            "fractional": "20/1",
+            "rootIndex": 212
+        },
+        {
+            "decimal": "22.00",
+            "fractional": "21/1",
+            "rootIndex": 213
+        },
+        {
+            "decimal": "23.00",
+            "fractional": "22/1",
+            "rootIndex": 214
+        },
+        {
+            "decimal": "24.00",
+            "fractional": "23/1",
+            "rootIndex": 215
+        },
+        {
+            "decimal": "25.00",
+            "fractional": "24/1",
+            "rootIndex": 216
+        },
+        {
+            "decimal": "26.00",
+            "fractional": "25/1",
+            "rootIndex": 217
+        },
+        {
+            "decimal": "27.00",
+            "fractional": "26/1",
+            "rootIndex": 218
+        },
+        {
+            "decimal": "28.00",
+            "fractional": "27/1",
+            "rootIndex": 219
+        },
+        {
+            "decimal": "29.00",
+            "fractional": "28/1",
+            "rootIndex": 220
+        },
+        {
+            "decimal": "30.00",
+            "fractional": "29/1",
+            "rootIndex": 221
+        },
+        {
+            "decimal": "31.00",
+            "fractional": "30/1",
+            "rootIndex": 222
+        },
+        {
+            "decimal": "32.00",
+            "fractional": "31/1",
+            "rootIndex": 223
+        },
+        {
+            "decimal": "33.00",
+            "fractional": "32/1",
+            "rootIndex": 224
+        },
+        {
+            "decimal": "34.00",
+            "fractional": "33/1",
+            "rootIndex": 225
+        },
+        {
+            "decimal": "35.00",
+            "fractional": "34/1",
+            "rootIndex": 226
+        },
+        {
+            "decimal": "36.00",
+            "fractional": "35/1",
+            "rootIndex": 227
+        },
+        {
+            "decimal": "37.00",
+            "fractional": "36/1",
+            "rootIndex": 228
+        },
+        {
+            "decimal": "38.00",
+            "fractional": "37/1",
+            "rootIndex": 229
+        },
+        {
+            "decimal": "39.00",
+            "fractional": "38/1",
+            "rootIndex": 230
+        },
+        {
+            "decimal": "40.00",
+            "fractional": "39/1",
+            "rootIndex": 231
+        },
+        {
+            "decimal": "41.00",
+            "fractional": "40/1",
+            "rootIndex": 232
+        },
+        {
+            "decimal": "42.00",
+            "fractional": "41/1",
+            "rootIndex": 233
+        },
+        {
+            "decimal": "43.00",
+            "fractional": "42/1",
+            "rootIndex": 234
+        },
+        {
+            "decimal": "44.00",
+            "fractional": "43/1",
+            "rootIndex": 235
+        },
+        {
+            "decimal": "45.00",
+            "fractional": "44/1",
+            "rootIndex": 236
+        },
+        {
+            "decimal": "46.00",
+            "fractional": "45/1",
+            "rootIndex": 237
+        },
+        {
+            "decimal": "47.00",
+            "fractional": "46/1",
+            "rootIndex": 238
+        },
+        {
+            "decimal": "48.00",
+            "fractional": "47/1",
+            "rootIndex": 239
+        },
+        {
+            "decimal": "49.00",
+            "fractional": "48/1",
+            "rootIndex": 240
+        },
+        {
+            "decimal": "50.00",
+            "fractional": "49/1",
+            "rootIndex": 241
+        },
+        {
+            "decimal": "51.00",
+            "fractional": "50/1",
+            "rootIndex": 242
+        },
+        {
+            "decimal": "56.00",
+            "fractional": "55/1",
+            "rootIndex": 243
+        },
+        {
+            "decimal": "61.00",
+            "fractional": "60/1",
+            "rootIndex": 244
+        },
+        {
+            "decimal": "67.00",
+            "fractional": "66/1",
+            "rootIndex": 245
+        },
+        {
+            "decimal": "71.00",
+            "fractional": "70/1",
+            "rootIndex": 246
+        },
+        {
+            "decimal": "76.00",
+            "fractional": "75/1",
+            "rootIndex": 247
+        },
+        {
+            "decimal": "81.00",
+            "fractional": "80/1",
+            "rootIndex": 248
+        },
+        {
+            "decimal": "86.00",
+            "fractional": "85/1",
+            "rootIndex": 249
+        },
+        {
+            "decimal": "91.00",
+            "fractional": "90/1",
+            "rootIndex": 250
+        },
+        {
+            "decimal": "96.00",
+            "fractional": "95/1",
+            "rootIndex": 251
+        },
+        {
+            "decimal": "101.00",
+            "fractional": "100/1",
+            "rootIndex": 252
+        },
+        {
+            "decimal": "106.00",
+            "fractional": "105/1",
+            "rootIndex": 253
+        },
+        {
+            "decimal": "111.00",
+            "fractional": "110/1",
+            "rootIndex": 254
+        },
+        {
+            "decimal": "116.00",
+            "fractional": "115/1",
+            "rootIndex": 255
+        },
+        {
+            "decimal": "121.00",
+            "fractional": "120/1",
+            "rootIndex": 256
+        },
+        {
+            "decimal": "126.00",
+            "fractional": "125/1",
+            "rootIndex": 257
+        },
+        {
+            "decimal": "131.00",
+            "fractional": "130/1",
+            "rootIndex": 258
+        },
+        {
+            "decimal": "136.00",
+            "fractional": "135/1",
+            "rootIndex": 259
+        },
+        {
+            "decimal": "141.00",
+            "fractional": "140/1",
+            "rootIndex": 260
+        },
+        {
+            "decimal": "146.00",
+            "fractional": "145/1",
+            "rootIndex": 261
+        },
+        {
+            "decimal": "151.00",
+            "fractional": "150/1",
+            "rootIndex": 262
+        },
+        {
+            "decimal": "156.00",
+            "fractional": "155/1",
+            "rootIndex": 263
+        },
+        {
+            "decimal": "161.00",
+            "fractional": "160/1",
+            "rootIndex": 264
+        },
+        {
+            "decimal": "166.00",
+            "fractional": "165/1",
+            "rootIndex": 265
+        },
+        {
+            "decimal": "171.00",
+            "fractional": "170/1",
+            "rootIndex": 266
+        },
+        {
+            "decimal": "176.00",
+            "fractional": "175/1",
+            "rootIndex": 267
+        },
+        {
+            "decimal": "181.00",
+            "fractional": "180/1",
+            "rootIndex": 268
+        },
+        {
+            "decimal": "186.00",
+            "fractional": "185/1",
+            "rootIndex": 269
+        },
+        {
+            "decimal": "191.00",
+            "fractional": "190/1",
+            "rootIndex": 270
+        },
+        {
+            "decimal": "196.00",
+            "fractional": "195/1",
+            "rootIndex": 271
+        },
+        {
+            "decimal": "201.00",
+            "fractional": "200/1",
+            "rootIndex": 272
+        },
+        {
+            "decimal": "206.00",
+            "fractional": "205/1",
+            "rootIndex": 273
+        },
+        {
+            "decimal": "211.00",
+            "fractional": "210/1",
+            "rootIndex": 274
+        },
+        {
+            "decimal": "216.00",
+            "fractional": "215/1",
+            "rootIndex": 275
+        },
+        {
+            "decimal": "221.00",
+            "fractional": "220/1",
+            "rootIndex": 276
+        },
+        {
+            "decimal": "226.00",
+            "fractional": "225/1",
+            "rootIndex": 277
+        },
+        {
+            "decimal": "231.00",
+            "fractional": "230/1",
+            "rootIndex": 278
+        },
+        {
+            "decimal": "236.00",
+            "fractional": "235/1",
+            "rootIndex": 279
+        },
+        {
+            "decimal": "241.00",
+            "fractional": "240/1",
+            "rootIndex": 280
+        },
+        {
+            "decimal": "246.00",
+            "fractional": "245/1",
+            "rootIndex": 281
+        },
+        {
+            "decimal": "251.00",
+            "fractional": "250/1",
+            "rootIndex": 282
+        },
+        {
+            "decimal": "256.00",
+            "fractional": "255/1",
+            "rootIndex": 283
+        },
+        {
+            "decimal": "261.00",
+            "fractional": "260/1",
+            "rootIndex": 284
+        },
+        {
+            "decimal": "266.00",
+            "fractional": "265/1",
+            "rootIndex": 285
+        },
+        {
+            "decimal": "271.00",
+            "fractional": "270/1",
+            "rootIndex": 286
+        },
+        {
+            "decimal": "276.00",
+            "fractional": "275/1",
+            "rootIndex": 287
+        },
+        {
+            "decimal": "281.00",
+            "fractional": "280/1",
+            "rootIndex": 288
+        },
+        {
+            "decimal": "286.00",
+            "fractional": "285/1",
+            "rootIndex": 289
+        },
+        {
+            "decimal": "291.00",
+            "fractional": "290/1",
+            "rootIndex": 290
+        },
+        {
+            "decimal": "296.00",
+            "fractional": "295/1",
+            "rootIndex": 291
+        },
+        {
+            "decimal": "301.00",
+            "fractional": "300/1",
+            "rootIndex": 292
+        },
+        {
+            "decimal": "306.00",
+            "fractional": "305/1",
+            "rootIndex": 293
+        },
+        {
+            "decimal": "311.00",
+            "fractional": "310/1",
+            "rootIndex": 294
+        },
+        {
+            "decimal": "316.00",
+            "fractional": "315/1",
+            "rootIndex": 295
+        },
+        {
+            "decimal": "321.00",
+            "fractional": "320/1",
+            "rootIndex": 296
+        },
+        {
+            "decimal": "326.00",
+            "fractional": "325/1",
+            "rootIndex": 297
+        },
+        {
+            "decimal": "331.00",
+            "fractional": "330/1",
+            "rootIndex": 298
+        },
+        {
+            "decimal": "336.00",
+            "fractional": "335/1",
+            "rootIndex": 299
+        },
+        {
+            "decimal": "341.00",
+            "fractional": "340/1",
+            "rootIndex": 300
+        },
+        {
+            "decimal": "346.00",
+            "fractional": "345/1",
+            "rootIndex": 301
+        },
+        {
+            "decimal": "351.00",
+            "fractional": "350/1",
+            "rootIndex": 302
+        },
+        {
+            "decimal": "356.00",
+            "fractional": "355/1",
+            "rootIndex": 303
+        },
+        {
+            "decimal": "361.00",
+            "fractional": "360/1",
+            "rootIndex": 304
+        },
+        {
+            "decimal": "366.00",
+            "fractional": "365/1",
+            "rootIndex": 305
+        },
+        {
+            "decimal": "371.00",
+            "fractional": "370/1",
+            "rootIndex": 306
+        },
+        {
+            "decimal": "376.00",
+            "fractional": "375/1",
+            "rootIndex": 307
+        },
+        {
+            "decimal": "381.00",
+            "fractional": "380/1",
+            "rootIndex": 308
+        },
+        {
+            "decimal": "386.00",
+            "fractional": "385/1",
+            "rootIndex": 309
+        },
+        {
+            "decimal": "391.00",
+            "fractional": "390/1",
+            "rootIndex": 310
+        },
+        {
+            "decimal": "396.00",
+            "fractional": "395/1",
+            "rootIndex": 311
+        },
+        {
+            "decimal": "401.00",
+            "fractional": "400/1",
+            "rootIndex": 312
+        },
+        {
+            "decimal": "406.00",
+            "fractional": "405/1",
+            "rootIndex": 313
+        },
+        {
+            "decimal": "411.00",
+            "fractional": "410/1",
+            "rootIndex": 314
+        },
+        {
+            "decimal": "416.00",
+            "fractional": "415/1",
+            "rootIndex": 315
+        },
+        {
+            "decimal": "421.00",
+            "fractional": "420/1",
+            "rootIndex": 316
+        },
+        {
+            "decimal": "426.00",
+            "fractional": "425/1",
+            "rootIndex": 317
+        },
+        {
+            "decimal": "431.00",
+            "fractional": "430/1",
+            "rootIndex": 318
+        },
+        {
+            "decimal": "436.00",
+            "fractional": "435/1",
+            "rootIndex": 319
+        },
+        {
+            "decimal": "441.00",
+            "fractional": "440/1",
+            "rootIndex": 320
+        },
+        {
+            "decimal": "446.00",
+            "fractional": "445/1",
+            "rootIndex": 321
+        },
+        {
+            "decimal": "451.00",
+            "fractional": "450/1",
+            "rootIndex": 322
+        },
+        {
+            "decimal": "456.00",
+            "fractional": "455/1",
+            "rootIndex": 323
+        },
+        {
+            "decimal": "461.00",
+            "fractional": "460/1",
+            "rootIndex": 324
+        },
+        {
+            "decimal": "466.00",
+            "fractional": "465/1",
+            "rootIndex": 325
+        },
+        {
+            "decimal": "471.00",
+            "fractional": "470/1",
+            "rootIndex": 326
+        },
+        {
+            "decimal": "476.00",
+            "fractional": "475/1",
+            "rootIndex": 327
+        },
+        {
+            "decimal": "481.00",
+            "fractional": "480/1",
+            "rootIndex": 328
+        },
+        {
+            "decimal": "486.00",
+            "fractional": "485/1",
+            "rootIndex": 329
+        },
+        {
+            "decimal": "491.00",
+            "fractional": "490/1",
+            "rootIndex": 330
+        },
+        {
+            "decimal": "496.00",
+            "fractional": "495/1",
+            "rootIndex": 331
+        },
+        {
+            "decimal": "501.00",
+            "fractional": "500/1",
+            "rootIndex": 332
+        },
+        {
+            "decimal": "506.00",
+            "fractional": "505/1",
+            "rootIndex": 333
+        },
+        {
+            "decimal": "511.00",
+            "fractional": "510/1",
+            "rootIndex": 334
+        },
+        {
+            "decimal": "516.00",
+            "fractional": "515/1",
+            "rootIndex": 335
+        },
+        {
+            "decimal": "521.00",
+            "fractional": "520/1",
+            "rootIndex": 336
+        },
+        {
+            "decimal": "526.00",
+            "fractional": "525/1",
+            "rootIndex": 337
+        },
+        {
+            "decimal": "531.00",
+            "fractional": "530/1",
+            "rootIndex": 338
+        },
+        {
+            "decimal": "536.00",
+            "fractional": "535/1",
+            "rootIndex": 339
+        },
+        {
+            "decimal": "541.00",
+            "fractional": "540/1",
+            "rootIndex": 340
+        },
+        {
+            "decimal": "546.00",
+            "fractional": "545/1",
+            "rootIndex": 341
+        },
+        {
+            "decimal": "551.00",
+            "fractional": "550/1",
+            "rootIndex": 342
+        },
+        {
+            "decimal": "556.00",
+            "fractional": "555/1",
+            "rootIndex": 343
+        },
+        {
+            "decimal": "561.00",
+            "fractional": "560/1",
+            "rootIndex": 344
+        },
+        {
+            "decimal": "566.00",
+            "fractional": "565/1",
+            "rootIndex": 345
+        },
+        {
+            "decimal": "571.00",
+            "fractional": "570/1",
+            "rootIndex": 346
+        },
+        {
+            "decimal": "576.00",
+            "fractional": "575/1",
+            "rootIndex": 347
+        },
+        {
+            "decimal": "581.00",
+            "fractional": "580/1",
+            "rootIndex": 348
+        },
+        {
+            "decimal": "586.00",
+            "fractional": "585/1",
+            "rootIndex": 349
+        },
+        {
+            "decimal": "591.00",
+            "fractional": "590/1",
+            "rootIndex": 350
+        },
+        {
+            "decimal": "596.00",
+            "fractional": "595/1",
+            "rootIndex": 351
+        },
+        {
+            "decimal": "601.00",
+            "fractional": "600/1",
+            "rootIndex": 352
+        },
+        {
+            "decimal": "606.00",
+            "fractional": "605/1",
+            "rootIndex": 353
+        },
+        {
+            "decimal": "611.00",
+            "fractional": "610/1",
+            "rootIndex": 354
+        },
+        {
+            "decimal": "616.00",
+            "fractional": "615/1",
+            "rootIndex": 355
+        },
+        {
+            "decimal": "621.00",
+            "fractional": "620/1",
+            "rootIndex": 356
+        },
+        {
+            "decimal": "626.00",
+            "fractional": "625/1",
+            "rootIndex": 357
+        },
+        {
+            "decimal": "631.00",
+            "fractional": "630/1",
+            "rootIndex": 358
+        },
+        {
+            "decimal": "636.00",
+            "fractional": "635/1",
+            "rootIndex": 359
+        },
+        {
+            "decimal": "641.00",
+            "fractional": "640/1",
+            "rootIndex": 360
+        },
+        {
+            "decimal": "646.00",
+            "fractional": "645/1",
+            "rootIndex": 361
+        },
+        {
+            "decimal": "651.00",
+            "fractional": "650/1",
+            "rootIndex": 362
+        },
+        {
+            "decimal": "656.00",
+            "fractional": "655/1",
+            "rootIndex": 363
+        },
+        {
+            "decimal": "661.00",
+            "fractional": "660/1",
+            "rootIndex": 364
+        },
+        {
+            "decimal": "666.00",
+            "fractional": "665/1",
+            "rootIndex": 365
+        },
+        {
+            "decimal": "671.00",
+            "fractional": "670/1",
+            "rootIndex": 366
+        },
+        {
+            "decimal": "676.00",
+            "fractional": "675/1",
+            "rootIndex": 367
+        },
+        {
+            "decimal": "681.00",
+            "fractional": "680/1",
+            "rootIndex": 368
+        },
+        {
+            "decimal": "686.00",
+            "fractional": "685/1",
+            "rootIndex": 369
+        },
+        {
+            "decimal": "691.00",
+            "fractional": "690/1",
+            "rootIndex": 370
+        },
+        {
+            "decimal": "696.00",
+            "fractional": "695/1",
+            "rootIndex": 371
+        },
+        {
+            "decimal": "701.00",
+            "fractional": "700/1",
+            "rootIndex": 372
+        },
+        {
+            "decimal": "706.00",
+            "fractional": "705/1",
+            "rootIndex": 373
+        },
+        {
+            "decimal": "711.00",
+            "fractional": "710/1",
+            "rootIndex": 374
+        },
+        {
+            "decimal": "716.00",
+            "fractional": "715/1",
+            "rootIndex": 375
+        },
+        {
+            "decimal": "721.00",
+            "fractional": "720/1",
+            "rootIndex": 376
+        },
+        {
+            "decimal": "726.00",
+            "fractional": "725/1",
+            "rootIndex": 377
+        },
+        {
+            "decimal": "731.00",
+            "fractional": "730/1",
+            "rootIndex": 378
+        },
+        {
+            "decimal": "736.00",
+            "fractional": "735/1",
+            "rootIndex": 379
+        },
+        {
+            "decimal": "741.00",
+            "fractional": "740/1",
+            "rootIndex": 380
+        },
+        {
+            "decimal": "746.00",
+            "fractional": "745/1",
+            "rootIndex": 381
+        },
+        {
+            "decimal": "751.00",
+            "fractional": "750/1",
+            "rootIndex": 382
+        },
+        {
+            "decimal": "756.00",
+            "fractional": "755/1",
+            "rootIndex": 383
+        },
+        {
+            "decimal": "761.00",
+            "fractional": "760/1",
+            "rootIndex": 384
+        },
+        {
+            "decimal": "766.00",
+            "fractional": "765/1",
+            "rootIndex": 385
+        },
+        {
+            "decimal": "771.00",
+            "fractional": "770/1",
+            "rootIndex": 386
+        },
+        {
+            "decimal": "776.00",
+            "fractional": "775/1",
+            "rootIndex": 387
+        },
+        {
+            "decimal": "781.00",
+            "fractional": "780/1",
+            "rootIndex": 388
+        },
+        {
+            "decimal": "786.00",
+            "fractional": "785/1",
+            "rootIndex": 389
+        },
+        {
+            "decimal": "791.00",
+            "fractional": "790/1",
+            "rootIndex": 390
+        },
+        {
+            "decimal": "796.00",
+            "fractional": "795/1",
+            "rootIndex": 391
+        },
+        {
+            "decimal": "801.00",
+            "fractional": "800/1",
+            "rootIndex": 392
+        },
+        {
+            "decimal": "806.00",
+            "fractional": "805/1",
+            "rootIndex": 393
+        },
+        {
+            "decimal": "811.00",
+            "fractional": "810/1",
+            "rootIndex": 394
+        },
+        {
+            "decimal": "816.00",
+            "fractional": "815/1",
+            "rootIndex": 395
+        },
+        {
+            "decimal": "821.00",
+            "fractional": "820/1",
+            "rootIndex": 396
+        },
+        {
+            "decimal": "826.00",
+            "fractional": "825/1",
+            "rootIndex": 397
+        },
+        {
+            "decimal": "831.00",
+            "fractional": "830/1",
+            "rootIndex": 398
+        },
+        {
+            "decimal": "836.00",
+            "fractional": "835/1",
+            "rootIndex": 399
+        },
+        {
+            "decimal": "841.00",
+            "fractional": "840/1",
+            "rootIndex": 400
+        },
+        {
+            "decimal": "846.00",
+            "fractional": "845/1",
+            "rootIndex": 401
+        },
+        {
+            "decimal": "851.00",
+            "fractional": "850/1",
+            "rootIndex": 402
+        },
+        {
+            "decimal": "856.00",
+            "fractional": "855/1",
+            "rootIndex": 403
+        },
+        {
+            "decimal": "861.00",
+            "fractional": "860/1",
+            "rootIndex": 404
+        },
+        {
+            "decimal": "866.00",
+            "fractional": "865/1",
+            "rootIndex": 405
+        },
+        {
+            "decimal": "871.00",
+            "fractional": "870/1",
+            "rootIndex": 406
+        },
+        {
+            "decimal": "876.00",
+            "fractional": "875/1",
+            "rootIndex": 407
+        },
+        {
+            "decimal": "881.00",
+            "fractional": "880/1",
+            "rootIndex": 408
+        },
+        {
+            "decimal": "886.00",
+            "fractional": "885/1",
+            "rootIndex": 409
+        },
+        {
+            "decimal": "891.00",
+            "fractional": "890/1",
+            "rootIndex": 410
+        },
+        {
+            "decimal": "896.00",
+            "fractional": "895/1",
+            "rootIndex": 411
+        },
+        {
+            "decimal": "901.00",
+            "fractional": "900/1",
+            "rootIndex": 412
+        },
+        {
+            "decimal": "906.00",
+            "fractional": "905/1",
+            "rootIndex": 413
+        },
+        {
+            "decimal": "911.00",
+            "fractional": "910/1",
+            "rootIndex": 414
+        },
+        {
+            "decimal": "916.00",
+            "fractional": "915/1",
+            "rootIndex": 415
+        },
+        {
+            "decimal": "921.00",
+            "fractional": "920/1",
+            "rootIndex": 416
+        },
+        {
+            "decimal": "926.00",
+            "fractional": "925/1",
+            "rootIndex": 417
+        },
+        {
+            "decimal": "931.00",
+            "fractional": "930/1",
+            "rootIndex": 418
+        },
+        {
+            "decimal": "936.00",
+            "fractional": "935/1",
+            "rootIndex": 419
+        },
+        {
+            "decimal": "941.00",
+            "fractional": "940/1",
+            "rootIndex": 420
+        },
+        {
+            "decimal": "946.00",
+            "fractional": "945/1",
+            "rootIndex": 421
+        },
+        {
+            "decimal": "951.00",
+            "fractional": "950/1",
+            "rootIndex": 422
+        },
+        {
+            "decimal": "956.00",
+            "fractional": "955/1",
+            "rootIndex": 423
+        },
+        {
+            "decimal": "961.00",
+            "fractional": "960/1",
+            "rootIndex": 424
+        },
+        {
+            "decimal": "966.00",
+            "fractional": "965/1",
+            "rootIndex": 425
+        },
+        {
+            "decimal": "971.00",
+            "fractional": "970/1",
+            "rootIndex": 426
+        },
+        {
+            "decimal": "976.00",
+            "fractional": "975/1",
+            "rootIndex": 427
+        },
+        {
+            "decimal": "981.00",
+            "fractional": "980/1",
+            "rootIndex": 428
+        },
+        {
+            "decimal": "986.00",
+            "fractional": "985/1",
+            "rootIndex": 429
+        },
+        {
+            "decimal": "991.00",
+            "fractional": "990/1",
+            "rootIndex": 430
+        },
+        {
+            "decimal": "996.00",
+            "fractional": "995/1",
+            "rootIndex": 431
+        },
+        {
+            "decimal": "1001.00",
+            "fractional": "1000/1",
+            "rootIndex": 432
+        },
+        {
+            "decimal": "1501.00",
+            "fractional": "1500/1",
+            "rootIndex": 433
+        },
+        {
+            "decimal": "2001.00",
+            "fractional": "2000/1",
+            "rootIndex": 434
+        },
+        {
+            "decimal": "2501.00",
+            "fractional": "2500/1",
+            "rootIndex": 435
+        },
+        {
+            "decimal": "3001.00",
+            "fractional": "3000/1",
+            "rootIndex": 436
+        },
+        {
+            "decimal": "3501.00",
+            "fractional": "3500/1",
+            "rootIndex": 437
+        },
+        {
+            "decimal": "4001.00",
+            "fractional": "4000/1",
+            "rootIndex": 438
+        },
+        {
+            "decimal": "4501.00",
+            "fractional": "4500/1",
+            "rootIndex": 439
+        },
+        {
+            "decimal": "5001.00",
+            "fractional": "5000/1",
+            "rootIndex": 440
+        },
+        {
+            "decimal": "7501.00",
+            "fractional": "7500/1",
+            "rootIndex": 441
+        },
+        {
+            "decimal": "10000.00",
+            "fractional": "10000/1",
+            "rootIndex": 442
+        }
+    ]
+}
