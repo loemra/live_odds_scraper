@@ -8,3 +8,7 @@ def get_config():
 
 
 config = get_config()
+
+
+def get_odds(ri) -> float:
+    return float(config["odds"][ri]["decimal"])

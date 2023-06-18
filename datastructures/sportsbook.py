@@ -1,13 +1,13 @@
-from dataclasses import dataclass, Field
-from event import Event
-from update_msg import UpdateMsg
+from dataclasses import dataclass, field
+from datastructures.event import Event
+from datastructures.update_msg import UpdateMsg
 from logs import logger
 
 
 @dataclass
 class Sportsbook:
     name: str
-    events: dict[str, Event] = Field(default_factory=dict)
+    events: dict[str, Event] = field(default_factory=dict)
 
     def __str__(self) -> str:
         return self.name
@@ -37,8 +37,13 @@ class Sportsbook:
             )
             return
 
-        logger.info(
-            f"Updating odds for {self.name}/{event}/{market}/{selection} from"
-            f" {selection.odds} to {update_msg.new_odds}"
-        )
-        selection.odds = update_msg.new_odds
+        with selection.lock:
+            logger.info(
+                f"Updating odds for {self.name}/{event}/{market}/{selection} from"
+                f" {selection.odds} to {update_msg.new_odds}"
+            )
+            print(
+                f"Updating odds for {self.name}/{event}/{market}/{selection} from"
+                f" {selection.odds} to {update_msg.new_odds}"
+            )
+            selection.odds = update_msg.new_odds

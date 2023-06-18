@@ -40,7 +40,6 @@ def _get_live_markets_for_sports(sports):
 
 
 def generate_payloads():
-    live_events = _get_live_events()
     event_ids, sports = map(
         list, zip(*_get_event_id_and_sport_from_live_events(live_events))
     )
@@ -97,17 +96,32 @@ def _handle_message(msg):
         logger.info("Keep alive response: {}".format(msg))
         return
 
+    if "sr" in msg:
+        logger.info(f"Subscribe Response! {msg}")
+
     return json.loads(msg)
 
 
-# PUBLIC FACING
-def get_messages():
+def _initial_setup():
+    logger.info("Running initial setup for fox_bets scraper.")
     global ws
     ws = get_socket()
+
+    global live_events
+    live_events = _get_live_events()
 
     payloads = generate_payloads()
     send_subscribe_payloads(payloads)
 
+    global _setup
+    _setup = True
+
+
+_initial_setup()
+
+
+# PUBLIC FACING
+def get_messages():
     while True:
         yield _handle_message(ws.recv())
 

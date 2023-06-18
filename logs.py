@@ -12,4 +12,4 @@ def setup_logging(logger_level=logging.INFO):
     return logger
 
 
-logger = setup_logging()
+logger = setup_logging(logging.DEBUG)
