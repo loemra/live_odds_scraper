@@ -106,22 +106,20 @@ def _match_or_register_translater(
         translater.create_event(unified_id, translate)
 
 
-def _fox_bets_translate_static(sportsbook: str, event: EventMetadata) -> EventMetadata:
-    # SPORT
+def _translate_static(sportsbook: str, event: EventMetadata) -> EventMetadata:
     sport_translater = translater.get_sport_translater(sportsbook)
     if event.sport in sport_translater:
         event.sport = sport_translater[event.sport]
 
-    # TODO: LEAGUE?
-
     return event
 
 
-def fox_bets_startup():
-    SPORTSBOOK_NAME = "fox_bets"
-    events = fox_bets.get_events()
-
+def update_events(sportsbook: str, events: list[EventMetadata]):
     for event in events:
-        event = _fox_bets_translate_static(SPORTSBOOK_NAME, event)
-        unified_event = _match_or_register_events_database(SPORTSBOOK_NAME, event)
-        _match_or_register_translater(SPORTSBOOK_NAME, event.id, unified_event.id)
+        event = _translate_static(sportsbook, event)
+        unified_event = _match_or_register_events_database(sportsbook, event)
+        _match_or_register_translater(sportsbook, event.id, unified_event.id)
+
+
+# SPORTS_BOOKS
+update_events("fox_bets", fox_bets.get_events())
