@@ -1,0 +1,39 @@
+{
+    "events": {
+        "a33ff63a-687b-49e9-8726-ad1bb797a740": {
+            "name": "Austin FC v Houston Dynamo",
+            "sport": "soccer",
+            "date": 1687656600.0
+        },
+        "69a51a9f-4080-4fd4-adc0-9364996b0ef1": {
+            "name": "Real Salt Lake v Minnesota Utd",
+            "sport": "soccer",
+            "date": 1687656600.0
+        },
+        "25ab2caa-4eda-4eab-98d9-21b082ebf6dd": {
+            "name": "Los Angeles FC v Vancouver Whitecaps",
+            "sport": "soccer",
+            "date": 1687660200.0
+        },
+        "a6ba28d1-228c-4b27-9e36-1fe94b282d90": {
+            "name": "Portland Timbers v New York City",
+            "sport": "soccer",
+            "date": 1687660200.0
+        },
+        "2bb7f949-047f-40e3-a0fd-51fedba1d71c": {
+            "name": "San Jose Earthquakes v Saint Louis City SC",
+            "sport": "soccer",
+            "date": 1687660200.0
+        },
+        "9992c4d3-c9ca-44b2-97c2-3b98ab714d81": {
+            "name": "Seattle v Orlando City",
+            "sport": "soccer",
+            "date": 1687660200.0
+        },
+        "4e74393b-f997-4b2c-b7f1-45533fa29028": {
+            "name": "USA v Jamaica",
+            "sport": "soccer",
+            "date": 1687656600.0
+        }
+    }
+}

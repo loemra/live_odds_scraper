@@ -1,0 +1,8 @@
+{
+    "sports": {
+        "soccer": {
+            "get_events_url": "https://sports.mi.foxbet.com/sportsbook/v1/api/getCompetitionsForDay?sport=SOCCER&date={}&count=6&utcOffset=-5&locale=en-us&channelId=20&siteId=536870916",
+            "markets": {}
+        }
+    }
+}
