@@ -109,6 +109,7 @@ def _maybe_match_market(
         return None
 
     for unified_market in unified_markets:
+        # allowed to do this because code is statically translated before this.
         if sportsbook_market.code == unified_market.code:
             return unified_market
 
@@ -119,6 +120,16 @@ def _unify_market(sportsbook: str, sportsbook_market: MarketMetadata) -> MarketM
     # TODO: I think markets can be translated fully statically, no dynamic unification needed.
     # If so get rid of this function and update events_database.
     return MarketMetadata(sportsbook_market.code)
+
+
+# SELECTION
+def _maybe_match_selection(
+    sportsbook_selection: Selection, unified_selctions: list[Selection]
+) -> Selection | None:
+    if len(unified_selctions) == 0:
+        return None
+
+    return _prompt_for_match(sportsbook_selection, unified_selctions)
 
 
 # PUBLIC
@@ -144,6 +155,14 @@ def update_events(
                 partial(_maybe_match_market, market.metadata),
                 partial(_unify_market, sportsbook, market.metadata),
             )
+
+            for selection in market.selection.values():
+                # no static translations for selection.
+                selection = events_database.match_or_register_selection(
+                    unified_event.id,
+                    market.metadata.code,
+                    partial(_maybe_match_selection, selection),
+                )
 
 
 # SPORTSBOOKS
