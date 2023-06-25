@@ -1,5 +1,5 @@
 from threading import Lock
-from datastructures.event_metadata import EventMetadata
+from datastructures.event import EventMetadata
 from datetime import datetime
 import json
 

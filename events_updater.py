@@ -1,13 +1,15 @@
-from datastructures.event_metadata import EventMetadata
+from datastructures.event import EventMetadata
+from datastructures.market import Market
 import database.events_database as events_database
 import database.translater as translater
 import fox_bets.fox_bets as fox_bets
 from datetime import datetime
 import uuid
+from collections.abc import Callable
 
 
 def _make_unified_id() -> str:
-    return str(uuid.uuid4())
+    return uuid.uuid4().hex
 
 
 def _prompt_for_unification(sportsbook: str, event: EventMetadata) -> EventMetadata:
@@ -106,7 +108,7 @@ def _match_or_register_translater(
         translater.create_event(unified_id, translate)
 
 
-def _translate_static(sportsbook: str, event: EventMetadata) -> EventMetadata:
+def _translate_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
     sport_translater = translater.get_sport_translater(sportsbook)
     if event.sport in sport_translater:
         event.sport = sport_translater[event.sport]
@@ -114,12 +116,31 @@ def _translate_static(sportsbook: str, event: EventMetadata) -> EventMetadata:
     return event
 
 
-def update_events(sportsbook: str, events: list[EventMetadata]):
-    for event in events:
-        event = _translate_static(sportsbook, event)
-        unified_event = _match_or_register_events_database(sportsbook, event)
+def _translate_market(sportsbook: str, market: Market) -> Market:
+    pass
+
+
+def update_events(
+    sportsbook: str,
+    sportsbook_get_events: Callable[[datetime], list[EventMetadata]],
+    sportsbook_get_odds: Callable[[str, str], list[Market]],
+):
+    for event in sportsbook_get_events(datetime.today()):
+        unified_event = _match_or_register_events_database(
+            sportsbook, _translate_event(sportsbook, event)
+        )
         _match_or_register_translater(sportsbook, event.id, unified_event.id)
 
+        markets = sportsbook_get_odds(event.id, event.sport)
+        for market in markets:
+            unified_market = _translate_market(market)
 
-# SPORTS_BOOKS
-update_events("fox_bets", fox_bets.get_events())
+
+# def update_odds():
+
+
+# SPORTSBOOKS
+update_events("fox_bets", fox_bets.get_events, fox_bets.get_odds)
+
+
+# fox_bets.get_odds()

@@ -1,6 +1,8 @@
+from datastructures.event import EventMetadata
+from datastructures.market import Market, MarketMetadata
+from datastructures.selection import Selection
+from fox_bets.config import get_events_urls, get_event_url
 import requests
-from datastructures.event_metadata import EventMetadata
-from fox_bets.config import get_events_urls
 from datetime import datetime
 
 
@@ -15,7 +17,28 @@ def _parse_events(j) -> list[EventMetadata]:
     return events
 
 
-def _get_event(event_url):
+def _parse_odds(j) -> list[Market]:
+    markets = []
+    for market in j["markets"]:
+        metadata = MarketMetadata(market["type"], market["name"], market.get("subtype"))
+        m = Market(metadata)
+        for selection in market["selection"]:
+            id = selection["id"]
+            m.selection[id] = Selection(
+                id, selection["name"], float(selection["odds"]["dec"])
+            )
+        markets.append(m)
+    return markets
+
+
+def _get_events(events_url: str):
+    result = requests.get(events_url)
+    if not result.status_code == 200:
+        raise f"fox_bets: _get_events(): status code = {result.status_code}, url = {events_url}, text = {result.text}"
+    return result.json()
+
+
+def _get_event(event_url: str):
     result = requests.get(event_url)
     if not result.status_code == 200:
         raise f"fox_bets: _get_event(): status code = {result.status_code}, url = {event_url}, text = {result.text}"
@@ -23,16 +46,16 @@ def _get_event(event_url):
 
 
 # gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
-def get_events() -> list[EventMetadata]:
+def get_events(date: datetime) -> list[EventMetadata]:
     events = []
-    for event_url in get_events_urls():
-        events.extend(_parse_events(_get_event(event_url)))
+    for event_url in get_events_urls(date):
+        events.extend(_parse_events(_get_events(event_url)))
     return events
 
 
 # gets initial odds for an upcoming event given fox_bet_event_id.
-def get_initial_odds(id):
-    pass
+def get_odds(id: str, sport: str) -> list[Market]:
+    return _parse_odds(_get_event(get_event_url(id, sport)))
 
 
 # return a generator that will yield update_msgs.

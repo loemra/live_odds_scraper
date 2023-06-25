@@ -1,8 +1,13 @@
 {
+    "get_events_url": "https://sports.mi.foxbet.com/sportsbook/v1/api/getCompetitionsForDay?sport={}&date={}&count=6&utcOffset=-5&locale=en-us&channelId=20&siteId=536870916",
+    "get_event_url": "https://sports.mi.foxbet.com/sportsbook/v1/api/getEvent?eventId={}&marketTypes={}&channelId=20&locale=en-us&siteId=536870916",
     "sports": {
-        "soccer": {
-            "get_events_url": "https://sports.mi.foxbet.com/sportsbook/v1/api/getCompetitionsForDay?sport=SOCCER&date={}&count=6&utcOffset=-5&locale=en-us&channelId=20&siteId=536870916",
-            "markets": {}
+        "SOCCER": {
+            "markets": [
+                "SOCCER:FT:AXB",
+                "SOCCER:FT:OU",
+                "SOCCER:OT:AXB"
+            ]
         }
     }
 }

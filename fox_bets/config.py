@@ -1,5 +1,5 @@
 import json
-from datetime import date
+from datetime import datetime
 
 
 def _get_config():
@@ -10,9 +10,14 @@ def _get_config():
 _config = _get_config()
 
 
-def get_events_urls() -> list[str]:
+def get_events_urls(date: datetime) -> list[str]:
     event_urls = []
-    today = date.today().strftime(r"%Y-%m-%d")
-    for _, event in _config["sports"].items():
-        event_urls.append(event["get_events_url"].format(today))
+    for sport in _config["sports"]:
+        event_urls.append(
+            _config["get_events_url"].format(sport, date.strftime(r"%Y-%m-%d"))
+        )
     return event_urls
+
+
+def get_event_url(id: str, sport: str) -> str:
+    return _config["get_event_url"].format(id, sport)
