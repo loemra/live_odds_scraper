@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import urllib.parse
 
 
 def _get_config():
@@ -20,4 +21,10 @@ def get_events_urls(date: datetime) -> list[str]:
 
 
 def get_event_url(id: str, sport: str) -> str:
-    return _config["get_event_url"].format(id, sport)
+    markets = ",".join(
+        [
+            urllib.parse.quote_plus(market)
+            for market in _config["sports"][sport]["markets"]
+        ]
+    )
+    return _config["get_event_url"].format(id, markets)

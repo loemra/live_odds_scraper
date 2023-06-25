@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from market import Market
+from datastructures.market import Market
 
 
 @dataclass

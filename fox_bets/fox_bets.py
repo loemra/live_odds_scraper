@@ -20,13 +20,15 @@ def _parse_events(j) -> list[EventMetadata]:
 def _parse_odds(j) -> list[Market]:
     markets = []
     for market in j["markets"]:
-        metadata = MarketMetadata(market["type"], market["name"], market.get("subtype"))
+        metadata = MarketMetadata(market["type"])
         m = Market(metadata)
         for selection in market["selection"]:
             id = selection["id"]
-            m.selection[id] = Selection(
-                id, selection["name"], float(selection["odds"]["dec"])
-            )
+            try:
+                odds = float(selection["odds"]["dec"])
+            except ValueError:
+                odds = None
+            m.selection[id] = Selection(id, selection["name"], odds)
         markets.append(m)
     return markets
 
@@ -34,14 +36,20 @@ def _parse_odds(j) -> list[Market]:
 def _get_events(events_url: str):
     result = requests.get(events_url)
     if not result.status_code == 200:
-        raise f"fox_bets: _get_events(): status code = {result.status_code}, url = {events_url}, text = {result.text}"
+        raise Exception(
+            f"fox_bets: _get_events(): status code = {result.status_code}, url ="
+            f" {events_url}, text = {result.text}"
+        )
     return result.json()
 
 
 def _get_event(event_url: str):
     result = requests.get(event_url)
     if not result.status_code == 200:
-        raise f"fox_bets: _get_event(): status code = {result.status_code}, url = {event_url}, text = {result.text}"
+        raise Exception(
+            f"fox_bets: _get_event(): status code = {result.status_code}, url ="
+            f" {event_url}, text = {result.text}"
+        )
     return result.json()
 
 
