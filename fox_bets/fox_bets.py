@@ -25,9 +25,9 @@ def _parse_odds(j) -> list[Market]:
         for selection in market["selection"]:
             id = selection["id"]
             try:
-                odds = float(selection["odds"]["dec"])
+                odds = {"fox_bets": float(selection["odds"]["dec"])}
             except ValueError:
-                odds = None
+                odds = {}
             m.selection[id] = Selection(id, selection["name"], odds)
         markets.append(m)
     return markets
@@ -62,8 +62,8 @@ def get_events(date: datetime) -> list[EventMetadata]:
 
 
 # gets initial odds for an upcoming event given fox_bet_event_id.
-def get_odds(id: str, sport: str) -> list[Market]:
-    return _parse_odds(_get_event(get_event_url(id, sport)))
+def get_odds(event_id: str, sport: str) -> list[Market]:
+    return _parse_odds(_get_event(get_event_url(event_id, sport)))
 
 
 # return a generator that will yield update_msgs.

@@ -1,4 +1,4 @@
-from datastructures.selection import SportsbookSelection
+from datastructures.selection import Selection
 from dataclasses import dataclass, field
 from typing import Optional
 
@@ -13,4 +13,4 @@ class MarketMetadata:
 @dataclass
 class Market:
     metadata: MarketMetadata
-    sportsbook_selection: dict[str, SportsbookSelection] = field(default_factory=dict)
+    selection: dict[str, Selection] = field(default_factory=dict)

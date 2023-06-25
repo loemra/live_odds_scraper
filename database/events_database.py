@@ -1,10 +1,13 @@
 from datastructures.event import EventMetadata
 from datastructures.market import MarketMetadata
+from datastructures.selection import Selection
 from threading import Lock
 from datetime import datetime
 import json
 from collections.abc import Callable
 
+
+# TODO: Figure out a better database solution, not json files.
 
 DATABASE_NAME = "database/events.json"
 
@@ -60,7 +63,7 @@ def match_or_register_event(
 def _get_markets(event_id: str) -> list[MarketMetadata]:
     database = _get_database()
     if event_id not in database["events"]:
-        raise f"_get_markets() {event_id} not found in database."
+        raise Exception(f"_get_markets() {event_id} not found in database.")
 
     event = database["events"][event_id]
     markets = []
@@ -77,7 +80,7 @@ def _get_markets(event_id: str) -> list[MarketMetadata]:
 def _register_market(event_id: str, market: MarketMetadata):
     database = _get_database()
     if event_id not in database["events"]:
-        raise f"_register_market() {event_id} not found in database."
+        raise Exception(f"_register_market() {event_id} not found in database.")
 
     event = database["events"][event_id]
     if "markets" not in event:
@@ -102,3 +105,33 @@ def match_or_register_market(
         market = unify()
         _register_market(event_id, market)
         return market
+
+
+def _get_selection(event_id: str, market_id: str) -> list[Selection]:
+    pass
+
+    # database = _get_database()
+    # if event_id not in database["events"]:
+    #     raise Exception(f"_get_selection() {event_id} not found in database.")
+
+    # event = database["events"][event_id]
+
+    # if "markets" not in event:
+    #     raise Exception(f"_get_selection() no markets for {event}.")
+    # if market_id not in event["markets"]:
+
+    # market = event["markets"][market_id]
+    # selection = []
+
+    # if "selection" not in market:
+    #     return selection
+
+    # for market_id, _ in event["markets"].items():
+    #     markets.append(MarketMetadata(market_id))
+
+    # return markets
+
+
+def match_or_register_selection(event_id: str, market_id: str):
+    with _lock:
+        pass

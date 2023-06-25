@@ -6,9 +6,4 @@ from typing import Optional
 class Selection:
     id: str
     name: str
-    odds: Optional[float]
-
-
-@dataclass
-class SportsbookSelection:
-    selection: dict[str, Selection] = field(default_factory=dict)
+    odds: dict[str, float] = field(default_factory=dict)
