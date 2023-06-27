@@ -60,6 +60,417 @@
                     }
                 }
             }
+        },
+        "7e39f4e4ba714efba50460af5abeee1c": {
+            "name": "Canada v Guadeloupe",
+            "sport": "soccer",
+            "date": 1687906800.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "c6091aa7f99840528a68ebdde1ad0b5c": {
+                            "name": "Canada",
+                            "odds": {
+                                "fox_bets": 1.14
+                            }
+                        },
+                        "3c8b11397ebd443cbb85ff82a2ec0958": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 6.5
+                            }
+                        },
+                        "155fae19ce8e40a58ae17dddfc10d4ad": {
+                            "name": "Guadeloupe",
+                            "odds": {
+                                "fox_bets": 12.0
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "c92dd70e1f8e4a8caf2d4c64de89da27": {
+                            "name": "Under 3.5",
+                            "odds": {
+                                "fox_bets": 1.53
+                            }
+                        },
+                        "05ed05d756ad4b47a0924c475f219d3b": {
+                            "name": "Over 3.5",
+                            "odds": {
+                                "fox_bets": 2.3
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "c3862fc0a5a74e2a8c66d7e2793c3075": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.6
+                            }
+                        },
+                        "7cfafdaf61fe4ac0bd2011ed022905e6": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.4
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "64730ca21320483d97a97edbcb3a92ba": {
+            "name": "Guatemala v Cuba",
+            "sport": "soccer",
+            "date": 1687913100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "1aa2ffc09a204147ac6e40ab16d65beb": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 3.6
+                            }
+                        },
+                        "91ada230a5b547108880026099df2aa2": {
+                            "name": "Guatemala",
+                            "odds": {
+                                "fox_bets": 1.44
+                            }
+                        },
+                        "42afafb3ca8448738a02026c8533f604": {
+                            "name": "Cuba",
+                            "odds": {
+                                "fox_bets": 7.0
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "beaf389dfd6d4a4faf37978db6ff4c3b": {
+                            "name": "Under 2.5",
+                            "odds": {
+                                "fox_bets": 1.53
+                            }
+                        },
+                        "bdfc9fc21a82481b929bce0eb1a2678d": {
+                            "name": "Over 2.5",
+                            "odds": {
+                                "fox_bets": 2.3
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "66b194be56934bfcb89c9ad93975b3ae": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.44
+                            }
+                        },
+                        "e1ca9df332ed49a4acaf1b33c9ca0b67": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.45
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "7bcc1a7fc0af4c84af8c26d185a50cee": {
+            "name": "Chapecoense v Sport Recife",
+            "sport": "soccer",
+            "date": 1687903200.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "151cc70abbe744c49b9fb7ce11842a0e": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 2.7
+                            }
+                        },
+                        "758de3db37e2490d89d261057c6e1997": {
+                            "name": "Chapecoense",
+                            "odds": {
+                                "fox_bets": 3.05
+                            }
+                        },
+                        "c3659ebac9f8482f9164be38798abcaf": {
+                            "name": "Sport Recife",
+                            "odds": {
+                                "fox_bets": 2.25
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "beb2d1eb42d74fb8bc82ebc6eab13f57": {
+                            "name": "Over 1.5",
+                            "odds": {
+                                "fox_bets": 1.47
+                            }
+                        },
+                        "1575dcd12f4b4c2394a6ef9e72fc27d4": {
+                            "name": "Under 1.5",
+                            "odds": {
+                                "fox_bets": 2.25
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "5ec8d73abd0d42698b3dc187462d5216": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.6
+                            }
+                        },
+                        "9317ece4a9f244068f18e8c1024530a6": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.0
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "fc5905505b664f35966dbbf9c7ef64a2": {
+            "name": "Criciuma v CRB",
+            "sport": "soccer",
+            "date": 1687903200.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "e5d6cedd5d6c4de0bbe0cb885e9e2727": {
+                            "name": "CRB",
+                            "odds": {
+                                "fox_bets": 4.1
+                            }
+                        },
+                        "6cf1dc5e3e5b4da2a5093171f1250336": {
+                            "name": "Criciuma",
+                            "odds": {
+                                "fox_bets": 1.75
+                            }
+                        },
+                        "a35c024dceb94fcebeae70580a5ab723": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 3.05
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "9833db508949413386647eda5d0afc40": {
+                            "name": "Under 2.5",
+                            "odds": {
+                                "fox_bets": 1.5
+                            }
+                        },
+                        "0d1ebff24b404d268eaf304b28b20534": {
+                            "name": "Over 2.5",
+                            "odds": {
+                                "fox_bets": 2.2
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "64e51cbe57fa4d65914124a5a7c5c042": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.6
+                            }
+                        },
+                        "bb4df1b810f547a99f4c7437ab087dab": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.05
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "2eaf47ba68aa4cd889d5fb981eb59d2f": {
+            "name": "Novorizontino v Botafogo FC Ribeirao Preto",
+            "sport": "soccer",
+            "date": 1687912200.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "1ff26ab40deb48bc8f568a4e89e6d21c": {
+                            "name": "Novorizontino",
+                            "odds": {
+                                "fox_bets": 1.4
+                            }
+                        },
+                        "7bb8513fb7314d6bbf7c3a67f40bc704": {
+                            "name": "Botafogo FC Ribeirao Preto",
+                            "odds": {
+                                "fox_bets": 6.5
+                            }
+                        },
+                        "bb228c3c7e454acf920de0b807d2990e": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 3.6
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "4c8632ed802e4d5fa18fba8c8d803e1a": {
+                            "name": "Over 2.5",
+                            "odds": {
+                                "fox_bets": 2.1
+                            }
+                        },
+                        "8f2ea4db9e854f5595a456894fba6031": {
+                            "name": "Under 2.5",
+                            "odds": {
+                                "fox_bets": 1.55
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "4b55769509924e32b2f2894b927d978f": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.25
+                            }
+                        },
+                        "e406ca397b024bcd9d1073002175d21a": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.5
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "132a91c13b4b4eeca14c53d467eb0dc8": {
+            "name": "Vila Nova v Tombense",
+            "sport": "soccer",
+            "date": 1687912200.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "7460a7001f4640b6bbb4d01f3525b4a7": {
+                            "name": "Tombense",
+                            "odds": {
+                                "fox_bets": 5.25
+                            }
+                        },
+                        "dd8501d54d97481c844a6c8ed2d49bac": {
+                            "name": "Vila Nova",
+                            "odds": {
+                                "fox_bets": 1.53
+                            }
+                        },
+                        "78094ea95d754b4984fcf1e045222b6d": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 3.3
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "5b5a471b4e4b4bd385245c8f3cc67755": {
+                            "name": "Under 2.5",
+                            "odds": {
+                                "fox_bets": 1.6
+                            }
+                        },
+                        "214803f540e44b06a552c5cb4edb1f9a": {
+                            "name": "Over 2.5",
+                            "odds": {
+                                "fox_bets": 2.05
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "e56d747355c34aebbaf255823f712e3e": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 2.0
+                            }
+                        },
+                        "fa8ceceb023745129ead58bf66d6f221": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.62
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "5fab9c4eba0a4242a245c1076d22e798": {
+            "name": "Tre Penne v Breidablik",
+            "sport": "soccer",
+            "date": 1687892400.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "755e72627ff541ee9ace6538b367d01b": {
+                            "name": "Tre Penne",
+                            "odds": {
+                                "fox_bets": 101.0
+                            }
+                        },
+                        "46111978e7b845a08ae365b0f75d4cea": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 19.0
+                            }
+                        },
+                        "46fefbff080040a2a3d3b89374baba01": {
+                            "name": "Breidablik",
+                            "odds": {
+                                "fox_bets": 1.002
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "e59c6e0908724faf9ca000a5139ba390": {
+                            "name": "Under 5.5",
+                            "odds": {
+                                "fox_bets": 2.05
+                            }
+                        },
+                        "bdd340b43efe43a38c3d59c25d2dacd4": {
+                            "name": "Over 5.5",
+                            "odds": {
+                                "fox_bets": 1.62
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
