@@ -32,17 +32,15 @@ def maybe_register_event(sportsbook: str, sportsbook_id: str, unified_id: str):
         _write_translater(EVENT_ID_TRANSLATER, j)
 
 
-def get_event_id_translater(sportsbook: str):
+def translate_event_id(sportsbook: str, event_id: str) -> str | None:
     with _lock:
         j = _get_translater(EVENT_ID_TRANSLATER)
 
-        translater = {}
-
         for unified_id, sportsbook_ids in j["events"].items():
-            if sportsbook in sportsbook_ids:
-                translater[sportsbook_ids[sportsbook]] = unified_id
+            if sportsbook_ids.get(sportsbook) == event_id:
+                return unified_id
 
-        return translater
+        return None
 
 
 def maybe_register_selection(sportsbook: str, sportsbook_id: str, unified_id: str):
@@ -67,27 +65,23 @@ def get_selection_id_translater(sportsbook: str):
         return translater
 
 
-def get_sport_translater(sportsbook: str):
+def translate_sport(sportsbook: str, sport: str) -> str | None:
     with _lock:
         j = _get_translater(SPORT_TRANSLATER)
 
-        translater = {}
-
         for unified_sport, sportsbook_sports in j["sports"].items():
-            if sportsbook in sportsbook_sports:
-                translater[sportsbook_sports[sportsbook]] = unified_sport
+            if sportsbook_sports.get(sportsbook) == sport:
+                return unified_sport
 
-        return translater
+        return None
 
 
-def get_market_translater(sportsbook: str):
+def translate_market(sportsbook: str, market_id) -> str | None:
     with _lock:
         j = _get_translater(MARKET_TRANSLATER)
 
-        translater = {}
-
         for unified_market, sportsbook_market in j["markets"].items():
-            if sportsbook in sportsbook_market:
-                translater[sportsbook_market[sportsbook]] = unified_market
+            if sportsbook_market.get(sportsbook) == market_id:
+                return unified_market
 
-        return translater
+        return None

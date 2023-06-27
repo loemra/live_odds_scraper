@@ -36,11 +36,11 @@ def _prompt_for_match(sportsbook_thing, unified_things: list):
 
 # EVENTS
 def _static_translate_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
-    sport_translater = translater.get_sport_translater(sportsbook)
-    if event.sport not in sport_translater:
+    unified_sport = translater.translate_sport(sportsbook, event.sport)
+    if not unified_sport:
         raise f"_translate_event {sportsbook}, {event}\nUnable to find sport in sports_translater"
 
-    event.sport = sport_translater[event.sport]
+    event.sport = unified_sport
     return event
 
 
@@ -53,7 +53,7 @@ def _maybe_match_event(
         return None
 
     # some basic logic to try to automate a little bit.
-    unified_id = translater.get_event_id_translater(sportsbook).get(sportsbook_event.id)
+    unified_id = translater.translate_event_id(sportsbook, sportsbook_event.id)
 
     some_match_date = False
     for unified_event in unified_events:
@@ -98,14 +98,14 @@ def _unify_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
 
 # MARKETS
 def _static_translate_market(sportsbook: str, market: MarketMetadata) -> MarketMetadata:
-    market_translater = translater.get_market_translater(sportsbook)
-    if market.code not in market_translater:
+    unified_market = translater.translate_market(sportsbook, market.code)
+    if not unified_market:
         raise Exception(
             f"_translate_market {sportsbook}, {market}\nUnable to find market in"
             " market_translater"
         )
 
-    market.code = market_translater[market.code]
+    market.code = unified_market
     return market
 
 
