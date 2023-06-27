@@ -3,6 +3,7 @@ from threading import Lock
 
 
 EVENT_ID_TRANSLATER = "database/translaters/event_id_translater.json"
+SELECTION_ID_TRANSLATER = "database/translaters/selection_id_translater.json"
 SPORT_TRANSLATER = "database/translaters/sport_translater.json"
 MARKET_TRANSLATER = "database/translaters/market_translater.json"
 
@@ -38,6 +39,28 @@ def get_event_id_translater(sportsbook: str):
         translater = {}
 
         for unified_id, sportsbook_ids in j["events"].items():
+            if sportsbook in sportsbook_ids:
+                translater[sportsbook_ids[sportsbook]] = unified_id
+
+        return translater
+
+
+def maybe_register_selection(sportsbook: str, sportsbook_id: str, unified_id: str):
+    with _lock:
+        j = _get_translater(SELECTION_ID_TRANSLATER)
+        if unified_id not in j["selection"]:
+            j["selection"][unified_id] = {}
+        j["selection"][unified_id][sportsbook] = sportsbook_id
+        _write_translater(SELECTION_ID_TRANSLATER, j)
+
+
+def get_selection_id_translater(sportsbook: str):
+    with _lock:
+        j = _get_translater(SELECTION_ID_TRANSLATER)
+
+        translater = {}
+
+        for unified_id, sportsbook_ids in j["selection"].items():
             if sportsbook in sportsbook_ids:
                 translater[sportsbook_ids[sportsbook]] = unified_id
 

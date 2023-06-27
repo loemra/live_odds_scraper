@@ -1,136 +1,64 @@
 {
     "events": {
-        "a33ff63a-687b-49e9-8726-ad1bb797a740": {
-            "name": "Austin FC v Houston Dynamo",
+        "9330875065494b3294aad19f152ae037": {
+            "name": "Costa Rica v Panama",
             "sport": "soccer",
-            "date": 1687656600.0
-        },
-        "69a51a9f-4080-4fd4-adc0-9364996b0ef1": {
-            "name": "Real Salt Lake v Minnesota Utd",
-            "sport": "soccer",
-            "date": 1687656600.0
-        },
-        "25ab2caa-4eda-4eab-98d9-21b082ebf6dd": {
-            "name": "Los Angeles FC v Vancouver Whitecaps",
-            "sport": "soccer",
-            "date": 1687660200.0
-        },
-        "a6ba28d1-228c-4b27-9e36-1fe94b282d90": {
-            "name": "Portland Timbers v New York City",
-            "sport": "soccer",
-            "date": 1687660200.0
-        },
-        "2bb7f949-047f-40e3-a0fd-51fedba1d71c": {
-            "name": "San Jose Earthquakes v Saint Louis City SC",
-            "sport": "soccer",
-            "date": 1687660200.0
-        },
-        "9992c4d3-c9ca-44b2-97c2-3b98ab714d81": {
-            "name": "Seattle v Orlando City",
-            "sport": "soccer",
-            "date": 1687660200.0
-        },
-        "4e74393b-f997-4b2c-b7f1-45533fa29028": {
-            "name": "USA v Jamaica",
-            "sport": "soccer",
-            "date": 1687656600.0
-        },
-        "8fecd5ba55044463b8772299acd8c867": {
-            "name": "Trinidad And Tobago v Saint Kitts and Nevis",
-            "sport": "soccer",
-            "date": 1687721400.0,
+            "date": 1687825800.0,
             "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "9f37419eb7b4474fa7e5740f5bb3fba9": {
-            "name": "Haiti v Qatar",
-            "sport": "soccer",
-            "date": 1687730400.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "67860af97d9c465894473dc57b4d23d3": {
-            "name": "Mexico v Honduras",
-            "sport": "soccer",
-            "date": 1687737600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "9e37040e51b4434b8c26e2f48df494f7": {
-            "name": "Gremio v Coritiba",
-            "sport": "soccer",
-            "date": 1687719600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {}
-            }
-        },
-        "277e5a1bb76d484bb91e232185a180ca": {
-            "name": "Palmeiras v Botafogo FR",
-            "sport": "soccer",
-            "date": 1687719600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "75c01da37a9148f69a33fdc916d0fe65": {
-            "name": "America Mg v Internacional",
-            "sport": "soccer",
-            "date": 1687728600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "d6d35a71389d4977a63535be90aaffd9": {
-            "name": "Bragantino Sp v Goias",
-            "sport": "soccer",
-            "date": 1687728600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "daf6be8f5f284c229aca79c2527bd2db": {
-            "name": "Santos v Flamengo",
-            "sport": "soccer",
-            "date": 1687728600.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
-            }
-        },
-        "29baac7733914c7ebc8cb62d302fa17a": {
-            "name": "Sampaio Correa v Ceara",
-            "sport": "soccer",
-            "date": 1687717800.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {}
-            }
-        },
-        "1bb8390d7d094db0a3b49f3d509cf4df": {
-            "name": "Guarani Sp v Vitoria Ba",
-            "sport": "soccer",
-            "date": 1687726800.0,
-            "markets": {
-                "soccer_game_result": {},
-                "soccer_over_under_total_goals": {},
-                "soccer_both_teams_to_score": {}
+                "soccer_game_result": {
+                    "selection": {
+                        "77dfb8010dbe484fa900619d6912d8eb": {
+                            "name": "Tie",
+                            "odds": {
+                                "fox_bets": 12.0
+                            }
+                        },
+                        "950064b4c5a94e7bb7606e7f7fff1725": {
+                            "name": "Panama",
+                            "odds": {
+                                "fox_bets": 1.01
+                            }
+                        },
+                        "f3958e20e92b4c5ab2ff36c45999f416": {
+                            "name": "Costa Rica",
+                            "odds": {
+                                "fox_bets": 76.0
+                            }
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "b48d16cbc257415ea6a1e8e34b341136": {
+                            "name": "Under 2.5",
+                            "odds": {
+                                "fox_bets": 1.72
+                            }
+                        },
+                        "7db07ab306e0486fbbbf0febbe115f26": {
+                            "name": "Over 2.5",
+                            "odds": {
+                                "fox_bets": 1.85
+                            }
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "fd339fc4f5734edbae7b581b4b4f04b5": {
+                            "name": "Yes",
+                            "odds": {
+                                "fox_bets": 3.45
+                            }
+                        },
+                        "9d40d89144d44be6addb5301b7ace43d": {
+                            "name": "No",
+                            "odds": {
+                                "fox_bets": 1.22
+                            }
+                        }
+                    }
+                }
             }
         }
     }

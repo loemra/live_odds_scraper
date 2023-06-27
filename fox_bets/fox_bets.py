@@ -20,6 +20,8 @@ def _parse_events(j) -> list[EventMetadata]:
 def _parse_odds(j) -> list[Market]:
     markets = []
     for market in j["markets"]:
+        if market.get("mostBalanced") is not None and market["mostBalanced"] == False:
+            continue
         metadata = MarketMetadata(market["type"])
         m = Market(metadata)
         for selection in market["selection"]:

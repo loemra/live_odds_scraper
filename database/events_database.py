@@ -71,7 +71,7 @@ def _get_markets(event_id: str) -> list[MarketMetadata]:
     if "markets" not in event:
         return markets
 
-    for market_id, _ in event["markets"].items():
+    for market_id, market in event["markets"].items():
         markets.append(MarketMetadata(market_id))
 
     return markets
@@ -87,6 +87,7 @@ def _register_market(event_id: str, market: MarketMetadata):
         event["markets"] = {}
 
     event["markets"][market.code] = {}
+
     _write_database(database)
 
 
@@ -108,30 +109,55 @@ def match_or_register_market(
 
 
 def _get_selection(event_id: str, market_id: str) -> list[Selection]:
-    pass
+    database = _get_database()
+    if event_id not in database["events"]:
+        raise Exception(f"_get_selection() {event_id} not found in database.")
+    event = database["events"][event_id]
+    if market_id not in event["markets"]:
+        raise Exception(f"_get_selection() {market_id} not found in event {event}.")
+    market = event["markets"][market_id]
 
-    # database = _get_database()
-    # if event_id not in database["events"]:
-    #     raise Exception(f"_get_selection() {event_id} not found in database.")
+    selection = []
+    if "selection" not in market:
+        return selection
 
-    # event = database["events"][event_id]
+    for selection_id, s in market["selection"].items():
+        selection.append(Selection(selection_id, s["name"], s["odds"]))
 
-    # if "markets" not in event:
-    #     raise Exception(f"_get_selection() no markets for {event}.")
-    # if market_id not in event["markets"]:
-
-    # market = event["markets"][market_id]
-    # selection = []
-
-    # if "selection" not in market:
-    #     return selection
-
-    # for market_id, _ in event["markets"].items():
-    #     markets.append(MarketMetadata(market_id))
-
-    # return markets
+    return selection
 
 
-def match_or_register_selection(event_id: str, market_id: str):
+def _register_selection(event_id: str, market_id: str, selection: Selection):
+    database = _get_database()
+    if event_id not in database["events"]:
+        raise Exception(f"_register_selection() {event_id} not found in database.")
+    event = database["events"][event_id]
+    if market_id not in event["markets"]:
+        raise Exception(
+            f"_register_selection() {market_id} not found in event {event}."
+        )
+    market = event["markets"][market_id]
+
+    if "selection" not in market:
+        market["selection"] = {}
+
+    market["selection"][selection.id] = {"name": selection.name, "odds": selection.odds}
+    _write_database(database)
+
+
+def match_or_register_selection(
+    event_id: str,
+    market_id: str,
+    maybe_match: Callable[[list[Selection]], Selection | None],
+    unify: Callable[[], Selection],
+):
     with _lock:
-        pass
+        selection = _get_selection(event_id, market_id)
+
+        selection = maybe_match(selection)
+        if selection:
+            return selection
+
+        selection = unify()
+        _register_selection(event_id, market_id, selection)
+        return selection

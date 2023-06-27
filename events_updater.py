@@ -45,17 +45,23 @@ def _static_translate_event(sportsbook: str, event: EventMetadata) -> EventMetad
 
 
 def _maybe_match_event(
-    sportsbook_event: EventMetadata, unified_events: list[EventMetadata]
+    sportsbook: str,
+    sportsbook_event: EventMetadata,
+    unified_events: list[EventMetadata],
 ) -> EventMetadata | None:
     if len(unified_events) == 0:
         return None
 
     # some basic logic to try to automate a little bit.
+    unified_id = translater.get_event_id_translater(sportsbook).get(sportsbook_event.id)
+
     some_match_date = False
     for unified_event in unified_events:
         if sportsbook_event.date == unified_event.date:
             some_match_date = True
         if sportsbook_event.name == unified_event.name:
+            return unified_event
+        if unified_id == unified_event.id:
             return unified_event
     if not some_match_date:
         return None
@@ -64,6 +70,7 @@ def _maybe_match_event(
 
 
 def _unify_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
+    return EventMetadata(_make_unified_id(), event.name, event.sport, event.date)
     print(f"\n\nUNIFYING {sportsbook} event:")
     print(f"\t\t{event}\n")
 
@@ -119,17 +126,41 @@ def _maybe_match_market(
 def _unify_market(sportsbook: str, sportsbook_market: MarketMetadata) -> MarketMetadata:
     # TODO: I think markets can be translated fully statically, no dynamic unification needed.
     # If so get rid of this function and update events_database.
-    return MarketMetadata(sportsbook_market.code)
+    return sportsbook_market
 
 
 # SELECTION
 def _maybe_match_selection(
-    sportsbook_selection: Selection, unified_selctions: list[Selection]
+    sportsbook: str, sportsbook_selection: Selection, unified_selctions: list[Selection]
 ) -> Selection | None:
     if len(unified_selctions) == 0:
         return None
 
+    unified_id = translater.get_selection_id_translater(sportsbook).get(
+        sportsbook_selection.id
+    )
+    for selection in unified_selctions:
+        if unified_id == selection.id:
+            return selection
+
     return _prompt_for_match(sportsbook_selection, unified_selctions)
+
+
+def _unify_selection(sportsbook: str, selection: Selection) -> Selection:
+    return Selection(_make_unified_id(), selection.name, selection.odds)
+    print(f"\n\nUNIFYING {sportsbook} selection:")
+    print(f"\t\t{selection}\n")
+
+    print("enter comma separated fields you would like to update:")
+    fields = input().split(",")
+
+    name = selection.name
+
+    if "name" in fields:
+        print("\nEnter unified name:")
+        name = input()
+
+    return Selection(_make_unified_id(), name, selection.odds)
 
 
 # PUBLIC
@@ -138,16 +169,17 @@ def update_events(
     sportsbook_get_events: Callable[[datetime], list[EventMetadata]],
     sportsbook_get_odds: Callable[[str, str], list[Market]],
 ):
-    for original_event in sportsbook_get_events(datetime.today()):
-        translated_event = _static_translate_event(sportsbook, original_event)
+    for event in sportsbook_get_events(datetime.today()):
+        original_sport = event.sport
+        translated_event = _static_translate_event(sportsbook, event)
         unified_event = events_database.match_or_register_event(
-            partial(_maybe_match_event, translated_event),
+            partial(_maybe_match_event, sportsbook, translated_event),
             partial(_unify_event, sportsbook, translated_event),
         )
-        translater.maybe_register_event(sportsbook, original_event.id, unified_event.id)
+        translater.maybe_register_event(sportsbook, event.id, unified_event.id)
 
         # must use original sportsbook version of the sport here.
-        markets = sportsbook_get_odds(original_event.id, original_event.sport)
+        markets = sportsbook_get_odds(event.id, original_sport)
         for market in markets:
             market.metadata = _static_translate_market(sportsbook, market.metadata)
             market.metadata = events_database.match_or_register_market(
@@ -157,11 +189,16 @@ def update_events(
             )
 
             for selection in market.selection.values():
+                original_id = selection.id
                 # no static translations for selection.
                 selection = events_database.match_or_register_selection(
                     unified_event.id,
                     market.metadata.code,
-                    partial(_maybe_match_selection, selection),
+                    partial(_maybe_match_selection, sportsbook, selection),
+                    partial(_unify_selection, sportsbook, selection),
+                )
+                translater.maybe_register_selection(
+                    sportsbook, original_id, selection.id
                 )
 
 
