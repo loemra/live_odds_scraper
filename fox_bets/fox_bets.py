@@ -1,9 +1,22 @@
 from datastructures.event import EventMetadata
 from datastructures.market import Market, MarketMetadata
 from datastructures.selection import Selection
-from fox_bets.config import get_events_urls, get_event_url
+from datastructures.update import Update
+from fox_bets.config import (
+    get_events_urls,
+    get_event_url,
+    get_send_alive,
+    get_url_and_auth_payload,
+    get_subscribe_payload,
+    get_ri_odds,
+)
 import requests
 from datetime import datetime
+import time
+import threading
+import websocket
+from functools import partial
+import json
 
 
 def _parse_events(j) -> list[EventMetadata]:
@@ -55,6 +68,28 @@ def _get_event(event_url: str):
     return result.json()
 
 
+# SOCKETS
+def _setup_send_alive(ws):
+    def _send_alive_request_background():
+        while True:
+            time.sleep(10)
+            ws.send(get_send_alive())
+
+    threading.Thread(target=_send_alive_request_background, daemon=True).start()
+
+
+def _get_socket():
+    url, payload = get_url_and_auth_payload()
+    ws = websocket.WebSocket(enable_multithread=True)
+    ws.connect(url)
+    ws.send(payload)
+    response = ws.recv()
+    if "error" in response:
+        raise Exception("Unable to start fox_bets socket.")
+    _setup_send_alive(ws)
+    return ws
+
+
 # gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
 def get_events(date: datetime) -> list[EventMetadata]:
     events = []
@@ -68,142 +103,96 @@ def get_odds(event_id: str, sport: str) -> list[Market]:
     return _parse_odds(_get_event(get_event_url(event_id, sport)))
 
 
-# return a generator that will yield update_msgs.
-def register_for_live_odds_updates(id):
-    pass
+def _handle_sr(msg):
+    for m in msg["sr"]["mdl"]:
+        try:
+            yield m["ets"]
+        except (KeyError, TypeError) as err:
+            pass
+            # print(f"Key error:{err}\n\ttrying to _get_etss for SR message: {msg}")
 
 
-"""
-import requests
-import websocket
-import json
-import time
-import threading
+def _get_etss(msg):
+    try:
+        msg["sr"]["mdl"]
+        for ets in _handle_sr(msg):
+            yield ets
+        return
+    except (KeyError, TypeError) as err:
+        print(err)
 
-from logs import logger
-from fox_bets.config import config
-
-
-# GET LIVE EVENTS
-def _get_live_events():
-    logger.info("Getting live events...")
-    result = requests.get(config["live_events"]["url"])
-    if result.status_code != 200:
-        logger.error(
-            f"get_live_events status code: {result.status_code}\nresult: {result.text}"
-        )
-        exit(-1)
-    logger.info("Success: got live events")
-    return result.json()
+    try:
+        yield msg["pm"]["ets"]
+    except (KeyError, TypeError) as err:
+        pass
+        # print(f"Key error:{err}\n\ttrying to _get_etss for PM message: {msg}")
 
 
-def _get_event_id_and_sport_from_live_events(j):
-    info = []
-    for o in j:
-        events = o["inplay"]["event"]
-        for event in events:
-            info.append((event["id"], event["sport"]))
-    return info
-
-
-def _get_live_markets_for_sports(sports):
-    markets = []
-    for sport in sports:
-        markets.append(
-            ",".join(config["markets_for_sports"][sport]["keyMarkets"]["inplay"])
-        )
-    return markets
-
-
-def generate_payloads():
-    event_ids, sports = map(
-        list, zip(*_get_event_id_and_sport_from_live_events(live_events))
-    )
-    markets = _get_live_markets_for_sports(sports)
-    payloads = []
-    for event_id, market in zip(event_ids, markets):
-        payload = config["subscribe"]["payload"]
-        payload["UpdateSubcriptions"]["toAdd"][0]["ids"] = event_id
-        payload["UpdateSubcriptions"]["toAdd"][1]["ids"] = market
-        payloads.append(json.dumps(payload))
-    return payloads
-
-
-# SOCKET SETUP
-def _setup_send_alive(ws):
-    def _send_alive_request_background():
-        while True:
-            time.sleep(10)
-            logger.info("Keep alive request")
-            ws.send(config["socket"]["send_alive"])
-
-    threading.Thread(target=_send_alive_request_background, daemon=True).start()
-
-
-def get_socket():
-    logger.info("Making socket...")
-    url, payload = config["socket"]["url"], config["socket"]["payload"]
-    ws = websocket.WebSocket(enable_multithread=True)
-    ws.connect(url)
-    ws.send(payload)
-    response = ws.recv()
-    if "error" in response:
-        logger.error(f"Authentication Error: {response}")
-        exit(-1)
-    logger.info("Success: Made socket")
-    _setup_send_alive(ws)
-    return ws
-
-
-def send_subscribe_payloads(payloads):
-    logger.info(f"Sending {len(payloads)} subscribe payloads...")
-    logger.debug(f"Payloads sent: {payloads}")
-    for payload in payloads:
-        ws.send(payload)
-
-
-# MESSAGE HANDLING
-def _handle_message(msg):
-    if "error" in msg:
-        logger.error("handle message error: {}".format(msg))
+def _create_update_msgs(ets):
+    try:
+        event_id = ets["i"]
+        markets = ets["ml"]
+    except KeyError as err:
+        print(f"error: {err}\nets has no event_id or no markets in ets: {ets}")
         return
 
+    for market in markets:
+        try:
+            market_code = market["t"]
+            selections = market["sl"]
+        except KeyError as err:
+            # print(f"error: {err}\nno market_id or no selections in market: {market}")
+            pass
+            continue
+
+        for selection in selections:
+            try:
+                selection_id = selection["i"]
+                odds = get_ri_odds(selection["ri"])
+            except KeyError as err:
+                print(
+                    f"error: {err}\nno selection_id or no odds in"
+                    f" selection: {selection}"
+                )
+                continue
+
+            yield Update(event_id, market_code, selection_id, odds)
+
+
+def _parse_msg(msg: str):
+    if "error" in msg:
+        return
     if "Response" in msg:
-        logger.info("Keep alive response: {}".format(msg))
         return
 
     if "sr" in msg:
-        logger.info(f"Subscribe Response! {msg}")
+        # logger.info(f"Subscribe Response! {msg}")
+        pass
 
-    return json.loads(msg)
+    for ets in _get_etss(json.loads(msg)):
+        for update in _create_update_msgs(ets):
+            yield update
 
 
-def _initial_setup():
-    logger.info("Running initial setup for fox_bets scraper.")
+ws = None
+
+
+def get_updates():
     global ws
-    ws = get_socket()
+    if not ws:
+        ws = _get_socket()
 
-    global live_events
-    live_events = _get_live_events()
-
-    payloads = generate_payloads()
-    send_subscribe_payloads(payloads)
-
-    global _setup
-    _setup = True
-
-
-_initial_setup()
-
-
-# PUBLIC FACING
-def get_messages():
     while True:
-        yield _handle_message(ws.recv())
+        for update in _parse_msg(ws.recv()):
+            if not update:
+                continue
+            yield update
 
 
-if __name__ == "__main__":
-    with open("messages.json", "w") as f:
-        for message in get_messages():
-            json.dump(message, f)          
-"""
+def register_for_live_odds_updates(event_id: str, markets: list[MarketMetadata]):
+    global ws
+    if not ws:
+        ws = _get_socket()
+
+    payload = get_subscribe_payload(event_id, markets)
+    ws.send(payload)

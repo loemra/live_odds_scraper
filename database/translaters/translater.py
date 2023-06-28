@@ -43,6 +43,19 @@ def translate_event_id(sportsbook: str, event_id: str) -> str | None:
         return None
 
 
+def translate_event_id_to_sportsbook(
+    sportsbook: str, unified_event_id: str
+) -> str | None:
+    with _lock:
+        j = _get_translater(EVENT_ID_TRANSLATER)
+
+        if unified_event_id in j["events"]:
+            if sportsbook in j["events"][unified_event_id]:
+                return j["events"][unified_event_id][sportsbook]
+
+        return None
+
+
 def maybe_register_selection(sportsbook: str, sportsbook_id: str, unified_id: str):
     with _lock:
         j = _get_translater(SELECTION_ID_TRANSLATER)
@@ -52,17 +65,15 @@ def maybe_register_selection(sportsbook: str, sportsbook_id: str, unified_id: st
         _write_translater(SELECTION_ID_TRANSLATER, j)
 
 
-def get_selection_id_translater(sportsbook: str):
+def translate_selection_id(sportsbook: str, selection_id: str) -> str | None:
     with _lock:
         j = _get_translater(SELECTION_ID_TRANSLATER)
 
-        translater = {}
-
         for unified_id, sportsbook_ids in j["selection"].items():
-            if sportsbook in sportsbook_ids:
-                translater[sportsbook_ids[sportsbook]] = unified_id
+            if sportsbook_ids.get(sportsbook) == selection_id:
+                return unified_id
 
-        return translater
+        return None
 
 
 def translate_sport(sportsbook: str, sport: str) -> str | None:
@@ -83,5 +94,16 @@ def translate_market(sportsbook: str, market_id) -> str | None:
         for unified_market, sportsbook_market in j["markets"].items():
             if sportsbook_market.get(sportsbook) == market_id:
                 return unified_market
+
+        return None
+
+
+def translate_market_to_sportsbook(sportsbook: str, unified_market_id) -> str | None:
+    with _lock:
+        j = _get_translater(MARKET_TRANSLATER)
+
+        if unified_market_id in j["markets"]:
+            if sportsbook in j["markets"][unified_market_id]:
+                return j["markets"][unified_market_id][sportsbook]
 
         return None

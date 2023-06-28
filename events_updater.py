@@ -4,7 +4,7 @@ from datastructures.selection import Selection
 import database.events_database as events_database
 import database.translaters.translater as translater
 import fox_bets.fox_bets as fox_bets
-from datetime import datetime
+from datetime import datetime, timedelta
 import uuid
 from collections.abc import Callable
 from functools import partial
@@ -136,9 +136,7 @@ def _maybe_match_selection(
     if len(unified_selctions) == 0:
         return None
 
-    unified_id = translater.get_selection_id_translater(sportsbook).get(
-        sportsbook_selection.id
-    )
+    unified_id = translater.translate_selection_id(sportsbook, sportsbook_selection.id)
     for selection in unified_selctions:
         if unified_id == selection.id:
             return selection
@@ -169,7 +167,7 @@ def update_events(
     sportsbook_get_events: Callable[[datetime], list[EventMetadata]],
     sportsbook_get_odds: Callable[[str, str], list[Market]],
 ):
-    for event in sportsbook_get_events(datetime.today()):
+    for event in sportsbook_get_events(datetime.today() + timedelta(1)):
         original_sport = event.sport
         translated_event = _static_translate_event(sportsbook, event)
         unified_event = events_database.match_or_register_event(

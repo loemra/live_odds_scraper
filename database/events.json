@@ -1,472 +1,658 @@
 {
     "events": {
-        "9330875065494b3294aad19f152ae037": {
-            "name": "Costa Rica v Panama",
+        "d78846fb256e43429d5ea7bb5299e03e": {
+            "name": "Jamaica v Trinidad And Tobago",
             "sport": "soccer",
-            "date": 1687825800.0,
+            "date": 1687995000.0,
             "markets": {
                 "soccer_game_result": {
                     "selection": {
-                        "77dfb8010dbe484fa900619d6912d8eb": {
+                        "fe71435af3a341c6baa2a5d052f67a1b": {
+                            "name": "Jamaica",
+                            "odds": 1.44
+                        },
+                        "c07a81b26d964bc098e22ddcdf9d8cad": {
                             "name": "Tie",
-                            "odds": {
-                                "fox_bets": 12.0
-                            }
+                            "odds": 3.8
                         },
-                        "950064b4c5a94e7bb7606e7f7fff1725": {
-                            "name": "Panama",
-                            "odds": {
-                                "fox_bets": 1.01
-                            }
-                        },
-                        "f3958e20e92b4c5ab2ff36c45999f416": {
-                            "name": "Costa Rica",
-                            "odds": {
-                                "fox_bets": 76.0
-                            }
+                        "dc71b043ef794f399586556702b71fe5": {
+                            "name": "Trinidad And Tobago",
+                            "odds": 6.5
                         }
                     }
                 },
                 "soccer_over_under_total_goals": {
                     "selection": {
-                        "b48d16cbc257415ea6a1e8e34b341136": {
+                        "c4849524dd634163bcba6598b171ab28": {
                             "name": "Under 2.5",
-                            "odds": {
-                                "fox_bets": 1.72
-                            }
+                            "odds": 1.7
                         },
-                        "7db07ab306e0486fbbbf0febbe115f26": {
+                        "65e17aedb99f4f7cbe1cb4b2ae19f249": {
                             "name": "Over 2.5",
-                            "odds": {
-                                "fox_bets": 1.85
-                            }
+                            "odds": 2.0
                         }
                     }
                 },
                 "soccer_both_teams_to_score": {
                     "selection": {
-                        "fd339fc4f5734edbae7b581b4b4f04b5": {
+                        "27f50a22e6054a5aa45d399227a417c5": {
                             "name": "Yes",
-                            "odds": {
-                                "fox_bets": 3.45
-                            }
+                            "odds": 2.15
                         },
-                        "9d40d89144d44be6addb5301b7ace43d": {
+                        "68d75798ef7a4ea5a47caa890b8a1dac": {
                             "name": "No",
-                            "odds": {
-                                "fox_bets": 1.22
-                            }
+                            "odds": 1.55
                         }
                     }
                 }
             }
         },
-        "7e39f4e4ba714efba50460af5abeee1c": {
-            "name": "Canada v Guadeloupe",
+        "0e4851c836fe41a599bdd2d718be50f1": {
+            "name": "Saint Kitts and Nevis v USA",
             "sport": "soccer",
-            "date": 1687906800.0,
+            "date": 1688002200.0,
             "markets": {
                 "soccer_game_result": {
                     "selection": {
-                        "c6091aa7f99840528a68ebdde1ad0b5c": {
-                            "name": "Canada",
-                            "odds": {
-                                "fox_bets": 1.14
-                            }
+                        "fc926a4c84b24159a367e53cf3069756": {
+                            "name": "USA",
+                            "odds": 1.02
                         },
-                        "3c8b11397ebd443cbb85ff82a2ec0958": {
+                        "5696f3507f504e19adb8cf74147973b1": {
+                            "name": "Saint Kitts and Nevis",
+                            "odds": 21.0
+                        },
+                        "00c65cd76fb048f3b8dcf9e974301ef3": {
                             "name": "Tie",
-                            "odds": {
-                                "fox_bets": 6.5
-                            }
-                        },
-                        "155fae19ce8e40a58ae17dddfc10d4ad": {
-                            "name": "Guadeloupe",
-                            "odds": {
-                                "fox_bets": 12.0
-                            }
+                            "odds": 12.0
                         }
                     }
                 },
                 "soccer_over_under_total_goals": {
                     "selection": {
-                        "c92dd70e1f8e4a8caf2d4c64de89da27": {
-                            "name": "Under 3.5",
-                            "odds": {
-                                "fox_bets": 1.53
-                            }
-                        },
-                        "05ed05d756ad4b47a0924c475f219d3b": {
-                            "name": "Over 3.5",
-                            "odds": {
-                                "fox_bets": 2.3
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "c3862fc0a5a74e2a8c66d7e2793c3075": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.6
-                            }
-                        },
-                        "7cfafdaf61fe4ac0bd2011ed022905e6": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.4
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "64730ca21320483d97a97edbcb3a92ba": {
-            "name": "Guatemala v Cuba",
-            "sport": "soccer",
-            "date": 1687913100.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "1aa2ffc09a204147ac6e40ab16d65beb": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 3.6
-                            }
-                        },
-                        "91ada230a5b547108880026099df2aa2": {
-                            "name": "Guatemala",
-                            "odds": {
-                                "fox_bets": 1.44
-                            }
-                        },
-                        "42afafb3ca8448738a02026c8533f604": {
-                            "name": "Cuba",
-                            "odds": {
-                                "fox_bets": 7.0
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "beaf389dfd6d4a4faf37978db6ff4c3b": {
-                            "name": "Under 2.5",
-                            "odds": {
-                                "fox_bets": 1.53
-                            }
-                        },
-                        "bdfc9fc21a82481b929bce0eb1a2678d": {
-                            "name": "Over 2.5",
-                            "odds": {
-                                "fox_bets": 2.3
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "66b194be56934bfcb89c9ad93975b3ae": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.44
-                            }
-                        },
-                        "e1ca9df332ed49a4acaf1b33c9ca0b67": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.45
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "7bcc1a7fc0af4c84af8c26d185a50cee": {
-            "name": "Chapecoense v Sport Recife",
-            "sport": "soccer",
-            "date": 1687903200.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "151cc70abbe744c49b9fb7ce11842a0e": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 2.7
-                            }
-                        },
-                        "758de3db37e2490d89d261057c6e1997": {
-                            "name": "Chapecoense",
-                            "odds": {
-                                "fox_bets": 3.05
-                            }
-                        },
-                        "c3659ebac9f8482f9164be38798abcaf": {
-                            "name": "Sport Recife",
-                            "odds": {
-                                "fox_bets": 2.25
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "beb2d1eb42d74fb8bc82ebc6eab13f57": {
-                            "name": "Over 1.5",
-                            "odds": {
-                                "fox_bets": 1.47
-                            }
-                        },
-                        "1575dcd12f4b4c2394a6ef9e72fc27d4": {
-                            "name": "Under 1.5",
-                            "odds": {
-                                "fox_bets": 2.25
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "5ec8d73abd0d42698b3dc187462d5216": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.6
-                            }
-                        },
-                        "9317ece4a9f244068f18e8c1024530a6": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.0
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "fc5905505b664f35966dbbf9c7ef64a2": {
-            "name": "Criciuma v CRB",
-            "sport": "soccer",
-            "date": 1687903200.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "e5d6cedd5d6c4de0bbe0cb885e9e2727": {
-                            "name": "CRB",
-                            "odds": {
-                                "fox_bets": 4.1
-                            }
-                        },
-                        "6cf1dc5e3e5b4da2a5093171f1250336": {
-                            "name": "Criciuma",
-                            "odds": {
-                                "fox_bets": 1.75
-                            }
-                        },
-                        "a35c024dceb94fcebeae70580a5ab723": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 3.05
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "9833db508949413386647eda5d0afc40": {
-                            "name": "Under 2.5",
-                            "odds": {
-                                "fox_bets": 1.5
-                            }
-                        },
-                        "0d1ebff24b404d268eaf304b28b20534": {
-                            "name": "Over 2.5",
-                            "odds": {
-                                "fox_bets": 2.2
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "64e51cbe57fa4d65914124a5a7c5c042": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.6
-                            }
-                        },
-                        "bb4df1b810f547a99f4c7437ab087dab": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.05
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "2eaf47ba68aa4cd889d5fb981eb59d2f": {
-            "name": "Novorizontino v Botafogo FC Ribeirao Preto",
-            "sport": "soccer",
-            "date": 1687912200.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "1ff26ab40deb48bc8f568a4e89e6d21c": {
-                            "name": "Novorizontino",
-                            "odds": {
-                                "fox_bets": 1.4
-                            }
-                        },
-                        "7bb8513fb7314d6bbf7c3a67f40bc704": {
-                            "name": "Botafogo FC Ribeirao Preto",
-                            "odds": {
-                                "fox_bets": 6.5
-                            }
-                        },
-                        "bb228c3c7e454acf920de0b807d2990e": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 3.6
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "4c8632ed802e4d5fa18fba8c8d803e1a": {
-                            "name": "Over 2.5",
-                            "odds": {
-                                "fox_bets": 2.1
-                            }
-                        },
-                        "8f2ea4db9e854f5595a456894fba6031": {
-                            "name": "Under 2.5",
-                            "odds": {
-                                "fox_bets": 1.55
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "4b55769509924e32b2f2894b927d978f": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.25
-                            }
-                        },
-                        "e406ca397b024bcd9d1073002175d21a": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.5
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "132a91c13b4b4eeca14c53d467eb0dc8": {
-            "name": "Vila Nova v Tombense",
-            "sport": "soccer",
-            "date": 1687912200.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "7460a7001f4640b6bbb4d01f3525b4a7": {
-                            "name": "Tombense",
-                            "odds": {
-                                "fox_bets": 5.25
-                            }
-                        },
-                        "dd8501d54d97481c844a6c8ed2d49bac": {
-                            "name": "Vila Nova",
-                            "odds": {
-                                "fox_bets": 1.53
-                            }
-                        },
-                        "78094ea95d754b4984fcf1e045222b6d": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 3.3
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "5b5a471b4e4b4bd385245c8f3cc67755": {
-                            "name": "Under 2.5",
-                            "odds": {
-                                "fox_bets": 1.6
-                            }
-                        },
-                        "214803f540e44b06a552c5cb4edb1f9a": {
-                            "name": "Over 2.5",
-                            "odds": {
-                                "fox_bets": 2.05
-                            }
-                        }
-                    }
-                },
-                "soccer_both_teams_to_score": {
-                    "selection": {
-                        "e56d747355c34aebbaf255823f712e3e": {
-                            "name": "Yes",
-                            "odds": {
-                                "fox_bets": 2.0
-                            }
-                        },
-                        "fa8ceceb023745129ead58bf66d6f221": {
-                            "name": "No",
-                            "odds": {
-                                "fox_bets": 1.62
-                            }
-                        }
-                    }
-                }
-            }
-        },
-        "5fab9c4eba0a4242a245c1076d22e798": {
-            "name": "Tre Penne v Breidablik",
-            "sport": "soccer",
-            "date": 1687892400.0,
-            "markets": {
-                "soccer_game_result": {
-                    "selection": {
-                        "755e72627ff541ee9ace6538b367d01b": {
-                            "name": "Tre Penne",
-                            "odds": {
-                                "fox_bets": 101.0
-                            }
-                        },
-                        "46111978e7b845a08ae365b0f75d4cea": {
-                            "name": "Tie",
-                            "odds": {
-                                "fox_bets": 19.0
-                            }
-                        },
-                        "46fefbff080040a2a3d3b89374baba01": {
-                            "name": "Breidablik",
-                            "odds": {
-                                "fox_bets": 1.002
-                            }
-                        }
-                    }
-                },
-                "soccer_over_under_total_goals": {
-                    "selection": {
-                        "e59c6e0908724faf9ca000a5139ba390": {
+                        "9b74588bfbe744edacf539aa18eae2e7": {
                             "name": "Under 5.5",
-                            "odds": {
-                                "fox_bets": 2.05
-                            }
+                            "odds": 1.6
                         },
-                        "bdd340b43efe43a38c3d59c25d2dacd4": {
+                        "67c76ddd41bb4f3680b8ffd37fe7a975": {
                             "name": "Over 5.5",
-                            "odds": {
-                                "fox_bets": 1.62
-                            }
+                            "odds": 2.15
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "ebdb6abe4926469c983afc26be5b4a7f": {
+                            "name": "Yes",
+                            "odds": 2.3
+                        },
+                        "5b6f4a30ba344b10a1d0acc3bc116f95": {
+                            "name": "No",
+                            "odds": 1.5
+                        }
+                    }
+                }
+            }
+        },
+        "e7d7462b22524f9c932cf3df62b11884": {
+            "name": "ABC v Atletico Go",
+            "sport": "soccer",
+            "date": 1687989600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "9e21c78486c44b4cb58e71155a90e618": {
+                            "name": "Atletico Go",
+                            "odds": 2.38
+                        },
+                        "6648bb4297324dd991134fffdd2b317a": {
+                            "name": "Tie",
+                            "odds": 2.88
+                        },
+                        "d6576bc4de1a4b95a638d6472516ed7a": {
+                            "name": "ABC",
+                            "odds": 2.7
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "be65804c5ee44f09b3fc5a6dd74af89f": {
+                            "name": "Under 2.5",
+                            "odds": 1.57
+                        },
+                        "0e45f9f8b146449cbe3d222d54310aa5": {
+                            "name": "Over 2.5",
+                            "odds": 2.1
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "4c5eeef35e3749ea9ee7f8299230b0bb": {
+                            "name": "Yes",
+                            "odds": 1.83
+                        },
+                        "0ccb7d5c276d4d70af03c441dd91e665": {
+                            "name": "No",
+                            "odds": 1.75
+                        }
+                    }
+                }
+            }
+        },
+        "d4c66c3d7bf84b6098ec564b4fdf3b0c": {
+            "name": "Ceara v Avai",
+            "sport": "soccer",
+            "date": 1687989600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "952672baaf4c4dccb0b849695cf1ee48": {
+                            "name": "Avai",
+                            "odds": 4.6
+                        },
+                        "73c7b036e06d4116af3fc1c3be185ec3": {
+                            "name": "Ceara",
+                            "odds": 1.62
+                        },
+                        "261a71f47abe4f928c890b2ab9cf110e": {
+                            "name": "Tie",
+                            "odds": 3.3
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "1526f9db921449018ceca54c3e0e1460": {
+                            "name": "Over 2.5",
+                            "odds": 2.0
+                        },
+                        "ac99828ad8cd469f8e850d767931c957": {
+                            "name": "Under 2.5",
+                            "odds": 1.62
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "6743064210d042e9b774c8307112b583": {
+                            "name": "No",
+                            "odds": 1.65
+                        },
+                        "0aad4abe5cb9400fb92622cf56eee832": {
+                            "name": "Yes",
+                            "odds": 1.95
+                        }
+                    }
+                }
+            }
+        },
+        "3e2a20479fc44ae49cd1ca492ff052bc": {
+            "name": "Guarani Sp v Mirassol",
+            "sport": "soccer",
+            "date": 1687998600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "234b732bc7b14d0e96e4739b77564f85": {
+                            "name": "Mirassol",
+                            "odds": 2.7
+                        },
+                        "5a69837677d04ec69b88172acd637450": {
+                            "name": "Tie",
+                            "odds": 2.9
+                        },
+                        "2254c6e9bb3c46af8bd228eca7d141d9": {
+                            "name": "Guarani Sp",
+                            "odds": 2.35
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "0fe3c4a372524d388a976a706d99e5a9": {
+                            "name": "Under 2.5",
+                            "odds": 1.5
+                        },
+                        "e970fbbca4d94c4da2aa2dd091630758": {
+                            "name": "Over 2.5",
+                            "odds": 2.2
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "d2d80847b56c46ee8b0cdb0c2e7b2a21": {
+                            "name": "Yes",
+                            "odds": 1.91
+                        },
+                        "097ea592bc91420c9e199a22a37b480a": {
+                            "name": "No",
+                            "odds": 1.67
+                        }
+                    }
+                }
+            }
+        },
+        "cd21bc1844ec48619ee7a753a233c4f1": {
+            "name": "Ituano v Ponte Preta",
+            "sport": "soccer",
+            "date": 1687998600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "0ac6185e1e41435b9ab22da62e4464ad": {
+                            "name": "Tie",
+                            "odds": 2.9
+                        },
+                        "bc1dfa0ec8984be79562db39e6ccd7b6": {
+                            "name": "Ituano",
+                            "odds": 2.0
+                        },
+                        "9cc638e559ee43dda1395f641e9a703a": {
+                            "name": "Ponte Preta",
+                            "odds": 3.4
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "734d5556c20d4bce8bc08657187a9e2b": {
+                            "name": "Over 2.5",
+                            "odds": 2.35
+                        },
+                        "d92cb44a682f4f42b8e91f6dfee678ad": {
+                            "name": "Under 2.5",
+                            "odds": 1.44
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "229dbf19202647fdb18d20f47b0e10c2": {
+                            "name": "Yes",
+                            "odds": 2.05
+                        },
+                        "f7ccd031948e42f5a72cca7891c70731": {
+                            "name": "No",
+                            "odds": 1.6
+                        }
+                    }
+                }
+            }
+        },
+        "53456371771e4bd58b85aa9046867af3": {
+            "name": "Londrina v Juventude",
+            "sport": "soccer",
+            "date": 1687998600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "b0dd9867ac1240638c21c1b6eb9bf4fd": {
+                            "name": "Juventude",
+                            "odds": 2.45
+                        },
+                        "31b9808890fa421aaf123f353ddfba0f": {
+                            "name": "Tie",
+                            "odds": 2.88
+                        },
+                        "a79d3d6c03bc4e3a88096c694d6412d3": {
+                            "name": "Londrina",
+                            "odds": 2.63
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "8b6360620b214005868b2fa4585868cb": {
+                            "name": "Over 2.5",
+                            "odds": 2.2
+                        },
+                        "17a07f1ad7164e16bf7425c2922e8565": {
+                            "name": "Under 2.5",
+                            "odds": 1.5
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "58ace96f88fd4d71ac59e7a7d95cae4d": {
+                            "name": "Yes",
+                            "odds": 1.9
+                        },
+                        "4d53e05bb65d47f99d1c4e113eb93b10": {
+                            "name": "No",
+                            "odds": 1.7
+                        }
+                    }
+                }
+            }
+        },
+        "7795f727af564ccc88e6dc7f2dca5c1b": {
+            "name": "Vitoria Ba v Sampaio Correa",
+            "sport": "soccer",
+            "date": 1687998600.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "44d6489b7e2942b6916777a17f5e6b1b": {
+                            "name": "Vitoria Ba",
+                            "odds": 1.6
+                        },
+                        "881b55bd247e4c678d1c78e125e74803": {
+                            "name": "Sampaio Correa",
+                            "odds": 4.6
+                        },
+                        "3aeeb8a081114f9e82846b6271d1a4e7": {
+                            "name": "Tie",
+                            "odds": 3.4
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "0bf4fae38c42410e94170977a1efbb1a": {
+                            "name": "Over 2.5",
+                            "odds": 1.95
+                        },
+                        "1fcf44ef17074810ae92c14e5009141a": {
+                            "name": "Under 2.5",
+                            "odds": 1.67
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "b29bd63ca9874c33ad0acb38b9a4f615": {
+                            "name": "Yes",
+                            "odds": 1.91
+                        },
+                        "c7fc24db002c4682864f0e9754708d91": {
+                            "name": "No",
+                            "odds": 1.67
+                        }
+                    }
+                }
+            }
+        },
+        "46bf4bd742674409b3af67979242a95b": {
+            "name": "Cangzhou Mighty Lions v Henan",
+            "sport": "soccer",
+            "date": 1687952100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "32cdb6aa7d6046f38ef1ae7f74a6de0a": {
+                            "name": "Tie",
+                            "odds": 3.1
+                        },
+                        "2d41b29f2174403583eef0e35a04ea2e": {
+                            "name": "Henan",
+                            "odds": 2.55
+                        },
+                        "e04af603cec44f8f89f3e4c87c30c562": {
+                            "name": "Cangzhou Mighty Lions",
+                            "odds": 2.35
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "01b1e158e60649f9b0f16be02570c63f": {
+                            "name": "Over 2.5",
+                            "odds": 1.85
+                        },
+                        "64c14511ff394ba08b6af800f1d3d86d": {
+                            "name": "Under 2.5",
+                            "odds": 1.72
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "7b3e5a4bda234cccb2ac22a5292e8d63": {
+                            "name": "Yes",
+                            "odds": 1.7
+                        },
+                        "1751dfc316a14dcc8b2cbe6139fe6fe5": {
+                            "name": "No",
+                            "odds": 1.9
+                        }
+                    }
+                }
+            }
+        },
+        "b426f54463534760b1ff6344b3385989": {
+            "name": "Shanghai Shenhua v Nantong Zhiyun FC",
+            "sport": "soccer",
+            "date": 1687952100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "e89ee314329a40ada5ec1168f57f434d": {
+                            "name": "Shanghai Shenhua",
+                            "odds": 1.36
+                        },
+                        "efcd89ffb62e477aaae7cc08d546f8ab": {
+                            "name": "Nantong Zhiyun FC",
+                            "odds": 7.0
+                        },
+                        "9f400363ac1148ae8c2f3a843a4376e8": {
+                            "name": "Tie",
+                            "odds": 3.7
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "12ab530811074a4bb2a80c036af1c1cc": {
+                            "name": "Over 2.5",
+                            "odds": 2.05
+                        },
+                        "7be202313dff401a97e03f0552318c40": {
+                            "name": "Under 2.5",
+                            "odds": 1.6
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "24c38f594c44429a810a605f5c5ffc42": {
+                            "name": "No",
+                            "odds": 1.47
+                        },
+                        "156432cd18954e58b4f16d8d6b445671": {
+                            "name": "Yes",
+                            "odds": 2.3
+                        }
+                    }
+                }
+            }
+        },
+        "92a3a03aa46341ebbf01bd6bcda911ee": {
+            "name": "Tianjin Teda v Qingdao Jonoon FC",
+            "sport": "soccer",
+            "date": 1687952100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "4a625c41c53546d892ad88a560f3ffc2": {
+                            "name": "Tianjin Teda",
+                            "odds": 1.57
+                        },
+                        "5cd559c8a1c7480bb3a78a43307a4ad2": {
+                            "name": "Qingdao Jonoon FC",
+                            "odds": 4.7
+                        },
+                        "01f66002f3d748a49747b310537e3b58": {
+                            "name": "Tie",
+                            "odds": 3.35
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "11fe9765a38048beb32693b41aa53beb": {
+                            "name": "Under 2.5",
+                            "odds": 1.62
+                        },
+                        "8777f91ec9244d60bd553d780ca8eac0": {
+                            "name": "Over 2.5",
+                            "odds": 2.0
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "f35f280dd1534d87990f35947e645441": {
+                            "name": "No",
+                            "odds": 1.65
+                        },
+                        "df4056b3168b49bf861b181e5ab56069": {
+                            "name": "Yes",
+                            "odds": 1.95
+                        }
+                    }
+                }
+            }
+        },
+        "bb1f0e5cb7664bdcb81cf9f4434a74ed": {
+            "name": "Wuhan Three Towns FC v Dalian Aerbin FC",
+            "sport": "soccer",
+            "date": 1687952100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "57b805979cc24bf7840df0c7fba9af72": {
+                            "name": "Tie",
+                            "odds": 5.25
+                        },
+                        "038e2623e314426982c67b31c0b18229": {
+                            "name": "Wuhan Three Towns FC",
+                            "odds": 1.2
+                        },
+                        "c07ab6bde5fc443cab076be473c3d3ed": {
+                            "name": "Dalian Aerbin FC",
+                            "odds": 8.5
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "6d4aa2c54e45495d8ae182c7fc0cd8b9": {
+                            "name": "Under 3.5",
+                            "odds": 1.5
+                        },
+                        "fef53e4622d94e26a645cd4f95d020c7": {
+                            "name": "Over 3.5",
+                            "odds": 2.2
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "8731431085394226910b42a06247576e": {
+                            "name": "Yes",
+                            "odds": 1.95
+                        },
+                        "d082616c046745efa17552ac80844649": {
+                            "name": "No",
+                            "odds": 1.65
+                        }
+                    }
+                }
+            }
+        },
+        "71a0f14717b2440c98b2b433e59c3a4d": {
+            "name": "Zhejiang Professional FC v Meizhou Hakka FC",
+            "sport": "soccer",
+            "date": 1687952100.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "97924bd3db954d43a5de820f9299ca22": {
+                            "name": "Zhejiang Professional FC",
+                            "odds": 1.55
+                        },
+                        "b3d026526c6c4bbda9c6247dd1125785": {
+                            "name": "Meizhou Hakka FC",
+                            "odds": 4.5
+                        },
+                        "1d7e03d4057142e88dabb7a212049e05": {
+                            "name": "Tie",
+                            "odds": 3.7
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "1fdb4109a1564347b006fec51613afad": {
+                            "name": "Under 2.5",
+                            "odds": 1.95
+                        },
+                        "a747717a6eaa4738a8c52d408efd7ccd": {
+                            "name": "Over 2.5",
+                            "odds": 1.65
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "f31e44b5f3f045e187c0dfb24428ba9b": {
+                            "name": "Yes",
+                            "odds": 1.72
+                        },
+                        "66af0d647cba4bdf81435d833fe7b652": {
+                            "name": "No",
+                            "odds": 1.85
+                        }
+                    }
+                }
+            }
+        },
+        "1bb9f9db5d304c3ea6843b8729ed1d8e": {
+            "name": "Urawa v Shonan",
+            "sport": "soccer",
+            "date": 1687948200.0,
+            "markets": {
+                "soccer_game_result": {
+                    "selection": {
+                        "470a4115cb254ee89b479d18db73dc9e": {
+                            "name": "Tie",
+                            "odds": 3.45
+                        },
+                        "a3194b29c79d4f4eb31109a44bd323ca": {
+                            "name": "Shonan",
+                            "odds": 4.7
+                        },
+                        "e2562289776e4e33b23e79ba721deaaf": {
+                            "name": "Urawa",
+                            "odds": 1.57
+                        }
+                    }
+                },
+                "soccer_over_under_total_goals": {
+                    "selection": {
+                        "d5373b930f174040ad5b3ebf3f1bdc2e": {
+                            "name": "Over 2.5",
+                            "odds": 1.8
+                        },
+                        "74b9357778724fc3ad8e3cfaa1a19cff": {
+                            "name": "Under 2.5",
+                            "odds": 1.75
+                        }
+                    }
+                },
+                "soccer_both_teams_to_score": {
+                    "selection": {
+                        "2acbea0bd6f24a2483f60dd6806205ff": {
+                            "name": "No",
+                            "odds": 1.75
+                        },
+                        "2a33cf70ab2b471e8e852931428f8f60": {
+                            "name": "Yes",
+                            "odds": 1.8
                         }
                     }
                 }

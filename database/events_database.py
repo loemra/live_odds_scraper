@@ -1,6 +1,7 @@
 from datastructures.event import EventMetadata
 from datastructures.market import MarketMetadata
 from datastructures.selection import Selection
+from datastructures.update import Update
 from threading import Lock
 from datetime import datetime
 import json
@@ -34,6 +35,11 @@ def _get_events() -> list[EventMetadata]:
         date = datetime.fromtimestamp(datetime_str)
         events.append(EventMetadata(unified_id, event["name"], event["sport"], date))
     return events
+
+
+def get_events():
+    with _lock:
+        return _get_events()
 
 
 def _register_event(event: EventMetadata):
@@ -75,6 +81,11 @@ def _get_markets(event_id: str) -> list[MarketMetadata]:
         markets.append(MarketMetadata(market_id))
 
     return markets
+
+
+def get_markets(event_id: str) -> list[MarketMetadata]:
+    with _lock:
+        return _get_markets(event_id)
 
 
 def _register_market(event_id: str, market: MarketMetadata):
@@ -161,3 +172,31 @@ def match_or_register_selection(
         selection = unify()
         _register_selection(event_id, market_id, selection)
         return selection
+
+
+def update_event_odds(update: Update):
+    with _lock:
+        database = _get_database()
+        if update.event_id not in database["events"]:
+            raise Exception(
+                f"update_event_odds() {update.event_id} not found in database."
+            )
+        event = database["events"][update.event_id]
+        if update.market_code not in event["markets"]:
+            raise Exception(
+                f"update_event_odds() {update.market_code} not found in event {event}."
+            )
+        market = event["markets"][update.market_code]
+        if update.selection_id not in market["selection"]:
+            raise Exception(
+                f"update_event_odds() {update.selection_id} not found in market"
+                f" {market}."
+            )
+
+        market["selection"][update.selection_id]["odds"] = update.new_odds
+        print(
+            "updating"
+            f" {update.event_id}/{update.market_code}/{update.selection_id} with"
+            f" {update.new_odds}"
+        )
+        _write_database(database)
