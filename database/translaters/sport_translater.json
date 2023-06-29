@@ -1,7 +1,5 @@
 {
-    "sports": {
-        "soccer": {
-            "fox_bets": "SOCCER"
-        }
-    }
+	"soccer": {
+		"fox_bets": "SOCCER"
+	}
 }

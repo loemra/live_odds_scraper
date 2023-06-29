@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 @dataclass
 class MarketMetadata:
-    code: str
+    id: str
 
 
 @dataclass
@@ -13,4 +13,4 @@ class Market:
     selection: dict[str, Selection] = field(default_factory=dict)
 
     def __repr__(self) -> str:
-        return f"{self.metadata.code}"
+        return f"{self.metadata.id}"

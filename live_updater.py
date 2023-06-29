@@ -1,15 +1,9 @@
+import database.translaters.translater as translater
+import fox_bets.fox_bets as fox_bets
+from database.events_database import get_events, get_markets, update_event_odds
 from datastructures.event import EventMetadata
 from datastructures.market import MarketMetadata
 from datastructures.update import Update
-import fox_bets.fox_bets as fox_bets
-from database.events_database import update_event_odds, get_events, get_markets
-from database.translaters.translater import (
-    translate_event_id,
-    translate_event_id_to_sportsbook,
-    translate_market,
-    translate_market_to_sportsbook,
-    translate_selection_id,
-)
 
 
 def get_live_events() -> list[EventMetadata]:

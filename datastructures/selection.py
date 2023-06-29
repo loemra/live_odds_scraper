@@ -1,12 +1,19 @@
 from dataclasses import dataclass, field
-from typing import Optional
+
+
+@dataclass
+class SelectionMetadata:
+    id: str
+    name: str
+
+    def __repr__(self) -> str:
+        return self.name
 
 
 @dataclass
 class Selection:
-    id: str
-    name: str
+    metadata: SelectionMetadata
     odds: dict[str, float] = field(default_factory=dict)
 
     def __repr__(self) -> str:
-        return self.name
+        return f"{self.metadata} odds: {self.odds}"

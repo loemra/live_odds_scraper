@@ -1,6 +1,6 @@
 from datastructures.event import EventMetadata
 from datastructures.market import Market, MarketMetadata
-from datastructures.selection import Selection
+from datastructures.selection import Selection, SelectionMetadata
 from datastructures.update import Update
 from fox_bets.config import (
     get_events_urls,
@@ -15,7 +15,6 @@ from datetime import datetime
 import time
 import threading
 import websocket
-from functools import partial
 import json
 
 
@@ -24,9 +23,7 @@ def _parse_events(j) -> list[EventMetadata]:
     for league in j:
         for event in league["event"]:
             date = datetime.fromtimestamp(float(event["eventTime"]) / 1000)
-            events.append(
-                EventMetadata(event["id"], event["name"], event["sport"], date)
-            )
+            events.append(EventMetadata(event["id"], event["name"], event["sport"], date))
     return events
 
 
@@ -43,7 +40,7 @@ def _parse_odds(j) -> list[Market]:
                 odds = {"fox_bets": float(selection["odds"]["dec"])}
             except ValueError:
                 odds = {}
-            m.selection[id] = Selection(id, selection["name"], odds)
+            m.selection[id] = Selection(SelectionMetadata(id, selection["name"]), odds)
         markets.append(m)
     return markets
 
@@ -52,8 +49,7 @@ def _get_events(events_url: str):
     result = requests.get(events_url)
     if not result.status_code == 200:
         raise Exception(
-            f"fox_bets: _get_events(): status code = {result.status_code}, url ="
-            f" {events_url}, text = {result.text}"
+            f"fox_bets: _get_events(): status code = {result.status_code}, url =" f" {events_url}, text = {result.text}"
         )
     return result.json()
 
@@ -62,8 +58,7 @@ def _get_event(event_url: str):
     result = requests.get(event_url)
     if not result.status_code == 200:
         raise Exception(
-            f"fox_bets: _get_event(): status code = {result.status_code}, url ="
-            f" {event_url}, text = {result.text}"
+            f"fox_bets: _get_event(): status code = {result.status_code}, url =" f" {event_url}, text = {result.text}"
         )
     return result.json()
 
@@ -82,7 +77,7 @@ def _get_socket():
     url, payload = get_url_and_auth_payload()
     ws = websocket.WebSocket(enable_multithread=True)
     ws.connect(url)
-    ws.send(payload)
+    ws.send(payload.encode())
     response = ws.recv()
     if "error" in response:
         raise Exception("Unable to start fox_bets socket.")
@@ -150,10 +145,7 @@ def _create_update_msgs(ets):
                 selection_id = selection["i"]
                 odds = get_ri_odds(selection["ri"])
             except KeyError as err:
-                print(
-                    f"error: {err}\nno selection_id or no odds in"
-                    f" selection: {selection}"
-                )
+                print(f"error: {err}\nno selection_id or no odds in" f" selection: {selection}")
                 continue
 
             yield Update(event_id, market_code, selection_id, odds)
@@ -195,4 +187,4 @@ def register_for_live_odds_updates(event_id: str, markets: list[MarketMetadata])
         ws = _get_socket()
 
     payload = get_subscribe_payload(event_id, markets)
-    ws.send(payload)
+    ws.send(payload.encode())
