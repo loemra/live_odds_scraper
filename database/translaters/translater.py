@@ -30,7 +30,7 @@ def _maybe_register(translater: str, sportsbook: str, sportsbook_id: str, unifie
     if unified_id not in j:
         j[unified_id] = {}
     j[unified_id][sportsbook] = sportsbook_id
-    _write_translater(EVENT_ID_TRANSLATER, j)
+    _write_translater(translater, j)
 
 
 def _sportsbook_to_unified(translater: str, sportsbook: str, sportsbook_id: str) -> str | None:

@@ -1,21 +1,18 @@
+import json
+import threading
+import time
+from datetime import datetime
+
+import requests
+import websocket
+
 from datastructures.event import EventMetadata
 from datastructures.market import Market, MarketMetadata
 from datastructures.selection import Selection, SelectionMetadata
 from datastructures.update import Update
-from fox_bets.config import (
-    get_events_urls,
-    get_event_url,
-    get_send_alive,
-    get_url_and_auth_payload,
-    get_subscribe_payload,
-    get_ri_odds,
-)
-import requests
-from datetime import datetime
-import time
-import threading
-import websocket
-import json
+from fox_bets.config import (get_event_url, get_events_urls, get_ri_odds,
+                             get_send_alive, get_subscribe_payload,
+                             get_url_and_auth_payload)
 
 
 def _parse_events(j) -> list[EventMetadata]:
@@ -114,7 +111,7 @@ def _get_etss(msg):
             yield ets
         return
     except (KeyError, TypeError) as err:
-        print(err)
+        pass
 
     try:
         yield msg["pm"]["ets"]
@@ -137,7 +134,6 @@ def _create_update_msgs(ets):
             selections = market["sl"]
         except KeyError as err:
             # print(f"error: {err}\nno market_id or no selections in market: {market}")
-            pass
             continue
 
         for selection in selections:

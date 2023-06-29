@@ -1,11 +1,20 @@
 {
-	"soccer_game_result": {
-		"fox_bets": "SOCCER:FT:AXB"
-	},
-	"soccer_over_under_total_goals": {
-		"fox_bets": "SOCCER:FT:OU"
-	},
-	"soccer_both_teams_to_score": {
-		"fox_bets": "SOCCER:FT:BTS"
-	}
+  "soccer_game_result": {
+    "fox_bets": "SOCCER:FT:AXB"
+  },
+  "soccer_over_under_total_goals": {
+    "fox_bets": "SOCCER:FT:OU"
+  },
+  "soccer_both_teams_to_score": {
+    "fox_bets": "SOCCER:FT:BTS"
+  },
+  "baseball_run_line": {
+    "fox_bets": "BASEBALL:FTOT:AHCP_MAIN"
+  },
+  "baseball_money_line": {
+    "fox_bets": "BASEBALL:FTOT:ML"
+  },
+  "baseball_total_runs": {
+    "fox_bets": "BASEBALL:FTOT:OU_MAIN"
+  }
 }

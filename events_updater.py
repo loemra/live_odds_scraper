@@ -25,7 +25,10 @@ def _prompt_for_match(sportsbook_thing, unified_things: list):
 
     print("\nEnter the option to match or 0 for none of the above.")
 
-    choice = int(input())
+    choice = input()
+    if not choice:
+        return None
+    choice = int(choice)
     if choice < 0 or choice > len(unified_things):
         print("INVALID... RETRYING")
         return _prompt_for_match(sportsbook_thing, unified_things)
@@ -100,7 +103,11 @@ def _maybe_match_selection(
 
 
 def _unify_selection(sportsbook: str, selection: SelectionMetadata) -> SelectionMetadata:
-    return SelectionMetadata(_make_unified_id(), selection.name)
+    print(f"\n\nUnify selection {selection}, input new name:")
+    unified_name = input()
+    if not unified_name:
+        unified_name = selection.name
+    return SelectionMetadata(_make_unified_id(), unified_name)
 
 
 def _update_selection(sportsbook: str, unified_event_id: str, unified_market_id: str, selection: Selection):

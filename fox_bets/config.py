@@ -1,7 +1,8 @@
 import json
+import urllib.parse
 from datetime import datetime
 from typing import Tuple
-import urllib.parse
+
 from datastructures.market import MarketMetadata
 
 
@@ -34,7 +35,7 @@ def get_url_and_auth_payload() -> Tuple[str, str]:
 
 
 def get_subscribe_payload(event_id: str, markets: list[MarketMetadata]) -> str:
-    return _config["sockets"]["subscribe_payload"].format(event_id, ",".join([market.code for market in markets]))
+    return _config["sockets"]["subscribe_payload"].format(event_id, ",".join([market.id for market in markets]))
 
 
 def get_ri_odds(ri: int) -> float:
