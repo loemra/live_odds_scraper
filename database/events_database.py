@@ -46,7 +46,7 @@ def _write_database(j):
 def _get_events() -> list[EventMetadata]:
     database = _get_database()
     events = []
-    for unified_id, event in database["events"].items():
+    for unified_id, event in database.items():
         datetime_str = event["date"]
         date = datetime.fromtimestamp(datetime_str)
         events.append(EventMetadata(unified_id, event["name"], event["sport"], date))
@@ -65,10 +65,10 @@ def get_event(event_id: str) -> Event:
 def _maybe_register_event(event: EventMetadata):
     database = _get_database()
 
-    if event.id in database["events"]:
+    if event.id in database:
         return
 
-    database["events"][event.id] = {
+    database[event.id] = {
         "name": event.name,
         "sport": event.sport,
         "date": event.date.timestamp(),
@@ -97,10 +97,10 @@ def match_or_register_event(
 
 def _get_markets(event_id: str) -> list[MarketMetadata]:
     database = _get_database()
-    if event_id not in database["events"]:
+    if event_id not in database:
         raise Exception(f"_get_markets() {event_id} not found in database.")
 
-    event = database["events"][event_id]
+    event = database[event_id]
     markets = []
 
     if "markets" not in event:
@@ -122,10 +122,10 @@ def get_markets(event_id: str) -> list[MarketMetadata]:
 
 def _maybe_register_market(event_id: str, market: MarketMetadata):
     database = _get_database()
-    if event_id not in database["events"]:
+    if event_id not in database:
         raise Exception(f"_register_market() {event_id} not found in database.")
 
-    event = database["events"][event_id]
+    event = database[event_id]
     if "markets" not in event:
         event["markets"] = {}
 
@@ -147,9 +147,9 @@ def maybe_register_market(event_id: str, market: MarketMetadata):
 
 def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
     database = _get_database()
-    if event_id not in database["events"]:
+    if event_id not in database:
         raise Exception(f"_get_selection() {event_id} not found in database.")
-    event = database["events"][event_id]
+    event = database[event_id]
     if market_id not in event["markets"]:
         raise Exception(f"_get_selection() {market_id} not found in event {event}.")
     market = event["markets"][market_id]
@@ -170,9 +170,9 @@ def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
 
 def _maybe_register_selection(event_id: str, market_id: str, selection: SelectionMetadata):
     database = _get_database()
-    if event_id not in database["events"]:
+    if event_id not in database:
         raise Exception(f"_register_selection() {event_id} not found in database.")
-    event = database["events"][event_id]
+    event = database[event_id]
     if market_id not in event["markets"]:
         raise Exception(f"_register_selection() {market_id} not found in event {event}.")
     market = event["markets"][market_id]
@@ -211,15 +211,23 @@ def match_or_register_selection(
 def update_event_odds(update: Update):
     with _lock:
         database = _get_database()
-        if update.event_id not in database["events"]:
+        if update.event_id not in database:
             raise Exception(f"update_event_odds() {update.event_id} not found in database.")
-        event = database["events"][update.event_id]
+        event = database[update.event_id]
         if update.market_id not in event["markets"]:
             raise Exception(f"update_event_odds() {update.market_id} not found in event {event}.")
         market = event["markets"][update.market_id]
         if update.selection_id not in market["selection"]:
             raise Exception(f"update_event_odds() {update.selection_id} not found in market" f" {market}.")
+        selection = market["selection"][update.selection_id]
 
-        market["selection"][update.selection_id]["odds"] = update.new_odds
-        print("updating" f" {update.event_id}/{update.market_id}/{update.selection_id} with" f" {update.new_odds}")
+        if "odds" not in selection:
+            selection["odds"] = {}
+        original_odds = selection["odds"].get(update.sportsbook)
+        selection["odds"][update.sportsbook] = update.new_odds
+        print(
+            "updating"
+            f" {update.event_id}/{update.market_id}/{update.selection_id}/{update.sportsbook} from {original_odds} to"
+            f" {update.new_odds}"
+        )
         _write_database(database)

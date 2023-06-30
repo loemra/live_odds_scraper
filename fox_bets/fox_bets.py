@@ -144,7 +144,7 @@ def _create_update_msgs(ets):
                 print(f"error: {err}\nno selection_id or no odds in" f" selection: {selection}")
                 continue
 
-            yield Update(event_id, market_code, selection_id, odds)
+            yield Update(event_id, market_code, selection_id, "fox_bets", odds)
 
 
 def _parse_msg(msg: str):

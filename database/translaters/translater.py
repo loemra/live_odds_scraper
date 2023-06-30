@@ -3,7 +3,9 @@ from threading import Lock
 
 # Dynamic
 EVENT_ID_TRANSLATER = "database/translaters/event_id_translater.json"
+EVENT_NAME_TRANSLATER = "database/translaters/event_name_translater.json"
 SELECTION_ID_TRANSLATER = "database/translaters/selection_id_translater.json"
+SELECTION_NAME_TRANSLATER = "database/translaters/selection_name_translater.json"
 
 # Static
 SPORT_TRANSLATER = "database/translaters/sport_translater.json"
@@ -71,6 +73,21 @@ def unified_to_sportsbook_event_id(sportsbook: str, unified_id: str) -> str | No
         return _unified_to_sportsbook(EVENT_ID_TRANSLATER, sportsbook, unified_id)
 
 
+def maybe_register_event_name(sportsbook: str, sportsbook_name: str, unified_name: str):
+    with _lock:
+        _maybe_register(EVENT_NAME_TRANSLATER, sportsbook, sportsbook_name, unified_name)
+
+
+def sportsbook_to_unified_event_name(sportsbook: str, sportsbook_name: str) -> str | None:
+    with _lock:
+        return _sportsbook_to_unified(EVENT_NAME_TRANSLATER, sportsbook, sportsbook_name)
+
+
+def unified_to_sportsbook_event_name(sportsbook: str, unified_name: str) -> str | None:
+    with _lock:
+        return _unified_to_sportsbook(EVENT_NAME_TRANSLATER, sportsbook, unified_name)
+
+
 # MARKET
 
 
@@ -110,3 +127,18 @@ def sportsbook_to_unified_selection_id(sportsbook: str, sportsbook_id: str) -> s
 def unified_to_sportsbook_selection_id(sportsbook: str, unified_id: str) -> str | None:
     with _lock:
         return _unified_to_sportsbook(SELECTION_ID_TRANSLATER, sportsbook, unified_id)
+
+
+def maybe_register_selection_name(sportsbook: str, sportsbook_name: str, unified_name: str):
+    with _lock:
+        _maybe_register(SELECTION_NAME_TRANSLATER, sportsbook, sportsbook_name, unified_name)
+
+
+def sportsbook_to_unified_selection_name(sportsbook: str, sportsbook_name) -> str | None:
+    with _lock:
+        return _sportsbook_to_unified(SELECTION_NAME_TRANSLATER, sportsbook, sportsbook_name)
+
+
+def unified_to_sportsbook_selection_name(sportsbook: str, unified_name) -> str | None:
+    with _lock:
+        return _unified_to_sportsbook(SELECTION_NAME_TRANSLATER, sportsbook, unified_name)

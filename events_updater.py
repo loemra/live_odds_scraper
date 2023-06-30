@@ -62,9 +62,17 @@ def _maybe_match_event(
 
 
 def _unify_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
+    unified_name = translater.sportsbook_to_unified_event_name(sportsbook, event.name)
+    if not unified_name:
+        print(f"\n\nUnify event {event}, input new name:")
+        unified_name = input()
+        if not unified_name:
+            unified_name = event.name
+        translater.maybe_register_event_name(sportsbook, event.name, unified_name)
+
     unified_sport = translater.sportsbook_to_unified_sport(sportsbook, event.sport)
     if not unified_sport:
-        raise Exception(f"unnable to translate {event.sport} for {sportsbook}")
+        raise Exception(f"unable to translate {event.sport} for {sportsbook}")
     return EventMetadata(_make_unified_id(), event.name, unified_sport, event.date)
 
 
@@ -103,10 +111,13 @@ def _maybe_match_selection(
 
 
 def _unify_selection(sportsbook: str, selection: SelectionMetadata) -> SelectionMetadata:
-    print(f"\n\nUnify selection {selection}, input new name:")
-    unified_name = input()
+    unified_name = translater.sportsbook_to_unified_selection_name(sportsbook, selection.name)
     if not unified_name:
-        unified_name = selection.name
+        print(f"\n\nUnify selection {selection}, input new name:")
+        unified_name = input()
+        if not unified_name:
+            unified_name = selection.name
+        translater.maybe_register_selection_name(sportsbook, selection.name, unified_name)
     return SelectionMetadata(_make_unified_id(), unified_name)
 
 
@@ -123,7 +134,7 @@ def _update_selection(sportsbook: str, unified_event_id: str, unified_market_id:
         translater.maybe_register_selection_id(sportsbook, selection.metadata.id, unified_selection.id)
 
     events_database.update_event_odds(
-        Update(unified_event_id, unified_market_id, unified_selection_id, selection.odds[sportsbook])
+        Update(unified_event_id, unified_market_id, unified_selection_id, sportsbook, selection.odds[sportsbook])
     )
 
 

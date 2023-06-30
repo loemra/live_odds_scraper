@@ -35,6 +35,7 @@ for update in fox_bets.get_updates():
                 unified_event_id,
                 unified_market_code,
                 unified_selection_id,
+                update.sportsbook,
                 update.new_odds,
             )
         )
