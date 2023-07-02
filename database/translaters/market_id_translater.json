@@ -1,12 +1,15 @@
 {
   "soccer_game_result": {
-    "fox_bets": "SOCCER:FT:AXB"
+    "fox_bets": "SOCCER:FT:AXB",
+    "bovada": "1"
   },
   "soccer_over_under_total_goals": {
-    "fox_bets": "SOCCER:FT:OU"
+    "fox_bets": "SOCCER:FT:OU",
+    "bovada": "13"
   },
   "soccer_both_teams_to_score": {
-    "fox_bets": "SOCCER:FT:BTS"
+    "fox_bets": "SOCCER:FT:BTS",
+    "bovada": "350"
   },
   "baseball_run_line": {
     "fox_bets": "BASEBALL:FTOT:AHCP_MAIN"

@@ -6,6 +6,7 @@ from functools import partial
 import database.events_database as events_database
 import database.translaters.translater as translater
 import fox_bets.fox_bets as fox_bets
+from bovada import bovada
 from datastructures.event import EventMetadata
 from datastructures.market import Market, MarketMetadata
 from datastructures.selection import Selection, SelectionMetadata
@@ -58,17 +59,19 @@ def _maybe_match_event(
     if not some_match_date:
         return None
 
-    return _prompt_for_match(sportsbook_event, unified_events)
+    return _prompt_for_match(
+        sportsbook_event,
+        [event for event in unified_events if abs((sportsbook_event.date - event.date).seconds) < 3600],
+    )
 
 
 def _unify_event(sportsbook: str, event: EventMetadata) -> EventMetadata:
     unified_name = translater.sportsbook_to_unified_event_name(sportsbook, event.name)
     if not unified_name:
-        print(f"\n\nUnify event {event}, input new name:")
-        unified_name = input()
-        if not unified_name:
-            unified_name = event.name
-        translater.maybe_register_event_name(sportsbook, event.name, unified_name)
+        # print(f"\n\nUnify event {event}, input new name:")
+        # unified_name = input()
+        # if not unified_name:
+        unified_name = event.name
 
     unified_sport = translater.sportsbook_to_unified_sport(sportsbook, event.sport)
     if not unified_sport:
@@ -102,9 +105,9 @@ def _maybe_match_selection(
     if len(unified_selctions) == 0:
         return None
 
-    unified_id = translater.sportsbook_to_unified_selection_id(sportsbook, sportsbook_selection.id)
+    unified_name = translater.sportsbook_to_unified_selection_name(sportsbook, sportsbook_selection.name)
     for selection in unified_selctions:
-        if unified_id == selection.id:
+        if unified_name == selection.name:
             return selection
 
     return _prompt_for_match(sportsbook_selection, unified_selctions)
@@ -117,7 +120,6 @@ def _unify_selection(sportsbook: str, selection: SelectionMetadata) -> Selection
         unified_name = input()
         if not unified_name:
             unified_name = selection.name
-        translater.maybe_register_selection_name(sportsbook, selection.name, unified_name)
     return SelectionMetadata(_make_unified_id(), unified_name)
 
 
@@ -132,6 +134,7 @@ def _update_selection(sportsbook: str, unified_event_id: str, unified_market_id:
         )
         unified_selection_id = unified_selection.id
         translater.maybe_register_selection_id(sportsbook, selection.metadata.id, unified_selection.id)
+        translater.maybe_register_selection_name(sportsbook, selection.metadata.name, unified_selection.name)
 
     events_database.update_event_odds(
         Update(unified_event_id, unified_market_id, unified_selection_id, sportsbook, selection.odds[sportsbook])
@@ -149,7 +152,7 @@ def _update_market(sportsbook: str, unified_event_id: str, market: Market):
         _update_selection(sportsbook, unified_event_id, unified_market_id, selection)
 
 
-def _update_event(sportsbook: str, get_odds: Callable[[str, str], list[Market]], event: EventMetadata):
+def _update_event(sportsbook: str, get_odds: Callable[[str], list[Market]], event: EventMetadata):
     unified_event_id = translater.sportsbook_to_unified_event_id(sportsbook, event.id)
     if not unified_event_id:
         unified_event = events_database.match_or_register_event(
@@ -158,8 +161,11 @@ def _update_event(sportsbook: str, get_odds: Callable[[str, str], list[Market]],
         )
         unified_event_id = unified_event.id
         translater.maybe_register_event_id(sportsbook, event.id, unified_event_id)
+        translater.maybe_register_event_name(sportsbook, event.name, unified_event.name)
 
-    markets = get_odds(event.id, event.sport)
+    if event.url is None:
+        raise Exception(f"no event url for {event}")
+    markets = get_odds(event.url)
     for market in markets:
         _update_market(sportsbook, unified_event_id, market)
 
@@ -167,7 +173,7 @@ def _update_event(sportsbook: str, get_odds: Callable[[str, str], list[Market]],
 def update_events(
     sportsbook: str,
     get_events: Callable[[datetime], list[EventMetadata]],
-    get_odds: Callable[[str, str], list[Market]],
+    get_odds: Callable[[str], list[Market]],
 ):
     for event in get_events(datetime.today() + timedelta(0)):
         _update_event(sportsbook, get_odds, event)
@@ -175,3 +181,4 @@ def update_events(
 
 # SPORTSBOOKS
 update_events("fox_bets", fox_bets.get_events, fox_bets.get_odds)
+update_events("bovada", bovada.get_events, bovada.get_odds)

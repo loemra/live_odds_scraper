@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
 from datetime import datetime
+from typing import Optional
+
 from datastructures.market import Market
 
 
@@ -9,17 +11,10 @@ class EventMetadata:
     name: str
     sport: str
     date: datetime
+    url: Optional[str] = field(default=None)
 
     def __repr__(self) -> str:
         return f"{self.sport}: {self.name} @ {self.date.strftime(r'%H:%M, %d-%m-%Y')}"
-
-    def to_json(self):
-        return {
-            "id": self.id,
-            "name": self.name,
-            "sport": self.sport,
-            "date": self.date.timestamp(),
-        }
 
 
 @dataclass

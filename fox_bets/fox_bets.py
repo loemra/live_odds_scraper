@@ -20,7 +20,11 @@ def _parse_events(j) -> list[EventMetadata]:
     for league in j:
         for event in league["event"]:
             date = datetime.fromtimestamp(float(event["eventTime"]) / 1000)
-            events.append(EventMetadata(event["id"], event["name"], event["sport"], date))
+            events.append(
+                EventMetadata(
+                    event["id"], event["name"], event["sport"], date, get_event_url(event["id"], event["sport"])
+                )
+            )
     return events
 
 
@@ -60,6 +64,19 @@ def _get_event(event_url: str):
     return result.json()
 
 
+# gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
+def get_events(date: datetime) -> list[EventMetadata]:
+    events = []
+    for event_url in get_events_urls(date):
+        events.extend(_parse_events(_get_events(event_url)))
+    return events
+
+
+# gets initial odds for an upcoming event given fox_bet_event_id.
+def get_odds(url: str) -> list[Market]:
+    return _parse_odds(_get_event(url))
+
+
 # SOCKETS
 def _setup_send_alive(ws):
     def _send_alive_request_background():
@@ -80,19 +97,6 @@ def _get_socket():
         raise Exception("Unable to start fox_bets socket.")
     _setup_send_alive(ws)
     return ws
-
-
-# gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
-def get_events(date: datetime) -> list[EventMetadata]:
-    events = []
-    for event_url in get_events_urls(date):
-        events.extend(_parse_events(_get_events(event_url)))
-    return events
-
-
-# gets initial odds for an upcoming event given fox_bet_event_id.
-def get_odds(event_id: str, sport: str) -> list[Market]:
-    return _parse_odds(_get_event(get_event_url(event_id, sport)))
 
 
 def _handle_sr(msg):

@@ -1,0 +1,5234 @@
+[
+  {
+    "path": [
+      {
+        "id": "6673237",
+        "link": "/soccer/international-club/uefa-champions-league",
+        "description": "UEFA Champions League",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 1,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "10100386",
+        "link": "/soccer/international-club",
+        "description": "International Club",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 8,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12125252",
+        "description": "FK Buducnost vs Breidablik",
+        "type": "GAMEEVENT",
+        "link": "/soccer/international-club/uefa-champions-league/fk-buducnost-breidablik-202306301500",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688151600000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6673237",
+        "notes": "",
+        "numMarkets": 19,
+        "lastModified": 1688154911770,
+        "competitors": [
+          {
+            "id": "12125252-16357310",
+            "name": "FK Buducnost",
+            "home": true
+          },
+          {
+            "id": "12125252-16368537",
+            "name": "Breidablik",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265367021",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365721958",
+                    "description": "FK Buducnost",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12125252-16357310",
+                    "price": {
+                      "id": "13788705199",
+                      "handicap": "4.5",
+                      "handicap2": "5.0",
+                      "american": "-122",
+                      "decimal": "1.819672",
+                      "fractional": "50/61",
+                      "malay": "0.82",
+                      "indonesian": "-1.22",
+                      "hongkong": "0.82"
+                    }
+                  },
+                  {
+                    "id": "1365721959",
+                    "description": "Breidablik",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12125252-16368537",
+                    "price": {
+                      "id": "13788705200",
+                      "handicap": "-4.5",
+                      "handicap2": "-5.0",
+                      "american": "+102",
+                      "decimal": "2.02",
+                      "fractional": "51/50",
+                      "malay": "-0.98",
+                      "indonesian": "1.02",
+                      "hongkong": "1.02"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265367008",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365721889",
+                    "description": "FK Buducnost",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12125252-16357310",
+                    "price": {
+                      "id": "13788559358",
+                      "american": "+6000",
+                      "decimal": "61.00",
+                      "fractional": "60/1",
+                      "malay": "-0.02",
+                      "indonesian": "60.00",
+                      "hongkong": "60.00"
+                    }
+                  },
+                  {
+                    "id": "1365721891",
+                    "description": "Breidablik",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12125252-16368537",
+                    "price": {
+                      "id": "13788523261",
+                      "american": "-5000",
+                      "decimal": "1.020",
+                      "fractional": "1/50",
+                      "malay": "0.02",
+                      "indonesian": "-50.00",
+                      "hongkong": "0.02"
+                    }
+                  },
+                  {
+                    "id": "1365721890",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788547113",
+                      "american": "+1400",
+                      "decimal": "15.00",
+                      "fractional": "14/1",
+                      "malay": "-0.07",
+                      "indonesian": "14.00",
+                      "hongkong": "14.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265367011",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365721899",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788677568",
+                      "handicap": "5.5",
+                      "handicap2": "6.0",
+                      "american": "-102",
+                      "decimal": "1.9804",
+                      "fractional": "50/51",
+                      "malay": "0.98",
+                      "indonesian": "-1.02",
+                      "hongkong": "0.98"
+                    }
+                  },
+                  {
+                    "id": "1365721898",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788677567",
+                      "handicap": "5.5",
+                      "handicap2": "6.0",
+                      "american": "-118",
+                      "decimal": "1.847458",
+                      "fractional": "50/59",
+                      "malay": "0.85",
+                      "indonesian": "-1.18",
+                      "hongkong": "0.85"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "8909599",
+        "link": "/soccer/south-america/uruguay/segunda-division",
+        "description": "Segunda Division",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2713461",
+        "link": "/soccer/south-america/uruguay",
+        "description": "Uruguay",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 3,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712482",
+        "link": "/soccer/south-america",
+        "description": "South America",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 35,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12120652",
+        "description": "Progreso vs Atenas de San Carlos",
+        "type": "GAMEEVENT",
+        "link": "/soccer/south-america/uruguay/segunda-division/progreso-atenas-de-san-carlos-202306301400",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688148000000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "8909599",
+        "notes": "",
+        "numMarkets": 3,
+        "lastModified": 1688154908189,
+        "competitors": [
+          {
+            "id": "12120652-16426062",
+            "name": "Progreso",
+            "home": true
+          },
+          {
+            "id": "12120652-16436917",
+            "name": "Atenas de San Carlos",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265355984",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686682",
+                    "description": "Progreso",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12120652-16426062",
+                    "price": {
+                      "id": "13788694633",
+                      "handicap": "-2.0",
+                      "american": "-185",
+                      "decimal": "1.540541",
+                      "fractional": "20/37",
+                      "malay": "0.54",
+                      "indonesian": "-1.85",
+                      "hongkong": "0.54"
+                    }
+                  },
+                  {
+                    "id": "1365686687",
+                    "description": "Atenas de San Carlos",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12120652-16436917",
+                    "price": {
+                      "id": "13788694634",
+                      "handicap": "2.0",
+                      "american": "+140",
+                      "decimal": "2.400",
+                      "fractional": "7/5",
+                      "malay": "-0.71",
+                      "indonesian": "1.40",
+                      "hongkong": "1.40"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265356013",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686814",
+                    "description": "Progreso",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12120652-16426062",
+                    "price": {
+                      "id": "13788626147",
+                      "american": "-800",
+                      "decimal": "1.125",
+                      "fractional": "1/8",
+                      "malay": "0.12",
+                      "indonesian": "-8.00",
+                      "hongkong": "0.12"
+                    }
+                  },
+                  {
+                    "id": "1365686818",
+                    "description": "Atenas de San Carlos",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12120652-16436917",
+                    "price": {
+                      "id": "13788626149",
+                      "american": "+3500",
+                      "decimal": "36.00",
+                      "fractional": "35/1",
+                      "malay": "-0.03",
+                      "indonesian": "35.00",
+                      "hongkong": "35.00"
+                    }
+                  },
+                  {
+                    "id": "1365686816",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788626148",
+                      "american": "+420",
+                      "decimal": "5.200",
+                      "fractional": "21/5",
+                      "malay": "-0.24",
+                      "indonesian": "4.20",
+                      "hongkong": "4.20"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265355997",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686758",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788694637",
+                      "handicap": "4.5",
+                      "american": "+425",
+                      "decimal": "5.250",
+                      "fractional": "17/4",
+                      "malay": "-0.24",
+                      "indonesian": "4.25",
+                      "hongkong": "4.25"
+                    }
+                  },
+                  {
+                    "id": "1365686761",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788694638",
+                      "handicap": "4.5",
+                      "american": "-750",
+                      "decimal": "1.133333",
+                      "fractional": "2/15",
+                      "malay": "0.13",
+                      "indonesian": "-7.50",
+                      "hongkong": "0.13"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "8514691",
+        "link": "/soccer/africa/egypt/premier-league",
+        "description": "Premier League",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2716494",
+        "link": "/soccer/africa/egypt",
+        "description": "Egypt",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 3,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712480",
+        "link": "/soccer/africa",
+        "description": "Africa",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 45,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12123425",
+        "description": "Al Mokawloon Al Arab vs El Daklyeh",
+        "type": "GAMEEVENT",
+        "link": "/soccer/africa/egypt/premier-league/al-mokawloon-al-arab-el-daklyeh-202306301430",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688149800000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "8514691",
+        "notes": "",
+        "numMarkets": 25,
+        "lastModified": 1688154960851,
+        "competitors": [
+          {
+            "id": "12123425-16443337",
+            "name": "Al Mokawloon Al Arab",
+            "home": true
+          },
+          {
+            "id": "12123425-16554875",
+            "name": "El Daklyeh",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265359007",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365697032",
+                    "description": "Al Mokawloon Al Arab",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123425-16443337",
+                    "price": {
+                      "id": "13788705368",
+                      "handicap": "0.5",
+                      "handicap2": "1.0",
+                      "american": "+118",
+                      "decimal": "2.18",
+                      "fractional": "59/50",
+                      "malay": "-0.85",
+                      "indonesian": "1.18",
+                      "hongkong": "1.18"
+                    }
+                  },
+                  {
+                    "id": "1365697031",
+                    "description": "El Daklyeh",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123425-16554875",
+                    "price": {
+                      "id": "13788705367",
+                      "handicap": "-0.5",
+                      "handicap2": "-1.0",
+                      "american": "-155",
+                      "decimal": "1.645161",
+                      "fractional": "20/31",
+                      "malay": "0.65",
+                      "indonesian": "-1.55",
+                      "hongkong": "0.65"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265359005",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365697025",
+                    "description": "Al Mokawloon Al Arab",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123425-16443337",
+                    "price": {
+                      "id": "13788706561",
+                      "american": "+900",
+                      "decimal": "10.00",
+                      "fractional": "9/1",
+                      "malay": "-0.11",
+                      "indonesian": "9.00",
+                      "hongkong": "9.00"
+                    }
+                  },
+                  {
+                    "id": "1365697027",
+                    "description": "El Daklyeh",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123425-16554875",
+                    "price": {
+                      "id": "13788709421",
+                      "american": "-280",
+                      "decimal": "1.357143",
+                      "fractional": "5/14",
+                      "malay": "0.36",
+                      "indonesian": "-2.80",
+                      "hongkong": "0.36"
+                    }
+                  },
+                  {
+                    "id": "1365697026",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788694703",
+                      "american": "+275",
+                      "decimal": "3.750",
+                      "fractional": "11/4",
+                      "malay": "-0.36",
+                      "indonesian": "2.75",
+                      "hongkong": "2.75"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265359047",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365697115",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788707907",
+                      "handicap": "1.5",
+                      "handicap2": "2.0",
+                      "american": "EVEN",
+                      "decimal": "2.00",
+                      "fractional": "1/1",
+                      "malay": "1.00",
+                      "indonesian": "1.00",
+                      "hongkong": "1.00"
+                    }
+                  },
+                  {
+                    "id": "1365697114",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788707906",
+                      "handicap": "1.5",
+                      "handicap2": "2.0",
+                      "american": "-130",
+                      "decimal": "1.769230",
+                      "fractional": "10/13",
+                      "malay": "0.77",
+                      "indonesian": "-1.30",
+                      "hongkong": "0.77"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12123430",
+        "description": "Tala'ea El Gaish vs Ceramica Cleopatra",
+        "type": "GAMEEVENT",
+        "link": "/soccer/africa/egypt/premier-league/tala-ea-el-gaish-ceramica-cleopatra-202306301430",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688149800000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "8514691",
+        "notes": "",
+        "numMarkets": 20,
+        "lastModified": 1688154963715,
+        "competitors": [
+          {
+            "id": "12123430-16430771",
+            "name": "Tala'ea El Gaish",
+            "home": true
+          },
+          {
+            "id": "12123430-16443343",
+            "name": "Ceramica Cleopatra",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265359811",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365699533",
+                    "description": "Tala'ea El Gaish",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123430-16430771",
+                    "price": {
+                      "id": "13788704471",
+                      "handicap": "0.0",
+                      "american": "+160",
+                      "decimal": "2.600",
+                      "fractional": "8/5",
+                      "malay": "-0.62",
+                      "indonesian": "1.60",
+                      "hongkong": "1.60"
+                    }
+                  },
+                  {
+                    "id": "1365699532",
+                    "description": "Ceramica Cleopatra",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123430-16443343",
+                    "price": {
+                      "id": "13788704470",
+                      "handicap": "0.0",
+                      "american": "-215",
+                      "decimal": "1.465116",
+                      "fractional": "20/43",
+                      "malay": "0.47",
+                      "indonesian": "-2.15",
+                      "hongkong": "0.47"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265359809",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365699526",
+                    "description": "Tala'ea El Gaish",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123430-16430771",
+                    "price": {
+                      "id": "13788708574",
+                      "american": "+600",
+                      "decimal": "7.00",
+                      "fractional": "6/1",
+                      "malay": "-0.17",
+                      "indonesian": "6.00",
+                      "hongkong": "6.00"
+                    }
+                  },
+                  {
+                    "id": "1365699528",
+                    "description": "Ceramica Cleopatra",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123430-16443343",
+                    "price": {
+                      "id": "13788708576",
+                      "american": "+260",
+                      "decimal": "3.600",
+                      "fractional": "13/5",
+                      "malay": "-0.38",
+                      "indonesian": "2.60",
+                      "hongkong": "2.60"
+                    }
+                  },
+                  {
+                    "id": "1365699527",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788708871",
+                      "american": "-190",
+                      "decimal": "1.526316",
+                      "fractional": "10/19",
+                      "malay": "0.53",
+                      "indonesian": "-1.90",
+                      "hongkong": "0.53"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265359845",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365699594",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788709229",
+                      "handicap": "0.5",
+                      "american": "+132",
+                      "decimal": "2.32",
+                      "fractional": "33/25",
+                      "malay": "-0.76",
+                      "indonesian": "1.32",
+                      "hongkong": "1.32"
+                    }
+                  },
+                  {
+                    "id": "1365699593",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788709228",
+                      "handicap": "0.5",
+                      "american": "-175",
+                      "decimal": "1.571429",
+                      "fractional": "4/7",
+                      "malay": "0.57",
+                      "indonesian": "-1.75",
+                      "hongkong": "0.57"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "2849586",
+        "link": "/soccer/europe/faroe-islands/1-deild",
+        "description": "1. Deild",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2849550",
+        "link": "/soccer/europe/faroe-islands",
+        "description": "Faroe Islands",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 5,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712478",
+        "link": "/soccer/europe",
+        "description": "Europe",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 25,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12099592",
+        "description": "NSI Runavík vs B36 II",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/faroe-islands/1-deild/nsi-runavik-b36-ii-202306301400",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688148000000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "2849586",
+        "notes": "",
+        "numMarkets": 3,
+        "lastModified": 1688154892349,
+        "competitors": [
+          {
+            "id": "12099592-11823451",
+            "name": "NSI Runavík",
+            "home": true
+          },
+          {
+            "id": "12099592-16320792",
+            "name": "B36 (R)",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265345310",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365641097",
+                    "description": "NSI Runavík",
+                    "status": "S",
+                    "type": "H",
+                    "competitorId": "12099592-11823451",
+                    "price": {
+                      "id": "13788684584",
+                      "handicap": "-1.0",
+                      "american": "-345",
+                      "decimal": "1.290",
+                      "fractional": "20/69",
+                      "malay": "0.29",
+                      "indonesian": "-3.45",
+                      "hongkong": "0.29"
+                    }
+                  },
+                  {
+                    "id": "1365641098",
+                    "description": "B36 (R)",
+                    "status": "S",
+                    "type": "A",
+                    "competitorId": "12099592-16320792",
+                    "price": {
+                      "id": "13788684585",
+                      "handicap": "1.0",
+                      "american": "+240",
+                      "decimal": "3.400",
+                      "fractional": "12/5",
+                      "malay": "-0.42",
+                      "indonesian": "2.40",
+                      "hongkong": "2.40"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265345298",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365641037",
+                    "description": "NSI Runavík",
+                    "status": "S",
+                    "type": "H",
+                    "competitorId": "12099592-11823451",
+                    "price": {
+                      "id": "13788697043",
+                      "american": "-10000",
+                      "decimal": "1.010",
+                      "fractional": "1/100",
+                      "malay": "0.01",
+                      "indonesian": "-100.00",
+                      "hongkong": "0.01"
+                    }
+                  },
+                  {
+                    "id": "1365641036",
+                    "description": "B36 (R)",
+                    "status": "S",
+                    "type": "A",
+                    "competitorId": "12099592-16320792",
+                    "price": {
+                      "id": "13788698255",
+                      "american": "+10000",
+                      "decimal": "101.00",
+                      "fractional": "100/1",
+                      "malay": "-0.01",
+                      "indonesian": "100.00",
+                      "hongkong": "100.00"
+                    }
+                  },
+                  {
+                    "id": "1365641035",
+                    "description": "Draw",
+                    "status": "S",
+                    "type": "D",
+                    "price": {
+                      "id": "13788702591",
+                      "american": "+2800",
+                      "decimal": "29.00",
+                      "fractional": "28/1",
+                      "malay": "-0.04",
+                      "indonesian": "28.00",
+                      "hongkong": "28.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265345302",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365641044",
+                    "description": "Over",
+                    "status": "S",
+                    "type": "O",
+                    "price": {
+                      "id": "13788690412",
+                      "handicap": "3.5",
+                      "american": "+500",
+                      "decimal": "6.00",
+                      "fractional": "5/1",
+                      "malay": "-0.20",
+                      "indonesian": "5.00",
+                      "hongkong": "5.00"
+                    }
+                  },
+                  {
+                    "id": "1365641045",
+                    "description": "Under",
+                    "status": "S",
+                    "type": "U",
+                    "price": {
+                      "id": "13788690413",
+                      "handicap": "3.5",
+                      "american": "-900",
+                      "decimal": "1.111111",
+                      "fractional": "1/9",
+                      "malay": "0.11",
+                      "indonesian": "-9.00",
+                      "hongkong": "0.11"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "6690066",
+        "link": "/soccer/europe/iceland/3-deild-karla",
+        "description": "3. deild karla",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2713655",
+        "link": "/soccer/europe/iceland",
+        "description": "Iceland",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 4,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712478",
+        "link": "/soccer/europe",
+        "description": "Europe",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 25,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12108478",
+        "description": "Ellidi vs UMF Vidir",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/iceland/3-deild-karla/ellidi-umf-vidir-202306301515",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688152500000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6690066",
+        "notes": "",
+        "numMarkets": 34,
+        "lastModified": 1688154954127,
+        "competitors": [
+          {
+            "id": "12108478-16471913",
+            "name": "Ellidi",
+            "home": true
+          },
+          {
+            "id": "12108478-16461305",
+            "name": "UMF Vidir",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265367191",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365722545",
+                    "description": "Ellidi",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12108478-16471913",
+                    "price": {
+                      "id": "13788708840",
+                      "handicap": "1.5",
+                      "american": "-122",
+                      "decimal": "1.819672",
+                      "fractional": "50/61",
+                      "malay": "0.82",
+                      "indonesian": "-1.22",
+                      "hongkong": "0.82"
+                    }
+                  },
+                  {
+                    "id": "1365722546",
+                    "description": "UMF Vidir",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12108478-16461305",
+                    "price": {
+                      "id": "13788708841",
+                      "handicap": "-1.5",
+                      "american": "-108",
+                      "decimal": "1.9259",
+                      "fractional": "25/27",
+                      "malay": "0.93",
+                      "indonesian": "-1.08",
+                      "hongkong": "0.93"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265367163",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365722432",
+                    "description": "Ellidi",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12108478-16471913",
+                    "price": {
+                      "id": "13788708772",
+                      "american": "+950",
+                      "decimal": "10.500",
+                      "fractional": "19/2",
+                      "malay": "-0.11",
+                      "indonesian": "9.50",
+                      "hongkong": "9.50"
+                    }
+                  },
+                  {
+                    "id": "1365722434",
+                    "description": "UMF Vidir",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12108478-16461305",
+                    "price": {
+                      "id": "13788708774",
+                      "american": "-400",
+                      "decimal": "1.250",
+                      "fractional": "1/4",
+                      "malay": "0.25",
+                      "indonesian": "-4.00",
+                      "hongkong": "0.25"
+                    }
+                  },
+                  {
+                    "id": "1365722433",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788708773",
+                      "american": "+400",
+                      "decimal": "5.00",
+                      "fractional": "4/1",
+                      "malay": "-0.25",
+                      "indonesian": "4.00",
+                      "hongkong": "4.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265367164",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365722435",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788708792",
+                      "handicap": "3.5",
+                      "american": "+140",
+                      "decimal": "2.400",
+                      "fractional": "7/5",
+                      "malay": "-0.71",
+                      "indonesian": "1.40",
+                      "hongkong": "1.40"
+                    }
+                  },
+                  {
+                    "id": "1365722436",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788708793",
+                      "handicap": "3.5",
+                      "american": "-185",
+                      "decimal": "1.540541",
+                      "fractional": "20/37",
+                      "malay": "0.54",
+                      "indonesian": "-1.85",
+                      "hongkong": "0.54"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "6689518",
+        "link": "/soccer/europe/ireland/loi-1st-division",
+        "description": "LOI 1st Division",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2714009",
+        "link": "/soccer/europe/ireland",
+        "description": "Ireland",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 4,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712478",
+        "link": "/soccer/europe",
+        "description": "Europe",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 25,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12107280",
+        "description": "Athlone Town vs Cobh Ramblers",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-1st-division/athlone-town-cobh-ramblers-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6689518",
+        "notes": "",
+        "numMarkets": 3,
+        "lastModified": 1688154958798,
+        "competitors": [
+          {
+            "id": "12107280-16410340",
+            "name": "Athlone Town",
+            "home": true
+          },
+          {
+            "id": "12107280-16460382",
+            "name": "Cobh Ramblers",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364503",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713603",
+                    "description": "Athlone Town",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12107280-16410340",
+                    "price": {
+                      "id": "13788709205",
+                      "handicap": "-1.0",
+                      "american": "-108",
+                      "decimal": "1.9259",
+                      "fractional": "25/27",
+                      "malay": "0.93",
+                      "indonesian": "-1.08",
+                      "hongkong": "0.93"
+                    }
+                  },
+                  {
+                    "id": "1365713606",
+                    "description": "Cobh Ramblers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12107280-16460382",
+                    "price": {
+                      "id": "13788709206",
+                      "handicap": "1.0",
+                      "american": "-122",
+                      "decimal": "1.819672",
+                      "fractional": "50/61",
+                      "malay": "0.82",
+                      "indonesian": "-1.22",
+                      "hongkong": "0.82"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364489",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713540",
+                    "description": "Athlone Town",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12107280-16410340",
+                    "price": {
+                      "id": "13788709172",
+                      "american": "-250",
+                      "decimal": "1.400",
+                      "fractional": "2/5",
+                      "malay": "0.40",
+                      "indonesian": "-2.50",
+                      "hongkong": "0.40"
+                    }
+                  },
+                  {
+                    "id": "1365713548",
+                    "description": "Cobh Ramblers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12107280-16460382",
+                    "price": {
+                      "id": "13788709174",
+                      "american": "+750",
+                      "decimal": "8.500",
+                      "fractional": "15/2",
+                      "malay": "-0.13",
+                      "indonesian": "7.50",
+                      "hongkong": "7.50"
+                    }
+                  },
+                  {
+                    "id": "1365713544",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788709173",
+                      "american": "+290",
+                      "decimal": "3.900",
+                      "fractional": "29/10",
+                      "malay": "-0.34",
+                      "indonesian": "2.90",
+                      "hongkong": "2.90"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364422",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713342",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788709197",
+                      "handicap": "4.0",
+                      "handicap2": "4.5",
+                      "american": "-105",
+                      "decimal": "1.952381",
+                      "fractional": "20/21",
+                      "malay": "0.95",
+                      "indonesian": "-1.05",
+                      "hongkong": "0.95"
+                    }
+                  },
+                  {
+                    "id": "1365713338",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788709196",
+                      "handicap": "4.0",
+                      "handicap2": "4.5",
+                      "american": "-125",
+                      "decimal": "1.800",
+                      "fractional": "4/5",
+                      "malay": "0.80",
+                      "indonesian": "-1.25",
+                      "hongkong": "0.80"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12100424",
+        "description": "Galway United vs Kerry FC",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-1st-division/galway-united-kerry-fc-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6689518",
+        "notes": "",
+        "numMarkets": 14,
+        "lastModified": 1688154970684,
+        "competitors": [
+          {
+            "id": "12100424-16118327",
+            "name": "Galway United",
+            "home": true
+          },
+          {
+            "id": "12100424-16611708",
+            "name": "Kerry FC",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364392",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713221",
+                    "description": "Galway United",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12100424-16118327",
+                    "price": {
+                      "id": "13788710272",
+                      "handicap": "-2.0",
+                      "handicap2": "-2.5",
+                      "american": "-115",
+                      "decimal": "1.870",
+                      "fractional": "20/23",
+                      "malay": "0.87",
+                      "indonesian": "-1.15",
+                      "hongkong": "0.87"
+                    }
+                  },
+                  {
+                    "id": "1365713224",
+                    "description": "Kerry FC",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12100424-16611708",
+                    "price": {
+                      "id": "13788710273",
+                      "handicap": "2.0",
+                      "handicap2": "2.5",
+                      "american": "-115",
+                      "decimal": "1.870",
+                      "fractional": "20/23",
+                      "malay": "0.87",
+                      "indonesian": "-1.15",
+                      "hongkong": "0.87"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364506",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713595",
+                    "description": "Galway United",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12100424-16118327",
+                    "price": {
+                      "id": "13788707534",
+                      "american": "-3500",
+                      "decimal": "1.028571",
+                      "fractional": "1/35",
+                      "malay": "0.03",
+                      "indonesian": "-35.00",
+                      "hongkong": "0.03"
+                    }
+                  },
+                  {
+                    "id": "1365713602",
+                    "description": "Kerry FC",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12100424-16611708",
+                    "price": {
+                      "id": "13788707535",
+                      "american": "+6600",
+                      "decimal": "67.00",
+                      "fractional": "66/1",
+                      "malay": "-0.02",
+                      "indonesian": "66.00",
+                      "hongkong": "66.00"
+                    }
+                  },
+                  {
+                    "id": "1365713599",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788702931",
+                      "american": "+1000",
+                      "decimal": "11.00",
+                      "fractional": "10/1",
+                      "malay": "-0.10",
+                      "indonesian": "10.00",
+                      "hongkong": "10.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364475",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713512",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788710267",
+                      "handicap": "2.5",
+                      "handicap2": "3.0",
+                      "american": "-128",
+                      "decimal": "1.78125",
+                      "fractional": "25/32",
+                      "malay": "0.78",
+                      "indonesian": "-1.28",
+                      "hongkong": "0.78"
+                    }
+                  },
+                  {
+                    "id": "1365713509",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788710266",
+                      "handicap": "2.5",
+                      "handicap2": "3.0",
+                      "american": "-102",
+                      "decimal": "1.9804",
+                      "fractional": "50/51",
+                      "malay": "0.98",
+                      "indonesian": "-1.02",
+                      "hongkong": "0.98"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12060798",
+        "description": "Treaty United vs Bray Wanderers",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-1st-division/treaty-united-bray-wanderers-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6689518",
+        "notes": "",
+        "numMarkets": 18,
+        "lastModified": 1688154950402,
+        "competitors": [
+          {
+            "id": "12060798-16460471",
+            "name": "Treaty United",
+            "home": true
+          },
+          {
+            "id": "12060798-16460470",
+            "name": "Bray Wanderers",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364456",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713442",
+                    "description": "Treaty United",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12060798-16460471",
+                    "price": {
+                      "id": "13788708347",
+                      "handicap": "0.0",
+                      "handicap2": "0.5",
+                      "american": "-115",
+                      "decimal": "1.870",
+                      "fractional": "20/23",
+                      "malay": "0.87",
+                      "indonesian": "-1.15",
+                      "hongkong": "0.87"
+                    }
+                  },
+                  {
+                    "id": "1365713445",
+                    "description": "Bray Wanderers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12060798-16460470",
+                    "price": {
+                      "id": "13788708348",
+                      "handicap": "0.0",
+                      "handicap2": "-0.5",
+                      "american": "-115",
+                      "decimal": "1.870",
+                      "fractional": "20/23",
+                      "malay": "0.87",
+                      "indonesian": "-1.15",
+                      "hongkong": "0.87"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364374",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713138",
+                    "description": "Treaty United",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12060798-16460471",
+                    "price": {
+                      "id": "13788708353",
+                      "american": "+330",
+                      "decimal": "4.300",
+                      "fractional": "33/10",
+                      "malay": "-0.30",
+                      "indonesian": "3.30",
+                      "hongkong": "3.30"
+                    }
+                  },
+                  {
+                    "id": "1365713147",
+                    "description": "Bray Wanderers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12060798-16460470",
+                    "price": {
+                      "id": "13788708354",
+                      "american": "+132",
+                      "decimal": "2.32",
+                      "fractional": "33/25",
+                      "malay": "-0.76",
+                      "indonesian": "1.32",
+                      "hongkong": "1.32"
+                    }
+                  },
+                  {
+                    "id": "1365713142",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788703551",
+                      "american": "+136",
+                      "decimal": "2.36",
+                      "fractional": "34/25",
+                      "malay": "-0.74",
+                      "indonesian": "1.36",
+                      "hongkong": "1.36"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364348",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713021",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788708346",
+                      "handicap": "3.0",
+                      "handicap2": "3.5",
+                      "american": "+108",
+                      "decimal": "2.08",
+                      "fractional": "27/25",
+                      "malay": "-0.93",
+                      "indonesian": "1.08",
+                      "hongkong": "1.08"
+                    }
+                  },
+                  {
+                    "id": "1365713018",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788708345",
+                      "handicap": "3.0",
+                      "handicap2": "3.5",
+                      "american": "-140",
+                      "decimal": "1.714286",
+                      "fractional": "5/7",
+                      "malay": "0.71",
+                      "indonesian": "-1.40",
+                      "hongkong": "0.71"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12112789",
+        "description": "Waterford vs Finn Harps",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-1st-division/waterford-finn-harps-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6689518",
+        "notes": "",
+        "numMarkets": 14,
+        "lastModified": 1688154966766,
+        "competitors": [
+          {
+            "id": "12112789-16110188",
+            "name": "Waterford",
+            "home": true
+          },
+          {
+            "id": "12112789-16106594",
+            "name": "Finn Harps",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364316",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712902",
+                    "description": "Waterford",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112789-16110188",
+                    "price": {
+                      "id": "13788710018",
+                      "handicap": "-3.5",
+                      "american": "+102",
+                      "decimal": "2.02",
+                      "fractional": "51/50",
+                      "malay": "-0.98",
+                      "indonesian": "1.02",
+                      "hongkong": "1.02"
+                    }
+                  },
+                  {
+                    "id": "1365712905",
+                    "description": "Finn Harps",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112789-16106594",
+                    "price": {
+                      "id": "13788710019",
+                      "handicap": "3.5",
+                      "american": "-132",
+                      "decimal": "1.757576",
+                      "fractional": "25/33",
+                      "malay": "0.76",
+                      "indonesian": "-1.32",
+                      "hongkong": "0.76"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364454",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713408",
+                    "description": "Waterford",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112789-16110188",
+                    "price": {
+                      "id": "13788321959",
+                      "american": "-10000",
+                      "decimal": "1.010",
+                      "fractional": "1/100",
+                      "malay": "0.01",
+                      "indonesian": "-100.00",
+                      "hongkong": "0.01"
+                    }
+                  },
+                  {
+                    "id": "1365713417",
+                    "description": "Finn Harps",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112789-16106594",
+                    "price": {
+                      "id": "13788389695",
+                      "american": "+8500",
+                      "decimal": "86.00",
+                      "fractional": "85/1",
+                      "malay": "-0.01",
+                      "indonesian": "85.00",
+                      "hongkong": "85.00"
+                    }
+                  },
+                  {
+                    "id": "1365713414",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788417038",
+                      "american": "+1200",
+                      "decimal": "13.00",
+                      "fractional": "12/1",
+                      "malay": "-0.08",
+                      "indonesian": "12.00",
+                      "hongkong": "12.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364416",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713327",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788710029",
+                      "handicap": "6.0",
+                      "american": "-108",
+                      "decimal": "1.9259",
+                      "fractional": "25/27",
+                      "malay": "0.93",
+                      "indonesian": "-1.08",
+                      "hongkong": "0.93"
+                    }
+                  },
+                  {
+                    "id": "1365713321",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788710028",
+                      "handicap": "6.0",
+                      "american": "-122",
+                      "decimal": "1.819672",
+                      "fractional": "50/61",
+                      "malay": "0.82",
+                      "indonesian": "-1.22",
+                      "hongkong": "0.82"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "6683438",
+        "link": "/soccer/europe/ireland/loi-premier-division",
+        "description": "LOI Premier Division",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2714009",
+        "link": "/soccer/europe/ireland",
+        "description": "Ireland",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 4,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712478",
+        "link": "/soccer/europe",
+        "description": "Europe",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 25,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12030086",
+        "description": "Cork City vs Drogheda United",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-premier-division/cork-city-drogheda-united-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6683438",
+        "notes": "",
+        "numMarkets": 22,
+        "lastModified": 1688154950954,
+        "competitors": [
+          {
+            "id": "12030086-16106637",
+            "name": "Cork City",
+            "home": true
+          },
+          {
+            "id": "12030086-16117280",
+            "name": "Drogheda United",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364518",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713652",
+                    "description": "Cork City",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12030086-16106637",
+                    "price": {
+                      "id": "13788708392",
+                      "handicap": "0.0",
+                      "american": "+108",
+                      "decimal": "2.08",
+                      "fractional": "27/25",
+                      "malay": "-0.93",
+                      "indonesian": "1.08",
+                      "hongkong": "1.08"
+                    }
+                  },
+                  {
+                    "id": "1365713655",
+                    "description": "Drogheda United",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12030086-16117280",
+                    "price": {
+                      "id": "13788708393",
+                      "handicap": "0.0",
+                      "american": "-140",
+                      "decimal": "1.714286",
+                      "fractional": "5/7",
+                      "malay": "0.71",
+                      "indonesian": "-1.40",
+                      "hongkong": "0.71"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364573",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713899",
+                    "description": "Cork City",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12030086-16106637",
+                    "price": {
+                      "id": "13788708370",
+                      "american": "+275",
+                      "decimal": "3.750",
+                      "fractional": "11/4",
+                      "malay": "-0.36",
+                      "indonesian": "2.75",
+                      "hongkong": "2.75"
+                    }
+                  },
+                  {
+                    "id": "1365713901",
+                    "description": "Drogheda United",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12030086-16117280",
+                    "price": {
+                      "id": "13788708372",
+                      "american": "+215",
+                      "decimal": "3.150",
+                      "fractional": "43/20",
+                      "malay": "-0.47",
+                      "indonesian": "2.15",
+                      "hongkong": "2.15"
+                    }
+                  },
+                  {
+                    "id": "1365713900",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788708371",
+                      "american": "+102",
+                      "decimal": "2.02",
+                      "fractional": "51/50",
+                      "malay": "-0.98",
+                      "indonesian": "1.02",
+                      "hongkong": "1.02"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364504",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713604",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788705922",
+                      "handicap": "1.0",
+                      "american": "+110",
+                      "decimal": "2.100",
+                      "fractional": "11/10",
+                      "malay": "-0.91",
+                      "indonesian": "1.10",
+                      "hongkong": "1.10"
+                    }
+                  },
+                  {
+                    "id": "1365713607",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788705921",
+                      "handicap": "1.0",
+                      "american": "-145",
+                      "decimal": "1.690",
+                      "fractional": "20/29",
+                      "malay": "0.69",
+                      "indonesian": "-1.45",
+                      "hongkong": "0.69"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12030089",
+        "description": "Dundalk vs Shamrock Rovers",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-premier-division/dundalk-shamrock-rovers-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6683438",
+        "notes": "",
+        "numMarkets": 22,
+        "lastModified": 1688154952168,
+        "competitors": [
+          {
+            "id": "12030089-16106636",
+            "name": "Dundalk",
+            "home": true
+          },
+          {
+            "id": "12030089-16118328",
+            "name": "Shamrock Rovers",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364543",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713780",
+                    "description": "Dundalk",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12030089-16106636",
+                    "price": {
+                      "id": "13788708627",
+                      "handicap": "0.0",
+                      "handicap2": "0.5",
+                      "american": "-128",
+                      "decimal": "1.78125",
+                      "fractional": "25/32",
+                      "malay": "0.78",
+                      "indonesian": "-1.28",
+                      "hongkong": "0.78"
+                    }
+                  },
+                  {
+                    "id": "1365713782",
+                    "description": "Shamrock Rovers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12030089-16118328",
+                    "price": {
+                      "id": "13788708628",
+                      "handicap": "0.0",
+                      "handicap2": "-0.5",
+                      "american": "-102",
+                      "decimal": "1.9804",
+                      "fractional": "50/51",
+                      "malay": "0.98",
+                      "indonesian": "-1.02",
+                      "hongkong": "0.98"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364559",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713828",
+                    "description": "Dundalk",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12030089-16106636",
+                    "price": {
+                      "id": "13788688117",
+                      "american": "+320",
+                      "decimal": "4.200",
+                      "fractional": "16/5",
+                      "malay": "-0.31",
+                      "indonesian": "3.20",
+                      "hongkong": "3.20"
+                    }
+                  },
+                  {
+                    "id": "1365713836",
+                    "description": "Shamrock Rovers",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12030089-16118328",
+                    "price": {
+                      "id": "13788708619",
+                      "american": "+150",
+                      "decimal": "2.500",
+                      "fractional": "6/4",
+                      "malay": "-0.67",
+                      "indonesian": "1.50",
+                      "hongkong": "1.50"
+                    }
+                  },
+                  {
+                    "id": "1365713833",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788708618",
+                      "american": "+126",
+                      "decimal": "2.26",
+                      "fractional": "63/50",
+                      "malay": "-0.79",
+                      "indonesian": "1.26",
+                      "hongkong": "1.26"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364379",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713175",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788705999",
+                      "handicap": "1.0",
+                      "american": "-140",
+                      "decimal": "1.714286",
+                      "fractional": "5/7",
+                      "malay": "0.71",
+                      "indonesian": "-1.40",
+                      "hongkong": "0.71"
+                    }
+                  },
+                  {
+                    "id": "1365713178",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788705998",
+                      "handicap": "1.0",
+                      "american": "+108",
+                      "decimal": "2.08",
+                      "fractional": "27/25",
+                      "malay": "-0.93",
+                      "indonesian": "1.08",
+                      "hongkong": "1.08"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12068790",
+        "description": "Shelbourne FC vs Derry City",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-premier-division/shelbourne-fc-derry-city-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6683438",
+        "notes": "",
+        "numMarkets": 22,
+        "lastModified": 1688154963033,
+        "competitors": [
+          {
+            "id": "12068790-16117281",
+            "name": "Shelbourne FC",
+            "home": true
+          },
+          {
+            "id": "12068790-16431856",
+            "name": "Derry City",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364296",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712895",
+                    "description": "Shelbourne FC",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12068790-16117281",
+                    "price": {
+                      "id": "13788709616",
+                      "handicap": "0.0",
+                      "handicap2": "0.5",
+                      "american": "-132",
+                      "decimal": "1.757576",
+                      "fractional": "25/33",
+                      "malay": "0.76",
+                      "indonesian": "-1.32",
+                      "hongkong": "0.76"
+                    }
+                  },
+                  {
+                    "id": "1365712896",
+                    "description": "Derry City",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12068790-16431856",
+                    "price": {
+                      "id": "13788709617",
+                      "handicap": "0.0",
+                      "handicap2": "-0.5",
+                      "american": "+102",
+                      "decimal": "2.02",
+                      "fractional": "51/50",
+                      "malay": "-0.98",
+                      "indonesian": "1.02",
+                      "hongkong": "1.02"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364447",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713386",
+                    "description": "Shelbourne FC",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12068790-16117281",
+                    "price": {
+                      "id": "13788709611",
+                      "american": "+380",
+                      "decimal": "4.800",
+                      "fractional": "19/5",
+                      "malay": "-0.26",
+                      "indonesian": "3.80",
+                      "hongkong": "3.80"
+                    }
+                  },
+                  {
+                    "id": "1365713393",
+                    "description": "Derry City",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12068790-16431856",
+                    "price": {
+                      "id": "13788706878",
+                      "american": "+162",
+                      "decimal": "2.62",
+                      "fractional": "81/50",
+                      "malay": "-0.62",
+                      "indonesian": "1.62",
+                      "hongkong": "1.62"
+                    }
+                  },
+                  {
+                    "id": "1365713389",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788706877",
+                      "american": "+104",
+                      "decimal": "2.04",
+                      "fractional": "26/25",
+                      "malay": "-0.96",
+                      "indonesian": "1.04",
+                      "hongkong": "1.04"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364385",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713192",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788706895",
+                      "handicap": "1.0",
+                      "american": "+110",
+                      "decimal": "2.100",
+                      "fractional": "11/10",
+                      "malay": "-0.91",
+                      "indonesian": "1.10",
+                      "hongkong": "1.10"
+                    }
+                  },
+                  {
+                    "id": "1365713191",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788706894",
+                      "handicap": "1.0",
+                      "american": "-145",
+                      "decimal": "1.690",
+                      "fractional": "20/29",
+                      "malay": "0.69",
+                      "indonesian": "-1.45",
+                      "hongkong": "0.69"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12085030",
+        "description": "Sligo Rovers vs Bohemians Dublin",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-premier-division/sligo-rovers-bohemians-dublin-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6683438",
+        "notes": "",
+        "numMarkets": 19,
+        "lastModified": 1688154958059,
+        "competitors": [
+          {
+            "id": "12085030-16110186",
+            "name": "Sligo Rovers",
+            "home": true
+          },
+          {
+            "id": "12085030-16431857",
+            "name": "Bohemians Dublin",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364178",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712499",
+                    "description": "Sligo Rovers",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12085030-16110186",
+                    "price": {
+                      "id": "13788704347",
+                      "handicap": "-2.0",
+                      "american": "-135",
+                      "decimal": "1.741",
+                      "fractional": "20/27",
+                      "malay": "0.74",
+                      "indonesian": "-1.35",
+                      "hongkong": "0.74"
+                    }
+                  },
+                  {
+                    "id": "1365712500",
+                    "description": "Bohemians Dublin",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12085030-16431857",
+                    "price": {
+                      "id": "13788704348",
+                      "handicap": "2.0",
+                      "american": "+105",
+                      "decimal": "2.050",
+                      "fractional": "21/20",
+                      "malay": "-0.95",
+                      "indonesian": "1.05",
+                      "hongkong": "1.05"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364210",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712654",
+                    "description": "Sligo Rovers",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12085030-16110186",
+                    "price": {
+                      "id": "13788704336",
+                      "american": "-2500",
+                      "decimal": "1.040",
+                      "fractional": "1/25",
+                      "malay": "0.04",
+                      "indonesian": "-25.00",
+                      "hongkong": "0.04"
+                    }
+                  },
+                  {
+                    "id": "1365712659",
+                    "description": "Bohemians Dublin",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12085030-16431857",
+                    "price": {
+                      "id": "13788706446",
+                      "american": "+6000",
+                      "decimal": "61.00",
+                      "fractional": "60/1",
+                      "malay": "-0.02",
+                      "indonesian": "60.00",
+                      "hongkong": "60.00"
+                    }
+                  },
+                  {
+                    "id": "1365712657",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788696026",
+                      "american": "+1100",
+                      "decimal": "12.00",
+                      "fractional": "11/1",
+                      "malay": "-0.09",
+                      "indonesian": "11.00",
+                      "hongkong": "11.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364221",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712714",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788709122",
+                      "handicap": "3.0",
+                      "american": "-128",
+                      "decimal": "1.78125",
+                      "fractional": "25/32",
+                      "malay": "0.78",
+                      "indonesian": "-1.28",
+                      "hongkong": "0.78"
+                    }
+                  },
+                  {
+                    "id": "1365712713",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788709121",
+                      "handicap": "3.0",
+                      "american": "-102",
+                      "decimal": "1.9804",
+                      "fractional": "50/51",
+                      "malay": "0.98",
+                      "indonesian": "-1.02",
+                      "hongkong": "0.98"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12100789",
+        "description": "St Patrick's Athletic vs University College Dublin",
+        "type": "GAMEEVENT",
+        "link": "/soccer/europe/ireland/loi-premier-division/st-patrick-s-athletic-university-college-dublin-202306301445",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688150700000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6683438",
+        "notes": "",
+        "numMarkets": 17,
+        "lastModified": 1688154953140,
+        "competitors": [
+          {
+            "id": "12100789-16106595",
+            "name": "St Patrick's Athletic",
+            "home": true
+          },
+          {
+            "id": "12100789-16110187",
+            "name": "University College Dublin",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265364306",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712880",
+                    "description": "St Patrick's Athletic",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12100789-16106595",
+                    "price": {
+                      "id": "13788708667",
+                      "handicap": "-4.0",
+                      "american": "-108",
+                      "decimal": "1.9259",
+                      "fractional": "25/27",
+                      "malay": "0.93",
+                      "indonesian": "-1.08",
+                      "hongkong": "0.93"
+                    }
+                  },
+                  {
+                    "id": "1365712881",
+                    "description": "University College Dublin",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12100789-16110187",
+                    "price": {
+                      "id": "13788708668",
+                      "handicap": "4.0",
+                      "american": "-122",
+                      "decimal": "1.819672",
+                      "fractional": "50/61",
+                      "malay": "0.82",
+                      "indonesian": "-1.22",
+                      "hongkong": "0.82"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364285",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365712801",
+                    "description": "St Patrick's Athletic",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12100789-16106595",
+                    "price": {
+                      "id": "13788557915",
+                      "american": "-3500",
+                      "decimal": "1.028571",
+                      "fractional": "1/35",
+                      "malay": "0.03",
+                      "indonesian": "-35.00",
+                      "hongkong": "0.03"
+                    }
+                  },
+                  {
+                    "id": "1365712803",
+                    "description": "University College Dublin",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12100789-16110187",
+                    "price": {
+                      "id": "13788573215",
+                      "american": "+9000",
+                      "decimal": "91.00",
+                      "fractional": "90/1",
+                      "malay": "-0.01",
+                      "indonesian": "90.00",
+                      "hongkong": "90.00"
+                    }
+                  },
+                  {
+                    "id": "1365712802",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788573214",
+                      "american": "+1000",
+                      "decimal": "11.00",
+                      "fractional": "10/1",
+                      "malay": "-0.10",
+                      "indonesian": "10.00",
+                      "hongkong": "10.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265364393",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365713216",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788708675",
+                      "handicap": "4.5",
+                      "american": "-112",
+                      "decimal": "1.892857",
+                      "fractional": "25/28",
+                      "malay": "0.89",
+                      "indonesian": "-1.12",
+                      "hongkong": "0.89"
+                    }
+                  },
+                  {
+                    "id": "1365713214",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788708676",
+                      "handicap": "4.5",
+                      "american": "-118",
+                      "decimal": "1.847458",
+                      "fractional": "50/59",
+                      "malay": "0.85",
+                      "indonesian": "-1.18",
+                      "hongkong": "0.85"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "6689353",
+        "link": "/soccer/south-america/argentina/primera-b",
+        "description": "Primera B",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2714645",
+        "link": "/soccer/south-america/argentina",
+        "description": "Argentina",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 2,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712482",
+        "link": "/soccer/south-america",
+        "description": "South America",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 35,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12112807",
+        "description": "Comunicaciones vs Armenio",
+        "type": "GAMEEVENT",
+        "link": "/soccer/south-america/argentina/primera-b/comunicaciones-armenio-202306301430",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688149800000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "6689353",
+        "notes": "",
+        "numMarkets": 19,
+        "lastModified": 1688154943930,
+        "competitors": [
+          {
+            "id": "12112807-16117550",
+            "name": "Comunicaciones",
+            "home": true
+          },
+          {
+            "id": "12112807-16117272",
+            "name": "Armenio",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265361576",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365704744",
+                    "description": "Comunicaciones",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112807-16117550",
+                    "price": {
+                      "id": "13788707857",
+                      "handicap": "2.5",
+                      "american": "-225",
+                      "decimal": "1.444444",
+                      "fractional": "4/9",
+                      "malay": "0.44",
+                      "indonesian": "-2.25",
+                      "hongkong": "0.44"
+                    }
+                  },
+                  {
+                    "id": "1365704745",
+                    "description": "Armenio",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112807-16117272",
+                    "price": {
+                      "id": "13788707858",
+                      "handicap": "-2.5",
+                      "american": "+168",
+                      "decimal": "2.68",
+                      "fractional": "42/25",
+                      "malay": "-0.60",
+                      "indonesian": "1.68",
+                      "hongkong": "1.68"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265361596",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365704805",
+                    "description": "Comunicaciones",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112807-16117550",
+                    "price": {
+                      "id": "13788646079",
+                      "american": "+8500",
+                      "decimal": "86.00",
+                      "fractional": "85/1",
+                      "malay": "-0.01",
+                      "indonesian": "85.00",
+                      "hongkong": "85.00"
+                    }
+                  },
+                  {
+                    "id": "1365704807",
+                    "description": "Armenio",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112807-16117272",
+                    "price": {
+                      "id": "13788646081",
+                      "american": "-10000",
+                      "decimal": "1.010",
+                      "fractional": "1/100",
+                      "malay": "0.01",
+                      "indonesian": "-100.00",
+                      "hongkong": "0.01"
+                    }
+                  },
+                  {
+                    "id": "1365704806",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788646080",
+                      "american": "+1700",
+                      "decimal": "18.00",
+                      "fractional": "17/1",
+                      "malay": "-0.06",
+                      "indonesian": "17.00",
+                      "hongkong": "17.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265361561",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365704679",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788705351",
+                      "handicap": "2.5",
+                      "american": "-135",
+                      "decimal": "1.741",
+                      "fractional": "20/27",
+                      "malay": "0.74",
+                      "indonesian": "-1.35",
+                      "hongkong": "0.74"
+                    }
+                  },
+                  {
+                    "id": "1365704680",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788705352",
+                      "handicap": "2.5",
+                      "american": "+105",
+                      "decimal": "2.050",
+                      "fractional": "21/20",
+                      "malay": "-0.95",
+                      "indonesian": "1.05",
+                      "hongkong": "1.05"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "9910488",
+        "link": "/soccer/south-america/brazil/paulista-segunda-divisao-u23",
+        "description": "Paulista, Segunda Divisao U23",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2712484",
+        "link": "/soccer/south-america/brazil",
+        "description": "Brazil",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 1,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712482",
+        "link": "/soccer/south-america",
+        "description": "South America",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 35,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12120657",
+        "description": "Mauaense SP U23 vs XV de Jaú SP U23",
+        "type": "GAMEEVENT",
+        "link": "/soccer/south-america/brazil/paulista-segunda-divisao-u23/mauaense-sp-u23-xv-de-jau-sp-u23-202306301400",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688148000000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "9910488",
+        "notes": "",
+        "numMarkets": 3,
+        "lastModified": 1688154764923,
+        "competitors": [
+          {
+            "id": "12120657-16435763",
+            "name": "Mauaense SP U23",
+            "home": true
+          },
+          {
+            "id": "12120657-16498951",
+            "name": "XV de Jaú SP U23",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265353720",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365677984",
+                    "description": "Mauaense SP U23",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12120657-16435763",
+                    "price": {
+                      "id": "13788673262",
+                      "handicap": "0.0",
+                      "handicap2": "0.5",
+                      "american": "-220",
+                      "decimal": "1.454545",
+                      "fractional": "5/11",
+                      "malay": "0.45",
+                      "indonesian": "-2.20",
+                      "hongkong": "0.45"
+                    }
+                  },
+                  {
+                    "id": "1365677986",
+                    "description": "XV de Jaú SP U23",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12120657-16498951",
+                    "price": {
+                      "id": "13788673263",
+                      "handicap": "0.0",
+                      "handicap2": "-0.5",
+                      "american": "+165",
+                      "decimal": "2.650",
+                      "fractional": "33/20",
+                      "malay": "-0.61",
+                      "indonesian": "1.65",
+                      "hongkong": "1.65"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265353703",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365677893",
+                    "description": "Mauaense SP U23",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12120657-16435763",
+                    "price": {
+                      "id": "13788690414",
+                      "american": "+1800",
+                      "decimal": "19.00",
+                      "fractional": "18/1",
+                      "malay": "-0.06",
+                      "indonesian": "18.00",
+                      "hongkong": "18.00"
+                    }
+                  },
+                  {
+                    "id": "1365677895",
+                    "description": "XV de Jaú SP U23",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12120657-16498951",
+                    "price": {
+                      "id": "13788690416",
+                      "american": "+370",
+                      "decimal": "4.700",
+                      "fractional": "37/10",
+                      "malay": "-0.27",
+                      "indonesian": "3.70",
+                      "hongkong": "3.70"
+                    }
+                  },
+                  {
+                    "id": "1365677894",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788690415",
+                      "american": "-600",
+                      "decimal": "1.166667",
+                      "fractional": "1/6",
+                      "malay": "0.17",
+                      "indonesian": "-6.00",
+                      "hongkong": "0.17"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265353713",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365677963",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788673267",
+                      "handicap": "0.5",
+                      "american": "+285",
+                      "decimal": "3.850",
+                      "fractional": "57/20",
+                      "malay": "-0.35",
+                      "indonesian": "2.85",
+                      "hongkong": "2.85"
+                    }
+                  },
+                  {
+                    "id": "1365677962",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788673268",
+                      "handicap": "0.5",
+                      "american": "-425",
+                      "decimal": "1.235294",
+                      "fractional": "4/17",
+                      "malay": "0.24",
+                      "indonesian": "-4.25",
+                      "hongkong": "0.24"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "8946440",
+        "link": "/soccer/south-america/brazil/u20-paulista",
+        "description": "U20 Paulista",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2712484",
+        "link": "/soccer/south-america/brazil",
+        "description": "Brazil",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 1,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712482",
+        "link": "/soccer/south-america",
+        "description": "South America",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 35,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12108490",
+        "description": "São Paulo SP U20 vs Comercial SP U20",
+        "type": "GAMEEVENT",
+        "link": "/soccer/south-america/brazil/u20-paulista/sao-paulo-sp-u20-comercial-sp-u20-202306301400",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688148000000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "8946440",
+        "notes": "",
+        "numMarkets": 3,
+        "lastModified": 1688154660218,
+        "competitors": [
+          {
+            "id": "12108490-16117071",
+            "name": "São Paulo SP U20",
+            "home": true
+          },
+          {
+            "id": "12108490-16442864",
+            "name": "Comercial SP U20",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265356015",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686820",
+                    "description": "São Paulo SP U20",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12108490-16117071",
+                    "price": {
+                      "id": "13788674397",
+                      "handicap": "-2.0",
+                      "american": "-385",
+                      "decimal": "1.260",
+                      "fractional": "20/77",
+                      "malay": "0.26",
+                      "indonesian": "-3.85",
+                      "hongkong": "0.26"
+                    }
+                  },
+                  {
+                    "id": "1365686822",
+                    "description": "Comercial SP U20",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12108490-16442864",
+                    "price": {
+                      "id": "13788674398",
+                      "handicap": "2.0",
+                      "american": "+265",
+                      "decimal": "3.650",
+                      "fractional": "53/20",
+                      "malay": "-0.38",
+                      "indonesian": "2.65",
+                      "hongkong": "2.65"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265356003",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686784",
+                    "description": "São Paulo SP U20",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12108490-16117071",
+                    "price": {
+                      "id": "13788469413",
+                      "american": "-1800",
+                      "decimal": "1.0555",
+                      "fractional": "1/18",
+                      "malay": "0.06",
+                      "indonesian": "-18.02",
+                      "hongkong": "0.06"
+                    }
+                  },
+                  {
+                    "id": "1365686788",
+                    "description": "Comercial SP U20",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12108490-16442864",
+                    "price": {
+                      "id": "13788469415",
+                      "american": "+4500",
+                      "decimal": "46.00",
+                      "fractional": "45/1",
+                      "malay": "-0.02",
+                      "indonesian": "45.00",
+                      "hongkong": "45.00"
+                    }
+                  },
+                  {
+                    "id": "1365686786",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788469414",
+                      "american": "+675",
+                      "decimal": "7.750",
+                      "fractional": "27/4",
+                      "malay": "-0.15",
+                      "indonesian": "6.75",
+                      "hongkong": "6.75"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265356006",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365686798",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788674395",
+                      "handicap": "2.5",
+                      "american": "+250",
+                      "decimal": "3.500",
+                      "fractional": "5/2",
+                      "malay": "-0.40",
+                      "indonesian": "2.50",
+                      "hongkong": "2.50"
+                    }
+                  },
+                  {
+                    "id": "1365686803",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788674396",
+                      "handicap": "2.5",
+                      "american": "-370",
+                      "decimal": "1.270",
+                      "fractional": "10/37",
+                      "malay": "0.27",
+                      "indonesian": "-3.70",
+                      "hongkong": "0.27"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "8932909",
+        "link": "/soccer/asia/iraq/premier-league",
+        "description": "Premier League",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "2721377",
+        "link": "/soccer/asia/iraq",
+        "description": "Iraq",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 5,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "2712479",
+        "link": "/soccer/asia",
+        "description": "Asia",
+        "type": "REGION",
+        "sportCode": "SOCC",
+        "order": 40,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12112796",
+        "description": "Al Shorta vs Al-Qasim SC",
+        "type": "GAMEEVENT",
+        "link": "/soccer/asia/iraq/premier-league/al-shorta-al-qasim-sc-202306301430",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688149800000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "8932909",
+        "notes": "",
+        "numMarkets": 21,
+        "lastModified": 1688154963416,
+        "competitors": [
+          {
+            "id": "12112796-16290194",
+            "name": "Shorta Baghdad",
+            "home": true
+          },
+          {
+            "id": "12112796-16442496",
+            "name": "Al Qasim SC",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265360850",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365702686",
+                    "description": "Shorta Baghdad",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112796-16290194",
+                    "price": {
+                      "id": "13788709272",
+                      "handicap": "-0.5",
+                      "american": "-135",
+                      "decimal": "1.741",
+                      "fractional": "20/27",
+                      "malay": "0.74",
+                      "indonesian": "-1.35",
+                      "hongkong": "0.74"
+                    }
+                  },
+                  {
+                    "id": "1365702687",
+                    "description": "Al Qasim SC",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112796-16442496",
+                    "price": {
+                      "id": "13788709273",
+                      "handicap": "0.5",
+                      "american": "+105",
+                      "decimal": "2.050",
+                      "fractional": "21/20",
+                      "malay": "-0.95",
+                      "indonesian": "1.05",
+                      "hongkong": "1.05"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265360869",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365702754",
+                    "description": "Shorta Baghdad",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12112796-16290194",
+                    "price": {
+                      "id": "13788709243",
+                      "american": "-141",
+                      "decimal": "1.70922",
+                      "fractional": "100/141",
+                      "malay": "0.71",
+                      "indonesian": "-1.41",
+                      "hongkong": "0.71"
+                    }
+                  },
+                  {
+                    "id": "1365702758",
+                    "description": "Al Qasim SC",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12112796-16442496",
+                    "price": {
+                      "id": "13788709245",
+                      "american": "+1100",
+                      "decimal": "12.00",
+                      "fractional": "11/1",
+                      "malay": "-0.09",
+                      "indonesian": "11.00",
+                      "hongkong": "11.00"
+                    }
+                  },
+                  {
+                    "id": "1365702755",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788709244",
+                      "american": "+124",
+                      "decimal": "2.24",
+                      "fractional": "31/25",
+                      "malay": "-0.81",
+                      "indonesian": "1.24",
+                      "hongkong": "1.24"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265360843",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365702660",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788704453",
+                      "handicap": "0.5",
+                      "american": "-195",
+                      "decimal": "1.512821",
+                      "fractional": "20/39",
+                      "malay": "0.51",
+                      "indonesian": "-1.95",
+                      "hongkong": "0.51"
+                    }
+                  },
+                  {
+                    "id": "1365702662",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788704454",
+                      "handicap": "0.5",
+                      "american": "+147",
+                      "decimal": "2.47",
+                      "fractional": "147/100",
+                      "malay": "-0.68",
+                      "indonesian": "1.47",
+                      "hongkong": "1.47"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "11135485",
+        "link": "/soccer/esoccer/eadriatic-league/eadriatic-league",
+        "description": "eAdriatic League",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "11135484",
+        "link": "/soccer/esoccer/eadriatic-league",
+        "description": "eAdriatic League",
+        "type": "COUNTRY",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "8976595",
+        "link": "/soccer/esoccer",
+        "description": "Esoccer",
+        "type": "COMPETITION",
+        "sportCode": "SOCC",
+        "order": 60,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12126607",
+        "description": "AS Roma (Alexis) vs Napoli (Bruno)",
+        "type": "GAMEEVENT",
+        "link": "/soccer/esoccer/eadriatic-league/eadriatic-league/as-roma-alexis-napoli-bruno-202306301545",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688154300000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "11135485",
+        "notes": "Scoreboard clock will show 0:00-4:00/5:00/6:00 (1st Half) and 45:00-49:00/50:00/51:00 (2nd Half) depending on Game format.",
+        "numMarkets": 3,
+        "lastModified": 1688154953646,
+        "competitors": [
+          {
+            "id": "12126607-16636129",
+            "name": "AS Roma (Alexis)",
+            "home": true
+          },
+          {
+            "id": "12126607-16631631",
+            "name": "Napoli (Bruno)",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265373182",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365743740",
+                    "description": "AS Roma (Alexis)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12126607-16636129",
+                    "price": {
+                      "id": "13788691122",
+                      "handicap": "1.5",
+                      "american": "-170",
+                      "decimal": "1.588235",
+                      "fractional": "10/17",
+                      "malay": "0.59",
+                      "indonesian": "-1.70",
+                      "hongkong": "0.59"
+                    }
+                  },
+                  {
+                    "id": "1365743741",
+                    "description": "Napoli (Bruno)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12126607-16631631",
+                    "price": {
+                      "id": "13788691123",
+                      "handicap": "-1.5",
+                      "american": "+120",
+                      "decimal": "2.200",
+                      "fractional": "6/5",
+                      "malay": "-0.83",
+                      "indonesian": "1.20",
+                      "hongkong": "1.20"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373180",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365743735",
+                    "description": "AS Roma (Alexis)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12126607-16636129",
+                    "price": {
+                      "id": "13788708649",
+                      "american": "+7500",
+                      "decimal": "76.00",
+                      "fractional": "75/1",
+                      "malay": "-0.01",
+                      "indonesian": "75.00",
+                      "hongkong": "75.00"
+                    }
+                  },
+                  {
+                    "id": "1365743737",
+                    "description": "Napoli (Bruno)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12126607-16631631",
+                    "price": {
+                      "id": "13788708651",
+                      "american": "-625",
+                      "decimal": "1.160000",
+                      "fractional": "4/25",
+                      "malay": "0.16",
+                      "indonesian": "-6.25",
+                      "hongkong": "0.16"
+                    }
+                  },
+                  {
+                    "id": "1365743736",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788708650",
+                      "american": "+350",
+                      "decimal": "4.50",
+                      "fractional": "7/2",
+                      "malay": "-0.29",
+                      "indonesian": "3.50",
+                      "hongkong": "3.50"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373181",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365743738",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788699864",
+                      "handicap": "8.5",
+                      "american": "+105",
+                      "decimal": "2.050",
+                      "fractional": "21/20",
+                      "malay": "-0.95",
+                      "indonesian": "1.05",
+                      "hongkong": "1.05"
+                    }
+                  },
+                  {
+                    "id": "1365743739",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788699865",
+                      "handicap": "8.5",
+                      "american": "-150",
+                      "decimal": "1.666667",
+                      "fractional": "2/3",
+                      "malay": "0.67",
+                      "indonesian": "-1.50",
+                      "hongkong": "0.67"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": [
+      {
+        "id": "9048117",
+        "link": "/soccer/esoccer/gt-sports-league/gt-nations-league-2-x-6-mins",
+        "description": "GT Nations League 2 x 6 mins",
+        "type": "LEAGUE",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": true,
+        "current": false
+      },
+      {
+        "id": "9048116",
+        "link": "/soccer/esoccer/gt-sports-league",
+        "description": "GT Sports League",
+        "type": "TOURNAMENT",
+        "sportCode": "SOCC",
+        "order": 9223372036854776000,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "8976595",
+        "link": "/soccer/esoccer",
+        "description": "Esoccer",
+        "type": "COMPETITION",
+        "sportCode": "SOCC",
+        "order": 60,
+        "leaf": false,
+        "current": false
+      },
+      {
+        "id": "240",
+        "link": "/soccer",
+        "description": "Soccer",
+        "type": "SPORT",
+        "sportCode": "SOCC",
+        "order": 9,
+        "leaf": false,
+        "current": true
+      }
+    ],
+    "events": [
+      {
+        "id": "12121444",
+        "description": "Manchester City (Mars) vs Bayern Munich (Seagal)",
+        "type": "GAMEEVENT",
+        "link": "/soccer/esoccer/gt-sports-league/gt-nations-league-2-x-6-mins/manchester-city-mars-bayern-munich-seagal-202306301545",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688154300000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "9048117",
+        "notes": "Scoreboard clock will show 0:00-4:00/5:00/6:00 (1st Half) and 45:00-49:00/50:00/51:00 (2nd Half) depending on Game format.",
+        "numMarkets": 3,
+        "lastModified": 1688154962152,
+        "competitors": [
+          {
+            "id": "12121444-16550504",
+            "name": "Manchester City (Mars)",
+            "home": true
+          },
+          {
+            "id": "12121444-16623211",
+            "name": "Bayern Munich (Seagal)",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265373377",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744445",
+                    "description": "Manchester City (Mars)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12121444-16550504",
+                    "price": {
+                      "id": "13788694193",
+                      "handicap": "-1.5",
+                      "american": "+135",
+                      "decimal": "2.350",
+                      "fractional": "27/20",
+                      "malay": "-0.74",
+                      "indonesian": "1.35",
+                      "hongkong": "1.35"
+                    }
+                  },
+                  {
+                    "id": "1365744446",
+                    "description": "Bayern Munich (Seagal)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12121444-16623211",
+                    "price": {
+                      "id": "13788694194",
+                      "handicap": "1.5",
+                      "american": "-190",
+                      "decimal": "1.526316",
+                      "fractional": "10/19",
+                      "malay": "0.53",
+                      "indonesian": "-1.90",
+                      "hongkong": "0.53"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373375",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "O",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744440",
+                    "description": "Manchester City (Mars)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12121444-16550504",
+                    "price": {
+                      "id": "13788709606",
+                      "american": "+200",
+                      "decimal": "3.00",
+                      "fractional": "2/1",
+                      "malay": "-0.50",
+                      "indonesian": "2.00",
+                      "hongkong": "2.00"
+                    }
+                  },
+                  {
+                    "id": "1365744442",
+                    "description": "Bayern Munich (Seagal)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12121444-16623211",
+                    "price": {
+                      "id": "13788709608",
+                      "american": "+310",
+                      "decimal": "4.100",
+                      "fractional": "31/10",
+                      "malay": "-0.32",
+                      "indonesian": "3.10",
+                      "hongkong": "3.10"
+                    }
+                  },
+                  {
+                    "id": "1365744441",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788709607",
+                      "american": "-113",
+                      "decimal": "1.884956",
+                      "fractional": "100/113",
+                      "malay": "0.88",
+                      "indonesian": "-1.13",
+                      "hongkong": "0.88"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373376",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744443",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788703132",
+                      "handicap": "4.5",
+                      "american": "+125",
+                      "decimal": "2.250",
+                      "fractional": "5/4",
+                      "malay": "-0.80",
+                      "indonesian": "1.25",
+                      "hongkong": "1.25"
+                    }
+                  },
+                  {
+                    "id": "1365744444",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788703133",
+                      "handicap": "4.5",
+                      "american": "-180",
+                      "decimal": "1.555556",
+                      "fractional": "5/9",
+                      "malay": "0.56",
+                      "indonesian": "-1.80",
+                      "hongkong": "0.56"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "12123016",
+        "description": "Paris Saint Germain (Pontiac) vs Real Madrid (Magdy)",
+        "type": "GAMEEVENT",
+        "link": "/soccer/esoccer/gt-sports-league/gt-nations-league-2-x-6-mins/paris-saint-germain-pontiac-real-madrid-magdy-202306301545",
+        "status": "O",
+        "sport": "SOCC",
+        "startTime": 1688154300000,
+        "live": true,
+        "awayTeamFirst": false,
+        "denySameGame": "NO",
+        "teaserAllowed": true,
+        "competitionId": "9048117",
+        "notes": "Scoreboard clock will show 0:00-4:00/5:00/6:00 (1st Half) and 45:00-49:00/50:00/51:00 (2nd Half) depending on Game format.",
+        "numMarkets": 3,
+        "lastModified": 1688154875052,
+        "competitors": [
+          {
+            "id": "12123016-16641879",
+            "name": "Paris SG (Pontiac)",
+            "home": true
+          },
+          {
+            "id": "12123016-16636524",
+            "name": "Real Madrid (Magdy)",
+            "home": false
+          }
+        ],
+        "displayGroups": [
+          {
+            "id": "100-23",
+            "description": "Game Lines",
+            "defaultType": true,
+            "alternateType": false,
+            "markets": [
+              {
+                "id": "265373481",
+                "descriptionKey": "Main Dynamic Asian Goal Handicap",
+                "description": "Goal Spread",
+                "key": "2W-HCAP",
+                "marketTypeId": "120738",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744841",
+                    "description": "Paris SG (Pontiac)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123016-16641879",
+                    "price": {
+                      "id": "13788688373",
+                      "handicap": "2.5",
+                      "american": "+120",
+                      "decimal": "2.200",
+                      "fractional": "6/5",
+                      "malay": "-0.83",
+                      "indonesian": "1.20",
+                      "hongkong": "1.20"
+                    }
+                  },
+                  {
+                    "id": "1365744842",
+                    "description": "Real Madrid (Magdy)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123016-16636524",
+                    "price": {
+                      "id": "13788688374",
+                      "handicap": "-2.5",
+                      "american": "-170",
+                      "decimal": "1.588235",
+                      "fractional": "10/17",
+                      "malay": "0.59",
+                      "indonesian": "-1.70",
+                      "hongkong": "0.59"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373373",
+                "descriptionKey": "Win/Draw/Win",
+                "description": "3-Way Moneyline",
+                "key": "3W-1X2",
+                "marketTypeId": "1",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744435",
+                    "description": "Paris SG (Pontiac)",
+                    "status": "O",
+                    "type": "H",
+                    "competitorId": "12123016-16641879",
+                    "price": {
+                      "id": "13788699918",
+                      "american": "+5500",
+                      "decimal": "56.00",
+                      "fractional": "55/1",
+                      "malay": "-0.02",
+                      "indonesian": "55.00",
+                      "hongkong": "55.00"
+                    }
+                  },
+                  {
+                    "id": "1365744437",
+                    "description": "Real Madrid (Magdy)",
+                    "status": "O",
+                    "type": "A",
+                    "competitorId": "12123016-16636524",
+                    "price": {
+                      "id": "13788694195",
+                      "american": "-10000",
+                      "decimal": "1.010",
+                      "fractional": "1/100",
+                      "malay": "0.01",
+                      "indonesian": "-100.00",
+                      "hongkong": "0.01"
+                    }
+                  },
+                  {
+                    "id": "1365744436",
+                    "description": "Draw",
+                    "status": "O",
+                    "type": "D",
+                    "price": {
+                      "id": "13788688656",
+                      "american": "+1000",
+                      "decimal": "11.00",
+                      "fractional": "10/1",
+                      "malay": "-0.10",
+                      "indonesian": "10.00",
+                      "hongkong": "10.00"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "265373374",
+                "descriptionKey": "Main Dynamic Over/Under",
+                "description": "Total",
+                "key": "2W-OU",
+                "marketTypeId": "120737",
+                "status": "S",
+                "singleOnly": false,
+                "notes": "",
+                "period": {
+                  "id": "232",
+                  "description": "Live Regulation Time",
+                  "abbreviation": "RT",
+                  "live": true,
+                  "main": true
+                },
+                "outcomes": [
+                  {
+                    "id": "1365744438",
+                    "description": "Over",
+                    "status": "O",
+                    "type": "O",
+                    "price": {
+                      "id": "13788702395",
+                      "handicap": "4.5",
+                      "american": "+130",
+                      "decimal": "2.300",
+                      "fractional": "13/10",
+                      "malay": "-0.77",
+                      "indonesian": "1.30",
+                      "hongkong": "1.30"
+                    }
+                  },
+                  {
+                    "id": "1365744439",
+                    "description": "Under",
+                    "status": "O",
+                    "type": "U",
+                    "price": {
+                      "id": "13788702396",
+                      "handicap": "4.5",
+                      "american": "-185",
+                      "decimal": "1.540541",
+                      "fractional": "20/37",
+                      "malay": "0.54",
+                      "indonesian": "-1.85",
+                      "hongkong": "0.54"
+                    }
+                  }
+                ]
+              }
+            ],
+            "order": 1
+          }
+        ]
+      }
+    ]
+  }
+]
