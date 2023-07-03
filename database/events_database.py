@@ -40,6 +40,11 @@ def _write_database(j):
         json.dump(j, f)
 
 
+def clear_db():
+    with _lock:
+        _write_database({})
+
+
 # EVENT
 
 

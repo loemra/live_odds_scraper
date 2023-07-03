@@ -1,1491 +1,160 @@
 {
-  "451b7af49c284f8aba63b97879114f25": {
-    "name": "Martinique v Panama",
+  "906ed3cb70554be0afce8f6c4568ba8e": {
+    "name": "Leon v Guadalajara",
     "sport": "soccer",
-    "date": 1688164200,
+    "date": 1688436000,
     "markets": {
       "soccer_game_result": {
         "selection": {
-          "6e53382004e74537b7ab9bdb6e5fdb7c": {
-            "name": "Martinique",
-            "odds": {
-              "fox_bets": 7
-            }
-          },
-          "c5276f2a5b1147ff8e640207e3c8ac1b": {
-            "name": "Panama",
-            "odds": {
-              "fox_bets": 1.35
-            }
-          },
-          "ed3996fc38e94f6e9c989c5b1427a7b5": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 4.33
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "09f6dfb5c9ea43e4a78edda4c372f6a1": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.7
-            }
-          },
-          "8d08b0024493421abe7b1173fd15283f": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "633e4fd39c094936a6d6f22dacc668ae": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "f4bbc6d2fc8040209ec8ae95175be3a1": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      }
-    }
-  },
-  "93665afce72e48ebbd4072b02a96051d": {
-    "name": "El Salvador v Costa Rica",
-    "sport": "soccer",
-    "date": 1688171400,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "d67934e6a8904911a4e0f772f766327c": {
-            "name": "El Salvador",
-            "odds": {
-              "fox_bets": 3.25
-            }
-          },
-          "1d085717d16545e586580259624e1923": {
-            "name": "Costa Rica",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "ae4e6f3e8e4f4a619d177b82cb81c4dd": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.05
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "03f13de70bb4453d8bea5828efef76d7": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 2.2
-            }
-          },
-          "39f18bf4a59b4a4285192b6af630cb70": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.57
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "6fdf3217ebd04e8099f4591e88823dfc": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.7
-            }
-          },
-          "2ff25c86780c48799c64764d97667e5b": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      }
-    }
-  },
-  "0f8f2a74fdec454ca2db81db4dd7c9a0": {
-    "name": "CF America v FC Juarez",
-    "sport": "soccer",
-    "date": 1688173200,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "52080139861a47ec903d462022c0acfe": {
-            "name": "CF America",
-            "odds": {
-              "fox_bets": 1.36
-            }
-          },
-          "89bb5bb5e3d6472682ba52d67d27c861": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 4.2
-            }
-          },
-          "3f67a9c9b1a642d4b7a5f3f33d5249b0": {
-            "name": "FC Juarez",
-            "odds": {
-              "fox_bets": 5.75
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "531c7255ff6e484bbe3f48ca78c084b9": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          },
-          "ae4cc6b584f34511b6d2302a6d4f2a90": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.53
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "29c0b2b641174d598a654decb63d5346": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "f20c67ae53d041bbb65fb783171626c8": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          }
-        }
-      }
-    }
-  },
-  "11322dbc5fc1487ebd1778c7a0c650e0": {
-    "name": "Mazatlan FC v Pachuca",
-    "sport": "soccer",
-    "date": 1688173200,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "1cf890e0122c4737a4458546292abadc": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.45
-            }
-          },
-          "7af3c0cd63834bca875f923d68ac344a": {
-            "name": "Pachuca",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "951845ce880e469eb67fa874a37d1d88": {
-            "name": "Mazatlan FC",
-            "odds": {
-              "fox_bets": 3.4
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "bf3a2d198f0a44d2b13e0b9e933f5e7c": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "31e57d91209b46868d8cf3036dbdb635": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.6
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "cf10706ef9494fbf9b41d492253ca704": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.55
-            }
-          },
-          "ee2afca63996490eb072e7e663a47f4e": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      }
-    }
-  },
-  "f7d90000d31447718e5003adc39215e3": {
-    "name": "Tijuana v Pumas UNAM",
-    "sport": "soccer",
-    "date": 1688181000,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "0ea1c7f46ea94ab18531d9f12ed3b871": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.3
-            }
-          },
-          "47d961f4423c43dc8471c46143da425f": {
-            "name": "Tijuana",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "4b7bc9f0462343e78b3772947b7d965f": {
-            "name": "Pumas UNAM",
-            "odds": {
-              "fox_bets": 3.1
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "bb7ca39261ce4a6496d6c6f9ac6238c9": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.65
-            }
-          },
-          "28342fc816554b63ac5e6f2b06d79395": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "8e66f6b59b7242d78891707cc7fe22a9": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.57
-            }
-          },
-          "5c3cdf86fb184eb49d02cc756bd7662a": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      }
-    }
-  },
-  "1f44d5ba08a949cabb2c8027dca1aabe": {
-    "name": "Tombense v Chapecoense",
-    "sport": "soccer",
-    "date": 1688171400,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "7a0e57867f7d4354892c3169a3aea85c": {
-            "name": "Chapecoense",
-            "odds": {
-              "fox_bets": 3.35
-            }
-          },
-          "61782b0b6e524cf79c407581c3227557": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 2.85
-            }
-          },
-          "5e38d88a459f4690940ada546e168373": {
-            "name": "Tombense",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "314d6e7a9aac4bd3a18ca71acbb18d4d": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 2.2
-            }
-          },
-          "97e642bed2fd4e028d5fc902385aa5d4": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "aa4441973e5f4c5ab4c2acc806c5de52": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "7ad95f3ffa204e238cd1dfeea1f76965": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          }
-        }
-      }
-    }
-  },
-  "1f7824ef5dc24200982e523cb2a4c777": {
-    "name": "Buducnost Podgorica v Breidablik",
-    "sport": "soccer",
-    "date": 1688151600,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "41b6340861e5489bb1a91b10a6e53bb9": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 6
-            }
-          },
-          "f95e2e86540f4affa208df34a2f1bb18": {
-            "name": "Buducnost Podgorica",
-            "odds": {
-              "fox_bets": 11
-            }
-          },
-          "0140def1f5f04f94af93b76318fdab6c": {
-            "name": "Breidablik",
-            "odds": {
-              "fox_bets": 1.12
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "1f84e21406c3461299d91070cbb815cb": {
-            "name": "Over 3.5",
+          "8900c13158844c478fd972f91bdb1f68": {
+            "name": "Leon",
             "odds": {
               "fox_bets": 1.9
             }
           },
-          "5d98283519564d34920f40c34b5dbb55": {
-            "name": "Under 3.5",
+          "6cf8583e4efe4b4f86c5631b1d5bdb06": {
+            "name": "Guadalajara",
             "odds": {
-              "fox_bets": 1.72
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "cd4e0718834f4c7587d178fa2b6d44ed": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.85
+              "fox_bets": 3.45
             }
           },
-          "54ba8ffafc754cfc9f958785cec333dd": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          }
-        }
-      }
-    }
-  },
-  "a66d8842ed1c48658b85b5d177c0b542": {
-    "name": "Chicago Cubs v Cleveland Guardians",
-    "sport": "baseball",
-    "date": 1688149200,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "3eb3ddf8eb06476b807bfaca450b837a": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          },
-          "c80b046fc3914514a5115adc183223d5": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "ee9fa6f2df634cfc86f89a476d5dc4d8": {
-            "name": "Cleveland Guardians",
-            "odds": {
-              "fox_bets": 1.7
-            }
-          },
-          "0665229d093a486ebcfc8c22d8106261": {
-            "name": "Chicago Cubs",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "968759e6f88c4f6790643b585b27b086": {
-            "name": "Cleveland Guardians",
-            "odds": {
-              "fox_bets": 5.5
-            }
-          },
-          "4a9fcfad8af04ad4a74fb1e0bc18260d": {
-            "name": "Chicago Cubs",
-            "odds": {
-              "fox_bets": 1.11
-            }
-          }
-        }
-      }
-    }
-  },
-  "b025706c310444e29b74f878be7632b8": {
-    "name": "Cincinnati Reds v San Diego Padres",
-    "sport": "baseball",
-    "date": 1688159400,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "4580fdeea1b34cc391c60d60e925ed5c": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "d539d0d145544fcbb07a5bcffc46f461": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "1bb2278257fe4a28b3d584c82ae1a394": {
-            "name": "San Diego Padres",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          },
-          "86158892e03e4ab1b5cdffe95bd37d3a": {
-            "name": "Cincinnati Reds",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "3eca6970b5364238b3070a7e60056aee": {
-            "name": "San Diego Padres",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "1461cc22cb614269b4deaef4955936bd": {
-            "name": "Cincinnati Reds",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          }
-        }
-      }
-    }
-  },
-  "edda963d4e974710aece70e45af6706a": {
-    "name": "Philadelphia Phillies v Washington Nationals",
-    "sport": "baseball",
-    "date": 1688162700,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "fd6bc2e5c1b549c9b299cecb29ee6f38": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "d1bae90b7f5d461aa6a3cd1b60a9de9d": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "b95b29ef1449437c8a32c6d812e837b5": {
-            "name": "Washington Nationals",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "b16362e9da9d4f1aab2b8d3b30f2525f": {
-            "name": "Philadelphia Phillies",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "24901bdaa26a4d68a603a0c7a8d6a78d": {
-            "name": "Washington Nationals",
-            "odds": {
-              "fox_bets": 3
-            }
-          },
-          "85c60e422b3a43319c0c25f70f9a344e": {
-            "name": "Philadelphia Phillies",
-            "odds": {
-              "fox_bets": 1.35
-            }
-          }
-        }
-      }
-    }
-  },
-  "55748ca57e534ff8b93bb1085956c4fa": {
-    "name": "Baltimore Orioles v Minnesota Twins",
-    "sport": "baseball",
-    "date": 1688166300,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "8ec02c0771c7473a8c336c288df5dd7b": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "a814d1112c71417ca7468e6bf640feb7": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "d5a1c2c0e40e4a188104efefb91cd433": {
-            "name": "Baltimore Orioles",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          },
-          "523cd774461a4a0c96e2645dedc40632": {
-            "name": "Minnesota Twins",
-            "odds": {
-              "fox_bets": 2.4
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "c2f7ef9eb3b7443a9616798b1009665f": {
-            "name": "Minnesota Twins",
-            "odds": {
-              "fox_bets": 1.57
-            }
-          },
-          "b3cb8ff914594c25a8feb5a3e80cc19e": {
-            "name": "Baltimore Orioles",
-            "odds": {
-              "fox_bets": 2.25
-            }
-          }
-        }
-      }
-    }
-  },
-  "b7276fea98514f5a874c1b368cd1ee5f": {
-    "name": "Pittsburgh Pirates v Milwaukee Brewers",
-    "sport": "baseball",
-    "date": 1688166300,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "599d95d1ab334634b7ae749ed5bd15d8": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "783ab995a9fb4604b170ce65548022c8": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "13cfeb307de449079711a19efa18121a": {
-            "name": "Pittsburgh Pirates",
-            "odds": {
-              "fox_bets": 1.65
-            }
-          },
-          "f346cf2306b844e5becf2dc2274114c6": {
-            "name": "Milwaukee Brewers",
-            "odds": {
-              "fox_bets": 2.2
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "87b75c242a86443491e7bbe46a4d24a2": {
-            "name": "Pittsburgh Pirates",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "3c52d1e97bea4fa3997d7130f72e68cc": {
-            "name": "Milwaukee Brewers",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          }
-        }
-      }
-    }
-  },
-  "31ecf66633d14a7e9f683c6c56959ef8": {
-    "name": "Toronto Blue Jays v Boston Red Sox",
-    "sport": "baseball",
-    "date": 1688166420,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "7d3fe96a2ba5412ab22986a73feb7bb9": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          },
-          "af85bd2b3bbe430cad3d7077053af4b0": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "1f3f350f44a94d7bb18fff14852d8b31": {
-            "name": "Toronto Blue Jays",
-            "odds": {
-              "fox_bets": 2
-            }
-          },
-          "ce33a02f81124d41889108f9d2779084": {
-            "name": "Boston Red Sox",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "d60f1c89941341a583c893e3a8ac961a": {
-            "name": "Toronto Blue Jays",
-            "odds": {
-              "fox_bets": 1.44
-            }
-          },
-          "41da61973db4444ebc8302429010d0e8": {
-            "name": "Boston Red Sox",
-            "odds": {
-              "fox_bets": 2.65
-            }
-          }
-        }
-      }
-    }
-  },
-  "b69d908c56664f51a081f68aa98af181": {
-    "name": "New York Mets v San Francisco Giants",
-    "sport": "baseball",
-    "date": 1688166600,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "d2c68afed9e242c586b52f6e9f9f1cb7": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "25c3ae9c81474224985140d3b2a47c70": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "ace66ff5171245d8bbef2619c8e600bd": {
-            "name": "San Francisco Giants",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "b81cc7fb58aa40e0bbe73050eddaa3ed": {
-            "name": "New York Mets",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "da8b87fbc69f4e36ada5bd2e19faae14": {
-            "name": "San Francisco Giants",
-            "odds": {
-              "fox_bets": 1.7
-            }
-          },
-          "7cdc3bc34f7d44c5800701da7c568bbf": {
-            "name": "New York Mets",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      }
-    }
-  },
-  "730582583bdd435aba0023872cf4fd1b": {
-    "name": "Atlanta Braves v Miami Marlins",
-    "sport": "baseball",
-    "date": 1688167200,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "fa4becddcf9a489bb557cb17eab704d9": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "4cec03fe9497492fa9a3253dcb4a1093": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "644725800c574519982a7d9e9e9c48df": {
-            "name": "Atlanta Braves",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "31bc67f347744323a46dd97580d1830c": {
-            "name": "Miami Marlins",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "c7044c38ae794041a6cb55d247a18944": {
-            "name": "Miami Marlins",
-            "odds": {
-              "fox_bets": 2.65
-            }
-          },
-          "6fdedfeeb9f04485bf73a784e03848e7": {
-            "name": "Atlanta Braves",
-            "odds": {
-              "fox_bets": 1.44
-            }
-          }
-        }
-      }
-    }
-  },
-  "0c9071e6db88409690c16189dafc9e5f": {
-    "name": "Texas Rangers v Houston Astros",
-    "sport": "baseball",
-    "date": 1688169900,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "572b8d74d86e4a57a326a8f9df7cabac": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "1e329c04a56a499188046a9ec975ca50": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "cfc434372a6341f1be18c991330013b3": {
-            "name": "Texas Rangers",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "29f0ef71172e46fbb7e09c8d9616457b": {
-            "name": "Houston Astros",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "00f3da7c677546cead9c41a817a0784c": {
-            "name": "Texas Rangers",
-            "odds": {
-              "fox_bets": 1.65
-            }
-          },
-          "6e7499f84d82497e9d44aebf278c2e37": {
-            "name": "Houston Astros",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          }
-        }
-      }
-    }
-  },
-  "b865aa3a88414c698d1b5676f72efa49": {
-    "name": "Colorado Rockies v Detroit Tigers",
-    "sport": "baseball",
-    "date": 1688170200,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "de01414a838044d493930b927c6dfaca": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "003b3908fcfc4a6a9c95da41c68d3e2c": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "6022dfed2b9047dc9c076ff38ecf9e46": {
-            "name": "Detroit Tigers",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "f66ec42c6393458387de3933f0d0b73e": {
-            "name": "Colorado Rockies",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "5c5f8445421040c0ac43168b2d582a7a": {
-            "name": "Detroit Tigers",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "ac801bb6bef54179839b02753c9f5879": {
-            "name": "Colorado Rockies",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      }
-    }
-  },
-  "6d530d21bde8437f8347a0c655188805": {
-    "name": "Kansas City Royals v Los Angeles Dodgers",
-    "sport": "baseball",
-    "date": 1688170200,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "48e0c5a3caab40f89495eb05c4224acd": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "f564003524714e9396ac240e41fd078c": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "1fed3d7ef6d847efa8adb3d01c3bbfe0": {
-            "name": "Kansas City Royals",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "a12eb421f8ff4892bf6cb5d26648a1b1": {
-            "name": "Los Angeles Dodgers",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "9f6d5df4fbfc49c9a717c01c58b542e8": {
-            "name": "Los Angeles Dodgers",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          },
-          "ae828d0a4ad042528dd26b6c955889d7": {
-            "name": "Kansas City Royals",
-            "odds": {
-              "fox_bets": 2.45
-            }
-          }
-        }
-      }
-    }
-  },
-  "ca872f74008c4dca9f98a4d5f67767fc": {
-    "name": "St. Louis Cardinals v New York Yankees",
-    "sport": "baseball",
-    "date": 1688170500,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "150b8027d3064fdab3b425af34ddf47b": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "a09aaace6c934139a0a25512d7868d13": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "98155b22b909474d84c6c87ec49c1086": {
-            "name": "New York Yankees",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          },
-          "cbe07c175c2043e1823b94e4cbae3161": {
-            "name": "St. Louis Cardinals",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "8285cd092e5048ea9dbba02e62cd1892": {
-            "name": "New York Yankees",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "f1e0536477b24d66843b143980747300": {
-            "name": "St. Louis Cardinals",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      }
-    }
-  },
-  "4ba18098bb914858be3ab09fec80d300": {
-    "name": "Los Angeles Angels v Arizona Diamondbacks",
-    "sport": "baseball",
-    "date": 1688175480,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "2a9845484e334f84a5311df4483bd6d1": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "2ed46d1b4a4d41b98c029654466d8b0c": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "26f348585cb04b8d9ddc969c73acce98": {
-            "name": "Los Angeles Angels",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "39f99dfeb636405a8850fa151daac4a7": {
-            "name": "Arizona Diamondbacks",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "949b33904daf4e52ab7b825952851e01": {
-            "name": "Los Angeles Angels",
-            "odds": {
-              "fox_bets": 1.6
-            }
-          },
-          "ebdd88a1bf2342649397169632029723": {
-            "name": "Arizona Diamondbacks",
-            "odds": {
-              "fox_bets": 2.25
-            }
-          }
-        }
-      }
-    }
-  },
-  "160a7f3dbbb649ff81111f50f1599585": {
-    "name": "Oakland Athletics v Chicago White Sox",
-    "sport": "baseball",
-    "date": 1688175600,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "842f12c7984c4ef5a34ecd51faa1332a": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "118dc04d491843bcb1a260b8f2fe340d": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "c39a684cced6483b895da19eebd8b977": {
-            "name": "Oakland Athletics",
-            "odds": {
-              "fox_bets": 2
-            }
-          },
-          "6afadfcc8ab446a1a9a55b7771be1acb": {
-            "name": "Chicago White Sox",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "11972542759c457082f53cc3dfe46ebb": {
-            "name": "Oakland Athletics",
-            "odds": {
-              "fox_bets": 2.25
-            }
-          },
-          "cb1a174c4fe5405c8c581a72e2860316": {
-            "name": "Chicago White Sox",
-            "odds": {
-              "fox_bets": 1.6
-            }
-          }
-        }
-      }
-    }
-  },
-  "213b78a7ee234c6dbd6e0c426cfc88ef": {
-    "name": "Seattle Mariners v Tampa Bay Rays",
-    "sport": "baseball",
-    "date": 1688177400,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "86594882bcbe47998a9a5bcf62931580": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "525c6936919c4dbc8e32845f3769ad99": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "70ee5221500f435cbef76fefc75e0265": {
-            "name": "Seattle Mariners",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "b1cc985c6c894af5b6922d8a7302685a": {
-            "name": "Tampa Bay Rays",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "f7c4e1ae5c8347d6a114a7859368396c": {
-            "name": "Tampa Bay Rays",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          },
-          "53ef3e376c534362b43bbf9955090c1c": {
-            "name": "Seattle Mariners",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      }
-    }
-  },
-  "94866d71dbd54cbd96325daba167d097": {
-    "name": "Jamaica v Saint Kitts and Nevis",
-    "sport": "soccer",
-    "date": 1688338800,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "befd1b7bd239420fb90fa17271d38c3d": {
-            "name": "Saint Kitts and Nevis",
-            "odds": {
-              "fox_bets": 29
-            }
-          },
-          "25eae77e6b414694a2e917785cc8655b": {
-            "name": "Jamaica",
-            "odds": {
-              "fox_bets": 1.02
-            }
-          },
-          "1df5d1e3ae984520961ba66335db764e": {
+          "6a11f83e4bb643eaa2f4500f47eef1d1": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 14
+              "fox_bets": 3.15
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "f0305ce99bea4b708d8d0d759168a2fd": {
-            "name": "Under 4.5",
+          "43e7edb918504aac8324e451afe8d2f4": {
+            "name": "Over 2.5",
             "odds": {
-              "fox_bets": 1.85
+              "fox_bets": 1.67
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "selection": {
+          "e55450c491dc4cf6a643c71ac5c22536": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 1.8
             }
           },
-          "0ef7460e99b243019ba50ca3da14d16a": {
-            "name": "Over 4.5",
+          "6fa83f8d765846f088a4dc3e71008eea": {
+            "name": "Yes",
             "odds": {
               "fox_bets": 1.8
             }
           }
         }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "21a27c7089c445cebbdb84a216e20d37": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.22
-            }
-          },
-          "e94fc6e1c7dc4570b9b2f9a1d1e9fa32": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 3.6
-            }
-          }
-        }
       }
     }
   },
-  "142a29f7f75f434f83646a01ce384504": {
-    "name": "USA v Trinidad And Tobago",
+  "95a695d36c45476da4d724ffd389ff24": {
+    "name": "Goias v Coritiba",
     "sport": "soccer",
-    "date": 1688338800,
+    "date": 1688425200,
     "markets": {
       "soccer_game_result": {
         "selection": {
-          "2e4ad8e21f0345ecb20caf65e56a00da": {
-            "name": "Tie",
+          "95aa47233f214e5cb5a77800c86780d1": {
+            "name": "Goias",
             "odds": {
-              "fox_bets": 8
+              "fox_bets": 2.05
             }
           },
-          "f2099771a5d64e32a0c8b28471d50d77": {
-            "name": "USA",
-            "odds": {
-              "fox_bets": 1.1
-            }
-          },
-          "9838552da4d04356a86b769296ab7bbc": {
-            "name": "Trinidad And Tobago",
-            "odds": {
-              "fox_bets": 13
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "de0c3f804e6347009bebe18f6d7c6df8": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "da9b6914025d466984c9984247c83efd": {
-            "name": "Under 3.5",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "86cc5fbff3104384b1dfd1b2442988e6": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          },
-          "1eaabf41a09048d084fcd0e50fca5827": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 2.3
-            }
-          }
-        }
-      }
-    }
-  },
-  "fa25112e0a0949df816319fa1df11049": {
-    "name": "Honduras v Haiti",
-    "sport": "soccer",
-    "date": 1688346000,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "261ebfdce36943b3b05a42ff77f7b933": {
-            "name": "Honduras",
-            "odds": {
-              "fox_bets": 2.63
-            }
-          },
-          "4ff86be141a1437bba613747ef8be842": {
+          "182add5b124b47ae8ec801266a8c111a": {
             "name": "Tie",
             "odds": {
               "fox_bets": 3.15
             }
           },
-          "0b0ef77fb26c4354b1d2356375c814ba": {
-            "name": "Haiti",
+          "5d79504698be4d0f93731491e02d9677": {
+            "name": "Coritiba",
             "odds": {
-              "fox_bets": 2.4
+              "fox_bets": 3.7
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "1e734d8f8c9a43a3ba6fb459941e87e0": {
+          "7c8123a2be054a7599444e513305e6ba": {
             "name": "Over 2.5",
             "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "91177431afd3408798417c3be1c56f2a": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.83
+              "fox_bets": 2.25
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
         "selection": {
-          "feac61c251a74fbdbe79aa1dd138ec74": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "6ab84321064840a79cf57196df9735c8": {
+          "aa3e4efb843d42339faa2c9f1dbf050c": {
             "name": "No",
             "odds": {
-              "fox_bets": 2
+              "fox_bets": 1.72
+            }
+          },
+          "7c276edc46874b9186e97ecd91bb4f40": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.95
             }
           }
         }
       }
     }
   },
-  "1f26aaf10ff74eae9571291fc7538745": {
-    "name": "Mexico v Qatar",
+  "c4fe9f65dd7140f8b9d90f4a9ccb49d0": {
+    "name": "Stabaek v Stromsgodset",
     "sport": "soccer",
-    "date": 1688346000,
+    "date": 1688403600,
     "markets": {
       "soccer_game_result": {
         "selection": {
-          "76c86e2364524a69be8e7f84e048396c": {
-            "name": "Mexico",
+          "0565c12b136e4e78befbcf8ca01e1d24": {
+            "name": "Stromsgodset",
             "odds": {
-              "fox_bets": 1.3
+              "fox_bets": 2.88
             }
           },
-          "eb17ad6fcb314750855ad09c78f60754": {
+          "35b8ee732be14ec4a856071381f78fbc": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 4.75
+              "fox_bets": 3.15
             }
           },
-          "f470e43dad454d159318bf25dd4e3cc1": {
-            "name": "Qatar",
+          "10f3c5e56fab4dcc9c4f20cbdd0f583d": {
+            "name": "Stabaek",
             "odds": {
-              "fox_bets": 7
+              "fox_bets": 2.1
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "5b92da48a00342e6b9f813b9f3f6f3c8": {
-            "name": "Under 3.5",
+          "6e2cc3cfef504c3f889acfc5f7a87f81": {
+            "name": "Under 2.5",
             "odds": {
-              "fox_bets": 1.57
-            }
-          },
-          "b6bc99721d4b4e2ebd1614838f1bd44b": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 2.2
+              "fox_bets": 1.75
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
         "selection": {
-          "8cab43fcf5f24522a3ef091a316804fa": {
+          "48744714cde5477aaf3894d98b5cce85": {
             "name": "Yes",
             "odds": {
-              "fox_bets": 1.7
+              "fox_bets": 1.65
             }
           },
-          "bb931c5cd78d4d47b8802b9bd2db03a5": {
+          "398a2e62a0324c5da836d33806b5b449": {
             "name": "No",
             "odds": {
               "fox_bets": 1.95
@@ -1495,227 +164,99 @@
       }
     }
   },
-  "b2b4a3c9f6ec402e9a9a2001fe651acd": {
-    "name": "Atlanta Utd v Philadelphia Union",
+  "3a335fa7662f40c49d6409cac5261243": {
+    "name": "Elfsborg v Hammarby",
     "sport": "soccer",
-    "date": 1688328000,
+    "date": 1688403600,
     "markets": {
       "soccer_game_result": {
         "selection": {
-          "c17918a60c0c476fba6545d29c4d509c": {
-            "name": "Philadelphia Union",
+          "934a79998ae045e69e2486c0a2470dbc": {
+            "name": "Elfsborg",
             "odds": {
-              "fox_bets": 2.8
+              "fox_bets": 1.47
             }
           },
-          "eb518d42e3c3415c9425d8ca94259b5a": {
+          "b5547aa2bd304f8d92ceea5815551c8b": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 3.6
+              "fox_bets": 2.75
             }
           },
-          "7c6fec4245f84120a3b7d52723061624": {
-            "name": "Atlanta Utd",
+          "9dde549e14e244cd9eb7e6a46e0950b0": {
+            "name": "Hammarby",
             "odds": {
-              "fox_bets": 2.25
+              "fox_bets": 2.6
+            }
+          },
+          "f8c779afe87c459e9aecc3674dbe47b0": {
+            "name": "Kalmar FF",
+            "odds": {
+              "fox_bets": 2.6
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "b141f7308b774c48ad8fe331606ed29d": {
-            "name": "Under 2.5",
+          "7ac5a33a20fb408190ca98a345e4f4c3": {
+            "name": "Under 3.5",
             "odds": {
-              "fox_bets": 2.35
-            }
-          },
-          "2ab8273cf96541b99b84b278f710ca12": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.55
+              "fox_bets": 2.3
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
         "selection": {
-          "5155c218d67d491b90d9576f6c690b50": {
+          "480ac52425d74cd8af80aedba9d10721": {
             "name": "Yes",
+            "odds": {
+              "fox_bets": 2
+            }
+          },
+          "cf5b1cbbc98740899a3f0af7b64689cf": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 1.62
+            }
+          }
+        }
+      }
+    }
+  },
+  "b21ed31d59994ca9986298510ec9f803": {
+    "name": "Mirassol v Ituano",
+    "sport": "soccer",
+    "date": 1688418000,
+    "markets": {
+      "soccer_game_result": {
+        "selection": {
+          "9986f905f9f941cca133d6b6b12175e3": {
+            "name": "Mirassol",
             "odds": {
               "fox_bets": 1.5
             }
           },
-          "4df728daef6b4054aed2af4be0746b07": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 2.35
-            }
-          }
-        }
-      }
-    }
-  },
-  "ea023e0c79bf421c9983896ec33483d8": {
-    "name": "Toluca v Necaxa",
-    "sport": "soccer",
-    "date": 1688320800,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "47cf310c810a4cb6875115ec43caae17": {
-            "name": "Toluca",
-            "odds": {
-              "fox_bets": 1.44
-            }
-          },
-          "d26a90442b2f4a6f9d637704b0c2d462": {
-            "name": "Necaxa",
+          "64fb4739cfc14cd2aac7d1e6143e4385": {
+            "name": "Ituano",
             "odds": {
               "fox_bets": 5.25
             }
           },
-          "5fcfee7fff3742309170657b1868b67c": {
+          "233426da540c4cc4bd57bf627ba0bb16": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 4.1
+              "fox_bets": 3.45
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "95c09750c8a94b21b3bc172a98b5bbbd": {
-            "name": "Under 3.5",
-            "odds": {
-              "fox_bets": 1.53
-            }
-          },
-          "929ac08f3e574eb0930808602cb3f132": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "9a251638612e4307a4ad9b141b117119": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.62
-            }
-          },
-          "d5f5e25a07394ec6b9f624342d5a77fa": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      }
-    }
-  },
-  "3944cd01a34440bd86e2ef13624c1a70": {
-    "name": "Santos Laguna v Queretaro",
-    "sport": "soccer",
-    "date": 1688346300,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "16cf8f70823e48e6861a25a9944bd123": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.6
-            }
-          },
-          "2c3c090bd3b84f8b9a165e9294db323c": {
-            "name": "Queretaro",
-            "odds": {
-              "fox_bets": 4.33
-            }
-          },
-          "e5e570e8c4654a9ab94fb5c19e69407f": {
-            "name": "Santos Laguna",
-            "odds": {
-              "fox_bets": 1.6
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "3e2f08dc175342e88722f668eb153644": {
+          "d56847ddfed047c1920e270bcb1a1dec": {
             "name": "Under 2.5",
             "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "129935d4d31d4006bc1b1cbba5e869a7": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 1.6
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "bcb13912d2c14c91bc9be3a4c8e2451a": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 2
-            }
-          },
-          "c43c3b2f818c4a2590081a8eb52ebca8": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.62
-            }
-          }
-        }
-      }
-    }
-  },
-  "c8b31ac866ac4f04bb395e65190b71dd": {
-    "name": "Atletico MG v America Mg",
-    "sport": "soccer",
-    "date": 1688324400,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "5f75e0ed6b7d4336b88c272d4c4e747c": {
-            "name": "Atletico MG",
-            "odds": {
-              "fox_bets": 1.44
-            }
-          },
-          "2a896d82caa247e19f113f6e4f216933": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 4.1
-            }
-          },
-          "9bae2885522c4eeba1dccb98bad7b705": {
-            "name": "America Mg",
-            "odds": {
-              "fox_bets": 7
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "b345dfd2bcab4288b0581c2f2b02b429": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          },
-          "c4defc2153334941a0c7fcfd04e1a221": {
-            "name": "Over 2.5",
-            "odds": {
               "fox_bets": 2
             }
           }
@@ -1723,43 +264,43 @@
       },
       "soccer_both_teams_to_score": {
         "selection": {
-          "2764f9b0252c436692c016808911b6d3": {
+          "35c26d07545443598d1bca8951efefe8": {
             "name": "Yes",
             "odds": {
               "fox_bets": 2.05
             }
           },
-          "4c9c7772961e4abaa9e7c1c0ae2a1856": {
+          "6089d9215f404526b4c6d82117df43c6": {
             "name": "No",
             "odds": {
-              "fox_bets": 1.65
+              "fox_bets": 1.57
             }
           }
         }
       }
     }
   },
-  "4c8ccd040346471483a0762a985a121e": {
-    "name": "Atletico PR v Palmeiras",
+  "e177ba81f7fe4ad0a1f3bdc87c91e513": {
+    "name": "Botafogo FC Ribeirao Preto v Guarani Sp",
     "sport": "soccer",
-    "date": 1688324400,
+    "date": 1688426100,
     "markets": {
       "soccer_game_result": {
         "selection": {
-          "560491a7497e4598ad5501d5e5095613": {
-            "name": "Palmeiras",
+          "4a1c89228f7b473dbc6570d34a98dc17": {
+            "name": "Guarani Sp",
             "odds": {
-              "fox_bets": 2.55
+              "fox_bets": 2.95
             }
           },
-          "ee357d79b7a44ceda4341575206c0fce": {
+          "fd1588f0928a438e952ec9b80e3a0297": {
+            "name": "Botafogo FC Ribeirao Preto",
+            "odds": {
+              "fox_bets": 2.25
+            }
+          },
+          "296aa0df73df410e82bbf310fcd8addc": {
             "name": "Tie",
-            "odds": {
-              "fox_bets": 3.1
-            }
-          },
-          "e3fed607bfe74c619b58d93a9b809ded": {
-            "name": "Atletico PR",
             "odds": {
               "fox_bets": 2.75
             }
@@ -1768,30 +309,134 @@
       },
       "soccer_over_under_total_goals": {
         "selection": {
-          "f91387effcdd496a905251e72ad26df8": {
-            "name": "Over 2.5",
+          "08fb570a2ce04a1aab9b2bb607b95fd5": {
+            "name": "Under 3.5",
             "odds": {
-              "fox_bets": 2.2
-            }
-          },
-          "6f317ff7e0434adf87d33d2525d401f3": {
-            "name": "Under 2.5",
-            "odds": {
-              "fox_bets": 1.6
+              "fox_bets": 1.47
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
         "selection": {
-          "ec814376db5d4971986cb7ef61d44784": {
+          "64dc500bf42b49939136db8a7906d12d": {
             "name": "No",
+            "odds": {
+              "fox_bets": 1.62
+            }
+          },
+          "ae82c75004bc424eba8fafec86aa458e": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 2
+            }
+          }
+        }
+      }
+    }
+  },
+  "ebfa426dc58f4231abafc07d8b61ddfb": {
+    "name": "Texas Rangers v Houston Astros",
+    "sport": "baseball",
+    "date": 1688407500,
+    "markets": {
+      "baseball_total_runs": {
+        "selection": {
+          "8a0d504b124a4291be99590922ee4320": {
+            "name": "Under",
+            "odds": {
+              "fox_bets": 2
+            }
+          },
+          "8512e96214634c71af65a4302df52c56": {
+            "name": "Over",
             "odds": {
               "fox_bets": 1.8
             }
+          }
+        }
+      },
+      "baseball_run_line": {
+        "selection": {
+          "fcc264b3491145cc9c14b4906cd111c9": {
+            "name": "Texas Rangers",
+            "odds": {
+              "fox_bets": 2
+            }
           },
-          "2a91f94445a8469cb65fe310f10c0459": {
-            "name": "Yes",
+          "f505459620f4438da8c2c02e17d1cd64": {
+            "name": "Houston Astros",
+            "odds": {
+              "fox_bets": 1.8
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "4957bf7af32f4303b4f1ca02c6b40186": {
+            "name": "Texas Rangers",
+            "odds": {
+              "fox_bets": 1.67
+            }
+          },
+          "4fd9231b85c04a0eb2ee0f33745e630d": {
+            "name": "Houston Astros",
+            "odds": {
+              "fox_bets": 2.1
+            }
+          }
+        }
+      }
+    }
+  },
+  "18573affbe324fc89578b4e1f25581f5": {
+    "name": "Milwaukee Brewers v Chicago Cubs",
+    "sport": "baseball",
+    "date": 1688407800,
+    "markets": {
+      "baseball_total_runs": {
+        "selection": {
+          "dd5ab6ad7d8142c69828cc26988a2ee7": {
+            "name": "Under",
+            "odds": {
+              "fox_bets": 1.91
+            }
+          },
+          "ab3c95d8232c46c08abfef673ae79469": {
+            "name": "Over",
+            "odds": {
+              "fox_bets": 1.91
+            }
+          }
+        }
+      },
+      "baseball_run_line": {
+        "selection": {
+          "3d5dec57957b4a60b6e171ce17cffec7": {
+            "name": "Milwaukee Brewers",
+            "odds": {
+              "fox_bets": 1.67
+            }
+          },
+          "5f247733bfb144789358d2595b0f695b": {
+            "name": "Chicago Cubs",
+            "odds": {
+              "fox_bets": 2.15
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "cdb736ac4f844a42a94ce03e55250d57": {
+            "name": "Milwaukee Brewers",
+            "odds": {
+              "fox_bets": 1.85
+            }
+          },
+          "c6cc444c2003468d9e56ab8ed0be7800": {
+            "name": "Chicago Cubs",
             "odds": {
               "fox_bets": 1.85
             }
@@ -1800,416 +445,394 @@
       }
     }
   },
-  "213fb95048cc48d08c0c2e5c7064d8ae": {
-    "name": "Botafogo FR v Vasco Da Gama",
-    "sport": "soccer",
-    "date": 1688324400,
+  "71240afaa2af4c7c95d5e3016b61019d": {
+    "name": "Washington Nationals v Cincinnati Reds",
+    "sport": "baseball",
+    "date": 1688421900,
     "markets": {
-      "soccer_game_result": {
+      "baseball_total_runs": {
         "selection": {
-          "1e1095ff25e04594aaf8bea8df1efdbb": {
-            "name": "Vasco Da Gama",
+          "82556214a78d4143b11615e8755ef9f2": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 5
+              "fox_bets": 1.85
             }
           },
-          "ffef61750dac4071adc71e857ef64b02": {
-            "name": "Botafogo FR",
+          "092bec7ce5694787bb624a86f493b13b": {
+            "name": "Over",
             "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "feaeaaec83344a87925973cae99f0227": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.5
+              "fox_bets": 1.95
             }
           }
         }
       },
-      "soccer_over_under_total_goals": {
+      "baseball_run_line": {
         "selection": {
-          "028a3bdfdaf744a8a87dfc17d0540fce": {
-            "name": "Under 2.5",
+          "4026fe4fa60f41a99da163940f0cb331": {
+            "name": "Washington Nationals",
             "odds": {
-              "fox_bets": 1.67
+              "fox_bets": 1.75
             }
           },
-          "75668c45347e4ac89293089297deb22d": {
-            "name": "Over 2.5",
+          "51fafd8b8e6344dba86df52876a82e1b": {
+            "name": "Cincinnati Reds",
+            "odds": {
+              "fox_bets": 2.05
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "407cc0a9b7cb4215be1ccca105d0ee12": {
+            "name": "Cincinnati Reds",
+            "odds": {
+              "fox_bets": 1.83
+            }
+          },
+          "64484239efe7418296b9ec7a0a6116df": {
+            "name": "Washington Nationals",
+            "odds": {
+              "fox_bets": 1.91
+            }
+          }
+        }
+      }
+    }
+  },
+  "9ca993024553463a8beacd1f24f770b3": {
+    "name": "Miami Marlins v St. Louis Cardinals",
+    "sport": "baseball",
+    "date": 1688424000,
+    "markets": {
+      "baseball_total_runs": {
+        "selection": {
+          "4acc9bb3839d44438163d1c4628a15be": {
+            "name": "Under",
+            "odds": {
+              "fox_bets": 1.95
+            }
+          },
+          "a5a224cb24dd49e2a5b9f5a22a6c2a09": {
+            "name": "Over",
+            "odds": {
+              "fox_bets": 1.85
+            }
+          }
+        }
+      },
+      "baseball_run_line": {
+        "selection": {
+          "dc941aca9439491388c79f00bcaa556c": {
+            "name": "St. Louis Cardinals",
+            "odds": {
+              "fox_bets": 1.72
+            }
+          },
+          "577963489eca4d1782c9e8798b97aff2": {
+            "name": "Miami Marlins",
             "odds": {
               "fox_bets": 2.1
             }
           }
         }
       },
-      "soccer_both_teams_to_score": {
+      "baseball_money_line": {
         "selection": {
-          "32e77bf4a6014838b89a81d0609c0e09": {
-            "name": "No",
+          "006e5a09dcc84861ac75221d2aef6ee1": {
+            "name": "St. Louis Cardinals",
+            "odds": {
+              "fox_bets": 2.1
+            }
+          },
+          "cadf32314faa4667b91370d8c0cef657": {
+            "name": "Miami Marlins",
             "odds": {
               "fox_bets": 1.7
             }
-          },
-          "e4465137d73b4c0bb3355dedefa25afa": {
-            "name": "Yes",
+          }
+        }
+      }
+    }
+  },
+  "ad7eadd9d25b4e339ad122a61b28d34c": {
+    "name": "New York Yankees v Baltimore Orioles",
+    "sport": "baseball",
+    "date": 1688425500,
+    "markets": {
+      "baseball_total_runs": {
+        "selection": {
+          "23a148aca5a3408eb0de3bc09960fa44": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 2
+              "fox_bets": 1.95
+            }
+          },
+          "91ba7ad737f3499ca46bbb5b4ce242bc": {
+            "name": "Over",
+            "odds": {
+              "fox_bets": 1.85
+            }
+          }
+        }
+      },
+      "baseball_run_line": {
+        "selection": {
+          "f7f60553eaac41f085741ef7dba9bdbc": {
+            "name": "Baltimore Orioles",
+            "odds": {
+              "fox_bets": 2.1
+            }
+          },
+          "f83974e8c74b4c0792041f14d5d78c07": {
+            "name": "New York Yankees",
+            "odds": {
+              "fox_bets": 1.72
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "1b086251cf754a8690e6f6bd9b9710b3": {
+            "name": "New York Yankees",
+            "odds": {
+              "fox_bets": 1.91
+            }
+          },
+          "ed7ae3628c3e498c843ba6b28d6fcf3a": {
+            "name": "Baltimore Orioles",
+            "odds": {
+              "fox_bets": 1.83
             }
           }
         }
       }
     }
   },
-  "4b80345ac8d04852bf94dee91eb22d1f": {
-    "name": "Cuiaba v Santos",
-    "sport": "soccer",
-    "date": 1688333400,
+  "36b8e3859c644b92a00523ef7f0d9fc1": {
+    "name": "Cleveland Guardians v Atlanta Braves",
+    "sport": "baseball",
+    "date": 1688425800,
     "markets": {
-      "soccer_game_result": {
+      "baseball_total_runs": {
         "selection": {
-          "2070cd303d824a888419b3608ec58420": {
-            "name": "Tie",
+          "11448b7a694c4b71a307dd33b15cae05": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 3.05
+              "fox_bets": 1.95
             }
           },
-          "63fc63b31ae3491f98fa257bae114d63": {
-            "name": "Cuiaba",
+          "efff7904e4f4486c92974671cc696c0f": {
+            "name": "Over",
             "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "72df140c42944136a87bd9865f3e62a0": {
-            "name": "Santos",
-            "odds": {
-              "fox_bets": 3.75
+              "fox_bets": 1.85
             }
           }
         }
       },
-      "soccer_over_under_total_goals": {
+      "baseball_run_line": {
         "selection": {
-          "2376f5c46df0469281e04acd9510aeb5": {
-            "name": "Under 1.5",
+          "e82d7e86b2ef4893aa7d568566b95204": {
+            "name": "Atlanta Braves",
             "odds": {
-              "fox_bets": 2.35
+              "fox_bets": 1.85
             }
           },
-          "6c77d9196e1647bc851cc6816a06dd02": {
-            "name": "Over 1.5",
+          "aaafcc2ada7e453388a686e641443b74": {
+            "name": "Cleveland Guardians",
             "odds": {
-              "fox_bets": 1.55
+              "fox_bets": 1.95
             }
           }
         }
       },
-      "soccer_both_teams_to_score": {
+      "baseball_money_line": {
         "selection": {
-          "9f61b07bf1e44a5d8efc665776f93678": {
-            "name": "Yes",
+          "eb4aa37411644fa4882d967ca78b1641": {
+            "name": "Atlanta Braves",
+            "odds": {
+              "fox_bets": 1.65
+            }
+          },
+          "b3d59204839b4426bad566f46b2330ef": {
+            "name": "Cleveland Guardians",
             "odds": {
               "fox_bets": 2.15
             }
-          },
-          "0f9102d54a9f47caae1156a2218d1784": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.6
-            }
           }
         }
       }
     }
   },
-  "5967402f8c3a45e6b189750e3dc892b4": {
-    "name": "Aalesunds v Rosenborg",
-    "sport": "soccer",
-    "date": 1688310000,
+  "e3409767fb414d90928df0cafaf4d391": {
+    "name": "Minnesota Twins v Kansas City Royals",
+    "sport": "baseball",
+    "date": 1688429400,
     "markets": {
-      "soccer_game_result": {
+      "baseball_total_runs": {
         "selection": {
-          "d2d9188ccbf649f9b227398103aa4ac6": {
-            "name": "Aalesunds",
+          "82e1a6def3594673844dfa36064a0c9a": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 1.14
+              "fox_bets": 1.85
             }
           },
-          "c0be5d982bca4da4b3a1b51b91bb2ce1": {
-            "name": "Tie",
+          "2a600742ba634cf4b9adef35b567584a": {
+            "name": "Over",
             "odds": {
-              "fox_bets": 4.1
-            }
-          },
-          "31abc70c06cd4c72af02a49228cd3437": {
-            "name": "Rosenborg",
-            "odds": {
-              "fox_bets": 18
+              "fox_bets": 1.95
             }
           }
         }
       },
-      "soccer_over_under_total_goals": {
+      "baseball_run_line": {
         "selection": {
-          "ca68f7c7a2184f53863da80812c061ba": {
-            "name": "Under 1.5",
+          "d31c1b81a47f4421975a40aff4e0a861": {
+            "name": "Minnesota Twins",
             "odds": {
-              "fox_bets": 1.28
+              "fox_bets": 1.85
             }
           },
-          "48f3f7360ec043eaa307636bf41ea59d": {
-            "name": "Over 1.5",
+          "00db2ee6776b430ab515869b42a7d907": {
+            "name": "Kansas City Royals",
+            "odds": {
+              "fox_bets": 1.95
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "800c98648e8644e2938f8b2d4d5b87e7": {
+            "name": "Minnesota Twins",
+            "odds": {
+              "fox_bets": 1.4
+            }
+          },
+          "dc5e6829538f4bdb8d64ce7afd3c5579": {
+            "name": "Kansas City Royals",
             "odds": {
               "fox_bets": 2.8
             }
           }
         }
-      },
-      "soccer_both_teams_to_score": {
+      }
+    }
+  },
+  "96553899a3014a5689414a1cc38e5118": {
+    "name": "San Diego Padres v Los Angeles Angels",
+    "sport": "baseball",
+    "date": 1688434800,
+    "markets": {
+      "baseball_total_runs": {
         "selection": {
-          "e15b19eefab74b93a706a060eb068068": {
-            "name": "No",
+          "a6a8036937674d59903caa2d3884074d": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 1.15
+              "fox_bets": 1.85
             }
           },
-          "b1fb02f3de1444e29441e217b8b45577": {
-            "name": "Yes",
+          "fe855cf07e0e44299723b0f9644d5f74": {
+            "name": "Over",
             "odds": {
-              "fox_bets": 3.6
+              "fox_bets": 1.95
+            }
+          }
+        }
+      },
+      "baseball_run_line": {
+        "selection": {
+          "dff44c1901b24388a88c0705eeb8fe6c": {
+            "name": "San Diego Padres",
+            "odds": {
+              "fox_bets": 1.72
+            }
+          },
+          "b1521b3dbc194a84b43d8ee461c00206": {
+            "name": "Los Angeles Angels",
+            "odds": {
+              "fox_bets": 2.1
+            }
+          }
+        }
+      },
+      "baseball_money_line": {
+        "selection": {
+          "dcf3ac55e3df4a01a869974ef64c7229": {
+            "name": "San Diego Padres",
+            "odds": {
+              "fox_bets": 1.5
+            }
+          },
+          "bc3e9e7527ea470bac4fbc6c1ece8a38": {
+            "name": "Los Angeles Angels",
+            "odds": {
+              "fox_bets": 2.45
             }
           }
         }
       }
     }
   },
-  "247ac1014c50478aa5dd3a8b74d36089": {
-    "name": "Brann v Hamarkameratene Fotball",
-    "sport": "soccer",
-    "date": 1688310000,
+  "3a3d24652e464d8494a8daa9849f3523": {
+    "name": "San Francisco Giants v Seattle Mariners",
+    "sport": "baseball",
+    "date": 1688435100,
     "markets": {
-      "soccer_game_result": {
+      "baseball_total_runs": {
         "selection": {
-          "930985d6189a4bd7a642da819bd95e13": {
-            "name": "Brann",
+          "83cc0ea97f314d579769c6141d2a8635": {
+            "name": "Under",
             "odds": {
-              "fox_bets": 1.01
+              "fox_bets": 1.8
             }
           },
-          "6633886442e5471ea1a9834e496183dd": {
-            "name": "Hamarkameratene Fotball",
-            "odds": {
-              "fox_bets": 226
-            }
-          },
-          "033b7759c22443c59b15b1c27f6a81bf": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 8.5
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "622420eab60d4f66b2c304bf44b48e94": {
-            "name": "Under 3.5",
-            "odds": {
-              "fox_bets": 1.05
-            }
-          },
-          "0a5b579a268c4a2f938e490a21fca496": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 5.25
-            }
-          }
-        }
-      }
-    }
-  },
-  "e38fe9696bc64cc8995e9dd1e733e410": {
-    "name": "Haugesund v Odds Bk",
-    "sport": "soccer",
-    "date": 1688310000,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "8e9ea9df10df470b858f1b3ac6f749fd": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 5.75
-            }
-          },
-          "b92a91c5030741f4ac6c5f610f5b8fc5": {
-            "name": "Odds Bk",
-            "odds": {
-              "fox_bets": 111
-            }
-          },
-          "87d8e4fc5e244e688807123e228b6813": {
-            "name": "Haugesund",
-            "odds": {
-              "fox_bets": 1.001
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "713f050e8e134f37865f8e7e28b944cf": {
-            "name": "Under 3.5",
-            "odds": {
-              "fox_bets": 1.01
-            }
-          },
-          "e9fdc89a4dae4017a4b0c879c3aaaac2": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 6.5
-            }
-          }
-        }
-      }
-    }
-  },
-  "618ac9fa2db147698267d4444fd02872": {
-    "name": "Lillestrom v Tromso",
-    "sport": "soccer",
-    "date": 1688310000,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "3eaddcc441b24286a8c9c4b7ebb33946": {
-            "name": "Tromso",
-            "odds": {
-              "fox_bets": 1.09
-            }
-          },
-          "ee33d80d56e94752842b4b7642dac1c9": {
-            "name": "Lillestrom",
-            "odds": {
-              "fox_bets": 26
-            }
-          },
-          "04116fa633ad44f6b5ced1832f34b898": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 4.6
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "1674eda34362430ead625c89341ac270": {
-            "name": "Over 1.5",
-            "odds": {
-              "fox_bets": 3.5
-            }
-          },
-          "b6c804b561fe45d7af7e1e891a3c2f7d": {
-            "name": "Under 1.5",
-            "odds": {
-              "fox_bets": 1.15
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "3013f5176e0947559a0885dbff69af7e": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 4.4
-            }
-          },
-          "48e0e5d54d8448b791f880341d080a27": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.09
-            }
-          }
-        }
-      }
-    }
-  },
-  "2cfab8a52d6342dba85fea8bd598ec70": {
-    "name": "Sarpsborg v Sandefjord",
-    "sport": "soccer",
-    "date": 1688310000
-  },
-  "864b95d55c6942a9a0969d7b69abfe68": {
-    "name": "Bodo Glimt v Molde",
-    "sport": "soccer",
-    "date": 1688318100,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "a2492d59f6e04b0eaa2be3f98cbbd856": {
-            "name": "Bodo Glimt",
+          "2110e9f78d094091b01681e5522f7c95": {
+            "name": "Over",
             "odds": {
               "fox_bets": 2
             }
-          },
-          "56d057d92a174b658cd5e93feb33c619": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.2
-            }
-          },
-          "dd0fd5b3cfc440fca6201f97fb038528": {
-            "name": "Molde",
-            "odds": {
-              "fox_bets": 2.88
-            }
           }
         }
       },
-      "soccer_over_under_total_goals": {
+      "baseball_run_line": {
         "selection": {
-          "7422a842ed954fb7b1004879fa789cc4": {
-            "name": "Over 3.5",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          },
-          "9f07fe48bee8439caf182994bf4cdd4d": {
-            "name": "Under 3.5",
-            "odds": {
-              "fox_bets": 1.53
-            }
-          },
-          "54692e0f09d242ebb20191de30f3ce3e": {
-            "name": "Under 2.5",
+          "7e5ab048a8544b4880c5b586510024d7": {
+            "name": "San Francisco Giants",
             "odds": {
               "fox_bets": 2.05
             }
           },
-          "e04bacf60bb34c7593a7944b6abf0bd4": {
-            "name": "Over 2.5",
+          "59e310010c2141bda97c02a65b9977fa": {
+            "name": "Seattle Mariners",
             "odds": {
-              "fox_bets": 1.53
+              "fox_bets": 1.75
             }
           }
         }
       },
-      "soccer_both_teams_to_score": {
+      "baseball_money_line": {
         "selection": {
-          "ac56e20fffd0492aa974aefa246d5d3f": {
-            "name": "No",
+          "a300d5c23d654e16940e359592c3c869": {
+            "name": "Seattle Mariners",
             "odds": {
-              "fox_bets": 2.2
+              "fox_bets": 2.1
             }
           },
-          "487619cd7cf94443a4668e71d0c2a34a": {
-            "name": "Yes",
+          "24ebf567b3fe4d5391ccdd2514d93f7a": {
+            "name": "San Francisco Giants",
             "odds": {
-              "fox_bets": 1.47
+              "fox_bets": 1.67
             }
           }
         }
       }
     }
+  },
+  "24466d80a97c48b2afa1eab116b496b1": {
+    "name": "Canada vs Cuba",
+    "sport": "soccer",
+    "date": 1688509800
   }
 }

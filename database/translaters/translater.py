@@ -55,6 +55,14 @@ def _unified_to_sportsbook(translater: str, sportsbook: str, unified_id: str) ->
     return None
 
 
+def reset_translaters():
+    with _lock:
+        _write_translater(EVENT_ID_TRANSLATER, {})
+        _write_translater(EVENT_NAME_TRANSLATER, {})
+        _write_translater(SELECTION_ID_TRANSLATER, {})
+        _write_translater(SELECTION_NAME_TRANSLATER, {})
+
+
 # EVENT
 
 
