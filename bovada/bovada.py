@@ -1,3 +1,4 @@
+import json
 from datetime import datetime
 
 import requests
@@ -37,14 +38,26 @@ def _parse_odds(j) -> list[Market]:
     markets = []
     for league in j:
         for event in league["events"]:
-            for market in event["markets"]:
-                m = Market(MarketMetadata(market["marketTypeId"]))
-                for outcome in market["outcomes"]:
-                    m.selection[outcome["id"]] = Selection(
-                        SelectionMetadata(outcome["id"], outcome["description"]),
-                        {"bovada": float(outcome["price"]["decimal"])},
-                    )
-                markets.append(m)
+            with open("bovada/data/sample.json", "w") as f:
+                json.dump(event, f)
+            for display_group in event["displayGroups"]:
+                for market in display_group["markets"]:
+                    market_id = market["marketTypeId"]
+                    if not market_id in config.get_markets():
+                        continue
+                    if not market["period"]["main"]:
+                        continue
+                    m = Market(MarketMetadata(market_id, config.get_market_kind(market_id)))
+                    for outcome in market["outcomes"]:
+                        handicap = outcome["price"].get("handicap")
+                        name = outcome["description"]
+                        if handicap:
+                            name = f"{name} {handicap}"
+                        m.selection[outcome["id"]] = Selection(
+                            SelectionMetadata(outcome["id"], name),
+                            {"bovada": float(outcome["price"]["decimal"])},
+                        )
+                    markets.append(m)
     return markets
 
 

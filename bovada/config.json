@@ -9,11 +9,11 @@
   ],
   "sports": {
     "SOCC": {
-      "markets": [
-        "1",
-        "13",
-        "350"
-      ]
+      "markets": {
+        "1": "TEAM_NAME",
+        "120737": "OVER_UNDER",
+        "350": "YES_NO"
+      }
     }
   }
 }

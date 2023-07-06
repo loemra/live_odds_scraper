@@ -3,7 +3,7 @@ import urllib.parse
 from datetime import datetime
 from typing import Tuple
 
-from datastructures.market import MarketMetadata
+from datastructures.market import MarketKind, MarketMetadata
 
 
 def _get_config():
@@ -40,3 +40,11 @@ def get_subscribe_payload(event_id: str, markets: list[MarketMetadata]) -> str:
 
 def get_ri_odds(ri: int) -> float:
     return float(_config["odds"][ri]["decimal"])
+
+
+def get_market_kind(market_id: str) -> MarketKind:
+    for s in _config["sports"].values():
+        kind = s["markets"].get(market_id)
+        if kind:
+            return MarketKind[kind]
+    raise Exception(f"Unable to find kind for id {market_id} fox_bets")

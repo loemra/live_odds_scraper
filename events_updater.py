@@ -17,9 +17,11 @@ from datastructures.update import Update
 
 
 def _setup_logger():
+    logging.basicConfig(level=logging.DEBUG, force=True)
     logger = logging.getLogger("events_updater")
+    logger.propagate = False
     fh = logging.FileHandler("logs/events_updater.log")
-    fh.setLevel(logging.INFO)
+    fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter("%(asctime)s - %(levelname)s @ %(filename)s:%(funcName)s:%(lineno)s == %(message)s")
     fh.setFormatter(formatter)
     logger.addHandler(fh)
@@ -73,11 +75,12 @@ def _maybe_match_event(
         return None
 
     best_matches = process.extractBests(
-        sportsbook_event, relevant_events, lambda e: e.name, fuzz.token_sort_ratio, score_cutoff=50
+        sportsbook_event, relevant_events, lambda e: e.name, fuzz.token_sort_ratio, score_cutoff=75
     )
 
     if not best_matches:
-        _logger.debug(f"successful no match: {sportsbook_event}, {relevant_events}")
+        res = process.extract(sportsbook_event, relevant_events, lambda e: e.name, fuzz.token_sort_ratio)
+        _logger.debug(f"successful no match: {sportsbook_event}, {res}")
         return None
     if len(best_matches) == 1:
         _logger.debug(f"successful match: {sportsbook_event}, {best_matches}")
@@ -107,12 +110,19 @@ def _maybe_match_selection(
     if len(unified_selctions) == 0:
         return None
 
+    # special case for tie / draw.
+    def custom_scorer(query, choice):
+        if query.lower() == "tie" or query.lower() == "draw":
+            return max(fuzz.token_sort_ratio("tie", choice), fuzz.token_sort_ratio("draw", choice))
+        return fuzz.token_sort_ratio(query, choice)
+
     best_matches = process.extractBests(
-        sportsbook_selection, unified_selctions, lambda e: e.name, fuzz.token_sort_ratio, score_cutoff=50
+        sportsbook_selection, unified_selctions, lambda e: e.name, custom_scorer, score_cutoff=79
     )
 
     if not best_matches:
-        _logger.debug(f"successful no match: {sportsbook_selection}, {unified_selctions}")
+        res = process.extract(sportsbook_selection, unified_selctions, lambda e: e.name, fuzz.token_sort_ratio)
+        _logger.debug(f"successful no match: {sportsbook_selection}, {res}")
         return None
     if len(best_matches) == 1:
         _logger.debug(f"successful match: {sportsbook_selection}, {best_matches}")
@@ -155,7 +165,7 @@ def _update_market(sportsbook: str, unified_event_id: str, market: Market):
     if not unified_market_id:
         _logger.warning(f"unable to translate market {market.metadata} for {sportsbook}")
         return
-    unified_market = MarketMetadata(unified_market_id)
+    unified_market = MarketMetadata(unified_market_id, market.metadata.kind)
     events_database.maybe_register_market(unified_event_id, unified_market)
 
     for selection in market.selection.values():
@@ -169,6 +179,7 @@ def _update_event(sportsbook: str, get_odds: Callable[[str], list[Market]], even
         if not unified_sport:
             _logger.error(f"unable to find unified sport {event.sport} for {sportsbook}")
             return
+        event.sport = unified_sport
         unified_event = events_database.match_or_register_event(
             partial(_maybe_match_event, event),
             partial(_unify_event, sportsbook, event),

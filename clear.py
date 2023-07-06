@@ -9,3 +9,9 @@ if res != "yes":
 
 clear_db()
 reset_translaters()
+
+with open("logs/events_database.log", "w") as f:
+    f.write("")
+
+with open("logs/events_updater.log", "w") as f:
+    f.write("")

@@ -1,5 +1,21 @@
 import json
+import logging
 from threading import Lock
+
+
+def _setup_logger():
+    logger = logging.getLogger("events_database")
+    logger.propagate = False
+    fh = logging.FileHandler("logs/events_database.log")
+    fh.setLevel(logging.INFO)
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s @ %(filename)s:%(funcName)s:%(lineno)s == %(message)s")
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+    return logger
+
+
+_logger = _setup_logger()
+
 
 # Dynamic
 EVENT_ID_TRANSLATER = "database/translaters/event_id_translater.json"

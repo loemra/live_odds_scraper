@@ -1,206 +1,813 @@
 {
-  "906ed3cb70554be0afce8f6c4568ba8e": {
-    "name": "Leon v Guadalajara",
+  "79428827c0e74731b6350ab7bae7268f": {
+    "name": "Costa Rica v Martinique",
     "sport": "soccer",
-    "date": 1688436000,
+    "date": 1688517000,
     "markets": {
       "soccer_game_result": {
+        "kind": "team_name",
         "selection": {
-          "8900c13158844c478fd972f91bdb1f68": {
-            "name": "Leon",
+          "2fcd86ec3700415fbffcbaebd393697b": {
+            "name": "Costa Rica",
             "odds": {
-              "fox_bets": 1.9
+              "fox_bets": 1.5,
+              "bovada": 1.555556
             }
           },
-          "6cf8583e4efe4b4f86c5631b1d5bdb06": {
-            "name": "Guadalajara",
-            "odds": {
-              "fox_bets": 3.45
-            }
-          },
-          "6a11f83e4bb643eaa2f4500f47eef1d1": {
+          "b923aabde15c4bd18c904c7e34ce8843": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 3.15
+              "fox_bets": 3.9,
+              "bovada": 4
+            }
+          },
+          "35f1938ca1de40af9819f5ccdae90ab0": {
+            "name": "Martinique",
+            "odds": {
+              "fox_bets": 5.25,
+              "bovada": 5.2
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
+        "kind": "over_under",
         "selection": {
-          "43e7edb918504aac8324e451afe8d2f4": {
+          "d4093384a0cf446cb471f48a1d4cd7ff": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 2.05,
+              "bovada": 1.819672
+            }
+          },
+          "c886846bfadb4b49877cf2741f63a685": {
             "name": "Over 2.5",
             "odds": {
-              "fox_bets": 1.67
+              "fox_bets": 1.65,
+              "bovada": 2.02
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
+        "kind": "yes_no",
         "selection": {
-          "e55450c491dc4cf6a643c71ac5c22536": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "6fa83f8d765846f088a4dc3e71008eea": {
+          "8f7bddc00d88467b86c46b19371d7960": {
             "name": "Yes",
             "odds": {
-              "fox_bets": 1.8
+              "fox_bets": 1.67,
+              "bovada": 1.892857
+            }
+          },
+          "8bce383608d64c3fb2b6c48a9d54d787": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2,
+              "bovada": 1.9259
             }
           }
         }
       }
     }
   },
-  "95a695d36c45476da4d724ffd389ff24": {
-    "name": "Goias v Coritiba",
+  "d47fef68a0994f56ad5cac90ee5928c0": {
+    "name": "Panama v El Salvador",
     "sport": "soccer",
-    "date": 1688425200,
+    "date": 1688517000,
     "markets": {
       "soccer_game_result": {
+        "kind": "team_name",
         "selection": {
-          "95aa47233f214e5cb5a77800c86780d1": {
-            "name": "Goias",
+          "c0780a5a75354dcfb50efc30a48fcf83": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.15,
+              "bovada": 3.4
+            }
+          },
+          "6cf16c9f7d204be885f9d322b08167be": {
+            "name": "Panama",
+            "odds": {
+              "fox_bets": 1.95,
+              "bovada": 2
+            }
+          },
+          "aa21125f1b004606b6c0236981e46678": {
+            "name": "El Salvador",
+            "odds": {
+              "fox_bets": 3.6,
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "e1259e71841b4e7dad7eab7b6c1f6c55": {
+            "name": "Over 2.5",
             "odds": {
               "fox_bets": 2.05
             }
           },
-          "182add5b124b47ae8ec801266a8c111a": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.15
-            }
-          },
-          "5d79504698be4d0f93731491e02d9677": {
-            "name": "Coritiba",
-            "odds": {
-              "fox_bets": 3.7
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "7c8123a2be054a7599444e513305e6ba": {
-            "name": "Over 2.5",
-            "odds": {
-              "fox_bets": 2.25
-            }
-          }
-        }
-      },
-      "soccer_both_teams_to_score": {
-        "selection": {
-          "aa3e4efb843d42339faa2c9f1dbf050c": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          },
-          "7c276edc46874b9186e97ecd91bb4f40": {
-            "name": "Yes",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      }
-    }
-  },
-  "c4fe9f65dd7140f8b9d90f4a9ccb49d0": {
-    "name": "Stabaek v Stromsgodset",
-    "sport": "soccer",
-    "date": 1688403600,
-    "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "0565c12b136e4e78befbcf8ca01e1d24": {
-            "name": "Stromsgodset",
-            "odds": {
-              "fox_bets": 2.88
-            }
-          },
-          "35b8ee732be14ec4a856071381f78fbc": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.15
-            }
-          },
-          "10f3c5e56fab4dcc9c4f20cbdd0f583d": {
-            "name": "Stabaek",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      },
-      "soccer_over_under_total_goals": {
-        "selection": {
-          "6e2cc3cfef504c3f889acfc5f7a87f81": {
+          "5a23d1f716314bfdb6d39009c9a61cd1": {
             "name": "Under 2.5",
             "odds": {
-              "fox_bets": 1.75
+              "fox_bets": 1.67
+            }
+          },
+          "28e4aa4b29ce4a2e9fd2e40bb34e9c62": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.847458
+            }
+          },
+          "2d68411b66b441c480014ba761137b49": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.9804
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
+        "kind": "yes_no",
         "selection": {
-          "48744714cde5477aaf3894d98b5cce85": {
+          "02322f70a92c47d69f03409071312986": {
             "name": "Yes",
             "odds": {
-              "fox_bets": 1.65
+              "fox_bets": 1.85,
+              "bovada": 1.9259
             }
           },
-          "398a2e62a0324c5da836d33806b5b449": {
+          "88d252edf0244820abb34206dab82bc5": {
             "name": "No",
             "odds": {
-              "fox_bets": 1.95
+              "fox_bets": 1.8,
+              "bovada": 1.892857
             }
           }
         }
       }
     }
   },
-  "3a335fa7662f40c49d6409cac5261243": {
-    "name": "Elfsborg v Hammarby",
+  "71a403b421654d388b1ba5ee8c5b3c9e": {
+    "name": "Canada v Cuba",
     "sport": "soccer",
-    "date": 1688403600,
+    "date": 1688509800,
     "markets": {
       "soccer_game_result": {
+        "kind": "team_name",
         "selection": {
-          "934a79998ae045e69e2486c0a2470dbc": {
-            "name": "Elfsborg",
+          "75cf396a755349edaa3858c17ee31478": {
+            "name": "Cuba",
             "odds": {
-              "fox_bets": 1.47
+              "fox_bets": 17,
+              "bovada": 24
             }
           },
-          "b5547aa2bd304f8d92ceea5815551c8b": {
+          "669cdbe066bb4ad08aaf10bd41e631c9": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 2.75
+              "fox_bets": 9.5,
+              "bovada": 12
             }
           },
-          "9dde549e14e244cd9eb7e6a46e0950b0": {
-            "name": "Hammarby",
+          "ce9da55611df43338f13d42f4b6ab401": {
+            "name": "Canada",
             "odds": {
-              "fox_bets": 2.6
-            }
-          },
-          "f8c779afe87c459e9aecc3674dbe47b0": {
-            "name": "Kalmar FF",
-            "odds": {
-              "fox_bets": 2.6
+              "fox_bets": 1.05,
+              "bovada": 1.0555
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
+        "kind": "over_under",
         "selection": {
-          "7ac5a33a20fb408190ca98a345e4f4c3": {
+          "19a5fd2ecb9f4c80a1d6066e97d695c3": {
+            "name": "Over 3.5",
+            "odds": {
+              "fox_bets": 1.57
+            }
+          },
+          "5224d006ae064b5ebafc7d5c1a2b4bd3": {
             "name": "Under 3.5",
+            "odds": {
+              "fox_bets": 2.2
+            }
+          },
+          "0132234732c94905965ab8331d8646d6": {
+            "name": "Over 4.0",
+            "odds": {
+              "bovada": 1.9259
+            }
+          },
+          "cae588b5c6f94910a5025eb180a96eeb": {
+            "name": "Under 4.0",
+            "odds": {
+              "bovada": 1.892857
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "520032aeb43341b1927ea7de1615a49c": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 2.15,
+              "bovada": 2.32
+            }
+          },
+          "a67b0a206c1c453e81be7f6495969caa": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 1.55,
+              "bovada": 1.625
+            }
+          }
+        }
+      }
+    }
+  },
+  "b1a4ff9ed4a548a09f88cdaf280206c0": {
+    "name": "Guadeloupe v Guatemala",
+    "sport": "soccer",
+    "date": 1688509800,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "9043921dae264853aab54a598fc73c91": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.2,
+              "bovada": 3.3
+            }
+          },
+          "f75111ebc5e44ecbb7914bb8f7ab4a67": {
+            "name": "Guadeloupe",
+            "odds": {
+              "fox_bets": 3.6,
+              "bovada": 3.6
+            }
+          },
+          "8eb8340da323423e80e1787c07067916": {
+            "name": "Guatemala",
+            "odds": {
+              "fox_bets": 1.9,
+              "bovada": 2
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "64a0df5bab71455180bbf68d38bd0a59": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 2.15
+            }
+          },
+          "45cdd4ccc8a440fdb8e5679a454224ed": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 1.62
+            }
+          },
+          "27c004f984c94053b55532a26604cd27": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "e147445b80094d378750d3ff0ec3b8e8": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "6390f6dcc8a249d196f3a22531fae549": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 1.72,
+              "bovada": 1.87
+            }
+          },
+          "5c6be0b650f249479121272fc8430a5b": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.91,
+              "bovada": 1.952381
+            }
+          }
+        }
+      }
+    }
+  },
+  "f22a811fc7b84a3abae7459879042791": {
+    "name": "Inter Miami CF v Columbus Crew",
+    "sport": "soccer",
+    "date": 1688513400,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "8c09c02675ba4b27bc2bc8286b3e1f14": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.6,
+              "bovada": 3.75
+            }
+          },
+          "07c0924db1e341b390457c2182cbdb37": {
+            "name": "Inter Miami CF",
+            "odds": {
+              "fox_bets": 2.75,
+              "bovada": 2.8
+            }
+          },
+          "7f8e820ad529470e95637ebe96c7a1a5": {
+            "name": "Columbus Crew",
+            "odds": {
+              "fox_bets": 2.25,
+              "bovada": 2.35
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "1496d8f7b32b47fbaf2be8ac3636983b": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 2.2
+            }
+          },
+          "672f9756b86c437487fce3682db84773": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 1.6
+            }
+          },
+          "81760392733247109f026b7594afdce3": {
+            "name": "Over 3.0",
+            "odds": {
+              "bovada": 2.02
+            }
+          },
+          "7afeed5754c849628af4f8add98dcf07": {
+            "name": "Under 3.0",
+            "odds": {
+              "bovada": 1.819672
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "87fb94c002a1442b9e61d82fa691855a": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2.35,
+              "bovada": 2.45
+            }
+          },
+          "a099b21caa5a4ad6ba7ec727e560ad4c": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.5,
+              "bovada": 1.526316
+            }
+          }
+        }
+      }
+    }
+  },
+  "eac479fefded40aaa0413508d08fd9fa": {
+    "name": "Orlando City v Toronto FC",
+    "sport": "soccer",
+    "date": 1688513400,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "9d544c66af37480cb1b660f858db4b33": {
+            "name": "Orlando City",
+            "odds": {
+              "fox_bets": 1.4,
+              "bovada": 1.416667
+            }
+          },
+          "fe4aa0f5c3fa412b8d55477dc5e5b94b": {
+            "name": "Toronto FC",
+            "odds": {
+              "fox_bets": 6.5,
+              "bovada": 6.75
+            }
+          },
+          "662e1dcb37f244a2978e323263b9a71b": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 4.5,
+              "bovada": 4.9
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "df8b77681bc14110aba86aad29af036c": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 2.25,
+              "bovada": 2.05
+            }
+          },
+          "b3da6f0546f5458a859f0a907fe98738": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 1.57,
+              "bovada": 1.8
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "1aa7ad8ba05849439afc1cd2bda8dfd8": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.7,
+              "bovada": 1.833333
+            }
+          },
+          "e9bc54e6cbad4d6285c3b46434adf8d4": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2,
+              "bovada": 1.909091
+            }
+          }
+        }
+      }
+    }
+  },
+  "3d4c76e6fcdf4a8a912954e661be75b8": {
+    "name": "FC Dallas v DC Utd",
+    "sport": "soccer",
+    "date": 1688517000,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "646fea00b12941fca6b869f2abd141f3": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.25,
+              "bovada": 3.45
+            }
+          },
+          "2310b24c6aa7481bb120f4601bffa1e8": {
+            "name": "DC Utd",
+            "odds": {
+              "fox_bets": 2.95,
+              "bovada": 3.05
+            }
+          },
+          "cd77a9a079e44190ae863af98a9a894a": {
+            "name": "FC Dallas",
+            "odds": {
+              "fox_bets": 2.3,
+              "bovada": 2.35
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "fb002e42795a463baf5edf559a02b690": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 2.05
+            }
+          },
+          "025a1dbd2f7d4f9db71c1d132d139d90": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 1.7
+            }
+          },
+          "766531cfb5a848738bbb01325242531b": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "8afe8db8997049be89f853f3036127cf": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "330ebaf9366342e1b28af5b785fc988e": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 1.85,
+              "bovada": 1.9259
+            }
+          },
+          "d17b1759558340f192173b6baffedc73": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.8,
+              "bovada": 1.819672
+            }
+          }
+        }
+      }
+    }
+  },
+  "81d3c7a38fc1436b9760fbb22fb976b9": {
+    "name": "Colorado Rapids v Portland Timbers",
+    "sport": "soccer",
+    "date": 1688520600,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "5eb209e6f5fd4d92960443d6847db00b": {
+            "name": "Colorado Rapids",
+            "odds": {
+              "fox_bets": 1.95,
+              "bovada": 2
+            }
+          },
+          "51eb54cc14004e09bdecb5c0c440851f": {
+            "name": "Portland Timbers",
+            "odds": {
+              "fox_bets": 3.5,
+              "bovada": 3.55
+            }
+          },
+          "d9a27e5a53c040489a25c7fb9e18b305": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.45,
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "242f698a26c14067a67b0eaf821e4443": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 1.85,
+              "bovada": 2.02
+            }
+          },
+          "323fb9876a71426fbb5349e65824a948": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 1.85,
+              "bovada": 1.819672
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "90a5a910aa624aeb92320100ba3bad18": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.7,
+              "bovada": 1.69
+            }
+          },
+          "43ee7930173e45f8b053aafbb8ff7fd2": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2,
+              "bovada": 2.1
+            }
+          }
+        }
+      }
+    }
+  },
+  "f6927d8cfffc49fc92746a3c01c067f5": {
+    "name": "LA Galaxy v Los Angeles FC",
+    "sport": "soccer",
+    "date": 1688524200,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "8b123761349047d2b3bc9a15289fea4b": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.75,
+              "bovada": 4.1
+            }
+          },
+          "96ec22d287574ec2bd631cf74b6b2cae": {
+            "name": "LA Galaxy",
+            "odds": {
+              "fox_bets": 3.35,
+              "bovada": 3.35
+            }
+          },
+          "747338b74bea494285cf49f3b3c09d05": {
+            "name": "Los Angeles FC",
+            "odds": {
+              "fox_bets": 1.95,
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "c09b19022c3e4a2596a6479bd576298e": {
+            "name": "Over 3.5",
+            "odds": {
+              "fox_bets": 2.2
+            }
+          },
+          "1c0a1e0a66dc4f20b99763e402886e08": {
+            "name": "Under 3.5",
+            "odds": {
+              "fox_bets": 1.62
+            }
+          },
+          "6f43ec4fa25040c59d543951f9535b68": {
+            "name": "Over 3.0",
+            "odds": {
+              "bovada": 1.8
+            }
+          },
+          "224d06d163bd40ba89c90fe8877847a0": {
+            "name": "Under 3.0",
+            "odds": {
+              "bovada": 2.05
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "85dda498d9d94a898aef69ca584a5894": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2.45,
+              "bovada": 2.55
+            }
+          },
+          "91f78b9f0fd54a8d9823d289b96cb14c": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.47,
+              "bovada": 1.47619
+            }
+          }
+        }
+      }
+    }
+  },
+  "605fdc0f2d3246cb8235c56fd6466f0d": {
+    "name": "New York City v Charlotte FC",
+    "sport": "soccer",
+    "date": 1688599800,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "1570644882f641a0b0eeb41d258a531b": {
+            "name": "New York City",
+            "odds": {
+              "fox_bets": 1.83,
+              "bovada": 1.87
+            }
+          },
+          "12a3ee0efd9b4804811519d2d7e59623": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 3.5,
+              "bovada": 3.8
+            }
+          },
+          "3bb0f250d5ce4a94a98a40749dfe6791": {
+            "name": "Charlotte FC",
+            "odds": {
+              "fox_bets": 3.9,
+              "bovada": 3.9
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "d7d98590b8b646528a36d67753beda05": {
+            "name": "Over 2.5",
+            "odds": {
+              "fox_bets": 1.72,
+              "bovada": 1.9804
+            }
+          },
+          "7df37c8972614b518ec9825f6e6f4049": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 2,
+              "bovada": 1.847458
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "387ca226c1e840608724d30111d4d87e": {
+            "name": "Yes",
+            "odds": {
+              "fox_bets": 1.67,
+              "bovada": 1.69
+            }
+          },
+          "4b62f8ea0e4046ffb91712f9440f0c31": {
+            "name": "No",
+            "odds": {
+              "fox_bets": 2.05,
+              "bovada": 2.1
+            }
+          }
+        }
+      }
+    }
+  },
+  "38e33ee4186a4f2d8841848c27e3233d": {
+    "name": "CRB v Sport Recife",
+    "sport": "soccer",
+    "date": 1688594400,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "db67be5ac4244c49ba2cbde578eb408b": {
+            "name": "Sport Recife",
+            "odds": {
+              "fox_bets": 2.5
+            }
+          },
+          "7b891455b7534b71b1a208e889d15700": {
+            "name": "CRB",
+            "odds": {
+              "fox_bets": 2.6
+            }
+          },
+          "378bda69ec164b07a8f1340d3db46933": {
+            "name": "Tie",
+            "odds": {
+              "fox_bets": 2.8
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "d4de6b7cd79d4a6fa4eb6123e02ead52": {
+            "name": "Under 2.5",
+            "odds": {
+              "fox_bets": 1.44
+            }
+          },
+          "efc427b3fb4c4cbaa82e035fd33c006f": {
+            "name": "Over 2.5",
             "odds": {
               "fox_bets": 2.3
             }
@@ -208,14 +815,15 @@
         }
       },
       "soccer_both_teams_to_score": {
+        "kind": "yes_no",
         "selection": {
-          "480ac52425d74cd8af80aedba9d10721": {
+          "91ba62bd7c0644d59cc585a1572dbd62": {
             "name": "Yes",
             "odds": {
               "fox_bets": 2
             }
           },
-          "cf5b1cbbc98740899a3f0af7b64689cf": {
+          "e02194861699443897bf1a3f6ed88e11": {
             "name": "No",
             "odds": {
               "fox_bets": 1.62
@@ -225,614 +833,2512 @@
       }
     }
   },
-  "b21ed31d59994ca9986298510ec9f803": {
-    "name": "Mirassol v Ituano",
+  "0ba7ff5fa70347e1aed95d372abfaaf0": {
+    "name": "Israel U21 vs England U21",
     "sport": "soccer",
-    "date": 1688418000,
+    "date": 1688572800,
     "markets": {
-      "soccer_game_result": {
-        "selection": {
-          "9986f905f9f941cca133d6b6b12175e3": {
-            "name": "Mirassol",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          },
-          "64fb4739cfc14cd2aac7d1e6143e4385": {
-            "name": "Ituano",
-            "odds": {
-              "fox_bets": 5.25
-            }
-          },
-          "233426da540c4cc4bd57bf627ba0bb16": {
-            "name": "Tie",
-            "odds": {
-              "fox_bets": 3.45
-            }
-          }
-        }
-      },
       "soccer_over_under_total_goals": {
+        "kind": "over_under",
         "selection": {
-          "d56847ddfed047c1920e270bcb1a1dec": {
+          "6f6103b0868145148caa9790b1660f6d": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.9804
+            }
+          },
+          "a240e981be1846e1a9454b0baa6682b3": {
             "name": "Under 2.5",
             "odds": {
-              "fox_bets": 2
+              "bovada": 1.78125
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "dbfaaf8f54b843bc9d81a85a500cb2fb": {
+            "name": "Israel U21",
+            "odds": {
+              "bovada": 8
+            }
+          },
+          "5e287fa02ec8476486bf47273ca42963": {
+            "name": "England U21",
+            "odds": {
+              "bovada": 1.344828
+            }
+          },
+          "6a41c30b1a5c46d080a1dc8bf9ed4902": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 4.2
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
+        "kind": "yes_no",
         "selection": {
-          "35c26d07545443598d1bca8951efefe8": {
+          "d55d2ad9af12486bb337466ecd0bd7eb": {
             "name": "Yes",
             "odds": {
-              "fox_bets": 2.05
+              "bovada": 2.38
             }
           },
-          "6089d9215f404526b4c6d82117df43c6": {
+          "d3d95fe200d145e4919307236540922b": {
             "name": "No",
             "odds": {
-              "fox_bets": 1.57
+              "bovada": 1.546448
             }
           }
         }
       }
     }
   },
-  "e177ba81f7fe4ad0a1f3bdc87c91e513": {
-    "name": "Botafogo FC Ribeirao Preto v Guarani Sp",
+  "065c9514b9864918997ebd5ae01bcb7f": {
+    "name": "Spain U21 vs Ukraine U21",
     "sport": "soccer",
-    "date": 1688426100,
+    "date": 1688583600,
     "markets": {
-      "soccer_game_result": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
         "selection": {
-          "4a1c89228f7b473dbc6570d34a98dc17": {
-            "name": "Guarani Sp",
+          "06a2cf9846364a6d820ac37ea3f8d2d2": {
+            "name": "Over 2.5",
             "odds": {
-              "fox_bets": 2.95
+              "bovada": 1.952381
             }
           },
-          "fd1588f0928a438e952ec9b80e3a0297": {
-            "name": "Botafogo FC Ribeirao Preto",
+          "1f0ad0941d6a4fac9048a6fcdd40a160": {
+            "name": "Under 2.5",
             "odds": {
-              "fox_bets": 2.25
+              "bovada": 1.8
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "5688b4c49f814d65a40fbf76b4bd77f8": {
+            "name": "Spain U21",
+            "odds": {
+              "bovada": 1.714286
             }
           },
-          "296aa0df73df410e82bbf310fcd8addc": {
+          "7f8c971f97a9476b901114ce701bbfb5": {
+            "name": "Ukraine U21",
+            "odds": {
+              "bovada": 4.2
+            }
+          },
+          "7fe081d772214718b21002f5173e0cc8": {
             "name": "Tie",
             "odds": {
-              "fox_bets": 2.75
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "6fd34e0296c64dcf94ef20629826f9c8": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.757576
+            }
+          },
+          "5bb9222dacf645e18288911b626f67fd": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      }
+    }
+  },
+  "c9b42e9c72bd4dd1beaf466b5e03a7a4": {
+    "name": "CF Montréal vs Atlanta United",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "a3319042bc964d6d9cf76d7b94f30ffb": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.9259
+            }
+          },
+          "6bf5cd18131545c6853eb4e07f1c3bd4": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.892857
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "9aa030287e3c445ab097d058b831b9b8": {
+            "name": "CF Montréal",
+            "odds": {
+              "bovada": 2.3
+            }
+          },
+          "e0802985f9224d1f941905f4dda26c0b": {
+            "name": "Atlanta United",
+            "odds": {
+              "bovada": 2.9
+            }
+          },
+          "7832f5b184db46508e2fa42172d95084": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.7
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "1faf8cbbfe644cc5bbd727980ae73f4f": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.606061
+            }
+          },
+          "a14aceab84034acbbae12626b9f0e023": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.25
+            }
+          }
+        }
+      }
+    }
+  },
+  "685ed8e93fa640f488eb852aa7cd0eda": {
+    "name": "Charlotte FC vs FC Cincinnati",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "4b670019ec9b4ab4a7b892da366a98b2": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 2.02
+            }
+          },
+          "ac8f28fc847244ca890a9451c4310aab": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.819672
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "7d941de119604458babcca9db2e98be6": {
+            "name": "Charlotte FC",
+            "odds": {
+              "bovada": 2.2
+            }
+          },
+          "89712093c7f643eaa20fb2572afa7aff": {
+            "name": "FC Cincinnati",
+            "odds": {
+              "bovada": 3.15
+            }
+          },
+          "19f3acfe10e547c397d14c185519aeed": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "ef6ad162efbf4e2dbd7480814a51a49d": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.645161
+            }
+          },
+          "1c347957bdb645128a94ace0b3dd6cb6": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.18
+            }
+          }
+        }
+      }
+    }
+  },
+  "98eeeb15eb42418982ebc6faf8e9a672": {
+    "name": "Columbus Crew vs New York City FC",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "677237de7f174fc3bf53b89d25542a20": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "132ddf0ad60a48599dee24339afac3ee": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "09b472e406044a948a690992a4b45639": {
+            "name": "Columbus Crew",
+            "odds": {
+              "bovada": 1.741
+            }
+          },
+          "01fa95d79d0b4e3caf6d9188e9a28318": {
+            "name": "New York City",
+            "odds": {
+              "bovada": 4.6
+            }
+          },
+          "7ae0543710e9481792bc0e485ddf3af0": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.9
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "ced8c005c2f848118d3c538956fbb3de": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.833333
+            }
+          },
+          "38488a46dd5143359b377f1c02d3f00b": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      }
+    }
+  },
+  "008d495d44a84402926023d9289dd5fa": {
+    "name": "DC United vs Inter Miami",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "bd0ea5ea63e94a6e93451999883186f7": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "ad1a34c949c0428998bf32b2d618df6e": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "7dfd78811d894ef3aa344e9b0ba597e5": {
+            "name": "DC Utd",
+            "odds": {
+              "bovada": 1.714286
+            }
+          },
+          "2f64bf485fd94c03be877c012eedbee2": {
+            "name": "Inter Miami CF",
+            "odds": {
+              "bovada": 4.6
+            }
+          },
+          "98426edb271647f080036a3a5b153077": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 4.1
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "3681e97aee254cc69b2c0681b071e55c": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.714286
+            }
+          },
+          "32d2aed98ecd43a9ae09d4d038e3786a": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.08
+            }
+          }
+        }
+      }
+    }
+  },
+  "b2dcdd3ab03d4502a5002950934a511c": {
+    "name": "NY Red Bulls vs New England Revolution",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "9ccf1b3fc3c7490db8ba4d94b0a2021a": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.8
+            }
+          },
+          "c07b192fc8f34f01b7613dbff8fd949e": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 2.05
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "8deb8d6549724110986115916b0be3b6": {
+            "name": "New York Red Bulls",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "51864265a8d046b5ab2c9425a2cce753": {
+            "name": "New England Revolution",
+            "odds": {
+              "bovada": 4
+            }
+          },
+          "a8ca74bcb2134f34a1613f7c38ed637d": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "25bdf1a4407d4a15a1f32a4587ea170e": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "d43b6a46beed483a92508ecb57715115": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.87
+            }
+          }
+        }
+      }
+    }
+  },
+  "b936f4916e6f4a5cb08eab45b8866104": {
+    "name": "Toronto FC vs Saint Louis City SC",
+    "sport": "soccer",
+    "date": 1688859000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "742fd0e936864cc2b23bda5d3d501b1b": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "5723d0ba672c40e7bd63f54ff2bea216": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "512a15ea6a4c4ab5b71ebe79cf4cfe62": {
+            "name": "Toronto FC",
+            "odds": {
+              "bovada": 2.15
+            }
+          },
+          "11fd41de0d744dc1bc94cf581eb58a99": {
+            "name": "Saint Louis City SC",
+            "odds": {
+              "bovada": 3.35
+            }
+          },
+          "42dc587043a143da97443f38af780419": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "95f847087ecb40d1b2f8498daf317d48": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.741
+            }
+          },
+          "e36e185cc62f4275affb02ed15d478ec": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.05
+            }
+          }
+        }
+      }
+    }
+  },
+  "6a135a88e5544b0d9324ba64a0918b21": {
+    "name": "Chicago Fire vs Nashville SC",
+    "sport": "soccer",
+    "date": 1688862600,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "1f2c3bf080cd4e8b9754b2b289ce064a": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "b96943aa9dd24e9e96316a7e44f85956": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "01da3e527e2045b0ba5af1f51f6a46e4": {
+            "name": "Chicago Fire",
+            "odds": {
+              "bovada": 2.35
+            }
+          },
+          "91501f7b6dba41d0a96cbba4f8317e1e": {
+            "name": "Nashville SC",
+            "odds": {
+              "bovada": 3
+            }
+          },
+          "5986db2571474a42823c8e3783253c9e": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.45
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "0f844dbbb26d49189df801e8b986f150": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.675676
+            }
+          },
+          "d493c49959e34561a258b72f9e9beb58": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.13
+            }
+          }
+        }
+      }
+    }
+  },
+  "0144c86b98db400e826956d3928c1a96": {
+    "name": "Houston Dynamo vs Sporting Kansas City",
+    "sport": "soccer",
+    "date": 1688862600,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "d81c3c0992e840b892312000ceb27ba2": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "9d4a73c9003a4c9eb0bf99ca9448cac9": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "bbd728b789e5463c9a6ec4de4dd9954d": {
+            "name": "Houston Dynamo",
+            "odds": {
+              "bovada": 2.15
+            }
+          },
+          "43a6d839461e49e98ed4fd4d28358364": {
+            "name": "Sporting Kansas City",
+            "odds": {
+              "bovada": 3.2
+            }
+          },
+          "2a68710478bb451d8d54f7906f3812b9": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "bbd23bd6b110498da81a4444b55f6993": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.675676
+            }
+          },
+          "68143adaac3b4f20baffceb91d73c1a7": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.13
+            }
+          }
+        }
+      }
+    }
+  },
+  "f3565f8c53e6485e98f51a3a6e026b4d": {
+    "name": "Minnesota United vs Austin FC",
+    "sport": "soccer",
+    "date": 1688862600,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "92094215f3024d05987e57ddf45b4ada": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "2fd5f81aff154eb98c43f379508556bd": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "5ae3a944a02045eb94b5b8ab25479dcd": {
+            "name": "Minnesota United",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "7c205173471244ab8d3d24c34afdeb56": {
+            "name": "Austin FC",
+            "odds": {
+              "bovada": 3.75
+            }
+          },
+          "d7aa6478a36c4f7ea94c72050e6790d2": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.9
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "0a3c164eba384fe4bc15993439665c1a": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.606061
+            }
+          },
+          "67b97a0f77a4471c833eb7920dbd7042": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.25
+            }
+          }
+        }
+      }
+    }
+  },
+  "778ff094976547bcbfdd320041dd0978": {
+    "name": "Colorado Rapids vs FC Dallas",
+    "sport": "soccer",
+    "date": 1688866200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "f1a93131fe614ff5909356887fd72bee": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "ff8cb878b95d467fb9d9400f26f1bd16": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "92d0c218d0b74e139fa8f2075e5d3290": {
+            "name": "Colorado Rapids",
+            "odds": {
+              "bovada": 2
+            }
+          },
+          "33ce4424868a4da695ad6244bdb8bf37": {
+            "name": "FC Dallas",
+            "odds": {
+              "bovada": 3.75
+            }
+          },
+          "eb61219168ed488eaa5843ca24c63153": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.5
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "df82020c02d5452283f015c02e7afe70": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "077551e230204928a2ee06aded07d4e4": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.8
+            }
+          }
+        }
+      }
+    }
+  },
+  "074d8373568744f0ad837292539eb350": {
+    "name": "Real Salt Lake vs Orlando City SC",
+    "sport": "soccer",
+    "date": 1688866200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "95fa79d01bdd45d2a5d4929f35062da4": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "5256d1ffffaa495886d84b17a9d7a2bd": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "a8798c365ff44072b1056de908428fea": {
+            "name": "Real Salt Lake",
+            "odds": {
+              "bovada": 2.25
+            }
+          },
+          "f3244c41b1134196a5ca9427eb2e9c62": {
+            "name": "Orlando City",
+            "odds": {
+              "bovada": 3.1
+            }
+          },
+          "71ab9d364a6949869b3bc5bcd29a8ec4": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "fa751a53021d4b40bdf733904e701f3f": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.714286
+            }
+          },
+          "abb852b3d10840bbb6a6afbfbef2020c": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.08
+            }
+          }
+        }
+      }
+    }
+  },
+  "e824aeabaaff4572a2eeab1850bba62e": {
+    "name": "Los Angeles FC vs San Jose Earthquakes",
+    "sport": "soccer",
+    "date": 1688869800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "f6626d2187d94f39beaac1a89da38241": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "de1aaef47424454a9feb1ae26cc56c3a": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "930b8b3fb72b4cd9b8d40f4616542e65": {
+            "name": "Los Angeles FC",
+            "odds": {
+              "bovada": 1.571429
+            }
+          },
+          "d31c0f53dd664aba9b9952e47589cd6d": {
+            "name": "San Jose Earthquakes",
+            "odds": {
+              "bovada": 5.4
+            }
+          },
+          "7b6fbabbe3d24baba12713fce70752e9": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 4.4
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "fbdc2ab9972e420781e0699fa94c05e6": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.78125
+            }
+          },
+          "25d0a8005fc74181b95ebc04fc476041": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.9804
+            }
+          }
+        }
+      }
+    }
+  },
+  "f204369929234dc28f49e73a6f52b9a4": {
+    "name": "Los Angeles Galaxy vs Philadelphia Union",
+    "sport": "soccer",
+    "date": 1688869800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "763309f9a9f24fc9a70df382f77ed2cf": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "c2cf63d762c1484183f86082bba0a374": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "6f69c3cf99d342b6901b2cfe1bef25cd": {
+            "name": "LA Galaxy",
+            "odds": {
+              "bovada": 2.4
+            }
+          },
+          "402121d376d047cfa4e14c08a6ff2741": {
+            "name": "Philadelphia Union",
+            "odds": {
+              "bovada": 2.9
+            }
+          },
+          "c6bd555b3faa4246a61678f9d1c92650": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "60e6283cc0af491d8df44ca1ed7f5f87": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.714286
+            }
+          },
+          "368d3d99438f446f97ee18a3b8c66916": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.08
+            }
+          }
+        }
+      }
+    }
+  },
+  "aca148d23c1641b8a4f5598db4a7f021": {
+    "name": "Vancouver Whitecaps vs Seattle Sounders",
+    "sport": "soccer",
+    "date": 1688869800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "36ece21d96914282a3437ed776838967": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "6b345997bfc94742b478f965f3043d0b": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "cd306c5c50f643aeb75cfe47e1118197": {
+            "name": "Vancouver Whitecaps",
+            "odds": {
+              "bovada": 2.1
+            }
+          },
+          "06dd9d82f79d4c60878c1bb59305fc37": {
+            "name": "Seattle Sounders",
+            "odds": {
+              "bovada": 3.45
+            }
+          },
+          "5a4d65812da8478e8eb8b9c3614bb68f": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "ea99c9211bee4cb98aa5491845be5d1b": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.757576
+            }
+          },
+          "2a7bcdc5c90142e1bcfcddc36ece063e": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      }
+    }
+  },
+  "53a6f1bed99d4a989a563e065c03a4a9": {
+    "name": "Cuiabá vs Bahia",
+    "sport": "soccer",
+    "date": 1688842800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "11ff7e13488944f283b7fd188ec07db5": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.9804
+            }
+          },
+          "3dca69b0bf854dd49d05394b602224e0": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.847458
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "f4fb8de91e644a01bd3ab15ec23c8ef9": {
+            "name": "Cuiabá",
+            "odds": {
+              "bovada": 2.1
+            }
+          },
+          "f8494ff729ed4301ad4b73193bd76b95": {
+            "name": "Bahia",
+            "odds": {
+              "bovada": 3.65
+            }
+          },
+          "025db4971873440daa1f8809d3ab1e07": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.35
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "15e392c8a7da453eb49816e99cf898e2": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.9804
+            }
+          },
+          "808dd117969841f888eb1c18f29963e7": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.78125
+            }
+          }
+        }
+      }
+    }
+  },
+  "a01148ed1dad4446b358a96ee59b74f0": {
+    "name": "Vasco da Gama vs Cruzeiro MG",
+    "sport": "soccer",
+    "date": 1688842800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "3ddf524997334fd8a7b3a523625eaeaa": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "01a8eeae1aef4fd5b5fdd41729253d84": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.87
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "87f51576dfa74df397f295c4d2c720c5": {
+            "name": "Vasco da Gama",
+            "odds": {
+              "bovada": 2.6
+            }
+          },
+          "dbbcefdcce66482094fb792497abe1e9": {
+            "name": "Cruzeiro MG",
+            "odds": {
+              "bovada": 2.75
+            }
+          },
+          "0cd520b9462440418405a87488d82ce3": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.35
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "8c13e4f26e484d2e9e5a7ba4636f9b1d": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "7dc484f1a9e64406b7f12bd06b68336a": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.833333
+            }
+          }
+        }
+      }
+    }
+  },
+  "35e9c1a978fd4bdbb0d63813f58de0c5": {
+    "name": "Atlético Mineiro vs Corinthians",
+    "sport": "soccer",
+    "date": 1688851800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "8554423bffa34b68bb7efe48a6f55bba": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.9259
+            }
+          },
+          "e1f52b9e461e44a49addb843c73dd0ce": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.892857
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "c8e602cacb404dbe8ec59011e79fafe0": {
+            "name": "Atlético Mineiro",
+            "odds": {
+              "bovada": 1.555556
+            }
+          },
+          "f801784aab624d85aa2a9f8aa4f01506": {
+            "name": "Corinthians",
+            "odds": {
+              "bovada": 6.25
+            }
+          },
+          "ed919767606e4306a05458c2511a1b34": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.3
+            }
+          },
+          "8eb95a230d2f4271bce54c2625b29cb8": {
+            "name": "Coritiba",
+            "odds": {
+              "bovada": 2.45
+            }
+          },
+          "7d621e4f475b4f9d973950d979b6b3e7": {
+            "name": "América Mineiro",
+            "odds": {
+              "bovada": 2.95
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "dc1ab5838b6f4c2db433f96c0ba7e764": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "57c10f39fdba43b48bc41bc8992edbfd": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.847458
+            }
+          }
+        }
+      }
+    }
+  },
+  "249581acf96f4fecb1a2dec4e8601c7f": {
+    "name": "Palmeiras vs Flamengo",
+    "sport": "soccer",
+    "date": 1688860800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "10c8c6b9a2b04d82ac605ebf7c6cd96a": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "9873c1a02e8441ecb01f508b74aa5c56": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "ac35682ba2a94069b7342510596ad450": {
+            "name": "Palmeiras",
+            "odds": {
+              "bovada": 2.2
+            }
+          },
+          "b3787ed2a9cb4ec293993f4fd60941c9": {
+            "name": "Flamengo",
+            "odds": {
+              "bovada": 3.25
+            }
+          },
+          "0efab62027504026b7f77e322ec51918": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.5
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "88f88c37466245e3882f13d0a304d9d1": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.69
+            }
+          },
+          "20691c040b054cbc8770765b2bd9aec0": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.1
+            }
+          }
+        }
+      }
+    }
+  },
+  "8427280b4df64effb5784238e284b204": {
+    "name": "Santos vs Goiás",
+    "sport": "soccer",
+    "date": 1688911200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "de3ad876730043cea87cf7d0935b5c78": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "97b7841ef3a4495fae226e97012b0f46": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "226bb9a4e8ea42239dfbc49991e68c72": {
+            "name": "Santos",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "7b11d1f021964dd884d98a4e2483ca48": {
+            "name": "Goiás",
+            "odds": {
+              "bovada": 4.1
+            }
+          },
+          "904ebcc102e14c75adbe142ec8bf4ee8": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.4
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "2fd6e5df89804e9b8fbc5b78ff6c140c": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 2.25
+            }
+          },
+          "09eb080829e34852affb25c17d90030f": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.606061
+            }
+          }
+        }
+      }
+    }
+  },
+  "29a25cf4410245e5a6e7a8cbddb72463": {
+    "name": "Fluminense vs Internacional",
+    "sport": "soccer",
+    "date": 1688929200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "a6b10dad954949ca8cdeef810491688d": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "c73e32717a3e454ab87dfc90baf8d096": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "b2923df7a31d470fbcff8e8400836342": {
+            "name": "Fluminense",
+            "odds": {
+              "bovada": 1.833333
+            }
+          },
+          "f04a972d35424e629ff117001ee5868d": {
+            "name": "Internacional",
+            "odds": {
+              "bovada": 4.4
+            }
+          },
+          "123ff0c2e3eb460e92c3ff29890c1977": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.6
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "f624f5e948a54e5494f89b4540637777": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "8f376bae87554e9d9974cf4130890da4": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.8
+            }
+          }
+        }
+      }
+    }
+  },
+  "9f2398a48d064ee1a3657f682b83f22d": {
+    "name": "RB Bragantino vs São Paulo",
+    "sport": "soccer",
+    "date": 1688929200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "d9d634c1f65446c38dc29e679b310be9": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.847458
+            }
+          },
+          "999cb2e34a224be1bb28dc9dd30b0875": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.9804
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "61e88cfec39a4c1eb23f7f799f8507a5": {
+            "name": "RB Bragantino",
+            "odds": {
+              "bovada": 2.05
+            }
+          },
+          "459a84ced2f2419fb1430bea500df7c4": {
+            "name": "São Paulo",
+            "odds": {
+              "bovada": 3.6
+            }
+          },
+          "4c8feb9df38e4727940c5cfdcfdf9eef": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.45
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "2158b458c3c347ab94017a8e5cc9bf4e": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "f63a0373357e485486501cf77e94cca3": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.87
+            }
+          }
+        }
+      }
+    }
+  },
+  "bbacd8c145d04bfa963e0be35982b2a2": {
+    "name": "Fortaleza vs Athletico Paranaense",
+    "sport": "soccer",
+    "date": 1688938200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "a175908623604d4c896f56c434548908": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "41fb728523e94c359c5308bbc81ed98f": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "3d5fe27cf8f14b6d88038c10ea114be0": {
+            "name": "Fortaleza",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "86713e7053f44570b385966ee3c2e8ae": {
+            "name": "Athletico Paranaense",
+            "odds": {
+              "bovada": 4.2
+            }
+          },
+          "d00b6d485b674cee89d0968d68eb3a95": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "2f71af18144146969e088cdea857f2bd": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "418799de14c44f23b2ea577c3c7d4133": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.833333
+            }
+          }
+        }
+      }
+    }
+  },
+  "21b9f3f9081e4755bde4d45367f5ba5e": {
+    "name": "Grêmio vs Botafogo",
+    "sport": "soccer",
+    "date": 1688938200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "e3aece4c5d5d4c5bae3a5c0606ef88f7": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.9804
+            }
+          },
+          "c8c07914fdb94682b8b5907fc590dd9a": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.847458
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "89c0d2ed00f94ec98b05e3b22dfe5779": {
+            "name": "Grêmio",
+            "odds": {
+              "bovada": 2
+            }
+          },
+          "df079b414a504a31a818ff1ecf467cfd": {
+            "name": "Botafogo",
+            "odds": {
+              "bovada": 3.7
+            }
+          },
+          "3c677923742c4b9db974db1ec719f833": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.6
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "83c80b2ffef94d678531f5a6b051ed39": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "cb830cab760c401789d53d6b08bda1d3": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      }
+    }
+  },
+  "c6bb5b9ab3af4a31897237d9f3009de5": {
+    "name": "Corinthians vs Grêmio",
+    "sport": "soccer",
+    "date": 1689465600,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "812bbb93d18048d592d42bf2a9f5f834": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 2.05
+            }
+          },
+          "09c29e16aae9474f94736f34228450b6": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 1.8
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "6751b4cf572b42dc99bafd545d2e9f27": {
+            "name": "Corinthians",
+            "odds": {
+              "bovada": 2.75
+            }
+          },
+          "fa94a3025c834ba7a35fb5768b866760": {
+            "name": "Grêmio",
+            "odds": {
+              "bovada": 2.75
+            }
+          },
+          "4c3a562a4ff34cae94aaa2bc3cd2b8d9": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.15
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "a0f7ca7fee354487b99b1a5b2718b6bd": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "fca81b4d8414487f8046027b70d183c4": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.8
+            }
+          }
+        }
+      }
+    }
+  },
+  "7a6c3cd91850485094083a69a4bc9aa0": {
+    "name": "Puebla FC vs Santos Laguna",
+    "sport": "soccer",
+    "date": 1688778000,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "0dbdc270869643edb8ef86d427294837": {
+            "name": "Over 3.0",
+            "odds": {
+              "bovada": 1.9804
+            }
+          },
+          "69c550b5138b47a088bf6d26d458d85c": {
+            "name": "Under 3.0",
+            "odds": {
+              "bovada": 1.847458
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "8e538a3a70d7483aa0d2e80e6018d6d2": {
+            "name": "FC Puebla",
+            "odds": {
+              "bovada": 2.5
+            }
+          },
+          "51bf86b8565345ca84f629fe61e4f63d": {
+            "name": "Santos Laguna",
+            "odds": {
+              "bovada": 2.6
+            }
+          },
+          "243f4f61c1714b80aeb45fd86bda6e92": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "0ae0986f31dd4b0297acdca66b0ae43f": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.526316
+            }
+          },
+          "e4d6dcc3771342d9b1772cb7460a46de": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.45
+            }
+          }
+        }
+      }
+    }
+  },
+  "cdad0cd97cba4368aeea34bd1c64562c": {
+    "name": "Necaxa vs Tijuana",
+    "sport": "soccer",
+    "date": 1688785200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "95340fbe979749fd88ba26e923cbb09f": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "6a72dba44b614a6b82beac95e2af64fa": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "90badc872b174b038bf24fc00395f6ff": {
+            "name": "Necaxa",
+            "odds": {
+              "bovada": 2.5
+            }
+          },
+          "090ffd59ace346c498a783827bc7662a": {
+            "name": "Tijuana",
+            "odds": {
+              "bovada": 2.75
+            }
+          },
+          "7c29ea43c8684829981cfcfba2f7759e": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.3
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "b7902fa759c2424e88044ff544dd4bb1": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.69
+            }
+          },
+          "d51e9e87c80c440db618ecbd5b7ebfac": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.1
+            }
+          }
+        }
+      }
+    }
+  },
+  "d6984f2afba149789f15d3bd2fb34387": {
+    "name": "Cruz Azul vs Deportivo Toluca FC",
+    "sport": "soccer",
+    "date": 1688860200,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "d31075b3596844c28f2ca935d6727d0b": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "e4ceec75e4a24680a9951755293d70e6": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "cb1966761d4c49389ceba993050099d8": {
+            "name": "Cruz Azul",
+            "odds": {
+              "bovada": 2.4
+            }
+          },
+          "66affb4c16c04fc3bdfca7e0ea337538": {
+            "name": "Deportivo Toluca",
+            "odds": {
+              "bovada": 2.8
+            }
+          },
+          "cf3cee600daf4449990be4a5c72a7d76": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.4
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "4ec1dfa4dbe94615b664c995b9b1bf7a": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.588235
+            }
+          },
+          "07458f7a72464d859d4270d046740534": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.28
+            }
+          }
+        }
+      }
+    }
+  },
+  "d3deee955b40453b8ef9de898fbc9bc1": {
+    "name": "FC Juarez vs Tigres UANL",
+    "sport": "soccer",
+    "date": 1688860800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "c74e2770cfc84b40bbb365cce9876f2e": {
+            "name": "Over 2.0",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "78a99a6476f14691b40352e2ef8165ed": {
+            "name": "Under 2.0",
+            "odds": {
+              "bovada": 2.02
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "2d0a92c0b5c14338923bb2ae7c992a4a": {
+            "name": "FC Juarez",
+            "odds": {
+              "bovada": 3.85
+            }
+          },
+          "d1e0fd717f444d31aed99550a7ead467": {
+            "name": "Tigres UANL",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "d7e79652541e45ff833497794042cd7a": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.35
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "36ffbf0bbee64c06962e8aec6db95098": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "76144f2c0b87425f866c4b59fbea7d18": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.87
+            }
+          }
+        }
+      }
+    }
+  },
+  "b81f356f3c434256ac6d107e973ab555": {
+    "name": "Chivas Guadalajara vs Atletico San Luis",
+    "sport": "soccer",
+    "date": 1688860800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "6da069a40a09434cbba52a2584c59ad1": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "eeb96959b8174c868454cb4c0c201431": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "c58d736d3a14460d83798ea1c70cb387": {
+            "name": "Chivas Guadalajara",
+            "odds": {
+              "bovada": 1.8
+            }
+          },
+          "fa40899594334afea4f81f29e6983075": {
+            "name": "Atletico San Luis",
+            "odds": {
+              "bovada": 4.3
+            }
+          },
+          "b221550e26d84250b1185e3a859e1813": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "601f49737759486781fc613e13ae0ec4": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.819672
+            }
+          },
+          "1332eeb9c11842fe83555693519a9d13": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      }
+    }
+  },
+  "6c92e377148b4d3d9e0787d7863284a2": {
+    "name": "Pumas UNAM vs Mazatlan FC",
+    "sport": "soccer",
+    "date": 1688925600,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "6bb6bb65c6964076847960e0be52f581": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "ffce68e5e7e642c5b9a20392a655d97d": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "2ac6f67b36fb4b8688d9e5bb916b5948": {
+            "name": "Pumas UNAM",
+            "odds": {
+              "bovada": 1.77
+            }
+          },
+          "bc3aed81850a4fa692859ad9785220dc": {
+            "name": "Mazatlan FC",
+            "odds": {
+              "bovada": 4.5
+            }
+          },
+          "663e7ed88d6e4be3a45fa944575e8d00": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "fb68ad856634475895dc00bccc1ca139": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.666667
+            }
+          },
+          "459d7c406281482ba6f3c1f16b1c2129": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.15
+            }
+          }
+        }
+      }
+    }
+  },
+  "7f7154ddf83c43cb9bd31bb9f1686084": {
+    "name": "Queretaro FC vs Club América",
+    "sport": "soccer",
+    "date": 1688943960,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "5dba02e59a554758ba592bf0512aa5d2": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "1cb91012f34240dbb9c2ed2f2d61d7d4": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "a49b464449774f97a34d9eeaaeb4994c": {
+            "name": "Querétaro FC",
+            "odds": {
+              "bovada": 4.1
+            }
+          },
+          "115f600d74b84769ab9db206d0d29001": {
+            "name": "Club América",
+            "odds": {
+              "bovada": 1.833333
+            }
+          },
+          "774a36ac9d5b4af183f20409ceb38cde": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.65
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "00298d9a56d84a35baa17d7af2c78f7a": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.666667
+            }
+          },
+          "61bdb1ac934146feb22e76f59b15fe9d": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.15
+            }
+          }
+        }
+      }
+    }
+  },
+  "3dc101cfaf5d49e6b7ed9343f7905890": {
+    "name": "CF Monterrey vs Atlas FC",
+    "sport": "soccer",
+    "date": 1688950800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "a7294e32a03942879e645aea89749929": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 2
+            }
+          },
+          "e1ac0cd6e08049d692c08e905d682777": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.833333
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "73049fa98d9a4150bd8f2c0d4d668b7d": {
+            "name": "CF Monterrey",
+            "odds": {
+              "bovada": 1.741
+            }
+          },
+          "be03d92982db4d1a8b8460973f601fd9": {
+            "name": "Atlas FC",
+            "odds": {
+              "bovada": 4.8
+            }
+          },
+          "063f844726db44cf9a6ceb0ec0c7baad": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.55
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "0e7b6f2d18bd4fe4b3f435b6bb4c9650": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "5cb53496360b4d1aa9a72ee84c0f24f7": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.833333
+            }
+          }
+        }
+      }
+    }
+  },
+  "0edb2258e58f48b9a0488d87a104f94c": {
+    "name": "Club León vs CF Pachuca",
+    "sport": "soccer",
+    "date": 1689040800,
+    "markets": {
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "8c46afcf37664d798e69aed7213538ac": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.892857
+            }
+          },
+          "52849144143a45b9a355c5efd2902020": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.9259
+            }
+          }
+        }
+      },
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "edc2a193481f4708aa140617ae82d4f0": {
+            "name": "Club León",
+            "odds": {
+              "bovada": 2.35
+            }
+          },
+          "bc4c9c8629d5460d8f86fb7162fffb67": {
+            "name": "CF Pachuca",
+            "odds": {
+              "bovada": 2.85
+            }
+          },
+          "68da5e9474544e02867525e6df23bb2e": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.4
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "7802b18aef3342d896dd6225524f9da2": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.581395
+            }
+          },
+          "8f77182511f54252915ec63626aa18ae": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.3
+            }
+          }
+        }
+      }
+    }
+  },
+  "faa3888353434810bbe1cdaeb47d4a61": {
+    "name": "Burnley vs Manchester City",
+    "sport": "soccer",
+    "date": 1691780400,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "15eed4ff2c664c048261033c5e11dac8": {
+            "name": "Burnley",
+            "odds": {
+              "bovada": 8.25
+            }
+          },
+          "69a248753df5421c816ba116aabfc112": {
+            "name": "Manchester City",
+            "odds": {
+              "bovada": 1.31746
+            }
+          },
+          "98aa940cd7454981a2ab4286a042c270": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 5.2
             }
           }
         }
       },
       "soccer_over_under_total_goals": {
+        "kind": "over_under",
         "selection": {
-          "08fb570a2ce04a1aab9b2bb607b95fd5": {
-            "name": "Under 3.5",
+          "3c33d406e5f6445ea532c0913c0c5d36": {
+            "name": "Over 3.0",
             "odds": {
-              "fox_bets": 1.47
+              "bovada": 2.02
+            }
+          },
+          "03b0249d52c04d1d9d8555562220c299": {
+            "name": "Under 3.0",
+            "odds": {
+              "bovada": 1.819672
             }
           }
         }
       },
       "soccer_both_teams_to_score": {
+        "kind": "yes_no",
         "selection": {
-          "64dc500bf42b49939136db8a7906d12d": {
-            "name": "No",
-            "odds": {
-              "fox_bets": 1.62
-            }
-          },
-          "ae82c75004bc424eba8fafec86aa458e": {
+          "fc7db8111e6b47f1bc935ee576b41c3d": {
             "name": "Yes",
             "odds": {
-              "fox_bets": 2
+              "bovada": 1.9804
+            }
+          },
+          "75b75be6e5f84dceafcef614a826f574": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.78125
             }
           }
         }
       }
     }
   },
-  "ebfa426dc58f4231abafc07d8b61ddfb": {
-    "name": "Texas Rangers v Houston Astros",
-    "sport": "baseball",
-    "date": 1688407500,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "8a0d504b124a4291be99590922ee4320": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 2
-            }
-          },
-          "8512e96214634c71af65a4302df52c56": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "fcc264b3491145cc9c14b4906cd111c9": {
-            "name": "Texas Rangers",
-            "odds": {
-              "fox_bets": 2
-            }
-          },
-          "f505459620f4438da8c2c02e17d1cd64": {
-            "name": "Houston Astros",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "4957bf7af32f4303b4f1ca02c6b40186": {
-            "name": "Texas Rangers",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "4fd9231b85c04a0eb2ee0f33745e630d": {
-            "name": "Houston Astros",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      }
-    }
-  },
-  "18573affbe324fc89578b4e1f25581f5": {
-    "name": "Milwaukee Brewers v Chicago Cubs",
-    "sport": "baseball",
-    "date": 1688407800,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "dd5ab6ad7d8142c69828cc26988a2ee7": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          },
-          "ab3c95d8232c46c08abfef673ae79469": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "3d5dec57957b4a60b6e171ce17cffec7": {
-            "name": "Milwaukee Brewers",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          },
-          "5f247733bfb144789358d2595b0f695b": {
-            "name": "Chicago Cubs",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "cdb736ac4f844a42a94ce03e55250d57": {
-            "name": "Milwaukee Brewers",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "c6cc444c2003468d9e56ab8ed0be7800": {
-            "name": "Chicago Cubs",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      }
-    }
-  },
-  "71240afaa2af4c7c95d5e3016b61019d": {
-    "name": "Washington Nationals v Cincinnati Reds",
-    "sport": "baseball",
-    "date": 1688421900,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "82556214a78d4143b11615e8755ef9f2": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "092bec7ce5694787bb624a86f493b13b": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "4026fe4fa60f41a99da163940f0cb331": {
-            "name": "Washington Nationals",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          },
-          "51fafd8b8e6344dba86df52876a82e1b": {
-            "name": "Cincinnati Reds",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "407cc0a9b7cb4215be1ccca105d0ee12": {
-            "name": "Cincinnati Reds",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          },
-          "64484239efe7418296b9ec7a0a6116df": {
-            "name": "Washington Nationals",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          }
-        }
-      }
-    }
-  },
-  "9ca993024553463a8beacd1f24f770b3": {
-    "name": "Miami Marlins v St. Louis Cardinals",
-    "sport": "baseball",
-    "date": 1688424000,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "4acc9bb3839d44438163d1c4628a15be": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "a5a224cb24dd49e2a5b9f5a22a6c2a09": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "dc941aca9439491388c79f00bcaa556c": {
-            "name": "St. Louis Cardinals",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          },
-          "577963489eca4d1782c9e8798b97aff2": {
-            "name": "Miami Marlins",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "006e5a09dcc84861ac75221d2aef6ee1": {
-            "name": "St. Louis Cardinals",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          },
-          "cadf32314faa4667b91370d8c0cef657": {
-            "name": "Miami Marlins",
-            "odds": {
-              "fox_bets": 1.7
-            }
-          }
-        }
-      }
-    }
-  },
-  "ad7eadd9d25b4e339ad122a61b28d34c": {
-    "name": "New York Yankees v Baltimore Orioles",
-    "sport": "baseball",
-    "date": 1688425500,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "23a148aca5a3408eb0de3bc09960fa44": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "91ba7ad737f3499ca46bbb5b4ce242bc": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "f7f60553eaac41f085741ef7dba9bdbc": {
-            "name": "Baltimore Orioles",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          },
-          "f83974e8c74b4c0792041f14d5d78c07": {
-            "name": "New York Yankees",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "1b086251cf754a8690e6f6bd9b9710b3": {
-            "name": "New York Yankees",
-            "odds": {
-              "fox_bets": 1.91
-            }
-          },
-          "ed7ae3628c3e498c843ba6b28d6fcf3a": {
-            "name": "Baltimore Orioles",
-            "odds": {
-              "fox_bets": 1.83
-            }
-          }
-        }
-      }
-    }
-  },
-  "36b8e3859c644b92a00523ef7f0d9fc1": {
-    "name": "Cleveland Guardians v Atlanta Braves",
-    "sport": "baseball",
-    "date": 1688425800,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "11448b7a694c4b71a307dd33b15cae05": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          },
-          "efff7904e4f4486c92974671cc696c0f": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "e82d7e86b2ef4893aa7d568566b95204": {
-            "name": "Atlanta Braves",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "aaafcc2ada7e453388a686e641443b74": {
-            "name": "Cleveland Guardians",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "eb4aa37411644fa4882d967ca78b1641": {
-            "name": "Atlanta Braves",
-            "odds": {
-              "fox_bets": 1.65
-            }
-          },
-          "b3d59204839b4426bad566f46b2330ef": {
-            "name": "Cleveland Guardians",
-            "odds": {
-              "fox_bets": 2.15
-            }
-          }
-        }
-      }
-    }
-  },
-  "e3409767fb414d90928df0cafaf4d391": {
-    "name": "Minnesota Twins v Kansas City Royals",
-    "sport": "baseball",
-    "date": 1688429400,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "82e1a6def3594673844dfa36064a0c9a": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "2a600742ba634cf4b9adef35b567584a": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "d31c1b81a47f4421975a40aff4e0a861": {
-            "name": "Minnesota Twins",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "00db2ee6776b430ab515869b42a7d907": {
-            "name": "Kansas City Royals",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "800c98648e8644e2938f8b2d4d5b87e7": {
-            "name": "Minnesota Twins",
-            "odds": {
-              "fox_bets": 1.4
-            }
-          },
-          "dc5e6829538f4bdb8d64ce7afd3c5579": {
-            "name": "Kansas City Royals",
-            "odds": {
-              "fox_bets": 2.8
-            }
-          }
-        }
-      }
-    }
-  },
-  "96553899a3014a5689414a1cc38e5118": {
-    "name": "San Diego Padres v Los Angeles Angels",
-    "sport": "baseball",
-    "date": 1688434800,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "a6a8036937674d59903caa2d3884074d": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.85
-            }
-          },
-          "fe855cf07e0e44299723b0f9644d5f74": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 1.95
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "dff44c1901b24388a88c0705eeb8fe6c": {
-            "name": "San Diego Padres",
-            "odds": {
-              "fox_bets": 1.72
-            }
-          },
-          "b1521b3dbc194a84b43d8ee461c00206": {
-            "name": "Los Angeles Angels",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "dcf3ac55e3df4a01a869974ef64c7229": {
-            "name": "San Diego Padres",
-            "odds": {
-              "fox_bets": 1.5
-            }
-          },
-          "bc3e9e7527ea470bac4fbc6c1ece8a38": {
-            "name": "Los Angeles Angels",
-            "odds": {
-              "fox_bets": 2.45
-            }
-          }
-        }
-      }
-    }
-  },
-  "3a3d24652e464d8494a8daa9849f3523": {
-    "name": "San Francisco Giants v Seattle Mariners",
-    "sport": "baseball",
-    "date": 1688435100,
-    "markets": {
-      "baseball_total_runs": {
-        "selection": {
-          "83cc0ea97f314d579769c6141d2a8635": {
-            "name": "Under",
-            "odds": {
-              "fox_bets": 1.8
-            }
-          },
-          "2110e9f78d094091b01681e5522f7c95": {
-            "name": "Over",
-            "odds": {
-              "fox_bets": 2
-            }
-          }
-        }
-      },
-      "baseball_run_line": {
-        "selection": {
-          "7e5ab048a8544b4880c5b586510024d7": {
-            "name": "San Francisco Giants",
-            "odds": {
-              "fox_bets": 2.05
-            }
-          },
-          "59e310010c2141bda97c02a65b9977fa": {
-            "name": "Seattle Mariners",
-            "odds": {
-              "fox_bets": 1.75
-            }
-          }
-        }
-      },
-      "baseball_money_line": {
-        "selection": {
-          "a300d5c23d654e16940e359592c3c869": {
-            "name": "Seattle Mariners",
-            "odds": {
-              "fox_bets": 2.1
-            }
-          },
-          "24ebf567b3fe4d5391ccdd2514d93f7a": {
-            "name": "San Francisco Giants",
-            "odds": {
-              "fox_bets": 1.67
-            }
-          }
-        }
-      }
-    }
-  },
-  "24466d80a97c48b2afa1eab116b496b1": {
-    "name": "Canada vs Cuba",
+  "963d5ba5bfe741adbf95b7ada0b6e635": {
+    "name": "Arsenal vs Nottingham Forest",
     "sport": "soccer",
-    "date": 1688509800
+    "date": 1691839800,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "1d6206054bc043fb972744b56fe68f9d": {
+            "name": "Arsenal",
+            "odds": {
+              "bovada": 1.266667
+            }
+          },
+          "f42b99af919740fabe47bad6e9c2e925": {
+            "name": "Nottingham Forest",
+            "odds": {
+              "bovada": 9
+            }
+          },
+          "e2d77cd363604d57a19824f56772cd1f": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 5.75
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "0d7271927cb34a5b83b7e65fd8784053": {
+            "name": "Over 3.0",
+            "odds": {
+              "bovada": 1.952381
+            }
+          },
+          "9df359840f894072881647704f8c18dd": {
+            "name": "Under 3.0",
+            "odds": {
+              "bovada": 1.87
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "d24f22cded5b4dab96254848be22d2e0": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.847458
+            }
+          },
+          "6239c9d50ed14065adbd45a24e941710": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.892857
+            }
+          }
+        }
+      }
+    }
+  },
+  "4392804bc57f438db721af3bcce2231d": {
+    "name": "Bournemouth vs West Ham United",
+    "sport": "soccer",
+    "date": 1691848800,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "295a640939774c37885e2244a30e3eea": {
+            "name": "Bournemouth",
+            "odds": {
+              "bovada": 2.8
+            }
+          },
+          "1051532a25b54d7ab0eca693566836d3": {
+            "name": "West Ham United",
+            "odds": {
+              "bovada": 2.45
+            }
+          },
+          "2bde10ba93e34679b644bfbda97d354c": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 3.3
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "eaa5ee9124494c51af09a1ef2ac125ea": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          },
+          "fee92df6268a4377bd61667228904549": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.909091
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "057da15f8d0b403694c755df042ce674": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 1.714286
+            }
+          },
+          "9796f1174d6f4713871e2839ada7c5f0": {
+            "name": "No",
+            "odds": {
+              "bovada": 2.08
+            }
+          }
+        }
+      }
+    }
+  },
+  "64c742817e024f5d8dbee98dac3bbde5": {
+    "name": "Brighton & Hove Albion vs Luton Town",
+    "sport": "soccer",
+    "date": 1691848800,
+    "markets": {
+      "soccer_game_result": {
+        "kind": "team_name",
+        "selection": {
+          "bad4aad23b544ef89705f778c14c7507": {
+            "name": "Brighton & Hove Albion",
+            "odds": {
+              "bovada": 1.31746
+            }
+          },
+          "ffcc25cd7274452dacbfd9b24e673caf": {
+            "name": "Luton Town",
+            "odds": {
+              "bovada": 8.25
+            }
+          },
+          "3cc8022683524219830086f99f5d8962": {
+            "name": "Tie",
+            "odds": {
+              "bovada": 5.2
+            }
+          }
+        }
+      },
+      "soccer_over_under_total_goals": {
+        "kind": "over_under",
+        "selection": {
+          "17527a1c6ebe4d3eb750dfacabb844f9": {
+            "name": "Over 2.5",
+            "odds": {
+              "bovada": 1.87
+            }
+          },
+          "9cbefef8194c43d5b462adcaa6d2f274": {
+            "name": "Under 2.5",
+            "odds": {
+              "bovada": 1.952381
+            }
+          }
+        }
+      },
+      "soccer_both_teams_to_score": {
+        "kind": "yes_no",
+        "selection": {
+          "d37a61754f6548da931acbd5116c2d42": {
+            "name": "Yes",
+            "odds": {
+              "bovada": 2.08
+            }
+          },
+          "d80d99f855e841c2be193a69b57a02e7": {
+            "name": "No",
+            "odds": {
+              "bovada": 1.714286
+            }
+          }
+        }
+      }
+    }
   }
 }

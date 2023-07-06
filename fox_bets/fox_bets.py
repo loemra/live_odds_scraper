@@ -1,7 +1,7 @@
 import json
 import threading
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import requests
 import websocket
@@ -10,9 +10,9 @@ from datastructures.event import EventMetadata
 from datastructures.market import Market, MarketMetadata
 from datastructures.selection import Selection, SelectionMetadata
 from datastructures.update import Update
-from fox_bets.config import (get_event_url, get_events_urls, get_ri_odds,
-                             get_send_alive, get_subscribe_payload,
-                             get_url_and_auth_payload)
+from fox_bets.config import (get_event_url, get_events_urls, get_market_kind,
+                             get_ri_odds, get_send_alive,
+                             get_subscribe_payload, get_url_and_auth_payload)
 
 
 def _parse_events(j) -> list[EventMetadata]:
@@ -33,7 +33,8 @@ def _parse_odds(j) -> list[Market]:
     for market in j["markets"]:
         if market.get("mostBalanced") is not None and market["mostBalanced"] == False:
             continue
-        metadata = MarketMetadata(market["type"])
+        market_id = market["type"]
+        metadata = MarketMetadata(market_id, get_market_kind(market_id))
         m = Market(metadata)
         for selection in market["selection"]:
             id = selection["id"]
@@ -65,10 +66,11 @@ def _get_event(event_url: str):
 
 
 # gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
-def get_events(date: datetime) -> list[EventMetadata]:
+def get_events(_: datetime) -> list[EventMetadata]:
     events = []
-    for event_url in get_events_urls(date):
-        events.extend(_parse_events(_get_events(event_url)))
+    for date in [datetime.today() + timedelta(i) for i in range(3)]:
+        for event_url in get_events_urls(date):
+            events.extend(_parse_events(_get_events(event_url)))
     return events
 
 

@@ -1,4 +1,5 @@
 import json
+import logging
 from collections.abc import Callable
 from datetime import datetime
 from threading import Lock
@@ -21,6 +22,20 @@ GENERAL STRUCTURE
     The only thing that can be updated in the database
     are odds for a sportsbook, the rest is const.
 """
+
+
+def _setup_logger():
+    logger = logging.getLogger("events_database")
+    logger.propagate = False
+    fh = logging.FileHandler("logs/events_database.log")
+    fh.setLevel(logging.INFO)
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s @ %(filename)s:%(funcName)s:%(lineno)s == %(message)s")
+    fh.setFormatter(formatter)
+    logger.addHandler(fh)
+    return logger
+
+
+_logger = _setup_logger()
 
 
 DATABASE_NAME = "database/events.json"
@@ -63,8 +78,8 @@ def get_events() -> list[EventMetadata]:
         return _get_events()
 
 
-def get_event(event_id: str) -> Event:
-    pass
+# def get_event(event_id: str) -> Event:
+#    pass
 
 
 def _maybe_register_event(event: EventMetadata):
@@ -103,7 +118,8 @@ def match_or_register_event(
 def _get_markets(event_id: str) -> list[MarketMetadata]:
     database = _get_database()
     if event_id not in database:
-        raise Exception(f"_get_markets() {event_id} not found in database.")
+        _logger.error(f"_get_markets() {event_id} not found in database.")
+        return []
 
     event = database[event_id]
     markets = []
@@ -128,7 +144,8 @@ def get_markets(event_id: str) -> list[MarketMetadata]:
 def _maybe_register_market(event_id: str, market: MarketMetadata):
     database = _get_database()
     if event_id not in database:
-        raise Exception(f"_register_market() {event_id} not found in database.")
+        _logger.error(f"_register_market() {event_id} not found in database.")
+        return
 
     event = database[event_id]
     if "markets" not in event:
@@ -137,7 +154,7 @@ def _maybe_register_market(event_id: str, market: MarketMetadata):
     if market.id in event["markets"]:
         return
 
-    event["markets"][market.id] = {}
+    event["markets"][market.id] = {"kind": market.kind}
 
     _write_database(database)
 
@@ -153,10 +170,12 @@ def maybe_register_market(event_id: str, market: MarketMetadata):
 def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
     database = _get_database()
     if event_id not in database:
-        raise Exception(f"_get_selection() {event_id} not found in database.")
+        _logger.error(f"_get_selection() {event_id} not found in database.")
+        return []
     event = database[event_id]
     if market_id not in event["markets"]:
-        raise Exception(f"_get_selection() {market_id} not found in event {event}.")
+        _logger.error(f"_get_selection() {market_id} not found in event {event}.")
+        return []
     market = event["markets"][market_id]
 
     selections = []
@@ -176,10 +195,12 @@ def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
 def _maybe_register_selection(event_id: str, market_id: str, selection: SelectionMetadata):
     database = _get_database()
     if event_id not in database:
-        raise Exception(f"_register_selection() {event_id} not found in database.")
+        _logger.error(f"_register_selection() {event_id} not found in database.")
+        return
     event = database[event_id]
     if market_id not in event["markets"]:
-        raise Exception(f"_register_selection() {market_id} not found in event {event}.")
+        _logger.error(f"_register_selection() {market_id} not found in event {event}.")
+        return
     market = event["markets"][market_id]
 
     if "selection" not in market:
@@ -217,20 +238,23 @@ def update_event_odds(update: Update):
     with _lock:
         database = _get_database()
         if update.event_id not in database:
-            raise Exception(f"update_event_odds() {update.event_id} not found in database.")
+            _logger.error(f"update_event_odds() {update.event_id} not found in database.")
+            return
         event = database[update.event_id]
         if update.market_id not in event["markets"]:
-            raise Exception(f"update_event_odds() {update.market_id} not found in event {event}.")
+            _logger.error(f"update_event_odds() {update.market_id} not found in event {event}.")
+            return
         market = event["markets"][update.market_id]
         if update.selection_id not in market["selection"]:
-            raise Exception(f"update_event_odds() {update.selection_id} not found in market" f" {market}.")
+            _logger.error(f"update_event_odds() {update.selection_id} not found in market" f" {market}.")
+            return
         selection = market["selection"][update.selection_id]
 
         if "odds" not in selection:
             selection["odds"] = {}
         original_odds = selection["odds"].get(update.sportsbook)
         selection["odds"][update.sportsbook] = update.new_odds
-        print(
+        _logger.info(
             "updating"
             f" {update.event_id}/{update.market_id}/{update.selection_id}/{update.sportsbook} from {original_odds} to"
             f" {update.new_odds}"
