@@ -21,6 +21,7 @@ class MarketMetadata:
 class Market:
     metadata: MarketMetadata
     selection: dict[str, Selection] = field(default_factory=dict)
+    linked: list[list[str]] = field(default_factory=list)
 
     def __repr__(self) -> str:
         return f"{self.metadata.id}/{self.metadata.kind}"

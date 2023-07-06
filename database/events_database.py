@@ -25,11 +25,14 @@ GENERAL STRUCTURE
 
 
 def _setup_logger():
+    logging.basicConfig(filename="logs/root.log", force=True)
     logger = logging.getLogger("events_database")
     logger.propagate = False
     fh = logging.FileHandler("logs/events_database.log")
     fh.setLevel(logging.INFO)
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s @ %(filename)s:%(funcName)s:%(lineno)s == %(message)s")
+    formatter = logging.Formatter(
+        "%(asctime)s - %(levelname)s @ %(lineno)s: %(message)s"
+    )
     fh.setFormatter(formatter)
     logger.addHandler(fh)
     return logger
@@ -69,7 +72,9 @@ def _get_events() -> list[EventMetadata]:
     for unified_id, event in database.items():
         datetime_str = event["date"]
         date = datetime.fromtimestamp(datetime_str)
-        events.append(EventMetadata(unified_id, event["name"], event["sport"], date))
+        events.append(
+            EventMetadata(unified_id, event["name"], event["sport"], date)
+        )
     return events
 
 
@@ -174,7 +179,9 @@ def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
         return []
     event = database[event_id]
     if market_id not in event["markets"]:
-        _logger.error(f"_get_selection() {market_id} not found in event {event}.")
+        _logger.error(
+            f"_get_selection() {market_id} not found in event {event}."
+        )
         return []
     market = event["markets"][market_id]
 
@@ -192,14 +199,20 @@ def _get_selections(event_id: str, market_id: str) -> list[SelectionMetadata]:
 # TODO: def get_selection(event_id: str, market_id: str, selection_id: str) -> Selection:
 
 
-def _maybe_register_selection(event_id: str, market_id: str, selection: SelectionMetadata):
+def _maybe_register_selection(
+    event_id: str, market_id: str, selection: SelectionMetadata
+):
     database = _get_database()
     if event_id not in database:
-        _logger.error(f"_register_selection() {event_id} not found in database.")
+        _logger.error(
+            f"_register_selection() {event_id} not found in database."
+        )
         return
     event = database[event_id]
     if market_id not in event["markets"]:
-        _logger.error(f"_register_selection() {market_id} not found in event {event}.")
+        _logger.error(
+            f"_register_selection() {market_id} not found in event {event}."
+        )
         return
     market = event["markets"][market_id]
 
@@ -238,15 +251,23 @@ def update_event_odds(update: Update):
     with _lock:
         database = _get_database()
         if update.event_id not in database:
-            _logger.error(f"update_event_odds() {update.event_id} not found in database.")
+            _logger.error(
+                f"update_event_odds() {update.event_id} not found in database."
+            )
             return
         event = database[update.event_id]
         if update.market_id not in event["markets"]:
-            _logger.error(f"update_event_odds() {update.market_id} not found in event {event}.")
+            _logger.error(
+                f"update_event_odds() {update.market_id} not found in event"
+                f" {event}."
+            )
             return
         market = event["markets"][update.market_id]
         if update.selection_id not in market["selection"]:
-            _logger.error(f"update_event_odds() {update.selection_id} not found in market" f" {market}.")
+            _logger.error(
+                f"update_event_odds() {update.selection_id} not found in market"
+                f" {market}."
+            )
             return
         selection = market["selection"][update.selection_id]
 
@@ -256,7 +277,7 @@ def update_event_odds(update: Update):
         selection["odds"][update.sportsbook] = update.new_odds
         _logger.info(
             "updating"
-            f" {update.event_id}/{update.market_id}/{update.selection_id}/{update.sportsbook} from {original_odds} to"
-            f" {update.new_odds}"
+            f" {update.event_id}/{update.market_id}/{update.selection_id}/{update.sportsbook} from"
+            f" {original_odds} to {update.new_odds}"
         )
         _write_database(database)

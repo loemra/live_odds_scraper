@@ -1,5 +1,4 @@
 import json
-from enum import Enum
 
 from datastructures.market import MarketKind
 

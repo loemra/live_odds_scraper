@@ -14,7 +14,10 @@ class EventMetadata:
     url: Optional[str] = field(default=None)
 
     def __repr__(self) -> str:
-        return f"{self.sport}: {self.name} @ {self.date.strftime(r'%H:%M, %d-%m-%Y')}"
+        return (
+            f"{self.sport}: {self.name} @"
+            f" {self.date.strftime(r'%H:%M, %d-%m-%Y')}"
+        )
 
 
 @dataclass
