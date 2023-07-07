@@ -4,7 +4,7 @@ from datastructures.market import MarketKind
 
 
 def _get_config():
-    with open("bovada/config.json", "r") as f:
+    with open("sportsbooks/bovada/config.json", "r") as f:
         return json.load(f)
 
 

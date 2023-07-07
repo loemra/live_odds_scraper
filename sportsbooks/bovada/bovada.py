@@ -10,11 +10,11 @@ from sportsbooks.bovada import config
 
 
 def _setup_logger():
-    logging.basicConfig(filename="logs/root.log", force=True)
+    logging.basicConfig(filename="logs/root.log")
     logger = logging.getLogger("bovada")
     logger.propagate = False
     fh = logging.FileHandler("logs/bovada.log")
-    fh.setLevel(logging.INFO)
+    fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
     )
@@ -61,12 +61,14 @@ def _parse_over_under_odds(market: Market, outcomes):
     for outcome in outcomes:
         id = outcome["id"]
         handicap = outcome["price"].get("handicap")
+        if not handicap:
+            _logger.warning(f"no handicap for market {market}")
         description = outcome["description"]
         name = f"{description} {handicap}"
         odds = {"bovada": float(outcome["price"]["decimal"])}
         market.selection[id] = Selection(SelectionMetadata(id, name), odds)
 
-        if not links[handicap]:
+        if handicap not in links:
             links[handicap] = []
         links[handicap].append(id)
 
@@ -74,12 +76,9 @@ def _parse_over_under_odds(market: Market, outcomes):
 
 
 def _parse_yes_no_odds(market: Market, outcomes):
-    # no links.
     for outcome in outcomes:
         id = outcome["id"]
-        handicap = outcome["price"].get("handicap")
-        description = outcome["description"]
-        name = f"{description} {handicap}"
+        name = outcome["description"]
         odds = {"bovada": float(outcome["price"]["decimal"])}
         market.selection[id] = Selection(SelectionMetadata(id, name), odds)
 
@@ -87,12 +86,9 @@ def _parse_yes_no_odds(market: Market, outcomes):
 
 
 def _parse_team_name_odds(market: Market, outcomes):
-    # no links.
     for outcome in outcomes:
         id = outcome["id"]
-        handicap = outcome["price"].get("handicap")
-        description = outcome["description"]
-        name = f"{description} {handicap}"
+        name = outcome["description"]
         odds = {"bovada": float(outcome["price"]["decimal"])}
         market.selection[id] = Selection(SelectionMetadata(id, name), odds)
 
@@ -114,13 +110,16 @@ def _parse_odds(j) -> list[Market]:
                     market_kind = config.get_market_kind(market_id)
                     m = Market(MarketMetadata(market_id, market_kind))
 
-                    if market_kind == MarketKind.OVER_UNDER:
-                        if market["id"][-1] != "0":
+                    if market_kind is MarketKind.OVER_UNDER:
+                        _logger.debug(
+                            f"{event['description']}, {market['id']}, "
+                        )
+                        if market["id"] != "G-2W-OU.Total Goals O/U.100":
                             continue
                         _parse_over_under_odds(m, market["outcomes"])
-                    elif market_kind == MarketKind.YES_NO:
+                    elif market_kind is MarketKind.YES_NO:
                         _parse_yes_no_odds(m, market["outcomes"])
-                    elif market_kind == MarketKind.TEAM_NAME:
+                    elif market_kind is MarketKind.TEAM_NAME:
                         _parse_team_name_odds(m, market["outcomes"])
 
                     markets.append(m)
@@ -142,13 +141,3 @@ def get_odds(url: str) -> list[Market]:
     if not event:
         return []
     return _parse_odds(event)
-
-
-def get_updates():
-    pass
-
-
-def register_for_live_odds_updates(
-    event_id: str, markets: list[MarketMetadata]
-):
-    pass

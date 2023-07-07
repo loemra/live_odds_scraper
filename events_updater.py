@@ -17,7 +17,9 @@ from sportsbooks.fox_bets import fox_bets
 
 
 def _setup_logger():
-    logging.basicConfig(filename="logs/root.log", force=True)
+    logging.basicConfig(
+        filename="logs/root.log", level=logging.DEBUG, force=True
+    )
     logger = logging.getLogger("events_updater")
     logger.propagate = False
     fh = logging.FileHandler("logs/events_updater.log")
@@ -131,13 +133,22 @@ def _maybe_match_selection(
     if len(unified_selctions) == 0:
         return None
 
-    # special case for tie / draw.
+    # special case for tie / draw and over / under.
     def custom_scorer(query, choice):
         if query.lower() == "tie" or query.lower() == "draw":
             return max(
                 fuzz.token_sort_ratio("tie", choice),
                 fuzz.token_sort_ratio("draw", choice),
             )
+
+        if ("over" in query.lower() or "under" in query.lower()) and (
+            "over" in choice.lower() or "under" in choice.lower()
+        ):
+            if ("over" in query.lower()) == ("under" in choice.lower()):
+                return 0
+            query = query.lower().replace("over", "").replace("under", "")
+            choice = choice.lower().replace("over", "").replace("under", "")
+
         return fuzz.token_sort_ratio(query, choice)
 
     best_matches = process.extractBests(
@@ -153,7 +164,7 @@ def _maybe_match_selection(
             sportsbook_selection,
             unified_selctions,
             lambda e: e.name,
-            fuzz.token_sort_ratio,
+            custom_scorer,
         )
         _logger.debug(f"successful no match: {sportsbook_selection}, {res}")
         return None

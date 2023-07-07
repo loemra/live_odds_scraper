@@ -25,7 +25,7 @@ GENERAL STRUCTURE
 
 
 def _setup_logger():
-    logging.basicConfig(filename="logs/root.log", force=True)
+    logging.basicConfig(filename="logs/root.log")
     logger = logging.getLogger("events_database")
     logger.propagate = False
     fh = logging.FileHandler("logs/events_database.log")
@@ -159,7 +159,9 @@ def _maybe_register_market(event_id: str, market: MarketMetadata):
     if market.id in event["markets"]:
         return
 
-    event["markets"][market.id] = {"kind": market.kind}
+    event["markets"][market.id] = {
+        "kind": market.kind,
+    }
 
     _write_database(database)
 
