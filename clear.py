@@ -1,4 +1,4 @@
-from database.events_database import clear_db
+"""from database.events_database import clear_db
 from database.translaters.translater import reset_translaters
 
 print("confirm: ")
@@ -9,7 +9,7 @@ if res != "yes":
 
 clear_db()
 reset_translaters()
-
+"""
 with open("logs/events_database.log", "w") as f:
     f.write("")
 

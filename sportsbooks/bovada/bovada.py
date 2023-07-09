@@ -3,9 +3,9 @@ from datetime import datetime
 
 import requests
 
-from datastructures.event import EventMetadata
-from datastructures.market import Market, MarketKind, MarketMetadata
-from datastructures.selection import Selection, SelectionMetadata
+from datastructures.event import Event
+from datastructures.market import MarketKind
+from datastructures.selection import Selection
 from sportsbooks.bovada import config
 
 
@@ -39,12 +39,12 @@ def _get_event(url: str):
     return res.json()
 
 
-def _parse_events(j) -> list[EventMetadata]:
+def _parse_events(j) -> list[Event]:
     events = []
     for league in j:
         for event in league["events"]:
             events.append(
-                EventMetadata(
+                Event(
                     event["id"],
                     event["description"],
                     event["sport"],
@@ -55,48 +55,8 @@ def _parse_events(j) -> list[EventMetadata]:
     return events
 
 
-def _parse_over_under_odds(market: Market, outcomes):
-    # linked by handicap
-    links = {}
-    for outcome in outcomes:
-        id = outcome["id"]
-        handicap = outcome["price"].get("handicap")
-        if not handicap:
-            _logger.warning(f"no handicap for market {market}")
-        description = outcome["description"]
-        name = f"{description} {handicap}"
-        odds = {"bovada": float(outcome["price"]["decimal"])}
-        market.selection[id] = Selection(SelectionMetadata(id, name), odds)
-
-        if handicap not in links:
-            links[handicap] = []
-        links[handicap].append(id)
-
-    market.linked = list(links.values())
-
-
-def _parse_yes_no_odds(market: Market, outcomes):
-    for outcome in outcomes:
-        id = outcome["id"]
-        name = outcome["description"]
-        odds = {"bovada": float(outcome["price"]["decimal"])}
-        market.selection[id] = Selection(SelectionMetadata(id, name), odds)
-
-    market.linked = [[id for id in market.selection]]
-
-
-def _parse_team_name_odds(market: Market, outcomes):
-    for outcome in outcomes:
-        id = outcome["id"]
-        name = outcome["description"]
-        odds = {"bovada": float(outcome["price"]["decimal"])}
-        market.selection[id] = Selection(SelectionMetadata(id, name), odds)
-
-    market.linked = [[id for id in market.selection]]
-
-
-def _parse_odds(j) -> list[Market]:
-    markets = []
+def _parse_odds(j) -> list[Selection]:
+    selections = []
     for league in j:
         for event in league["events"]:
             for display_group in event["displayGroups"]:
@@ -108,7 +68,6 @@ def _parse_odds(j) -> list[Market]:
                     ):
                         continue
                     market_kind = config.get_market_kind(market_id)
-                    m = Market(MarketMetadata(market_id, market_kind))
 
                     if market_kind is MarketKind.OVER_UNDER:
                         _logger.debug(
@@ -116,17 +75,28 @@ def _parse_odds(j) -> list[Market]:
                         )
                         if market["id"] != "G-2W-OU.Total Goals O/U.100":
                             continue
-                        _parse_over_under_odds(m, market["outcomes"])
-                    elif market_kind is MarketKind.YES_NO:
-                        _parse_yes_no_odds(m, market["outcomes"])
-                    elif market_kind is MarketKind.TEAM_NAME:
-                        _parse_team_name_odds(m, market["outcomes"])
 
-                    markets.append(m)
-    return markets
+                    link = "0"
+                    for selection in market["outcomes"]:
+                        id = selection["id"]
+                        name = selection["name"]
+                        if market_kind is MarketKind.OVER_UNDER:
+                            handicap = selection["price"].get("handicap")
+                            if not handicap:
+                                raise Exception(
+                                    f"no handicap for over_under @ {market_id},"
+                                    f" {id} {event}"
+                                )
+                            link = handicap
+
+                        odds = float(selection["price"]["decimal"])
+                        selections.append(
+                            Selection(id, name, link, market_id, odds)
+                        )
+    return selections
 
 
-def get_events(_: datetime) -> list[EventMetadata]:
+def get_events() -> list[Event]:
     events = []
     for url in config.get_events_urls():
         event = _get_event(url)
@@ -136,7 +106,7 @@ def get_events(_: datetime) -> list[EventMetadata]:
     return events
 
 
-def get_odds(url: str) -> list[Market]:
+def get_odds(url: str) -> list[Selection]:
     event = _get_event(url)
     if not event:
         return []
