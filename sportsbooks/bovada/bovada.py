@@ -14,7 +14,7 @@ def _setup_logger():
     logger = logging.getLogger("bovada")
     logger.propagate = False
     fh = logging.FileHandler("logs/bovada.log")
-    fh.setLevel(logging.DEBUG)
+    fh.setLevel(logging.INFO)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
     )
@@ -70,16 +70,13 @@ def _parse_odds(j) -> list[Selection]:
                     market_kind = config.get_market_kind(market_id)
 
                     if market_kind is MarketKind.OVER_UNDER:
-                        _logger.debug(
-                            f"{event['description']}, {market['id']}, "
-                        )
                         if market["id"] != "G-2W-OU.Total Goals O/U.100":
                             continue
 
                     link = "0"
                     for selection in market["outcomes"]:
                         id = selection["id"]
-                        name = selection["name"]
+                        name = selection["description"]
                         if market_kind is MarketKind.OVER_UNDER:
                             handicap = selection["price"].get("handicap")
                             if not handicap:

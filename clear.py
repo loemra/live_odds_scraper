@@ -1,5 +1,4 @@
-"""from database.events_database import clear_db
-from database.translaters.translater import reset_translaters
+import os
 
 print("confirm: ")
 res = input()
@@ -7,17 +6,12 @@ res = input()
 if res != "yes":
     exit()
 
-clear_db()
-reset_translaters()
-"""
-with open("logs/events_database.log", "w") as f:
+with open("database/events.db", "w") as f:
     f.write("")
 
-with open("logs/events_updater.log", "w") as f:
-    f.write("")
+# run initial setup code for the db.
+from database import setup_db
 
-with open("logs/fox_bets.log", "w") as f:
-    f.write("")
-
-with open("logs/bovada.log", "w") as f:
-    f.write("")
+for path in os.listdir("logs"):
+    with open(f"logs/{path}", "w") as f:
+        f.write("")

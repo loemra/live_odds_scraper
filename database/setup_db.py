@@ -1,9 +1,9 @@
 import sqlite3
 from typing import Tuple
 
-from datastructures.market import Market, MarketKind, SbMarket
+from datastructures.market import MarketKind
 
-conn = sqlite3.connect("db2/events.db")
+conn = sqlite3.connect("database/events.db")
 cur = conn.cursor()
 
 
@@ -94,28 +94,25 @@ def _maybe_add_sbs(sbs: list[str]):
 def _maybe_add_sports(sports: list[str]):
     cur.executemany(
         "INSERT INTO sports VALUES (?)",
-        [(sport) for sport in sports],
+        [(sport,) for sport in sports],
     )
 
 
-def _maybe_add_sb_sports(sb_sports: list[Tuple[str, str, str]]):
+def _maybe_add_sb_sports(sb_sports: list[Tuple]):
     cur.executemany(
-        "INSERT INTO sb_markets VALUES (?, ?, ?)",
+        "INSERT INTO sb_sports VALUES (?, ?, ?)",
         sb_sports,
     )
 
 
-def _maybe_add_markets(markets: list[Market]):
-    cur.executemany(
-        "INSERT INTO markets VALUES (?, ?)",
-        [(market.name, market.kind) for market in markets],
-    )
+def _maybe_add_markets(markets: list[Tuple]):
+    cur.executemany("INSERT INTO markets VALUES (?, ?)", markets)
 
 
-def _maybe_add_sb_markets(sb_markets: list[SbMarket]):
+def _maybe_add_sb_markets(sb_markets: list[Tuple]):
     cur.executemany(
         "INSERT INTO sb_markets VALUES (?, ?, ?)",
-        [(market.name, market.market_id, market.sb) for market in sb_markets],
+        sb_markets,
     )
 
 
@@ -126,19 +123,19 @@ _maybe_add_sb_sports(
 )
 _maybe_add_markets(
     [
-        Market("soccer_game_result", MarketKind.TEAM_NAME),
-        Market("soccer_over_under_total_goals", MarketKind.OVER_UNDER),
-        Market("soccer_both_teams_to_score", MarketKind.YES_NO),
+        ("soccer_game_result", "TEAM_NAME"),
+        ("soccer_over_under_total_goals", "OVER_UNDER"),
+        ("soccer_both_teams_to_score", "YES_NO"),
     ]
 )
 _maybe_add_sb_markets(
     [
-        SbMarket("SOCCER:FT:AXB", "soccer_game_result", "fox_bets"),
-        SbMarket("SOCCER:FT:OU", "soccer_over_under_total_goals", "fox_bets"),
-        SbMarket("SOCCER:FT:BTS", "soccer_both_teams_to_score", "fox_bets"),
-        SbMarket("1", "soccer_game_result", "bovada"),
-        SbMarket("13", "soccer_over_under_total_goals", "bovada"),
-        SbMarket("350", "soccer_both_teams_to_score", "bovada"),
+        ("SOCCER:FT:AXB", "soccer_game_result", "fox_bets"),
+        ("SOCCER:FT:OU", "soccer_over_under_total_goals", "fox_bets"),
+        ("SOCCER:FT:BTS", "soccer_both_teams_to_score", "fox_bets"),
+        ("1", "soccer_game_result", "bovada"),
+        ("13", "soccer_over_under_total_goals", "bovada"),
+        ("350", "soccer_both_teams_to_score", "bovada"),
     ]
 )
 

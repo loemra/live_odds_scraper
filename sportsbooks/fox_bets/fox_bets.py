@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import requests
 
 from datastructures.event import Event
+from datastructures.market import MarketKind
 from datastructures.selection import Selection
 from sportsbooks.fox_bets import config
 
@@ -56,17 +57,19 @@ def _parse_odds(j) -> list[Selection]:
     selections = []
     for market in j["markets"]:
         market_id = market["type"]
+        market_kind = config.get_market_kind(market_id)
 
-        ids = []
         for selection in market["selection"]:
             id = selection["id"]
-            ids.append(id)
             try:
                 odds = float(selection["odds"]["dec"])
             except ValueError:
                 continue
+            link = "0"
+            if market_kind is MarketKind.OVER_UNDER:
+                link = market["subtype"]
             selections.append(
-                Selection(id, selection["name"], "0", market_id, odds)
+                Selection(id, selection["name"], link, market_id, odds)
             )
     return selections
 
