@@ -1,12 +1,11 @@
 import dataclasses
+import multiprocessing
 import sqlite3
-from threading import Lock
 from typing import Callable, Tuple
 
 from datastructures.event import Event
 from datastructures.selection import Selection
 
-_lock = Lock()
 conn = sqlite3.connect("database/events.db")
 cur = conn.cursor()
 
@@ -56,7 +55,7 @@ def _register_event(event: Event) -> Event:
         )
     if not cur.lastrowid:
         raise Exception(f"_register_event, unable to get row_id for {event}")
-    modified_event = dataclasses.replace(event, id=str(cur.lastrowid))
+    modified_event = dataclasses.replace(event, id=cur.lastrowid)
     return modified_event
 
 
@@ -70,7 +69,7 @@ def _sb_event_exists(sb: str, id: str) -> bool:
 
 
 def _register_sb_event(
-    sb: str, sb_event_id: str, sb_event_url: str, event_id: str
+    sb: str, sb_event_id: str, sb_event_url: str, event_id: int
 ):
     with conn:
         cur.execute(
@@ -80,11 +79,12 @@ def _register_sb_event(
 
 
 def match_or_register_event(
+    lock,
     sb: str,
     event: Event,
     match_events: Callable[[Event, list[Event]], Event | None],
 ):
-    with _lock:
+    with lock:
         if _sb_event_exists(sb, event.id):
             return
 
@@ -97,12 +97,15 @@ def match_or_register_event(
             raise Exception(
                 f"match_or_register_event sportsbook event has no url {event}"
             )
-        _register_sb_event(sb, event.id, event.url, match.id)
+        _register_sb_event(sb, event.id, event.url, int(match.id))
 
 
-def get_sb_events(sb: str) -> list[Tuple[str, str]]:
-    res = cur.execute("SELECT event_id, url FROM sb_events WHERE sb = ?", (sb,))
-    return res.fetchall()
+def get_sb_events(lock, sb: str) -> list[Tuple[str, str]]:
+    with lock:
+        res = cur.execute(
+            "SELECT event_id, url FROM sb_events WHERE sb = ?", (sb,)
+        )
+        return res.fetchall()
 
 
 def _update_odds(sb: str, id: str, odds: float):
@@ -122,7 +125,7 @@ def _sb_selection_exists(sb: str, id: str) -> bool:
 
 
 def _get_selections(
-    unified_event_id: str, unified_market_id: str
+    unified_event_id: int, unified_market_id: str
 ) -> list[Selection]:
     res = cur.execute(
         (
@@ -136,7 +139,7 @@ def _get_selections(
 
 
 def _register_selection(
-    sb: str, selection: Selection, event_id: str
+    sb: str, selection: Selection, event_id: int
 ) -> Selection:
     with conn:
         cur.execute(
@@ -148,7 +151,7 @@ def _register_selection(
 
 
 def _register_sb_selection(
-    sb: str, sb_selection_id: str, sb_odds: float | None, selection_id
+    sb: str, sb_selection_id: str, sb_odds: float | None, selection_id: int
 ):
     with conn:
         cur.execute(
@@ -163,12 +166,13 @@ def _register_sb_selection(
 
 
 def update_or_register_event_selections(
+    lock,
     sb: str,
-    unified_event_id: str,
+    unified_event_id: int,
     selection: Selection,
     match_selection: Callable[[Selection, list[Selection]], Selection | None],
 ):
-    with _lock:
+    with lock:
         if _sb_selection_exists(sb, selection.id):
             if not selection.odds:
                 raise Exception(
@@ -188,4 +192,4 @@ def update_or_register_event_selections(
             selection.market_id = unified_market_id
             match = _register_selection(sb, selection, unified_event_id)
 
-        _register_sb_selection(sb, selection.id, selection.odds, match.id)
+        _register_sb_selection(sb, selection.id, selection.odds, int(match.id))

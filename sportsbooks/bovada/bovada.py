@@ -14,7 +14,7 @@ def _setup_logger():
     logger = logging.getLogger("bovada")
     logger.propagate = False
     fh = logging.FileHandler("logs/bovada.log")
-    fh.setLevel(logging.INFO)
+    fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
     )
@@ -84,7 +84,11 @@ def _parse_odds(j) -> list[Selection]:
                                     f"no handicap for over_under @ {market_id},"
                                     f" {id} {event}"
                                 )
+                            if "handicap2" in selection["price"]:
+                                continue
+                            name = f"{name} {handicap}"
                             link = handicap
+                            _logger.debug(f"{handicap} for selection: {id}")
 
                         odds = float(selection["price"]["decimal"])
                         selections.append(

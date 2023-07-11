@@ -56,9 +56,9 @@ def _maybe_match_event(
         return None
 
     relevant_events = [
-        event
-        for event in potential_events
-        if abs((event.date - event.date).total_seconds()) < 3600
+        p_event
+        for p_event in potential_events
+        if abs((event.date - p_event.date).total_seconds()) < 3600
     ]
     if not relevant_events:
         return None
@@ -100,8 +100,8 @@ def _maybe_match_selection(
     def custom_scorer(query, choice):
         if query.lower() == "tie" or query.lower() == "draw":
             return max(
-                fuzz.token_sort_ratio("tie", choice),
-                fuzz.token_sort_ratio("draw", choice),
+                fuzz.token_sort_ratio("tie", choice.lower()),
+                fuzz.token_sort_ratio("draw", choice.lower()),
             )
 
         if ("over" in query.lower() or "under" in query.lower()) and (
@@ -140,19 +140,22 @@ def _maybe_match_selection(
     return _prompt_for_match(selection, potential_selections)
 
 
-def match_or_register_events(sb: str, sb_get_events: Callable[[], list[Event]]):
+def match_or_register_events(
+    lock, sb: str, sb_get_events: Callable[[], list[Event]]
+):
     for event in sb_get_events():
-        db.match_or_register_event(sb, event, _maybe_match_event)
+        db.match_or_register_event(lock, sb, event, _maybe_match_event)
 
 
 def update_or_register_event_selections(
+    lock,
     sb: str,
     sb_get_odds: Callable[[str], list[Selection]],
 ):
-    sb_events = db.get_sb_events(sb)
+    sb_events = db.get_sb_events(lock, sb)
     for unified_event_id, url in sb_events:
         selections = sb_get_odds(url)
         for selection in selections:
             db.update_or_register_event_selections(
-                sb, unified_event_id, selection, _maybe_match_selection
+                lock, sb, unified_event_id, selection, _maybe_match_selection
             )

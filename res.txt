@@ -1,0 +1,4557 @@
+Leon v Pachuca soccer_game_result
+fox_bets Pachuca 61.0
+fox_bets Leon 1.001
+fox_bets Tie 19.0
+1.0680260205713183
+
+
+
+Leon v Pachuca soccer_over_under_total_goals
+fox_bets Over 3.5 1.57
+fox_bets Under 3.5 2.0
+1.1369426751592355
+
+
+
+Leon v Pachuca soccer_over_under_total_goals
+fox_bets Over 4.5 3.6
+fox_bets Under 4.5 1.15
+1.1473429951690823
+
+
+
+Leon v Pachuca soccer_over_under_total_goals
+fox_bets Under 5.5 1.02
+fox_bets Over 5.5 6.5
+1.134238310708899
+
+
+
+Leon v Pachuca soccer_both_teams_to_score
+fox_bets Yes 2.38
+fox_bets No 1.4
+1.134453781512605
+
+
+
+Urartu v Zrinjski soccer_game_result
+fox_bets Tie 3.0
+fox_bets Zrinjski 2.3
+fox_bets Urartu 2.88
+1.1153381642512077
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Over 2.5 2.2
+fox_bets Under 2.5 1.57
+1.0914881297046901
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Over 3.5 3.9
+fox_bets Under 3.5 1.2
+1.0897435897435899
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Over 0.5 1.08
+fox_bets Under 0.5 6.0
+1.0925925925925926
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Under 1.5 2.63
+fox_bets Over 1.5 1.4
+1.0945138511678436
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Over 6.5 21.0
+fox_bets Under 6.5 1.001
+1.0466200466200468
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Under 4.5 1.05
+fox_bets Over 4.5 7.5
+1.0857142857142856
+
+
+
+Urartu v Zrinjski soccer_over_under_total_goals
+fox_bets Under 5.5 1.005
+fox_bets Over 5.5 11.0
+1.0859339665309815
+
+
+
+Urartu v Zrinjski soccer_both_teams_to_score
+fox_bets No 1.67
+fox_bets Yes 2.0
+1.098802395209581
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_game_result
+fox_bets Qarabag Fk 1.25
+fox_bets Lincoln Red Imps 10.0
+fox_bets Tie 4.8
+1.1083333333333334
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Over 2.5 1.7
+fox_bets Under 2.5 2.0
+1.0882352941176472
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Over 3.5 2.8
+fox_bets Under 3.5 1.36
+1.0924369747899159
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Under 0.5 8.5
+fox_bets Over 0.5 1.03
+1.0885208452312964
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Under 1.5 3.5
+fox_bets Over 1.5 1.25
+1.0857142857142859
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Under 6.5 1.004
+fox_bets Over 6.5 13.0
+1.072939013178057
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 21.0
+1.0466200466200468
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Over 4.5 5.0
+fox_bets Under 4.5 1.12
+1.0928571428571427
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_over_under_total_goals
+fox_bets Under 5.5 1.04
+fox_bets Over 5.5 7.5
+1.0948717948717948
+
+
+
+Lincoln Red Imps v Qarabag Fk soccer_both_teams_to_score
+fox_bets No 1.5
+fox_bets Yes 2.3
+1.1014492753623188
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_game_result
+fox_bets Zalgiris 1.4
+fox_bets Tie 3.9
+fox_bets FK Struga Trim-Lum 6.5
+1.1245421245421245
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Under 2.5 1.72
+fox_bets Over 2.5 1.95
+1.0942158616577222
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Over 3.5 3.4
+fox_bets Under 3.5 1.25
+1.0941176470588236
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Over 0.5 1.05
+fox_bets Under 0.5 7.5
+1.0857142857142856
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Under 1.5 3.1
+fox_bets Over 1.5 1.3
+1.0918114143920594
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Under 6.5 1.001
+fox_bets Over 6.5 17.0
+1.0578245284127639
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Over 4.5 6.0
+fox_bets Under 4.5 1.08
+1.0925925925925926
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_over_under_total_goals
+fox_bets Under 5.5 1.01
+fox_bets Over 5.5 10.0
+1.0900990099009902
+
+
+
+Zalgiris v FK Struga Trim-Lum soccer_both_teams_to_score
+fox_bets No 1.55
+fox_bets Yes 2.15
+1.1102775693923481
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_game_result
+fox_bets Maccabi Haifa 1.33
+fox_bets Hamrun Spartans FC 7.5
+fox_bets Tie 4.5
+1.1074352548036757
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 2.5 2.05
+fox_bets Over 2.5 1.67
+1.0866072732583614
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 3.5 1.4
+fox_bets Over 3.5 2.63
+1.0945138511678436
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 0.5 8.5
+fox_bets Over 0.5 1.03
+1.0885208452312964
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 1.5 3.7
+fox_bets Over 1.5 1.22
+1.0899424014178112
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 6.5 1.005
+fox_bets Over 6.5 11.0
+1.0859339665309815
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Over 7.5 21.0
+fox_bets Under 7.5 1.001
+1.0466200466200468
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 4.5 1.12
+fox_bets Over 4.5 5.0
+1.0928571428571427
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_over_under_total_goals
+fox_bets Under 5.5 1.04
+fox_bets Over 5.5 7.5
+1.0948717948717948
+
+
+
+Hamrun Spartans FC v Maccabi Haifa soccer_both_teams_to_score
+fox_bets Yes 2.0
+fox_bets No 1.67
+1.098802395209581
+
+
+
+Olimpija v Valmiera FK/BSS soccer_game_result
+fox_bets Olimpija 1.3
+fox_bets Tie 4.5
+fox_bets Valmiera FK/BSS 8.0
+1.1164529914529915
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 2.5 1.65
+fox_bets Under 2.5 2.05
+1.0938654841093867
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 3.5 2.63
+fox_bets Under 3.5 1.4
+1.0945138511678436
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 0.5 1.03
+fox_bets Under 0.5 8.5
+1.0885208452312964
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 1.5 1.2
+fox_bets Under 1.5 3.9
+1.0897435897435899
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Under 6.5 1.005
+fox_bets Over 6.5 11.0
+1.0859339665309815
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 21.0
+1.0466200466200468
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 4.5 4.33
+fox_bets Under 4.5 1.15
+1.1005120996083946
+
+
+
+Olimpija v Valmiera FK/BSS soccer_over_under_total_goals
+fox_bets Over 5.5 7.5
+fox_bets Under 5.5 1.04
+1.0948717948717948
+
+
+
+Olimpija v Valmiera FK/BSS soccer_both_teams_to_score
+fox_bets No 1.62
+fox_bets Yes 2.05
+1.1050888286660645
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_game_result
+fox_bets Flora Tallinn 13.0
+fox_bets Tie 6.5
+fox_bets Rakow Czestochowa 1.14
+1.1079622132253713
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Under 2.5 2.2
+fox_bets Over 2.5 1.57
+1.0914881297046901
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Under 3.5 1.47
+fox_bets Over 3.5 2.45
+1.0884353741496597
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Over 0.5 1.02
+fox_bets Under 0.5 9.0
+1.091503267973856
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Over 1.5 1.18
+fox_bets Under 1.5 4.2
+1.0855528652138822
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Over 6.5 11.0
+fox_bets Under 6.5 1.005
+1.0859339665309815
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Over 7.5 17.0
+fox_bets Under 7.5 1.001
+1.0578245284127639
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Under 4.5 1.18
+fox_bets Over 4.5 4.2
+1.0855528652138822
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_over_under_total_goals
+fox_bets Under 5.5 1.05
+fox_bets Over 5.5 7.5
+1.0857142857142856
+
+
+
+Rakow Czestochowa v Flora Tallinn soccer_both_teams_to_score
+fox_bets No 1.36
+fox_bets Yes 2.75
+1.0989304812834224
+
+
+
+KF Ballkani v Ludogorets soccer_game_result
+fox_bets KF Ballkani 4.6
+fox_bets Ludogorets 1.65
+fox_bets Tie 3.45
+1.1133069828722002
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Over 2.5 1.85
+fox_bets Under 2.5 1.8
+1.0960960960960962
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Over 3.5 3.1
+fox_bets Under 3.5 1.3
+1.0918114143920594
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Under 0.5 7.0
+fox_bets Over 0.5 1.06
+1.0862533692722371
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Over 1.5 1.3
+fox_bets Under 1.5 3.1
+1.0918114143920594
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Under 6.5 1.002
+fox_bets Over 6.5 15.0
+1.0646706586826347
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Over 4.5 5.5
+fox_bets Under 4.5 1.1
+1.0909090909090908
+
+
+
+KF Ballkani v Ludogorets soccer_over_under_total_goals
+fox_bets Over 5.5 9.0
+fox_bets Under 5.5 1.02
+1.091503267973856
+
+
+
+KF Ballkani v Ludogorets soccer_both_teams_to_score
+fox_bets No 1.8
+fox_bets Yes 1.85
+1.0960960960960962
+
+
+
+KI Klaksvik v Ferencvaros soccer_game_result
+fox_bets Tie 4.2
+fox_bets KI Klaksvik 7.0
+fox_bets Ferencvaros 1.36
+1.1162464985994398
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Over 2.5 1.7
+fox_bets Under 2.5 2.0
+1.0882352941176472
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Under 3.5 1.36
+fox_bets Over 3.5 2.8
+1.0924369747899159
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Under 0.5 7.5
+fox_bets Over 0.5 1.04
+1.0948717948717948
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Over 1.5 1.25
+fox_bets Under 1.5 3.5
+1.0857142857142859
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Under 6.5 1.004
+fox_bets Over 6.5 13.0
+1.072939013178057
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Under 4.5 1.12
+fox_bets Over 4.5 5.0
+1.0928571428571427
+
+
+
+KI Klaksvik v Ferencvaros soccer_over_under_total_goals
+fox_bets Over 5.5 8.5
+fox_bets Under 5.5 1.03
+1.0885208452312964
+
+
+
+KI Klaksvik v Ferencvaros soccer_both_teams_to_score
+fox_bets Yes 2.0
+fox_bets No 1.67
+1.098802395209581
+
+
+
+Partizani Tirana v Bate Borisov soccer_game_result
+fox_bets Bate Borisov 2.75
+fox_bets Partizani Tirana 2.4
+fox_bets Tie 2.95
+1.1192860811504879
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Under 2.5 1.55
+fox_bets Over 2.5 2.25
+1.0896057347670252
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Over 3.5 3.9
+fox_bets Under 3.5 1.2
+1.0897435897435899
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Over 0.5 1.09
+fox_bets Under 0.5 5.75
+1.0913442361388113
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Over 1.5 1.44
+fox_bets Under 1.5 2.5
+1.0944444444444446
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Under 6.5 1.001
+fox_bets Over 6.5 21.0
+1.0466200466200468
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Under 4.5 1.05
+fox_bets Over 4.5 7.5
+1.0857142857142856
+
+
+
+Partizani Tirana v Bate Borisov soccer_over_under_total_goals
+fox_bets Under 5.5 1.005
+fox_bets Over 5.5 11.0
+1.0859339665309815
+
+
+
+Partizani Tirana v Bate Borisov soccer_both_teams_to_score
+fox_bets No 1.67
+fox_bets Yes 2.0
+1.098802395209581
+
+
+
+Shamrock Rovers v Breidablik soccer_game_result
+fox_bets Shamrock Rovers 1.7
+fox_bets Tie 3.45
+fox_bets Breidablik 4.2
+1.1161856046766534
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Over 2.5 1.8
+fox_bets Under 2.5 1.85
+1.0960960960960962
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Under 3.5 1.33
+fox_bets Over 3.5 3.0
+1.0852130325814535
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Over 0.5 1.05
+fox_bets Under 0.5 7.5
+1.0857142857142856
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Under 1.5 3.4
+fox_bets Over 1.5 1.25
+1.0941176470588236
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Under 6.5 1.002
+fox_bets Over 6.5 15.0
+1.0646706586826347
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Under 4.5 1.1
+fox_bets Over 4.5 5.5
+1.0909090909090908
+
+
+
+Shamrock Rovers v Breidablik soccer_over_under_total_goals
+fox_bets Under 5.5 1.02
+fox_bets Over 5.5 9.0
+1.091503267973856
+
+
+
+Shamrock Rovers v Breidablik soccer_both_teams_to_score
+fox_bets No 1.85
+fox_bets Yes 1.8
+1.0960960960960962
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_game_result
+fox_bets Tianjin Teda 2.25
+fox_bets Cangzhou Mighty Lions 2.75
+fox_bets Tie 3.05
+1.1359496605398245
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Under 4.5 1.07
+fox_bets Over 4.5 5.25
+1.1250556297285268
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Under 6.5 1.004
+fox_bets Over 6.5 8.0
+1.12101593625498
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Over 0.5 1.06
+fox_bets Under 0.5 5.5
+1.125214408233276
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Under 2.5 1.67
+fox_bets Over 2.5 1.95
+1.111622908030094
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Over 3.5 3.15
+fox_bets Under 3.5 1.25
+1.1174603174603175
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Over 5.5 7.0
+fox_bets Under 5.5 1.02
+1.123249299719888
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_over_under_total_goals
+fox_bets Over 1.5 1.3
+fox_bets Under 1.5 2.8
+1.1263736263736264
+
+
+
+Cangzhou Mighty Lions v Tianjin Teda soccer_both_teams_to_score
+fox_bets Yes 1.75
+fox_bets No 1.83
+1.1178766588602653
+
+
+
+Chengdu Better City v Henan soccer_game_result
+fox_bets Tie 4.1
+fox_bets Chengdu Better City 1.33
+fox_bets Henan 7.0
+1.1386392811296533
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Over 4.5 4.75
+fox_bets Under 4.5 1.1
+1.1196172248803826
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 6.5 1.007
+fox_bets Over 6.5 8.0
+1.11804865938431
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 0.5 6.5
+fox_bets Over 0.5 1.04
+1.1153846153846154
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 2.5 1.8
+fox_bets Over 2.5 1.75
+1.126984126984127
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 3.5 1.3
+fox_bets Over 3.5 2.88
+1.1164529914529915
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 5.5 1.03
+fox_bets Over 5.5 6.5
+1.1247199402539207
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 8.0
+1.1240009990009991
+
+
+
+Chengdu Better City v Henan soccer_over_under_total_goals
+fox_bets Over 1.5 1.25
+fox_bets Under 1.5 3.2
+1.1125
+
+
+
+Chengdu Better City v Henan soccer_both_teams_to_score
+fox_bets Yes 2.0
+fox_bets No 1.6
+1.125
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_game_result
+fox_bets Shanghai Shenhua 4.6
+fox_bets Shandong Taishan 1.62
+fox_bets Tie 3.25
+1.1423675626574177
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Under 4.5 1.06
+fox_bets Over 4.5 5.5
+1.125214408233276
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Under 6.5 1.002
+fox_bets Over 6.5 8.0
+1.123003992015968
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Under 0.5 5.5
+fox_bets Over 0.5 1.06
+1.125214408233276
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Under 2.5 1.6
+fox_bets Over 2.5 2.0
+1.125
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Over 3.5 3.45
+fox_bets Under 3.5 1.2
+1.1231884057971016
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Over 5.5 7.5
+fox_bets Under 5.5 1.01
+1.1234323432343234
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_over_under_total_goals
+fox_bets Under 1.5 2.7
+fox_bets Over 1.5 1.33
+1.1222500696184907
+
+
+
+Shandong Taishan v Shanghai Shenhua soccer_both_teams_to_score
+fox_bets Yes 1.95
+fox_bets No 1.65
+1.118881118881119
+
+
+
+USA v Panama soccer_game_result
+bovada USA 1.606061
+bovada Panama 5.6
+bovada Tie 3.75
+1.0678794519487058
+
+
+
+USA v Panama soccer_over_under_total_goals
+fox_bets Over 6.5 17.0
+fox_bets Under 6.5 1.001
+1.0578245284127639
+
+
+
+USA v Panama soccer_over_under_total_goals
+bovada Under 2.5 1.76923
+bovada Over 2.5 2.1
+1.0414081132416226
+
+
+
+USA v Panama soccer_over_under_total_goals
+fox_bets Over 3.5 3.5
+fox_bets Under 3.5 1.25
+1.0857142857142859
+
+
+
+USA v Panama soccer_over_under_total_goals
+fox_bets Under 4.5 1.07
+fox_bets Over 4.5 6.5
+1.0884255930984903
+
+
+
+USA v Panama soccer_over_under_total_goals
+fox_bets Over 0.5 1.05
+fox_bets Under 0.5 7.5
+1.0857142857142856
+
+
+
+USA v Panama soccer_over_under_total_goals
+fox_bets Over 5.5 10.0
+fox_bets Under 5.5 1.01
+1.0900990099009902
+
+
+
+USA v Panama soccer_over_under_total_goals
+bovada Under 1.5 3.2
+bovada Over 1.5 1.363636
+1.045833528888941
+
+
+
+USA v Panama soccer_both_teams_to_score
+bovada No 1.714286
+bovada Yes 2.15
+1.0484495151808948
+
+
+
+Jamaica v Mexico soccer_game_result
+fox_bets Jamaica 5.25
+bovada Tie 4.0
+bovada Mexico 1.606061
+1.063117547186801
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+fox_bets Under 6.5 1.001
+fox_bets Over 6.5 17.0
+1.0578245284127639
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+bovada Over 2.5 2.11
+bovada Under 2.5 1.757576
+1.0428990880524873
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+fox_bets Over 3.5 3.4
+fox_bets Under 3.5 1.25
+1.0941176470588236
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+fox_bets Over 4.5 6.5
+fox_bets Under 4.5 1.07
+1.0884255930984903
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+fox_bets Under 0.5 7.0
+fox_bets Over 0.5 1.06
+1.0862533692722371
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+fox_bets Over 5.5 10.0
+fox_bets Under 5.5 1.01
+1.0900990099009902
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+bovada Over 1.5 1.363636
+bovada Under 1.5 3.2
+1.045833528888941
+
+
+
+Jamaica v Mexico soccer_both_teams_to_score
+bovada Yes 2.15
+bovada No 1.714286
+1.0484495151808948
+
+
+
+New England Revolution v Atlanta Utd soccer_game_result
+bovada New England Revolution 1.87
+bovada Tie 3.95
+fox_bets Atlanta Utd 3.9
+1.0443341716610517
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Under 2.5 2.35
+bovada Over 2.5 1.617284
+1.043852506700622
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+bovada Under 3.5 1.546448
+bovada Over 3.5 2.5
+1.046643146099966
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Over 0.5 1.03
+fox_bets Under 0.5 9.5
+1.0761369443025037
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Under 1.5 4.33
+fox_bets Over 1.5 1.18
+1.0784045093357342
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Under 6.5 1.02
+fox_bets Over 6.5 10.0
+1.080392156862745
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 19.0
+1.0516325779483675
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Under 4.5 1.2
+fox_bets Over 4.5 4.2
+1.0714285714285714
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+fox_bets Over 5.5 7.0
+fox_bets Under 5.5 1.07
+1.0774365821094793
+
+
+
+New England Revolution v Atlanta Utd soccer_both_teams_to_score
+bovada No 2.32
+bovada Yes 1.571429
+1.0673979455685854
+
+
+
+New York Red Bulls v FC Cincinnati soccer_game_result
+bovada FC Cincinnati 3.75
+bovada Tie 3.5
+bovada New York Red Bulls 2.0
+1.0523809523809524
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Under 2.5 1.8
+bovada Over 2.5 2.13
+1.0250391236306728
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Under 3.5 1.3
+bovada Over 3.5 3.8
+1.0323886639676112
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Over 0.5 1.06
+fox_bets Under 0.5 7.5
+1.0767295597484277
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Under 1.5 3.3
+bovada Over 1.5 1.363636
+1.036363831919244
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Under 6.5 1.002
+fox_bets Over 6.5 16.0
+1.060503992015968
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Over 4.5 5.75
+fox_bets Under 4.5 1.1
+1.08300395256917
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+fox_bets Over 5.5 9.5
+fox_bets Under 5.5 1.03
+1.0761369443025037
+
+
+
+New York Red Bulls v FC Cincinnati soccer_both_teams_to_score
+bovada Yes 1.909091
+fox_bets No 1.95
+1.0366300116867273
+
+
+
+Chicago Fire v CF Montréal soccer_game_result
+bovada Tie 3.9
+fox_bets CF Montréal 4.2
+bovada Chicago Fire 1.8
+1.05006105006105
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+bovada Over 2.5 1.78125
+bovada Under 2.5 2.08
+1.0421727395411606
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+bovada Under 3.5 1.416667
+bovada Over 3.5 2.93
+1.0471791151788952
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+fox_bets Under 0.5 8.5
+fox_bets Over 0.5 1.04
+1.079185520361991
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+fox_bets Over 1.5 1.25
+bovada Under 1.5 4.05
+1.0469135802469136
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+fox_bets Over 6.5 14.0
+fox_bets Under 6.5 1.004
+1.0674445076835515
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+fox_bets Over 4.5 5.0
+fox_bets Under 4.5 1.14
+1.0771929824561404
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+fox_bets Under 5.5 1.04
+fox_bets Over 5.5 8.5
+1.079185520361991
+
+
+
+Chicago Fire v CF Montréal soccer_both_teams_to_score
+bovada No 2.08
+bovada Yes 1.714286
+1.064102466880358
+
+
+
+Houston Dynamo v Minnesota Utd soccer_game_result
+bovada Minnesota Utd 3.65
+fox_bets Tie 3.7
+bovada Houston Dynamo 2.0
+1.0442428730099962
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Under 2.5 2.15
+bovada Over 2.5 1.746269
+1.037765739147224
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+bovada Under 3.5 1.454545
+bovada Over 3.5 2.78
+1.0472124450596445
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Under 0.5 8.5
+fox_bets Over 0.5 1.04
+1.079185520361991
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+bovada Under 1.5 4.2
+bovada Over 1.5 1.232558
+1.0494160846598621
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Over 6.5 12.0
+fox_bets Under 6.5 1.01
+1.0734323432343233
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 23.0
+1.0424792598705643
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Under 4.5 1.15
+fox_bets Over 4.5 4.6
+1.0869565217391306
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+fox_bets Under 5.5 1.06
+fox_bets Over 5.5 7.5
+1.0767295597484277
+
+
+
+Houston Dynamo v Minnesota Utd soccer_both_teams_to_score
+fox_bets No 2.2
+bovada Yes 1.625
+1.06993006993007
+
+
+
+Nashville SC v Philadelphia Union soccer_game_result
+bovada Tie 3.45
+bovada Nashville SC 2.15
+fox_bets Philadelphia Union 3.45
+1.0448264239973037
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+fox_bets Over 2.5 1.95
+fox_bets Under 2.5 1.8
+1.0683760683760686
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+bovada Under 3.5 1.350877
+fox_bets Over 3.5 3.25
+1.0479521537034544
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+fox_bets Over 0.5 1.06
+fox_bets Under 0.5 7.5
+1.0767295597484277
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+bovada Under 1.5 3.65
+bovada Over 1.5 1.294118
+1.0466996647232545
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+fox_bets Over 6.5 16.0
+fox_bets Under 6.5 1.002
+1.060503992015968
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+fox_bets Over 4.5 5.5
+fox_bets Under 4.5 1.11
+1.0827190827190827
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+fox_bets Over 5.5 9.5
+fox_bets Under 5.5 1.03
+1.0761369443025037
+
+
+
+Nashville SC v Philadelphia Union soccer_both_teams_to_score
+bovada Yes 1.741
+bovada No 2.05
+1.062187416819602
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_game_result
+bovada Tie 3.85
+bovada Sporting Kansas City 1.87
+bovada Real Salt Lake 3.95
+1.047664174991055
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Over 2.5 1.69
+bovada Under 2.5 2.2
+1.0462614308768154
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Over 3.5 2.69
+bovada Under 3.5 1.47619
+1.0491667852570636
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+fox_bets Under 0.5 9.5
+fox_bets Over 0.5 1.03
+1.0761369443025037
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Under 1.5 4.4
+bovada Over 1.5 1.217391
+1.0487015040584928
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+fox_bets Over 6.5 12.0
+fox_bets Under 6.5 1.01
+1.0734323432343233
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 23.0
+1.0424792598705643
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+fox_bets Under 4.5 1.15
+fox_bets Over 4.5 4.6
+1.0869565217391306
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+fox_bets Over 5.5 7.5
+fox_bets Under 5.5 1.06
+1.0767295597484277
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_both_teams_to_score
+bovada Yes 1.625
+bovada No 2.2
+1.06993006993007
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_game_result
+bovada Los Angeles FC 1.540541
+bovada Tie 4.6
+bovada Saint Louis City SC 5.4
+1.0516991029525826
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+bovada Under 2.5 2.56
+bovada Over 2.5 1.526316
+1.045797323424507
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 3.5 1.65
+bovada Over 3.5 2.28
+1.0446570972886762
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 0.5 10.0
+fox_bets Over 0.5 1.02
+1.080392156862745
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Over 1.5 1.15
+fox_bets Under 1.5 4.75
+1.080091533180778
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 6.5 1.02
+fox_bets Over 6.5 10.0
+1.080392156862745
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 7.5 1.002
+fox_bets Over 7.5 16.0
+1.060503992015968
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 4.5 1.25
+fox_bets Over 4.5 3.7
+1.0702702702702702
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+fox_bets Under 5.5 1.09
+fox_bets Over 5.5 6.0
+1.084097859327217
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_both_teams_to_score
+bovada Yes 1.606061
+bovada No 2.25
+1.067085801155055
+
+
+
+San Jose Earthquakes v Seattle soccer_game_result
+bovada Tie 3.35
+bovada San Jose Earthquakes 2.65
+fox_bets Seattle 2.63
+bovada Seattle Sounders 2.65
+1.4334525807007719
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Under 2.5 1.75
+fox_bets Over 2.5 2.0
+1.0714285714285714
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Over 3.5 3.3
+bovada Under 3.5 1.350877
+1.04329014904145
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Under 0.5 7.5
+fox_bets Over 0.5 1.06
+1.0767295597484277
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+bovada Over 1.5 1.285714
+bovada Under 1.5 3.7
+1.0480482208875925
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Over 6.5 16.0
+fox_bets Under 6.5 1.002
+1.060503992015968
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Under 4.5 1.1
+fox_bets Over 4.5 5.75
+1.08300395256917
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+fox_bets Over 5.5 9.5
+fox_bets Under 5.5 1.03
+1.0761369443025037
+
+
+
+San Jose Earthquakes v Seattle soccer_both_teams_to_score
+fox_bets Yes 1.7
+bovada No 2.1
+1.0644257703081232
+
+
+
+Vancouver Whitecaps v Austin FC soccer_game_result
+bovada Austin FC 4.4
+bovada Tie 4.1
+bovada Vancouver Whitecaps 1.714286
+1.0545084024082447
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+bovada Over 2.5 1.555556
+bovada Under 2.5 2.47
+1.0477152587788676
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+bovada Under 3.5 1.606061
+bovada Over 3.5 2.36
+1.0463701702699326
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Under 0.5 10.0
+fox_bets Over 0.5 1.02
+1.080392156862745
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Under 1.5 4.75
+fox_bets Over 1.5 1.15
+1.080091533180778
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Under 6.5 1.02
+fox_bets Over 6.5 10.0
+1.080392156862745
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Over 7.5 19.0
+fox_bets Under 7.5 1.001
+1.0516325779483675
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Under 4.5 1.22
+fox_bets Over 4.5 3.9
+1.0760823875577974
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+fox_bets Over 5.5 6.5
+fox_bets Under 5.5 1.08
+1.0797720797720798
+
+
+
+Vancouver Whitecaps v Austin FC soccer_both_teams_to_score
+bovada No 2.35
+bovada Yes 1.555556
+1.068388874077343
+
+
+
+FK Astana v Dinamo Tbilisi soccer_game_result
+fox_bets Dinamo Tbilisi 4.0
+fox_bets Tie 3.3
+fox_bets FK Astana 1.8
+1.1085858585858586
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Under 6.5 1.001
+fox_bets Over 6.5 17.0
+1.0578245284127639
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Under 2.5 1.67
+fox_bets Over 2.5 2.05
+1.0866072732583614
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Over 3.5 3.4
+fox_bets Under 3.5 1.25
+1.0941176470588236
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Over 4.5 6.5
+fox_bets Under 4.5 1.07
+1.0884255930984903
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Over 0.5 1.07
+fox_bets Under 0.5 6.5
+1.0884255930984903
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Under 5.5 1.01
+fox_bets Over 5.5 10.0
+1.0900990099009902
+
+
+
+FK Astana v Dinamo Tbilisi soccer_over_under_total_goals
+fox_bets Under 1.5 3.0
+fox_bets Over 1.5 1.33
+1.0852130325814535
+
+
+
+FK Astana v Dinamo Tbilisi soccer_both_teams_to_score
+fox_bets Yes 2.0
+fox_bets No 1.67
+1.098802395209581
+
+
+
+HJK Helsinki v Larne FC soccer_game_result
+fox_bets Larne FC 9.0
+fox_bets HJK Helsinki 1.22
+fox_bets Tie 5.0
+1.1307832422586521
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Under 6.5 1.005
+fox_bets Over 6.5 11.0
+1.0859339665309815
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Under 2.5 2.15
+fox_bets Over 2.5 1.62
+1.0824002296870514
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Over 3.5 2.5
+fox_bets Under 3.5 1.44
+1.0944444444444446
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 21.0
+1.0466200466200468
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Over 4.5 4.33
+fox_bets Under 4.5 1.15
+1.1005120996083946
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Under 0.5 8.5
+fox_bets Over 0.5 1.03
+1.0885208452312964
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Over 5.5 7.5
+fox_bets Under 5.5 1.04
+1.0948717948717948
+
+
+
+HJK Helsinki v Larne FC soccer_over_under_total_goals
+fox_bets Over 1.5 1.2
+fox_bets Under 1.5 3.9
+1.0897435897435899
+
+
+
+HJK Helsinki v Larne FC soccer_both_teams_to_score
+fox_bets Yes 2.25
+fox_bets No 1.53
+1.0980392156862746
+
+
+
+Hacken v The New Saints soccer_game_result
+fox_bets The New Saints 14.0
+fox_bets Tie 6.5
+fox_bets Hacken 1.12
+1.1181318681318682
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Under 6.5 1.02
+fox_bets Over 6.5 9.0
+1.091503267973856
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 2.5 1.47
+fox_bets Under 2.5 2.45
+1.0884353741496597
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 3.5 2.15
+fox_bets Under 3.5 1.6
+1.0901162790697674
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Under 7.5 1.002
+fox_bets Over 7.5 15.0
+1.0646706586826347
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 4.5 3.5
+fox_bets Under 4.5 1.25
+1.0857142857142859
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 0.5 1.005
+fox_bets Under 0.5 11.0
+1.0859339665309815
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 5.5 6.0
+fox_bets Under 5.5 1.08
+1.0925925925925926
+
+
+
+Hacken v The New Saints soccer_over_under_total_goals
+fox_bets Over 1.5 1.12
+fox_bets Under 1.5 5.0
+1.0928571428571427
+
+
+
+Hacken v The New Saints soccer_both_teams_to_score
+fox_bets No 1.47
+fox_bets Yes 2.4
+1.096938775510204
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_game_result
+fox_bets Sheriff Tiraspol 3.2
+fox_bets SSC Farul Constanta 2.15
+fox_bets Tie 3.0
+1.1109496124031006
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Over 6.5 21.0
+fox_bets Under 6.5 1.001
+1.0466200466200468
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Over 2.5 2.3
+fox_bets Under 2.5 1.53
+1.0883773799374823
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Under 3.5 1.18
+fox_bets Over 3.5 4.2
+1.0855528652138822
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Over 4.5 7.5
+fox_bets Under 4.5 1.04
+1.0948717948717948
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Under 0.5 6.0
+fox_bets Over 0.5 1.08
+1.0925925925925926
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Over 5.5 11.0
+fox_bets Under 5.5 1.005
+1.0859339665309815
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_over_under_total_goals
+fox_bets Under 1.5 2.5
+fox_bets Over 1.5 1.44
+1.0944444444444446
+
+
+
+SSC Farul Constanta v Sheriff Tiraspol soccer_both_teams_to_score
+fox_bets Yes 2.0
+fox_bets No 1.67
+1.098802395209581
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_game_result
+fox_bets Tie 5.5
+fox_bets FC Swift Hesperange 10.0
+fox_bets Slovan Bratislava 1.2
+1.1151515151515152
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Over 6.5 10.0
+fox_bets Under 6.5 1.01
+1.0900990099009902
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Under 2.5 2.35
+fox_bets Over 2.5 1.5
+1.0921985815602837
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Under 3.5 1.55
+fox_bets Over 3.5 2.25
+1.0896057347670252
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Over 7.5 17.0
+fox_bets Under 7.5 1.001
+1.0578245284127639
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Over 4.5 3.9
+fox_bets Under 4.5 1.2
+1.0897435897435899
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Over 0.5 1.01
+fox_bets Under 0.5 10.0
+1.0900990099009902
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Under 5.5 1.07
+fox_bets Over 5.5 6.5
+1.0884255930984903
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_over_under_total_goals
+fox_bets Over 1.5 1.18
+fox_bets Under 1.5 4.2
+1.0855528652138822
+
+
+
+Slovan Bratislava v FC Swift Hesperange soccer_both_teams_to_score
+fox_bets No 1.65
+fox_bets Yes 2.05
+1.0938654841093867
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_game_result
+fox_bets Tie 3.25
+fox_bets Zhejiang Professional FC 2.65
+fox_bets Changchun Yatai 2.2
+1.1395962528038
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Over 4.5 4.0
+fox_bets Under 4.5 1.14
+1.1271929824561404
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Under 6.5 1.01
+fox_bets Over 6.5 7.5
+1.1234323432343234
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Over 0.5 1.04
+fox_bets Under 0.5 6.5
+1.1153846153846154
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Over 2.5 1.62
+fox_bets Under 2.5 2.0
+1.117283950617284
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Over 3.5 2.45
+fox_bets Under 3.5 1.4
+1.1224489795918366
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Under 5.5 1.05
+fox_bets Over 5.5 6.0
+1.119047619047619
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Over 7.5 8.0
+fox_bets Under 7.5 1.002
+1.123003992015968
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_over_under_total_goals
+fox_bets Under 1.5 3.6
+fox_bets Over 1.5 1.18
+1.125235404896422
+
+
+
+Changchun Yatai v Zhejiang Professional FC soccer_both_teams_to_score
+fox_bets No 2.15
+fox_bets Yes 1.53
+1.1187110503115976
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_game_result
+fox_bets Beijing Guoan 1.91
+fox_bets Tie 3.35
+fox_bets Meizhou Hakka FC 3.15
+1.1395279895709685
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Under 4.5 1.12
+fox_bets Over 4.5 4.33
+1.123804025074233
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Under 6.5 1.007
+fox_bets Over 6.5 8.0
+1.11804865938431
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Under 0.5 6.5
+fox_bets Over 0.5 1.04
+1.1153846153846154
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Under 2.5 1.91
+fox_bets Over 2.5 1.67
+1.1223626046336648
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Over 3.5 2.63
+fox_bets Under 3.5 1.35
+1.12096887762287
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Over 5.5 6.5
+fox_bets Under 5.5 1.04
+1.1153846153846154
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 8.5
+1.1166480578245286
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_over_under_total_goals
+fox_bets Over 1.5 1.22
+fox_bets Under 1.5 3.35
+1.1181795938341081
+
+
+
+Meizhou Hakka FC v Beijing Guoan soccer_both_teams_to_score
+fox_bets Yes 1.57
+fox_bets No 2.05
+1.1247475532080162
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_game_result
+fox_bets Nantong Zhiyun FC 1.9
+fox_bets Tie 3.15
+fox_bets Dalian Aerbin FC 3.4
+1.137893753992825
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 4.5 1.07
+fox_bets Over 4.5 5.25
+1.1250556297285268
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 6.5 1.004
+fox_bets Over 6.5 8.0
+1.12101593625498
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 0.5 5.75
+fox_bets Over 0.5 1.06
+1.117309269893355
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 2.5 1.62
+fox_bets Over 2.5 1.95
+1.1301044634377968
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 3.5 1.22
+fox_bets Over 3.5 3.3
+1.122702434177844
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 5.5 1.02
+fox_bets Over 5.5 7.0
+1.123249299719888
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_over_under_total_goals
+fox_bets Under 1.5 2.8
+fox_bets Over 1.5 1.3
+1.1263736263736264
+
+
+
+Nantong Zhiyun FC v Dalian Aerbin FC soccer_both_teams_to_score
+fox_bets Yes 1.8
+fox_bets No 1.75
+1.126984126984127
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_game_result
+fox_bets Qingdao Jonoon FC 1.28
+fox_bets Tie 4.5
+fox_bets Shenzhen Shangqingyin 8.0
+1.1284722222222223
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 4.5 1.12
+fox_bets Over 4.5 4.33
+1.123804025074233
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 6.5 1.007
+fox_bets Over 6.5 8.0
+1.11804865938431
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 0.5 6.5
+fox_bets Over 0.5 1.04
+1.1153846153846154
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Over 2.5 1.67
+fox_bets Under 2.5 1.91
+1.1223626046336648
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Over 3.5 2.6
+fox_bets Under 3.5 1.36
+1.1199095022624435
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 5.5 1.04
+fox_bets Over 5.5 6.5
+1.1153846153846154
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 8.5
+1.1166480578245286
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_over_under_total_goals
+fox_bets Under 1.5 3.35
+fox_bets Over 1.5 1.22
+1.1181795938341081
+
+
+
+Qingdao Jonoon FC v Shenzhen Shangqingyin soccer_both_teams_to_score
+fox_bets No 1.6
+fox_bets Yes 2.05
+1.1128048780487805
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_game_result
+fox_bets Shanghai East Asia 1.8
+fox_bets Wuhan Three Towns FC 3.6
+fox_bets Tie 3.3
+1.1363636363636365
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Under 4.5 1.11
+fox_bets Over 4.5 4.6
+1.118292205248727
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 6.5 8.0
+fox_bets Under 6.5 1.005
+1.1200248756218907
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 0.5 1.04
+fox_bets Under 0.5 6.5
+1.1153846153846154
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 2.5 1.72
+fox_bets Under 2.5 1.85
+1.1219358893777498
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 3.5 2.75
+fox_bets Under 3.5 1.33
+1.1155160628844838
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 5.5 6.5
+fox_bets Under 5.5 1.03
+1.1247199402539207
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Over 7.5 8.5
+fox_bets Under 7.5 1.001
+1.1166480578245286
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_over_under_total_goals
+fox_bets Under 1.5 3.25
+fox_bets Over 1.5 1.22
+1.1273644388398487
+
+
+
+Shanghai East Asia v Wuhan Three Towns FC soccer_both_teams_to_score
+fox_bets Yes 1.65
+fox_bets No 1.95
+1.118881118881119
+
+
+
+FC Inter Turku v Vps soccer_game_result
+fox_bets Vps 3.35
+fox_bets Tie 3.3
+fox_bets FC Inter Turku 1.85
+1.1420783062574107
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Over 6.5 8.0
+fox_bets Under 6.5 1.007
+1.11804865938431
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Under 2.5 1.83
+fox_bets Over 2.5 1.75
+1.1178766588602653
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Over 3.5 2.8
+fox_bets Under 3.5 1.3
+1.1263736263736264
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Under 7.5 1.001
+fox_bets Over 7.5 8.5
+1.1166480578245286
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Under 4.5 1.11
+fox_bets Over 4.5 4.6
+1.118292205248727
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Under 0.5 6.0
+fox_bets Over 0.5 1.05
+1.119047619047619
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Over 5.5 6.5
+fox_bets Under 5.5 1.03
+1.1247199402539207
+
+
+
+FC Inter Turku v Vps soccer_over_under_total_goals
+fox_bets Under 1.5 3.15
+fox_bets Over 1.5 1.25
+1.1174603174603175
+
+
+
+FC Inter Turku v Vps soccer_both_teams_to_score
+fox_bets Yes 1.7
+fox_bets No 1.9
+1.1145510835913313
+
+
+
+USA v Panama soccer_over_under_total_goals
+bovada Over 1.0 1.083333
+bovada Under 1.0 7.75
+1.052109465165195
+
+
+
+USA v Panama soccer_over_under_total_goals
+bovada Over 2.0 1.571429
+bovada Under 2.0 2.43
+1.0478860965548207
+
+
+
+USA v Panama soccer_over_under_total_goals
+bovada Over 3.0 3.05
+bovada Under 3.0 1.392157
+1.046178640794671
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+bovada Over 1.0 1.083333
+bovada Under 1.0 7.75
+1.052109465165195
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+bovada Over 2.0 1.571429
+bovada Under 2.0 2.43
+1.0478860965548207
+
+
+
+Jamaica v Mexico soccer_over_under_total_goals
+bovada Over 3.0 3.05
+bovada Under 3.0 1.392157
+1.046178640794671
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+bovada Over 1.0 1.090909
+bovada Under 1.0 7.5
+1.0500000763888953
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+bovada Over 2.0 1.588235
+bovada Under 2.0 2.4
+1.0462964128943975
+
+
+
+New York Red Bulls v FC Cincinnati soccer_over_under_total_goals
+bovada Over 3.0 3.1
+bovada Under 3.0 1.384615
+1.0448030680008522
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+bovada Over 2.0 1.273973
+bovada Under 2.0 3.8
+1.048103886527877
+
+
+
+New England Revolution v Atlanta Utd soccer_over_under_total_goals
+bovada Over 4.0 3.75
+bovada Under 4.0 1.277778
+1.049275226213004
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+bovada Over 2.0 1.363636
+bovada Under 2.0 3.2
+1.045833528888941
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+bovada Over 3.0 2.3
+bovada Under 3.0 1.636943
+1.0456774291017386
+
+
+
+Chicago Fire v CF Montréal soccer_over_under_total_goals
+bovada Over 4.0 4.95
+bovada Under 4.0 1.2
+1.0353535353535355
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+bovada Over 2.0 1.344828
+bovada Under 2.0 3.3
+1.0466198178232728
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+bovada Over 3.0 2.22
+bovada Under 3.0 1.675676
+1.0472245284941772
+
+
+
+Houston Dynamo v Minnesota Utd soccer_over_under_total_goals
+bovada Over 4.0 4.4
+bovada Under 4.0 1.217391
+1.0487015040584928
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+bovada Over 2.0 1.454545
+bovada Under 2.0 2.78
+1.0472124450596445
+
+
+
+Nashville SC v Philadelphia Union soccer_over_under_total_goals
+bovada Over 3.0 2.6
+bovada Under 3.0 1.512821
+1.0456321208981305
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Over 2.0 1.322581
+bovada Under 2.0 3.5
+1.0418116438345066
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Over 3.0 2.13
+bovada Under 3.0 1.735294
+1.045754793585031
+
+
+
+Sporting Kansas City v Real Salt Lake soccer_over_under_total_goals
+bovada Over 4.0 4.15
+bovada Under 4.0 1.238095
+1.0486563184394682
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+bovada Over 2.0 1.217391
+bovada Under 2.0 4.4
+1.0487015040584928
+
+
+
+Los Angeles FC v Saint Louis City SC soccer_over_under_total_goals
+bovada Over 4.0 3.25
+bovada Under 4.0 1.350877
+1.0479521537034544
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+bovada Over 2.0 1.444444
+bovada Under 2.0 2.83
+1.0456647957848733
+
+
+
+San Jose Earthquakes v Seattle soccer_over_under_total_goals
+bovada Over 3.0 2.58
+bovada Under 3.0 1.518135
+1.0462998472498501
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+bovada Over 2.0 1.238095
+bovada Under 2.0 4.15
+1.0486563184394682
+
+
+
+Vancouver Whitecaps v Austin FC soccer_over_under_total_goals
+bovada Over 4.0 3.45
+bovada Under 4.0 1.327869
+1.042941408540595
+
+
+
+CF Montréal vs Charlotte FC soccer_game_result
+bovada CF Montréal 2.35
+bovada Charlotte FC 2.9
+bovada Draw 3.6
+1.0481372788782912
+
+
+
+CF Montréal vs Charlotte FC soccer_over_under_total_goals
+bovada Over 1.5 1.277778
+bovada Under 1.5 3.75
+1.049275226213004
+
+
+
+CF Montréal vs Charlotte FC soccer_over_under_total_goals
+bovada Over 2.0 1.416667
+bovada Under 2.0 2.93
+1.0471791151788952
+
+
+
+CF Montréal vs Charlotte FC soccer_over_under_total_goals
+bovada Over 3.0 2.5
+bovada Under 3.0 1.546448
+1.046643146099966
+
+
+
+CF Montréal vs Charlotte FC soccer_over_under_total_goals
+bovada Over 3.5 3.12
+bovada Under 3.5 1.377358
+1.0465404763582868
+
+
+
+CF Montréal vs Charlotte FC soccer_both_teams_to_score
+bovada Yes 1.69
+bovada No 2.1
+1.0679064525218371
+
+
+
+FC Cincinnati vs Nashville SC soccer_game_result
+bovada FC Cincinnati 2.15
+bovada Nashville SC 3.35
+bovada Draw 3.45
+1.0534788142201026
+
+
+
+FC Cincinnati vs Nashville SC soccer_over_under_total_goals
+bovada Over 1.5 1.3125
+bovada Under 1.5 3.55
+1.0435949027498324
+
+
+
+FC Cincinnati vs Nashville SC soccer_over_under_total_goals
+bovada Over 2.0 1.47619
+bovada Under 2.0 2.69
+1.0491667852570636
+
+
+
+FC Cincinnati vs Nashville SC soccer_over_under_total_goals
+bovada Over 3.0 2.69
+bovada Under 3.0 1.47619
+1.0491667852570636
+
+
+
+FC Cincinnati vs Nashville SC soccer_over_under_total_goals
+bovada Over 3.5 3.35
+bovada Under 3.5 1.333333
+1.048507650186614
+
+
+
+FC Cincinnati vs Nashville SC soccer_both_teams_to_score
+bovada Yes 1.757576
+bovada No 2.02
+1.0640149437138828
+
+
+
+New England Revolution vs DC United soccer_game_result
+bovada New England Revolution 2.1
+bovada DC United 3.55
+bovada Draw 3.4
+1.0519982640943701
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 1.5 1.217391
+bovada Under 1.5 4.4
+1.0487015040584928
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 2.0 1.327869
+bovada Under 2.0 3.45
+1.042941408540595
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 2.5 1.724638
+bovada Under 2.5 2.14
+1.0471215452034779
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 3.0 2.18
+bovada Under 3.0 1.699301
+1.0471928584515828
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 3.5 2.7
+bovada Under 3.5 1.471698
+1.0498576021257984
+
+
+
+New England Revolution vs DC United soccer_over_under_total_goals
+bovada Over 4.0 4.25
+bovada Under 4.0 1.229885
+1.0483782677911782
+
+
+
+New England Revolution vs DC United soccer_both_teams_to_score
+bovada Yes 1.581395
+bovada No 2.3
+1.067135689361773
+
+
+
+Austin FC vs Sporting Kansas City soccer_game_result
+bovada Austin FC 2.1
+bovada Sporting Kansas City 3.55
+bovada Draw 3.4
+1.0519982640943701
+
+
+
+Austin FC vs Sporting Kansas City soccer_over_under_total_goals
+bovada Over 1.5 1.27
+bovada Under 1.5 3.85
+1.0471418345434094
+
+
+
+Austin FC vs Sporting Kansas City soccer_over_under_total_goals
+bovada Over 2.0 1.408163
+bovada Under 2.0 2.95
+1.0491281121791358
+
+
+
+Austin FC vs Sporting Kansas City soccer_over_under_total_goals
+bovada Over 3.0 2.45
+bovada Under 3.0 1.564972
+1.0471523334811441
+
+
+
+Austin FC vs Sporting Kansas City soccer_over_under_total_goals
+bovada Over 3.5 3.1
+bovada Under 3.5 1.384615
+1.0448030680008522
+
+
+
+Austin FC vs Sporting Kansas City soccer_both_teams_to_score
+bovada Yes 1.69
+bovada No 2.1
+1.0679064525218371
+
+
+
+Chicago Fire vs Toronto FC soccer_game_result
+bovada Chicago Fire 1.8
+bovada Toronto FC 5.2
+bovada Draw 3.3
+1.0508935508935509
+
+
+
+Chicago Fire vs Toronto FC soccer_over_under_total_goals
+bovada Over 1.5 1.322581
+bovada Under 1.5 3.5
+1.0418116438345066
+
+
+
+Chicago Fire vs Toronto FC soccer_over_under_total_goals
+bovada Over 2.0 1.5
+bovada Under 2.0 2.63
+1.046894803548796
+
+
+
+Chicago Fire vs Toronto FC soccer_over_under_total_goals
+bovada Over 3.0 2.78
+bovada Under 3.0 1.454545
+1.0472124450596445
+
+
+
+Chicago Fire vs Toronto FC soccer_over_under_total_goals
+bovada Over 3.5 3.45
+bovada Under 3.5 1.327869
+1.042941408540595
+
+
+
+Chicago Fire vs Toronto FC soccer_both_teams_to_score
+bovada Yes 1.87
+bovada No 1.87
+1.06951871657754
+
+
+
+Minnesota United vs Los Angeles FC soccer_game_result
+bovada Minnesota United 2.6
+bovada Los Angeles FC 2.5
+bovada Draw 3.85
+1.0443556443556443
+
+
+
+Minnesota United vs Los Angeles FC soccer_over_under_total_goals
+bovada Over 1.5 1.344828
+bovada Under 1.5 3.3
+1.0466198178232728
+
+
+
+Minnesota United vs Los Angeles FC soccer_over_under_total_goals
+bovada Over 2.0 1.531915
+bovada Under 2.0 2.55
+1.0449345951910889
+
+
+
+Minnesota United vs Los Angeles FC soccer_over_under_total_goals
+bovada Over 3.0 2.88
+bovada Under 3.0 1.434783
+1.0441917291093263
+
+
+
+Minnesota United vs Los Angeles FC soccer_over_under_total_goals
+bovada Over 3.5 3.65
+bovada Under 3.5 1.294118
+1.0466996647232545
+
+
+
+Minnesota United vs Los Angeles FC soccer_both_teams_to_score
+bovada Yes 1.833333
+bovada No 1.909091
+1.0692641434943315
+
+
+
+Saint Louis City SC vs Inter Miami soccer_game_result
+bovada Saint Louis City SC 1.540541
+bovada Inter Miami 5.75
+bovada Draw 4.4
+1.0503083841705596
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 1.5 1.208333
+bovada Under 1.5 4.5
+1.0498086574184802
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 2.0 1.30303
+bovada Under 2.0 3.6
+1.0452198167177869
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 2.5 1.666667
+bovada Under 2.5 2.25
+1.0444443244444686
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 3.0 2.1
+bovada Under 3.0 1.76923
+1.0414081132416226
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 3.5 2.63
+bovada Under 3.5 1.5
+1.046894803548796
+
+
+
+Saint Louis City SC vs Inter Miami soccer_over_under_total_goals
+bovada Over 4.0 4.0
+bovada Under 4.0 1.25
+1.05
+
+
+
+Saint Louis City SC vs Inter Miami soccer_both_teams_to_score
+bovada Yes 1.757576
+bovada No 2.02
+1.0640149437138828
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_game_result
+bovada Colorado Rapids 2.25
+bovada Houston Dynamo 3.1
+bovada Draw 3.45
+1.0568801620695027
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_over_under_total_goals
+bovada Over 1.5 1.285714
+bovada Under 1.5 3.7
+1.0480482208875925
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_over_under_total_goals
+bovada Over 2.0 1.444444
+bovada Under 2.0 2.83
+1.0456647957848733
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_over_under_total_goals
+bovada Over 3.0 2.58
+bovada Under 3.0 1.518135
+1.0462998472498501
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_over_under_total_goals
+bovada Over 3.5 3.25
+bovada Under 3.5 1.350877
+1.0479521537034544
+
+
+
+Colorado Rapids vs Houston Dynamo soccer_both_teams_to_score
+bovada Yes 1.714286
+bovada No 2.08
+1.064102466880358
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_game_result
+bovada Real Salt Lake 2.25
+bovada New York Red Bulls 3.25
+bovada Draw 3.4
+1.0462543991955757
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_over_under_total_goals
+bovada Over 1.5 1.285714
+bovada Under 1.5 3.7
+1.0480482208875925
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_over_under_total_goals
+bovada Over 2.0 1.444444
+bovada Under 2.0 2.83
+1.0456647957848733
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_over_under_total_goals
+bovada Over 3.0 2.58
+bovada Under 3.0 1.518135
+1.0462998472498501
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_over_under_total_goals
+bovada Over 3.5 3.2
+bovada Under 3.5 1.363636
+1.045833528888941
+
+
+
+Real Salt Lake vs NY Red Bulls soccer_both_teams_to_score
+bovada Yes 1.714286
+bovada No 2.08
+1.064102466880358
+
+
+
+Portland Timbers vs Columbus Crew soccer_game_result
+bovada Portland Timbers 2.3
+bovada Columbus Crew 2.9
+bovada Draw 3.65
+1.053582797642275
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 1.5 1.227273
+bovada Under 1.5 4.3
+1.04737277327978
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 2.0 1.327869
+bovada Under 2.0 3.45
+1.042941408540595
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 2.5 1.714286
+bovada Under 2.5 2.15
+1.0484495151808948
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 3.0 2.18
+bovada Under 3.0 1.699301
+1.0471928584515828
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 3.5 2.73
+bovada Under 3.5 1.465116
+1.048840178847632
+
+
+
+Portland Timbers vs Columbus Crew soccer_over_under_total_goals
+bovada Over 4.0 4.3
+bovada Under 4.0 1.227273
+1.04737277327978
+
+
+
+Portland Timbers vs Columbus Crew soccer_both_teams_to_score
+bovada Yes 1.581395
+bovada No 2.3
+1.067135689361773
+
+
+
+Seattle Sounders vs FC Dallas soccer_game_result
+bovada Seattle Sounders 1.8
+bovada FC Dallas 4.4
+bovada Draw 3.75
+1.0494949494949495
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 1.0 1.105
+bovada Under 1.0 6.75
+1.0531255237137591
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 1.5 1.408163
+bovada Under 1.5 2.95
+1.0491281121791358
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 2.0 1.675676
+bovada Under 2.0 2.22
+1.0472245284941772
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 2.5 2.25
+bovada Under 2.5 1.666667
+1.0444443244444686
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 3.0 3.4
+bovada Under 3.0 1.333333
+1.0441178345588704
+
+
+
+Seattle Sounders vs FC Dallas soccer_over_under_total_goals
+bovada Over 3.5 4.15
+bovada Under 3.5 1.238095
+1.0486563184394682
+
+
+
+Seattle Sounders vs FC Dallas soccer_both_teams_to_score
+bovada Yes 2.08
+bovada No 1.714286
+1.064102466880358
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_game_result
+bovada Vancouver Whitecaps 1.8
+bovada LA Galaxy 4.4
+bovada Draw 3.75
+1.0494949494949495
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 1.5 1.208333
+bovada Under 1.5 4.5
+1.0498086574184802
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 2.0 1.294118
+bovada Under 2.0 3.65
+1.0466996647232545
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 2.5 1.666667
+bovada Under 2.5 2.25
+1.0444443244444686
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 3.0 2.08
+bovada Under 3.0 1.78125
+1.0421727395411606
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 3.5 2.6
+bovada Under 3.5 1.512821
+1.0456321208981305
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_over_under_total_goals
+bovada Over 4.0 3.95
+bovada Under 4.0 1.25641
+1.049083086741317
+
+
+
+Vancouver Whitecaps vs Los Angeles Galaxy soccer_both_teams_to_score
+bovada Yes 1.613497
+bovada No 2.23
+1.0682023304693973
+
+
+
+Brest vs Lens soccer_game_result
+bovada Brest 4.1
+bovada Lens 1.833333
+bovada Draw 3.55
+1.071047224497578
+
+
+
+Brest vs Lens soccer_over_under_total_goals
+bovada Over 1.5 1.322581
+bovada Under 1.5 3.5
+1.0418116438345066
+
+
+
+Brest vs Lens soccer_over_under_total_goals
+bovada Over 2.0 1.49505
+bovada Under 2.0 2.65
+1.0462324412700275
+
+
+
+Brest vs Lens soccer_over_under_total_goals
+bovada Over 3.0 2.73
+bovada Under 3.0 1.465116
+1.048840178847632
+
+
+
+Brest vs Lens soccer_over_under_total_goals
+bovada Over 3.5 3.45
+bovada Under 3.5 1.327869
+1.042941408540595
+
+
+
+Brest vs Lens soccer_both_teams_to_score
+bovada Yes 1.847458
+bovada No 1.892857
+1.0695862210839802
+
+
+
+Clermont Foot vs Monaco soccer_game_result
+bovada Clermont Foot 3.45
+bovada Monaco 2.0
+bovada Draw 3.5
+1.0755693581780537
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 1.5 1.232558
+bovada Under 1.5 4.2
+1.0494160846598621
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 2.0 1.344828
+bovada Under 2.0 3.3
+1.0466198178232728
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 2.5 1.735294
+bovada Under 2.5 2.13
+1.045754793585031
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 3.0 2.22
+bovada Under 3.0 1.675676
+1.0472245284941772
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 3.5 2.83
+bovada Under 3.5 1.444444
+1.0456647957848733
+
+
+
+Clermont Foot vs Monaco soccer_over_under_total_goals
+bovada Over 4.0 4.4
+bovada Under 4.0 1.217391
+1.0487015040584928
+
+
+
+Clermont Foot vs Monaco soccer_both_teams_to_score
+bovada Yes 1.645161
+bovada No 2.18
+1.066558840851632
+
+
+
+Marseille vs Reims soccer_game_result
+bovada Marseille 1.555556
+bovada Reims 5.4
+bovada Draw 4.2
+1.0661373824641494
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 1.5 1.243902
+bovada Under 1.5 4.05
+1.0508354326114888
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 2.0 1.363636
+bovada Under 2.0 3.2
+1.045833528888941
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 2.5 1.76923
+bovada Under 2.5 2.1
+1.0414081132416226
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 3.0 2.3
+bovada Under 3.0 1.636943
+1.0456774291017386
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 3.5 2.9
+bovada Under 3.5 1.425532
+1.0463200816401805
+
+
+
+Marseille vs Reims soccer_over_under_total_goals
+bovada Over 4.0 4.5
+bovada Under 4.0 1.208333
+1.0498086574184802
+
+
+
+Marseille vs Reims soccer_both_teams_to_score
+bovada Yes 1.833333
+bovada No 1.909091
+1.0692641434943315
+
+
+
+Montpellier vs Le Havre soccer_game_result
+bovada Montpellier 2.05
+bovada Le Havre 3.5
+bovada Draw 3.35
+1.0720266264496334
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 1.0 1.1
+bovada Under 1.0 7.0
+1.051948051948052
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 1.5 1.37
+bovada Under 1.5 3.15
+1.0473873247595875
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 2.0 1.588235
+bovada Under 2.0 2.4
+1.0462964128943975
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 2.5 2.12
+bovada Under 2.5 1.746269
+1.0443475732850036
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 3.0 3.1
+bovada Under 3.0 1.384615
+1.0448030680008522
+
+
+
+Montpellier vs Le Havre soccer_over_under_total_goals
+bovada Over 3.5 3.8
+bovada Under 3.5 1.273973
+1.048103886527877
+
+
+
+Montpellier vs Le Havre soccer_both_teams_to_score
+bovada Yes 1.892857
+bovada No 1.847458
+1.0695862210839802
+
+
+
+Nantes vs Toulouse soccer_game_result
+bovada Nantes 2.35
+bovada Toulouse 2.9
+bovada Draw 3.4
+1.0644771481593371
+
+
+
+Nantes vs Toulouse soccer_over_under_total_goals
+bovada Over 1.5 1.3125
+bovada Under 1.5 3.55
+1.0435949027498324
+
+
+
+Nantes vs Toulouse soccer_over_under_total_goals
+bovada Over 2.0 1.465116
+bovada Under 2.0 2.73
+1.048840178847632
+
+
+
+Nantes vs Toulouse soccer_over_under_total_goals
+bovada Over 3.0 2.67
+bovada Under 3.0 1.485437
+1.047734401184893
+
+
+
+Nantes vs Toulouse soccer_over_under_total_goals
+bovada Over 3.5 3.35
+bovada Under 3.5 1.333333
+1.048507650186614
+
+
+
+Nantes vs Toulouse soccer_both_teams_to_score
+bovada Yes 1.757576
+bovada No 2.02
+1.0640149437138828
+
+
+
+Nice vs Lille soccer_game_result
+bovada Nice 2.9
+bovada Lille 2.25
+bovada Draw 3.55
+1.0709621714964115
+
+
+
+Nice vs Lille soccer_over_under_total_goals
+bovada Over 1.5 1.27
+bovada Under 1.5 3.85
+1.0471418345434094
+
+
+
+Nice vs Lille soccer_over_under_total_goals
+bovada Over 2.0 1.4
+bovada Under 2.0 3.0
+1.0476190476190477
+
+
+
+Nice vs Lille soccer_over_under_total_goals
+bovada Over 3.0 2.43
+bovada Under 3.0 1.571429
+1.0478860965548207
+
+
+
+Nice vs Lille soccer_over_under_total_goals
+bovada Over 3.5 3.1
+bovada Under 3.5 1.384615
+1.0448030680008522
+
+
+
+Nice vs Lille soccer_both_teams_to_score
+bovada Yes 1.69
+bovada No 2.1
+1.0679064525218371
+
+
+
+Paris Saint-Germain vs Lorient soccer_game_result
+bovada Paris Saint-Germain 1.166667
+bovada Lorient 12.0
+bovada Draw 7.25
+1.07840698006106
+
+
+
+Paris Saint-Germain vs Lorient soccer_over_under_total_goals
+bovada Over 2.5 1.344828
+bovada Under 2.5 3.3
+1.0466198178232728
+
+
+
+Paris Saint-Germain vs Lorient soccer_over_under_total_goals
+bovada Over 3.0 1.485437
+bovada Under 3.0 2.67
+1.047734401184893
+
+
+
+Paris Saint-Germain vs Lorient soccer_over_under_total_goals
+bovada Over 4.0 2.38
+bovada Under 4.0 1.595238
+1.0470337762935003
+
+
+
+Paris Saint-Germain vs Lorient soccer_over_under_total_goals
+bovada Over 4.5 2.93
+bovada Under 4.5 1.416667
+1.0471791151788952
+
+
+
+Paris Saint-Germain vs Lorient soccer_both_teams_to_score
+bovada Yes 1.87
+bovada No 1.87
+1.06951871657754
+
+
+
+Rennes vs Metz soccer_game_result
+bovada Rennes 1.4
+bovada Metz 7.0
+bovada Draw 4.5
+1.0793650793650795
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 1.5 1.25641
+bovada Under 1.5 3.95
+1.049083086741317
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 2.0 1.384615
+bovada Under 2.0 3.1
+1.0448030680008522
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 2.5 1.8
+bovada Under 2.5 2.05
+1.043360433604336
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 3.0 2.36
+bovada Under 3.0 1.606061
+1.0463701702699326
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 3.5 3.0
+bovada Under 3.5 1.4
+1.0476190476190477
+
+
+
+Rennes vs Metz soccer_over_under_total_goals
+bovada Over 4.0 4.8
+bovada Under 4.0 1.19
+1.048669467787115
+
+
+
+Rennes vs Metz soccer_both_teams_to_score
+bovada Yes 2.02
+bovada No 1.757576
+1.0640149437138828
+
+
+
+Strasbourg vs Lyon soccer_game_result
+bovada Strasbourg 2.55
+bovada Lyon 2.55
+bovada Draw 3.55
+1.0660038663352667
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 1.5 1.222222
+bovada Under 1.5 4.35
+1.0480670244134402
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 2.0 1.327869
+bovada Under 2.0 3.45
+1.042941408540595
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 2.5 1.699301
+bovada Under 2.5 2.18
+1.0471928584515828
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 3.0 2.15
+bovada Under 3.0 1.714286
+1.0484495151808948
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 3.5 2.7
+bovada Under 3.5 1.471698
+1.0498576021257984
+
+
+
+Strasbourg vs Lyon soccer_over_under_total_goals
+bovada Over 4.0 4.25
+bovada Under 4.0 1.229885
+1.0483782677911782
+
+
+
+Strasbourg vs Lyon soccer_both_teams_to_score
+bovada Yes 1.581395
+bovada No 2.3
+1.067135689361773
+
+
+
+Empoli vs Hellas Verona soccer_game_result
+bovada Empoli 2.35
+bovada Hellas Verona 3.0
+bovada Draw 3.2
+1.0713652482269502
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 1.0 1.105
+bovada Under 1.0 6.75
+1.0531255237137591
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 1.5 1.392157
+bovada Under 1.5 3.05
+1.046178640794671
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 2.0 1.636943
+bovada Under 2.0 2.3
+1.0456774291017386
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 2.5 2.2
+bovada Under 2.5 1.69
+1.0462614308768154
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 3.0 3.25
+bovada Under 3.0 1.350877
+1.0479521537034544
+
+
+
+Empoli vs Hellas Verona soccer_over_under_total_goals
+bovada Over 3.5 4.0
+bovada Under 3.5 1.25
+1.05
+
+
+
+Empoli vs Hellas Verona soccer_both_teams_to_score
+bovada Yes 1.892857
+bovada No 1.847458
+1.0695862210839802
+
+
+
+Frosinone vs Napoli soccer_game_result
+bovada Frosinone 6.5
+bovada Napoli 1.425532
+bovada Draw 4.6
+1.0727299536272639
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 1.5 1.232558
+bovada Under 1.5 4.2
+1.0494160846598621
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 2.0 1.333333
+bovada Under 2.0 3.35
+1.048507650186614
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 2.5 1.724638
+bovada Under 2.5 2.14
+1.0471215452034779
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 3.0 2.2
+bovada Under 3.0 1.69
+1.0462614308768154
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 3.5 2.78
+bovada Under 3.5 1.454545
+1.0472124450596445
+
+
+
+Frosinone vs Napoli soccer_over_under_total_goals
+bovada Over 4.0 4.4
+bovada Under 4.0 1.217391
+1.0487015040584928
+
+
+
+Frosinone vs Napoli soccer_both_teams_to_score
+bovada Yes 1.909091
+bovada No 1.833333
+1.0692641434943315
+
+
+
+Genoa vs Fiorentina soccer_game_result
+bovada Genoa 3.0
+bovada Fiorentina 2.3
+bovada Draw 3.35
+1.0666234047155527
+
+
+
+Genoa vs Fiorentina soccer_over_under_total_goals
+bovada Over 1.5 1.327869
+bovada Under 1.5 3.45
+1.042941408540595
+
+
+
+Genoa vs Fiorentina soccer_over_under_total_goals
+bovada Over 2.0 1.512821
+bovada Under 2.0 2.6
+1.0456321208981305
+
+
+
+Genoa vs Fiorentina soccer_over_under_total_goals
+bovada Over 3.0 2.78
+bovada Under 3.0 1.454545
+1.0472124450596445
+
+
+
+Genoa vs Fiorentina soccer_over_under_total_goals
+bovada Over 3.5 3.5
+bovada Under 3.5 1.322581
+1.0418116438345066
+
+
+
+Genoa vs Fiorentina soccer_both_teams_to_score
+bovada Yes 1.78125
+bovada No 1.9804
+1.066352004025414
+
+
+
+Inter Milan vs Monza soccer_game_result
+bovada Inter Milan 1.384615
+bovada Monza 7.0
+bovada Draw 4.7
+1.0778455231435133
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 1.5 1.212766
+bovada Under 1.5 4.45
+1.0492804757003893
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 2.0 1.3125
+bovada Under 2.0 3.55
+1.0435949027498324
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 2.5 1.666667
+bovada Under 2.5 2.25
+1.0444443244444686
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 3.0 2.11
+bovada Under 3.0 1.757576
+1.0428990880524873
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 3.5 2.65
+bovada Under 3.5 1.49505
+1.0462324412700275
+
+
+
+Inter Milan vs Monza soccer_over_under_total_goals
+bovada Over 4.0 4.05
+bovada Under 4.0 1.243902
+1.0508354326114888
+
+
+
+Inter Milan vs Monza soccer_both_teams_to_score
+bovada Yes 1.892857
+bovada No 1.847458
+1.0695862210839802
+
+
+
+AS Roma vs Salernitana soccer_game_result
+bovada AS Roma 1.487805
+bovada Salernitana 6.25
+bovada Draw 4.2
+1.0702263305435091
+
+
+
+AS Roma vs Salernitana soccer_over_under_total_goals
+bovada Over 1.5 1.3125
+bovada Under 1.5 3.55
+1.0435949027498324
+
+
+
+AS Roma vs Salernitana soccer_over_under_total_goals
+bovada Over 2.0 1.471698
+bovada Under 2.0 2.7
+1.0498576021257984
+
+
+
+AS Roma vs Salernitana soccer_over_under_total_goals
+bovada Over 3.0 2.69
+bovada Under 3.0 1.47619
+1.0491667852570636
+
+
+
+AS Roma vs Salernitana soccer_over_under_total_goals
+bovada Over 3.5 3.35
+bovada Under 3.5 1.333333
+1.048507650186614
+
+
+
+AS Roma vs Salernitana soccer_both_teams_to_score
+bovada Yes 2.08
+bovada No 1.714286
+1.064102466880358
+
+
+
+Sassuolo vs Atalanta soccer_game_result
+bovada Sassuolo 3.15
+bovada Atalanta 2.15
+bovada Draw 3.5
+1.0682908822443706
+
+
+
+Sassuolo vs Atalanta soccer_over_under_total_goals
+bovada Over 2.0 1.27
+bovada Under 2.0 3.85
+1.0471418345434094
+
+
+
+Sassuolo vs Atalanta soccer_over_under_total_goals
+bovada Over 2.5 1.617284
+bovada Under 2.5 2.34
+1.045671019157432
+
+
+
+Sassuolo vs Atalanta soccer_over_under_total_goals
+bovada Over 3.5 2.47
+bovada Under 3.5 1.555556
+1.0477152587788676
+
+
+
+Sassuolo vs Atalanta soccer_over_under_total_goals
+bovada Over 4.0 3.7
+bovada Under 4.0 1.285714
+1.0480482208875925
+
+
+
+Sassuolo vs Atalanta soccer_both_teams_to_score
+bovada Yes 1.526316
+bovada No 2.45
+1.0633355887306295
+
+
+
+Lecce vs Lazio soccer_game_result
+bovada Lecce 3.35
+bovada Lazio 2.15
+bovada Draw 3.3
+1.0666540447866375
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 1.0 1.105
+bovada Under 1.0 6.75
+1.0531255237137591
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 1.5 1.392157
+bovada Under 1.5 3.05
+1.046178640794671
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 2.0 1.645161
+bovada Under 2.0 2.28
+1.046439735749427
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 2.5 2.2
+bovada Under 2.5 1.69
+1.0462614308768154
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 3.0 3.25
+bovada Under 3.0 1.350877
+1.0479521537034544
+
+
+
+Lecce vs Lazio soccer_over_under_total_goals
+bovada Over 3.5 4.0
+bovada Under 3.5 1.25
+1.05
+
+
+
+Lecce vs Lazio soccer_both_teams_to_score
+bovada Yes 1.909091
+bovada No 1.833333
+1.0692641434943315
+
+
+
+Udinese vs Juventus soccer_game_result
+bovada Udinese 4.3
+bovada Juventus 1.87
+bovada Draw 3.3
+1.0703478008539566
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 1.0 1.1
+bovada Under 1.0 7.0
+1.051948051948052
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 1.5 1.363636
+bovada Under 1.5 3.2
+1.045833528888941
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 2.0 1.588235
+bovada Under 2.0 2.4
+1.0462964128943975
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 2.5 2.13
+bovada Under 2.5 1.735294
+1.045754793585031
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 3.0 3.05
+bovada Under 3.0 1.392157
+1.046178640794671
+
+
+
+Udinese vs Juventus soccer_over_under_total_goals
+bovada Over 3.5 3.75
+bovada Under 3.5 1.277778
+1.049275226213004
+
+
+
+Udinese vs Juventus soccer_both_teams_to_score
+bovada Yes 1.9259
+bovada No 1.819672
+1.0687873481265595
+
+
+
+Torino vs Cagliari soccer_game_result
+bovada Torino 1.741
+bovada Cagliari 4.6
+bovada Draw 3.6
+1.069551620896425
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 1.0 1.1
+bovada Under 1.0 7.0
+1.051948051948052
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 1.5 1.384615
+bovada Under 1.5 3.1
+1.0448030680008522
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 2.0 1.617284
+bovada Under 2.0 2.34
+1.045671019157432
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 2.5 2.15
+bovada Under 2.5 1.714286
+1.0484495151808948
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 3.0 3.2
+bovada Under 3.0 1.363636
+1.045833528888941
+
+
+
+Torino vs Cagliari soccer_over_under_total_goals
+bovada Over 3.5 3.95
+bovada Under 3.5 1.25641
+1.049083086741317
+
+
+
+Torino vs Cagliari soccer_both_teams_to_score
+bovada Yes 2.05
+bovada No 1.741
+1.062187416819602
+
+
+
+Bologna vs AC Milan soccer_game_result
+bovada Bologna 3.25
+bovada AC Milan 2.15
+bovada Draw 3.35
+1.0713160494486422
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 1.0 1.090909
+bovada Under 1.0 7.5
+1.0500000763888953
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 1.5 1.363636
+bovada Under 1.5 3.2
+1.045833528888941
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 2.0 1.571429
+bovada Under 2.0 2.43
+1.0478860965548207
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 2.5 2.11
+bovada Under 2.5 1.757576
+1.0428990880524873
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 3.0 3.05
+bovada Under 3.0 1.392157
+1.046178640794671
+
+
+
+Bologna vs AC Milan soccer_over_under_total_goals
+bovada Over 3.5 3.75
+bovada Under 3.5 1.277778
+1.049275226213004
+
+
+
+Bologna vs AC Milan soccer_both_teams_to_score
+bovada Yes 1.847458
+bovada No 1.892857
+1.0695862210839802
+
+
+
+Almería vs Rayo Vallecano soccer_game_result
+bovada Almería 2.4
+bovada Rayo Vallecano 2.85
+bovada Draw 3.3
+1.0705741626794258
+
+
+
+Almería vs Rayo Vallecano soccer_over_under_total_goals
+bovada Over 1.5 1.30303
+bovada Under 1.5 3.6
+1.0452198167177869
+
+
+
+Almería vs Rayo Vallecano soccer_over_under_total_goals
+bovada Over 2.0 1.465116
+bovada Under 2.0 2.73
+1.048840178847632
+
+
+
+Almería vs Rayo Vallecano soccer_over_under_total_goals
+bovada Over 3.0 2.63
+bovada Under 3.0 1.5
+1.046894803548796
+
+
+
+Almería vs Rayo Vallecano soccer_over_under_total_goals
+bovada Over 3.5 3.3
+bovada Under 3.5 1.344828
+1.0466198178232728
+
+
+
+Almería vs Rayo Vallecano soccer_both_teams_to_score
+bovada Yes 1.714286
+bovada No 2.08
+1.064102466880358
+
+
+
+Athletic Bilbao vs Real Madrid soccer_game_result
+bovada Athletic Bilbao 3.2
+bovada Real Madrid 2.2
+bovada Draw 3.35
+1.0655529172320217
+
+
+
+Athletic Bilbao vs Real Madrid soccer_over_under_total_goals
+bovada Over 1.5 1.27
+bovada Under 1.5 3.85
+1.0471418345434094
+
+
+
+Athletic Bilbao vs Real Madrid soccer_over_under_total_goals
+bovada Over 2.0 1.4
+bovada Under 2.0 3.0
+1.0476190476190477
+
+
+
+Athletic Bilbao vs Real Madrid soccer_over_under_total_goals
+bovada Over 3.0 2.43
+bovada Under 3.0 1.571429
+1.0478860965548207
+
+
+
+Athletic Bilbao vs Real Madrid soccer_over_under_total_goals
+bovada Over 3.5 3.05
+bovada Under 3.5 1.392157
+1.046178640794671
+
+
+
+Athletic Bilbao vs Real Madrid soccer_both_teams_to_score
+bovada Yes 1.675676
+bovada No 2.13
+1.0662576461188442
+
+
+
+Atlético Madrid vs Granada soccer_game_result
+bovada Atlético Madrid 1.31746
+bovada Granada 9.0
+bovada Draw 5.0
+1.070147438589744
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 1.5 1.243902
+bovada Under 1.5 4.05
+1.0508354326114888
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 2.0 1.363636
+bovada Under 2.0 3.2
+1.045833528888941
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 2.5 1.76923
+bovada Under 2.5 2.1
+1.0414081132416226
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 3.0 2.3
+bovada Under 3.0 1.636943
+1.0456774291017386
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 3.5 2.93
+bovada Under 3.5 1.416667
+1.0471791151788952
+
+
+
+Atlético Madrid vs Granada soccer_over_under_total_goals
+bovada Over 4.0 4.65
+bovada Under 4.0 1.2
+1.0483870967741935
+
+
+
+Atlético Madrid vs Granada soccer_both_teams_to_score
+bovada Yes 2.18
+bovada No 1.645161
+1.066558840851632
+
+
+
+Celta de Vigo vs Osasuna soccer_game_result
+bovada Celta de Vigo 2.1
+bovada Osasuna 3.5
+bovada Draw 3.2
+1.0744047619047619
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 1.0 1.125
+bovada Under 1.0 6.0
+1.0555555555555556
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 1.5 1.444444
+bovada Under 1.5 2.83
+1.0456647957848733
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 2.0 1.746269
+bovada Under 2.0 2.12
+1.0443475732850036
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 2.5 2.36
+bovada Under 2.5 1.606061
+1.0463701702699326
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 3.0 3.65
+bovada Under 3.0 1.294118
+1.0466996647232545
+
+
+
+Celta de Vigo vs Osasuna soccer_over_under_total_goals
+bovada Over 3.5 4.4
+bovada Under 3.5 1.217391
+1.0487015040584928
+
+
+
+Celta de Vigo vs Osasuna soccer_both_teams_to_score
+bovada Yes 2.02
+bovada No 1.757576
+1.0640149437138828
+
+
+
+Cádiz vs Alavés soccer_game_result
+bovada Cádiz 2.15
+bovada Alavés 3.6
+bovada Draw 3.05
+1.0707629093065618
+
+
+
+Cádiz vs Alavés soccer_over_under_total_goals
+bovada Over 1.0 1.153846
+bovada Under 1.0 5.35
+1.053582670072705
+
+
+
+Cádiz vs Alavés soccer_over_under_total_goals
+bovada Over 1.5 1.512821
+bovada Under 1.5 2.6
+1.0456321208981305
+
+
+
+Cádiz vs Alavés soccer_over_under_total_goals
+bovada Over 2.5 2.58
+bovada Under 2.5 1.518135
+1.0462998472498501
+
+
+
+Cádiz vs Alavés soccer_over_under_total_goals
+bovada Over 3.0 4.15
+bovada Under 3.0 1.238095
+1.0486563184394682
+
+
+
+Cádiz vs Alavés soccer_both_teams_to_score
+bovada Yes 2.15
+bovada No 1.666667
+1.0651161590697915
+
+
+
+Getafe vs FC Barcelona soccer_game_result
+bovada Getafe 5.4
+bovada FC Barcelona 1.606061
+bovada Draw 3.85
+1.0675668016360556
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 1.0 1.083333
+bovada Under 1.0 7.75
+1.052109465165195
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 1.5 1.350877
+bovada Under 1.5 3.25
+1.0479521537034544
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 2.0 1.564972
+bovada Under 2.0 2.45
+1.0471523334811441
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 2.5 2.1
+bovada Under 2.5 1.76923
+1.0414081132416226
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 3.0 3.0
+bovada Under 3.0 1.4
+1.0476190476190477
+
+
+
+Getafe vs FC Barcelona soccer_over_under_total_goals
+bovada Over 3.5 3.7
+bovada Under 3.5 1.285714
+1.0480482208875925
+
+
+
+Getafe vs FC Barcelona soccer_both_teams_to_score
+bovada Yes 2.08
+bovada No 1.714286
+1.064102466880358
+
+
+
+Las Palmas vs Mallorca soccer_game_result
+bovada Las Palmas 2.45
+bovada Mallorca 3.05
+bovada Draw 3.0
+1.069365451098472
+
+
+
+Las Palmas vs Mallorca soccer_over_under_total_goals
+bovada Over 1.0 1.153846
+bovada Under 1.0 5.35
+1.053582670072705
+
+
+
+Las Palmas vs Mallorca soccer_over_under_total_goals
+bovada Over 1.5 1.518135
+bovada Under 1.5 2.58
+1.0462998472498501
+
+
+
+Las Palmas vs Mallorca soccer_over_under_total_goals
+bovada Over 2.5 2.6
+bovada Under 2.5 1.512821
+1.0456321208981305
+
+
+
+Las Palmas vs Mallorca soccer_over_under_total_goals
+bovada Over 3.0 4.2
+bovada Under 3.0 1.232558
+1.0494160846598621
+
+
+
+Las Palmas vs Mallorca soccer_both_teams_to_score
+bovada Yes 2.1
+bovada No 1.69
+1.0679064525218371
+
+
+
+Real Sociedad vs Girona soccer_game_result
+bovada Real Sociedad 1.645161
+bovada Girona 4.9
+bovada Draw 3.85
+1.0716651369146777
+
+
+
+Real Sociedad vs Girona soccer_over_under_total_goals
+bovada Over 1.5 1.285714
+bovada Under 1.5 3.7
+1.0480482208875925
+
+
+
+Real Sociedad vs Girona soccer_over_under_total_goals
+bovada Over 2.0 1.434783
+bovada Under 2.0 2.88
+1.0441917291093263
+
+
+
+Real Sociedad vs Girona soccer_over_under_total_goals
+bovada Over 3.0 2.55
+bovada Under 3.0 1.531915
+1.0449345951910889
+
+
+
+Real Sociedad vs Girona soccer_over_under_total_goals
+bovada Over 3.5 3.2
+bovada Under 3.5 1.363636
+1.045833528888941
+
+
+
+Real Sociedad vs Girona soccer_both_teams_to_score
+bovada Yes 1.87
+bovada No 1.87
+1.06951871657754
+
+
+
+[1.0250391236306728, 1.0323886639676112, 1.0353535353535355, 1.036363831919244, 1.0366300116867273, 1.037765739147224, 1.0414081132416226, 1.0414081132416226, 1.0414081132416226, 1.0414081132416226, 1.0414081132416226, 1.0418116438345066, 1.0418116438345066, 1.0418116438345066, 1.0418116438345066, 1.0421727395411606, 1.0421727395411606, 1.0424792598705643, 1.0424792598705643, 1.0428990880524873, 1.0428990880524873, 1.0428990880524873, 1.042941408540595, 1.042941408540595, 1.042941408540595, 1.042941408540595, 1.042941408540595, 1.042941408540595, 1.042941408540595, 1.04329014904145, 1.043360433604336, 1.0435949027498324, 1.0435949027498324, 1.0435949027498324, 1.0435949027498324, 1.043852506700622, 1.0441178345588704, 1.0441917291093263, 1.0441917291093263, 1.0442428730099962, 1.0443341716610517, 1.0443475732850036, 1.0443475732850036, 1.0443556443556443, 1.0444443244444686, 1.0444443244444686, 1.0444443244444686, 1.0444443244444686, 1.0446570972886762, 1.0448030680008522, 1.0448030680008522, 1.0448030680008522, 1.0448030680008522, 1.0448030680008522, 1.0448030680008522, 1.0448264239973037, 1.0449345951910889, 1.0449345951910889, 1.0452198167177869, 1.0452198167177869, 1.0456321208981305, 1.0456321208981305, 1.0456321208981305, 1.0456321208981305, 1.0456321208981305, 1.0456647957848733, 1.0456647957848733, 1.0456647957848733, 1.0456647957848733, 1.0456647957848733, 1.045671019157432, 1.045671019157432, 1.0456774291017386, 1.0456774291017386, 1.0456774291017386, 1.0456774291017386, 1.045754793585031, 1.045754793585031, 1.045754793585031, 1.045797323424507, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.045833528888941, 1.046178640794671, 1.046178640794671, 1.046178640794671, 1.046178640794671, 1.046178640794671, 1.046178640794671, 1.046178640794671, 1.0462324412700275, 1.0462324412700275, 1.0462543991955757, 1.0462614308768154, 1.0462614308768154, 1.0462614308768154, 1.0462614308768154, 1.0462964128943975, 1.0462964128943975, 1.0462964128943975, 1.0462998472498501, 1.0462998472498501, 1.0462998472498501, 1.0462998472498501, 1.0462998472498501, 1.0463200816401805, 1.0463701702699326, 1.0463701702699326, 1.0463701702699326, 1.046439735749427, 1.0465404763582868, 1.0466198178232728, 1.0466198178232728, 1.0466198178232728, 1.0466198178232728, 1.0466198178232728, 1.0466200466200468, 1.0466200466200468, 1.0466200466200468, 1.0466200466200468, 1.0466200466200468, 1.0466200466200468, 1.0466200466200468, 1.046643146099966, 1.046643146099966, 1.0466996647232545, 1.0466996647232545, 1.0466996647232545, 1.0466996647232545, 1.046894803548796, 1.046894803548796, 1.046894803548796, 1.0469135802469136, 1.0470337762935003, 1.0471215452034779, 1.0471215452034779, 1.0471418345434094, 1.0471418345434094, 1.0471418345434094, 1.0471418345434094, 1.0471523334811441, 1.0471523334811441, 1.0471791151788952, 1.0471791151788952, 1.0471791151788952, 1.0471791151788952, 1.0471928584515828, 1.0471928584515828, 1.0471928584515828, 1.0472124450596445, 1.0472124450596445, 1.0472124450596445, 1.0472124450596445, 1.0472124450596445, 1.0472245284941772, 1.0472245284941772, 1.0472245284941772, 1.04737277327978, 1.04737277327978, 1.0473873247595875, 1.0476190476190477, 1.0476190476190477, 1.0476190476190477, 1.0476190476190477, 1.047664174991055, 1.0477152587788676, 1.0477152587788676, 1.047734401184893, 1.047734401184893, 1.0478860965548207, 1.0478860965548207, 1.0478860965548207, 1.0478860965548207, 1.0478860965548207, 1.0479521537034544, 1.0479521537034544, 1.0479521537034544, 1.0479521537034544, 1.0479521537034544, 1.0479521537034544, 1.0480482208875925, 1.0480482208875925, 1.0480482208875925, 1.0480482208875925, 1.0480482208875925, 1.0480482208875925, 1.0480670244134402, 1.048103886527877, 1.048103886527877, 1.0481372788782912, 1.0483782677911782, 1.0483782677911782, 1.0483870967741935, 1.0484495151808948, 1.0484495151808948, 1.0484495151808948, 1.0484495151808948, 1.0484495151808948, 1.048507650186614, 1.048507650186614, 1.048507650186614, 1.048507650186614, 1.0486563184394682, 1.0486563184394682, 1.0486563184394682, 1.0486563184394682, 1.048669467787115, 1.0487015040584928, 1.0487015040584928, 1.0487015040584928, 1.0487015040584928, 1.0487015040584928, 1.0487015040584928, 1.0487015040584928, 1.048840178847632, 1.048840178847632, 1.048840178847632, 1.048840178847632, 1.049083086741317, 1.049083086741317, 1.049083086741317, 1.0491281121791358, 1.0491281121791358, 1.0491667852570636, 1.0491667852570636, 1.0491667852570636, 1.0491667852570636, 1.049275226213004, 1.049275226213004, 1.049275226213004, 1.049275226213004, 1.0492804757003893, 1.0494160846598621, 1.0494160846598621, 1.0494160846598621, 1.0494160846598621, 1.0494949494949495, 1.0494949494949495, 1.0498086574184802, 1.0498086574184802, 1.0498086574184802, 1.0498576021257984, 1.0498576021257984, 1.0498576021257984, 1.05, 1.05, 1.05, 1.0500000763888953, 1.0500000763888953, 1.05006105006105, 1.0503083841705596, 1.0508354326114888, 1.0508354326114888, 1.0508354326114888, 1.0508935508935509, 1.0516325779483675, 1.0516325779483675, 1.0516991029525826, 1.051948051948052, 1.051948051948052, 1.051948051948052, 1.0519982640943701, 1.0519982640943701, 1.052109465165195, 1.052109465165195, 1.052109465165195, 1.0523809523809524, 1.0531255237137591, 1.0531255237137591, 1.0531255237137591, 1.0534788142201026, 1.053582670072705, 1.053582670072705, 1.053582797642275, 1.0545084024082447, 1.0555555555555556, 1.0568801620695027, 1.0578245284127639, 1.0578245284127639, 1.0578245284127639, 1.0578245284127639, 1.0578245284127639, 1.0578245284127639, 1.060503992015968, 1.060503992015968, 1.060503992015968, 1.060503992015968, 1.062187416819602, 1.062187416819602, 1.063117547186801, 1.0633355887306295, 1.0640149437138828, 1.0640149437138828, 1.0640149437138828, 1.0640149437138828, 1.0640149437138828, 1.064102466880358, 1.064102466880358, 1.064102466880358, 1.064102466880358, 1.064102466880358, 1.064102466880358, 1.064102466880358, 1.0644257703081232, 1.0644771481593371, 1.0646706586826347, 1.0646706586826347, 1.0646706586826347, 1.0651161590697915, 1.0655529172320217, 1.0660038663352667, 1.0661373824641494, 1.0662576461188442, 1.066352004025414, 1.066558840851632, 1.066558840851632, 1.0666234047155527, 1.0666540447866375, 1.067085801155055, 1.067135689361773, 1.067135689361773, 1.067135689361773, 1.0673979455685854, 1.0674445076835515, 1.0675668016360556, 1.0678794519487058, 1.0679064525218371, 1.0679064525218371, 1.0679064525218371, 1.0679064525218371, 1.0680260205713183, 1.0682023304693973, 1.0682908822443706, 1.0683760683760686, 1.068388874077343, 1.0687873481265595, 1.0692641434943315, 1.0692641434943315, 1.0692641434943315, 1.0692641434943315, 1.069365451098472, 1.06951871657754, 1.06951871657754, 1.06951871657754, 1.069551620896425, 1.0695862210839802, 1.0695862210839802, 1.0695862210839802, 1.0695862210839802, 1.0695862210839802, 1.06993006993007, 1.06993006993007, 1.070147438589744, 1.0702263305435091, 1.0702702702702702, 1.0703478008539566, 1.0705741626794258, 1.0707629093065618, 1.0709621714964115, 1.071047224497578, 1.0713160494486422, 1.0713652482269502, 1.0714285714285714, 1.0714285714285714, 1.0716651369146777, 1.0720266264496334, 1.0727299536272639, 1.072939013178057, 1.072939013178057, 1.0734323432343233, 1.0734323432343233, 1.0744047619047619, 1.0755693581780537, 1.0760823875577974, 1.0761369443025037, 1.0761369443025037, 1.0761369443025037, 1.0761369443025037, 1.0761369443025037, 1.0767295597484277, 1.0767295597484277, 1.0767295597484277, 1.0767295597484277, 1.0767295597484277, 1.0771929824561404, 1.0774365821094793, 1.0778455231435133, 1.0784045093357342, 1.07840698006106, 1.079185520361991, 1.079185520361991, 1.079185520361991, 1.0793650793650795, 1.0797720797720798, 1.080091533180778, 1.080091533180778, 1.080392156862745, 1.080392156862745, 1.080392156862745, 1.080392156862745, 1.080392156862745, 1.0824002296870514, 1.0827190827190827, 1.08300395256917, 1.08300395256917, 1.084097859327217, 1.0852130325814535, 1.0852130325814535, 1.0855528652138822, 1.0855528652138822, 1.0855528652138822, 1.0855528652138822, 1.0857142857142856, 1.0857142857142856, 1.0857142857142856, 1.0857142857142856, 1.0857142857142856, 1.0857142857142856, 1.0857142857142859, 1.0857142857142859, 1.0857142857142859, 1.0857142857142859, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0859339665309815, 1.0862533692722371, 1.0862533692722371, 1.0866072732583614, 1.0866072732583614, 1.0869565217391306, 1.0869565217391306, 1.0882352941176472, 1.0882352941176472, 1.0883773799374823, 1.0884255930984903, 1.0884255930984903, 1.0884255930984903, 1.0884255930984903, 1.0884255930984903, 1.0884353741496597, 1.0884353741496597, 1.0885208452312964, 1.0885208452312964, 1.0885208452312964, 1.0885208452312964, 1.0885208452312964, 1.0896057347670252, 1.0896057347670252, 1.0897435897435899, 1.0897435897435899, 1.0897435897435899, 1.0897435897435899, 1.0897435897435899, 1.0899424014178112, 1.0900990099009902, 1.0900990099009902, 1.0900990099009902, 1.0900990099009902, 1.0900990099009902, 1.0900990099009902, 1.0901162790697674, 1.0909090909090908, 1.0909090909090908, 1.0913442361388113, 1.0914881297046901, 1.0914881297046901, 1.091503267973856, 1.091503267973856, 1.091503267973856, 1.091503267973856, 1.0918114143920594, 1.0918114143920594, 1.0918114143920594, 1.0921985815602837, 1.0924369747899159, 1.0924369747899159, 1.0925925925925926, 1.0925925925925926, 1.0925925925925926, 1.0925925925925926, 1.0928571428571427, 1.0928571428571427, 1.0928571428571427, 1.0928571428571427, 1.0938654841093867, 1.0938654841093867, 1.0941176470588236, 1.0941176470588236, 1.0941176470588236, 1.0941176470588236, 1.0942158616577222, 1.0944444444444446, 1.0944444444444446, 1.0944444444444446, 1.0945138511678436, 1.0945138511678436, 1.0945138511678436, 1.0948717948717948, 1.0948717948717948, 1.0948717948717948, 1.0948717948717948, 1.0948717948717948, 1.0948717948717948, 1.0960960960960962, 1.0960960960960962, 1.0960960960960962, 1.0960960960960962, 1.096938775510204, 1.0980392156862746, 1.098802395209581, 1.098802395209581, 1.098802395209581, 1.098802395209581, 1.098802395209581, 1.098802395209581, 1.0989304812834224, 1.1005120996083946, 1.1005120996083946, 1.1014492753623188, 1.1050888286660645, 1.1074352548036757, 1.1079622132253713, 1.1083333333333334, 1.1085858585858586, 1.1102775693923481, 1.1109496124031006, 1.111622908030094, 1.1125, 1.1128048780487805, 1.1133069828722002, 1.1145510835913313, 1.1151515151515152, 1.1153381642512077, 1.1153846153846154, 1.1153846153846154, 1.1153846153846154, 1.1153846153846154, 1.1153846153846154, 1.1153846153846154, 1.1153846153846154, 1.1155160628844838, 1.1161856046766534, 1.1162464985994398, 1.1164529914529915, 1.1164529914529915, 1.1166480578245286, 1.1166480578245286, 1.1166480578245286, 1.1166480578245286, 1.117283950617284, 1.117309269893355, 1.1174603174603175, 1.1174603174603175, 1.1178766588602653, 1.1178766588602653, 1.11804865938431, 1.11804865938431, 1.11804865938431, 1.11804865938431, 1.1181318681318682, 1.1181795938341081, 1.1181795938341081, 1.118292205248727, 1.118292205248727, 1.1187110503115976, 1.118881118881119, 1.118881118881119, 1.119047619047619, 1.119047619047619, 1.1192860811504879, 1.1196172248803826, 1.1199095022624435, 1.1200248756218907, 1.12096887762287, 1.12101593625498, 1.12101593625498, 1.1219358893777498, 1.1222500696184907, 1.1223626046336648, 1.1223626046336648, 1.1224489795918366, 1.122702434177844, 1.123003992015968, 1.123003992015968, 1.1231884057971016, 1.123249299719888, 1.123249299719888, 1.1234323432343234, 1.1234323432343234, 1.123804025074233, 1.123804025074233, 1.1240009990009991, 1.1245421245421245, 1.1247199402539207, 1.1247199402539207, 1.1247199402539207, 1.1247475532080162, 1.125, 1.125, 1.1250556297285268, 1.1250556297285268, 1.125214408233276, 1.125214408233276, 1.125214408233276, 1.125235404896422, 1.1263736263736264, 1.1263736263736264, 1.1263736263736264, 1.126984126984127, 1.126984126984127, 1.1271929824561404, 1.1273644388398487, 1.1284722222222223, 1.1301044634377968, 1.1307832422586521, 1.134238310708899, 1.134453781512605, 1.1359496605398245, 1.1363636363636365, 1.1369426751592355, 1.137893753992825, 1.1386392811296533, 1.1395279895709685, 1.1395962528038, 1.1420783062574107, 1.1423675626574177, 1.1473429951690823, 1.4334525807007719]
