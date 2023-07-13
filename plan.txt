@@ -1,0 +1,20 @@
+Data scraping plan:
+- daily get all events 10 days in the future
+- before live:
+	- scrape for odds changes every minute
+	- will i get limited?
+		- add logging for status code.
+- during live:
+	- subscribe to websockets and get live odds changes.
+		- ** could i just do this all the time? when not live?
+		- might avoid limiting issues
+
+
+
+DB updates:
+- create history of odds updates!
+	- history table: that includes timestamp, sb_selection_id, odds
+
+- store the original sportsbook names of things to verify fuzzy string matching if needed.
+- get rid of unnecessary tables like sports + sbs
+

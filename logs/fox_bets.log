@@ -1,0 +1,82 @@
+2023-07-12 23:47:27,590 - INFO @ 89 == time for get request 0.19077424998977222 seconds
+2023-07-12 23:47:27,750 - INFO @ 93 == time for parse 0.00011125000310130417 seconds
+2023-07-12 23:47:27,931 - INFO @ 89 == time for get request 0.14794091598014347 seconds
+2023-07-12 23:47:28,071 - INFO @ 93 == time for parse 5.137501284480095e-05 seconds
+2023-07-12 23:47:28,258 - INFO @ 89 == time for get request 0.13558475000900216 seconds
+2023-07-12 23:47:28,404 - INFO @ 93 == time for parse 4.42500167991966e-05 seconds
+2023-07-12 23:47:28,596 - INFO @ 89 == time for get request 0.1598012079775799 seconds
+2023-07-12 23:47:28,780 - INFO @ 93 == time for parse 0.00010024997754953802 seconds
+2023-07-12 23:47:28,959 - INFO @ 89 == time for get request 0.14617799999541603 seconds
+2023-07-12 23:47:29,105 - INFO @ 93 == time for parse 6.908300565555692e-05 seconds
+2023-07-12 23:47:29,305 - INFO @ 89 == time for get request 0.16837691600085236 seconds
+2023-07-12 23:47:29,449 - INFO @ 93 == time for parse 3.079100861214101e-05 seconds
+2023-07-12 23:47:29,614 - INFO @ 89 == time for get request 0.15038491701125167 seconds
+2023-07-12 23:47:29,760 - INFO @ 93 == time for parse 6.970801041461527e-05 seconds
+2023-07-12 23:47:29,934 - INFO @ 89 == time for get request 0.14024070801679045 seconds
+2023-07-12 23:47:30,088 - INFO @ 93 == time for parse 2.5333021767437458e-05 seconds
+2023-07-12 23:47:30,293 - INFO @ 89 == time for get request 0.18978187500033528 seconds
+2023-07-12 23:47:30,435 - INFO @ 93 == time for parse 3.1167000997811556e-05 seconds
+2023-07-12 23:47:30,593 - INFO @ 89 == time for get request 0.13881670800037682 seconds
+2023-07-12 23:47:30,739 - INFO @ 93 == time for parse 7.454201113432646e-05 seconds
+2023-07-12 23:47:30,910 - INFO @ 89 == time for get request 0.14042875001905486 seconds
+2023-07-12 23:47:31,050 - INFO @ 93 == time for parse 7.937499321997166e-05 seconds
+2023-07-12 23:47:31,226 - INFO @ 89 == time for get request 0.1448511249909643 seconds
+2023-07-12 23:47:31,377 - INFO @ 93 == time for parse 7.29160092305392e-05 seconds
+2023-07-12 23:47:31,556 - INFO @ 89 == time for get request 0.14850441698217764 seconds
+2023-07-12 23:47:31,696 - INFO @ 93 == time for parse 6.349998875521123e-05 seconds
+2023-07-12 23:47:31,884 - INFO @ 89 == time for get request 0.15232987501076423 seconds
+2023-07-12 23:47:32,030 - INFO @ 93 == time for parse 5.4292002459988e-05 seconds
+2023-07-12 23:47:32,197 - INFO @ 89 == time for get request 0.1399114170053508 seconds
+2023-07-12 23:47:32,339 - INFO @ 93 == time for parse 0.00011579101555980742 seconds
+2023-07-12 23:47:32,511 - INFO @ 89 == time for get request 0.13984066699049436 seconds
+2023-07-12 23:47:32,657 - INFO @ 93 == time for parse 0.00010458301403559744 seconds
+2023-07-12 23:47:32,846 - INFO @ 89 == time for get request 0.1555884999979753 seconds
+2023-07-12 23:47:32,985 - INFO @ 93 == time for parse 3.691698657348752e-05 seconds
+2023-07-12 23:47:33,209 - INFO @ 89 == time for get request 0.20250133401714265 seconds
+2023-07-12 23:47:33,374 - INFO @ 93 == time for parse 0.00016116700135171413 seconds
+2023-07-12 23:47:33,558 - INFO @ 89 == time for get request 0.14811204199213535 seconds
+2023-07-12 23:47:33,721 - INFO @ 93 == time for parse 5.7249999372288585e-05 seconds
+2023-07-12 23:47:33,927 - INFO @ 89 == time for get request 0.17571116599719971 seconds
+2023-07-12 23:47:34,071 - INFO @ 93 == time for parse 5.3625000873580575e-05 seconds
+2023-07-12 23:47:34,256 - INFO @ 89 == time for get request 0.1516334170009941 seconds
+2023-07-12 23:47:34,438 - INFO @ 93 == time for parse 9.570899419486523e-05 seconds
+2023-07-12 23:47:34,659 - INFO @ 89 == time for get request 0.18859808400156908 seconds
+2023-07-12 23:47:34,804 - INFO @ 93 == time for parse 9.691697778180242e-05 seconds
+2023-07-12 23:47:34,984 - INFO @ 89 == time for get request 0.14544391699018888 seconds
+2023-07-12 23:47:35,123 - INFO @ 93 == time for parse 3.8124999264255166e-05 seconds
+2023-07-12 23:47:35,314 - INFO @ 89 == time for get request 0.1655158749781549 seconds
+2023-07-12 23:47:35,488 - INFO @ 93 == time for parse 7.974999607540667e-05 seconds
+2023-07-12 23:47:35,669 - INFO @ 89 == time for get request 0.14542570899357088 seconds
+2023-07-12 23:47:35,813 - INFO @ 93 == time for parse 2.6583002181723714e-05 seconds
+2023-07-12 23:47:35,973 - INFO @ 89 == time for get request 0.1411905839922838 seconds
+2023-07-12 23:47:36,132 - INFO @ 93 == time for parse 3.287498839199543e-05 seconds
+2023-07-12 23:47:36,296 - INFO @ 89 == time for get request 0.13895495800534263 seconds
+2023-07-12 23:47:36,519 - INFO @ 93 == time for parse 2.795798354782164e-05 seconds
+2023-07-12 23:47:36,689 - INFO @ 89 == time for get request 0.14554854200105183 seconds
+2023-07-12 23:47:36,841 - INFO @ 93 == time for parse 0.00012849998893216252 seconds
+2023-07-12 23:47:37,101 - INFO @ 89 == time for get request 0.2240584169921931 seconds
+2023-07-12 23:47:37,235 - INFO @ 93 == time for parse 5.2207993576303124e-05 seconds
+2023-07-12 23:47:37,414 - INFO @ 89 == time for get request 0.14756954199401662 seconds
+2023-07-12 23:47:37,564 - INFO @ 93 == time for parse 8.295901352539659e-05 seconds
+2023-07-12 23:47:37,751 - INFO @ 89 == time for get request 0.1560943340009544 seconds
+2023-07-12 23:47:37,910 - INFO @ 93 == time for parse 0.0001334169937763363 seconds
+2023-07-12 23:47:38,091 - INFO @ 89 == time for get request 0.14527220799936913 seconds
+2023-07-12 23:47:38,247 - INFO @ 93 == time for parse 5.733300349675119e-05 seconds
+2023-07-12 23:47:38,436 - INFO @ 89 == time for get request 0.15816516600898467 seconds
+2023-07-12 23:47:38,584 - INFO @ 93 == time for parse 5.9541023802012205e-05 seconds
+2023-07-12 23:47:38,763 - INFO @ 89 == time for get request 0.147141458990518 seconds
+2023-07-12 23:47:38,914 - INFO @ 93 == time for parse 0.00011970798368565738 seconds
+2023-07-12 23:47:39,134 - INFO @ 89 == time for get request 0.18779854199965484 seconds
+2023-07-12 23:47:39,292 - INFO @ 93 == time for parse 0.0001077089982572943 seconds
+2023-07-12 23:47:39,481 - INFO @ 89 == time for get request 0.15640412500943057 seconds
+2023-07-12 23:47:39,639 - INFO @ 93 == time for parse 7.583401747979224e-05 seconds
+2023-07-12 23:47:39,820 - INFO @ 89 == time for get request 0.14477620800607838 seconds
+2023-07-12 23:47:39,970 - INFO @ 93 == time for parse 9.274997864849865e-05 seconds
+2023-07-12 23:47:40,180 - INFO @ 89 == time for get request 0.1785693340061698 seconds
+2023-07-12 23:47:40,334 - INFO @ 93 == time for parse 9.645798127166927e-05 seconds
+2023-07-12 23:47:40,507 - INFO @ 89 == time for get request 0.13969795900629833 seconds
+2023-07-12 23:47:40,657 - INFO @ 93 == time for parse 5.3208001190796494e-05 seconds
+2023-07-12 23:47:40,871 - INFO @ 89 == time for get request 0.18595979202655144 seconds
+2023-07-12 23:47:41,020 - INFO @ 93 == time for parse 0.00011199997970834374 seconds
+2023-07-12 23:47:41,224 - INFO @ 89 == time for get request 0.1709534999972675 seconds
+2023-07-12 23:47:41,376 - INFO @ 93 == time for parse 0.00010870900587178767 seconds

@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime, timedelta
+from timeit import timeit
 
 import requests
 
@@ -10,11 +11,10 @@ from sportsbooks.fox_bets import config
 
 
 def _setup_logger():
-    logging.basicConfig(filename="logs/root.log")
     logger = logging.getLogger("fox_bets")
     logger.propagate = False
     fh = logging.FileHandler("logs/fox_bets.log")
-    fh.setLevel(logging.INFO)
+    fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
     )
@@ -85,4 +85,11 @@ def get_events() -> list[Event]:
 
 # gets initial odds for an upcoming event given fox_bet_event_id.
 def get_odds(url: str) -> list[Selection]:
+    time = timeit(lambda: _get_event(url), number=1)
+    _logger.info(f"time for get request {time} seconds")
+    event = _get_event(url)
+
+    time = timeit(lambda: _parse_odds(event), number=1)
+    _logger.info(f"time for parse {time} seconds")
+    return _parse_odds(event)
     return _parse_odds(_get_event(url))

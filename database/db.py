@@ -1,6 +1,6 @@
 import dataclasses
-import multiprocessing
 import sqlite3
+from datetime import datetime
 from typing import Callable, Tuple
 
 from datastructures.event import Event
@@ -37,7 +37,7 @@ def _get_unified_market_name(sb: str, market: str) -> str:
     unified_market = res.fetchone()
     if not unified_market:
         raise Exception(
-            f"_get_unified_market_name unable to get sport name for {sb},"
+            f"_get_unified_market_name unable to get market name for {sb},"
             f" {market}"
         )
     return unified_market[0]
@@ -69,12 +69,12 @@ def _sb_event_exists(sb: str, id: str) -> bool:
 
 
 def _register_sb_event(
-    sb: str, sb_event_id: str, sb_event_url: str, event_id: int
+    sb: str, sb_event_id: str, sb_event_url: str, event_id: int, sb_name: str
 ):
     with conn:
         cur.execute(
-            "INSERT INTO sb_events VALUES (?, ?, ?, ?)",
-            (sb_event_id, sb_event_url, event_id, sb),
+            "INSERT INTO sb_events VALUES (?, ?, ?, ?, ?)",
+            (sb_event_id, sb_event_url, sb_name, event_id, sb),
         )
 
 
@@ -97,13 +97,18 @@ def match_or_register_event(
             raise Exception(
                 f"match_or_register_event sportsbook event has no url {event}"
             )
-        _register_sb_event(sb, event.id, event.url, int(match.id))
+        _register_sb_event(sb, event.id, event.url, int(match.id), event.name)
 
 
 def get_sb_events(lock, sb: str) -> list[Tuple[str, str]]:
+    # return events that have not started.
+    now = datetime.now().timestamp()
     with lock:
         res = cur.execute(
-            "SELECT event_id, url FROM sb_events WHERE sb = ?", (sb,)
+            "SELECT sb_events.event_id, sb_events.url FROM sb_events, events"
+            " WHERE sb_events.sb = ? AND events.id = sb_events.event_id AND"
+            " events.date > ?",
+            (sb, now),
         )
         return res.fetchall()
 
@@ -113,6 +118,15 @@ def _update_odds(sb: str, id: str, odds: float):
         cur.execute(
             "UPDATE sb_selections SET odds = ? WHERE sb = ? AND id = ?",
             (str(odds), sb, id),
+        )
+        updated_rowid = cur.lastrowid
+        cur.execute(
+            "INSERT INTO history VALUES (?, ?, ?)",
+            (
+                odds,
+                int(datetime.now().timestamp()),
+                updated_rowid,
+            ),
         )
 
 
@@ -128,19 +142,15 @@ def _get_selections(
     unified_event_id: int, unified_market_id: str
 ) -> list[Selection]:
     res = cur.execute(
-        (
-            "SELECT id, name, link, market_id FROM selections WHERE event_id ="
-            " ? AND market_id = ?"
-        ),
+        "SELECT id, name, link, market_id FROM selections WHERE event_id ="
+        " ? AND market_id = ?",
         (unified_event_id, unified_market_id),
     )
     selections = res.fetchall()
     return [Selection(*selection) for selection in selections]
 
 
-def _register_selection(
-    sb: str, selection: Selection, event_id: int
-) -> Selection:
+def _register_selection(selection: Selection, event_id: int) -> Selection:
     with conn:
         cur.execute(
             "INSERT INTO selections VALUES (NULL, ?, ?, ?, ?)",
@@ -151,16 +161,30 @@ def _register_selection(
 
 
 def _register_sb_selection(
-    sb: str, sb_selection_id: str, sb_odds: float | None, selection_id: int
+    sb: str,
+    sb_selection_id: str,
+    sb_odds: float | None,
+    selection_id: int,
+    sb_name: str,
 ):
     with conn:
         cur.execute(
-            "INSERT INTO sb_selections VALUES (?, ?, ?, ?)",
+            "INSERT INTO sb_selections VALUES (?, ?, ?, ?, ?)",
             (
                 sb_selection_id,
                 (str(sb_odds) if sb_odds else "NULL"),
+                sb_name,
                 selection_id,
                 sb,
+            ),
+        )
+        updated_rowid = cur.lastrowid
+        cur.execute(
+            "INSERT INTO history VALUES (?, ?, ?)",
+            (
+                sb_odds,
+                int(datetime.now().timestamp()),
+                updated_rowid,
             ),
         )
 
@@ -190,6 +214,8 @@ def update_or_register_event_selections(
         )
         if not match:
             selection.market_id = unified_market_id
-            match = _register_selection(sb, selection, unified_event_id)
+            match = _register_selection(selection, unified_event_id)
 
-        _register_sb_selection(sb, selection.id, selection.odds, int(match.id))
+        _register_sb_selection(
+            sb, selection.id, selection.odds, int(match.id), selection.name
+        )

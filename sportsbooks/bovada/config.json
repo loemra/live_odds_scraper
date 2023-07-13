@@ -5,7 +5,8 @@
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
   },
   "url_sports": [
-    "soccer"
+    "soccer",
+    "tennis"
   ],
   "sports": {
     "SOCC": {
@@ -13,6 +14,13 @@
         "1": "TEAM_NAME",
         "13": "OVER_UNDER",
         "350": "YES_NO"
+      }
+    },
+    "TENN": {
+      "markets": {
+        "67": "SPREAD",
+        "120755": "OVER_UNDER",
+        "68": "TEAM_NAME"
       }
     }
   }

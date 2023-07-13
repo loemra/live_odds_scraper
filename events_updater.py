@@ -1,4 +1,5 @@
 import logging
+from timeit import timeit
 from typing import Callable
 
 from thefuzz import fuzz, process
@@ -9,10 +10,8 @@ from datastructures.selection import Selection
 
 
 def _setup_logger():
-    logging.basicConfig(
-        filename="logs/root.log", level=logging.DEBUG, force=True
-    )
     logger = logging.getLogger("events_updater")
+    logger.setLevel(logging.INFO)
     logger.propagate = False
     fh = logging.FileHandler("logs/events_updater.log")
     fh.setLevel(logging.DEBUG)
@@ -66,7 +65,7 @@ def _maybe_match_event(
     best_matches = process.extractBests(
         event,
         relevant_events,
-        lambda e: e.name,
+        lambda e: e.name,  # type: ignore
         fuzz.token_sort_ratio,
         score_cutoff=75,
     )
@@ -75,7 +74,7 @@ def _maybe_match_event(
         res = process.extract(
             event,
             relevant_events,
-            lambda e: e.name,
+            lambda e: e.name,  # type: ignore
             fuzz.token_sort_ratio,
         )
         _logger.debug(f"successful no match: {event}, {res}")
@@ -117,8 +116,8 @@ def _maybe_match_selection(
     best_matches = process.extractBests(
         selection,
         potential_selections,
-        lambda e: e.name,
-        custom_scorer,
+        lambda e: e.name,  # type: ignore
+        custom_scorer,  # type: ignore
         score_cutoff=79,
     )
 
@@ -126,8 +125,8 @@ def _maybe_match_selection(
         res = process.extract(
             selection,
             potential_selections,
-            lambda e: e.name,
-            custom_scorer,
+            lambda e: e.name,  # type: ignore
+            custom_scorer,  # type: ignore
         )
         _logger.debug(f"successful no match: {selection}, {res}")
         return None
@@ -154,8 +153,17 @@ def update_or_register_event_selections(
 ):
     sb_events = db.get_sb_events(lock, sb)
     for unified_event_id, url in sb_events:
-        selections = sb_get_odds(url)
-        for selection in selections:
-            db.update_or_register_event_selections(
-                lock, sb, unified_event_id, selection, _maybe_match_selection
-            )
+
+        def tmp():
+            selections = sb_get_odds(url)
+            for selection in selections:
+                db.update_or_register_event_selections(
+                    lock,
+                    sb,
+                    int(unified_event_id),
+                    selection,
+                    _maybe_match_selection,
+                )
+
+        time = timeit(tmp, number=1)
+        _logger.info(f"{sb} took {time} seconds")

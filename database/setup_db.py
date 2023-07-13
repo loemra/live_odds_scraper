@@ -1,8 +1,6 @@
 import sqlite3
 from typing import Tuple
 
-from datastructures.market import MarketKind
-
 conn = sqlite3.connect("database/events.db")
 cur = conn.cursor()
 
@@ -44,7 +42,7 @@ def _mabye_create_sbs():
 
 def _maybe_create_sb_events():
     cur.execute(
-        "CREATE TABLE IF NOT EXISTS sb_events(id TEXT, url TEXT,"
+        "CREATE TABLE IF NOT EXISTS sb_events(id TEXT, url TEXT, name TEXT,"
         " event_id, sb, FOREIGN KEY (event_id) REFERENCES events(id), FOREIGN"
         " KEY (sb) REFERENCES sbs(name))"
     )
@@ -68,9 +66,17 @@ def _maybe_create_sb_markets():
 
 def _maybe_create_sb_selections():
     cur.execute(
-        "CREATE TABLE IF NOT EXISTS sb_selections(id TEXT, odds"
+        "CREATE TABLE IF NOT EXISTS sb_selections(id TEXT, odds TEXT, name"
         " TEXT, selection_id, sb, FOREIGN KEY (selection_id) REFERENCES"
         " selections(id), FOREIGN KEY (sb) REFERENCES sbs(name))"
+    )
+
+
+def _maybe_create_history():
+    cur.execute(
+        "CREATE TABLE IF NOT EXISTS history(odds TEXT, time INTEGER,"
+        " sb_selection_id, FOREIGN KEY (sb_selection_id) REFERENCES"
+        " sb_selections(rowid))"
     )
 
 
@@ -83,6 +89,7 @@ _maybe_create_sb_events()
 _maybe_create_sb_sports()
 _maybe_create_sb_markets()
 _maybe_create_sb_selections()
+_maybe_create_history()
 
 conn.commit()
 
@@ -117,15 +124,22 @@ def _maybe_add_sb_markets(sb_markets: list[Tuple]):
 
 
 _maybe_add_sbs(["fox_bets", "bovada"])
-_maybe_add_sports(["soccer"])
+_maybe_add_sports(["soccer", "tennis"])
 _maybe_add_sb_sports(
-    [("SOCCER", "soccer", "fox_bets"), ("SOCC", "soccer", "bovada")]
+    [
+        ("SOCCER", "soccer", "fox_bets"),
+        ("SOCC", "soccer", "bovada"),
+        ("TENN", "tennis", "bovada"),
+    ]
 )
 _maybe_add_markets(
     [
         ("soccer_game_result", "TEAM_NAME"),
         ("soccer_over_under_total_goals", "OVER_UNDER"),
         ("soccer_both_teams_to_score", "YES_NO"),
+        ("tennis_spread", "SPREAD"),
+        ("tennis_game_result", "TEAM_NAME"),
+        ("tennis_over_under_total_games", "OVER_UNDER"),
     ]
 )
 _maybe_add_sb_markets(
@@ -136,6 +150,9 @@ _maybe_add_sb_markets(
         ("1", "soccer_game_result", "bovada"),
         ("13", "soccer_over_under_total_goals", "bovada"),
         ("350", "soccer_both_teams_to_score", "bovada"),
+        ("67", "tennis_spread", "bovada"),
+        ("68", "tennis_game_result", "bovada"),
+        ("120755", "tennis_over_under_total_games", "bovada"),
     ]
 )
 

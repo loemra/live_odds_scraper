@@ -33,26 +33,6 @@ def get_event_url(id: str, sport: str) -> str:
     return _config["get_event_url"].format(id, markets)
 
 
-def get_send_alive() -> str:
-    return _config["sockets"]["send_alive"]
-
-
-def get_url_and_auth_payload() -> Tuple[str, str]:
-    return (_config["sockets"]["url"], _config["sockets"]["auth_payload"])
-
-
-"""
-def get_subscribe_payload(event_id: str, markets: list[MarketMetadata]) -> str:
-    return _config["sockets"]["subscribe_payload"].format(
-        event_id, ",".join([market.id for market in markets])
-    )
-    """
-
-
-def get_ri_odds(ri: int) -> float:
-    return float(_config["odds"][ri]["decimal"])
-
-
 def get_market_kind(market_id: str) -> MarketKind:
     for s in _config["sports"].values():
         kind = s["markets"].get(market_id)

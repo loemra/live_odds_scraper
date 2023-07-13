@@ -1,5 +1,6 @@
 import logging
 from datetime import datetime
+from timeit import timeit
 
 import requests
 
@@ -10,8 +11,9 @@ from sportsbooks.bovada import config
 
 
 def _setup_logger():
-    logging.basicConfig(filename="logs/root.log")
+    logging.basicConfig()
     logger = logging.getLogger("bovada")
+    logger.setLevel(logging.INFO)
     logger.propagate = False
     fh = logging.FileHandler("logs/bovada.log")
     fh.setLevel(logging.DEBUG)
@@ -61,14 +63,21 @@ def _parse_odds(j) -> list[Selection]:
         for event in league["events"]:
             for display_group in event["displayGroups"]:
                 for market in display_group["markets"]:
+                    _logger.debug(
+                        "Market:"
+                        f" {market['description']} {market['descriptionKey']} {market['marketTypeId']} Period:"
+                        f" {market['period']['description']} {market['period']['main']}"
+                    )
                     market_id = market["marketTypeId"]
                     if (
-                        market_id not in config.get_markets()
+                        not config.is_market(market_id)
                         or not market["period"]["main"]
                     ):
                         continue
                     market_kind = config.get_market_kind(market_id)
 
+                    # TODO: This needs to be more sport specific.
+                    # tennis does not have the same constraint as soccer.
                     if market_kind is MarketKind.OVER_UNDER:
                         if market["id"] != "G-2W-OU.Total Goals O/U.100":
                             continue
@@ -108,7 +117,12 @@ def get_events() -> list[Event]:
 
 
 def get_odds(url: str) -> list[Selection]:
+    time = timeit(lambda: _get_event(url), number=1)
+    _logger.info(f"time for get request {time} seconds")
     event = _get_event(url)
     if not event:
         return []
+
+    time = timeit(lambda: _parse_odds(event), number=1)
+    _logger.info(f"time for parse {time} seconds")
     return _parse_odds(event)

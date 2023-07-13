@@ -7,3 +7,4 @@ class MarketKind(StrEnum):
     TEAM_NAME = auto()
     OVER_UNDER = auto()
     YES_NO = auto()
+    SPREAD = auto()

@@ -22,11 +22,11 @@ def get_event_url(link: str) -> str:
     return _config["get_event_url"].format(link)
 
 
-def get_markets() -> list[str]:
-    markets = []
+def is_market(market: str) -> bool:
     for s in _config["sports"].values():
-        markets.extend([i for i in s["markets"].keys()])
-    return markets
+        if market in s["markets"].keys():
+            return True
+    return False
 
 
 def get_market_kind(id: str) -> MarketKind:
