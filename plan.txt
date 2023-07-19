@@ -9,12 +9,13 @@ Data scraping plan:
 		- ** could i just do this all the time? when not live?
 		- might avoid limiting issues
 
-
+x Update the way that sportsbooks process specific market/sports combinations.
+Make markets more dynamic, different period types, first half + second half + ... these might have the same ids but should be treated as different markets.
 
 DB updates:
-- create history of odds updates!
-	- history table: that includes timestamp, sb_selection_id, odds
+x create history of odds updates!
+	x history table: that includes timestamp, sb_selection_id, odds
+x store the original sportsbook names of things to verify fuzzy string matching if needed.
 
-- store the original sportsbook names of things to verify fuzzy string matching if needed.
 - get rid of unnecessary tables like sports + sbs
 

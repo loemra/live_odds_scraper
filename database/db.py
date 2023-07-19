@@ -154,7 +154,12 @@ def _register_selection(selection: Selection, event_id: int) -> Selection:
     with conn:
         cur.execute(
             "INSERT INTO selections VALUES (NULL, ?, ?, ?, ?)",
-            (selection.name, selection.link, event_id, selection.market_id),
+            (
+                selection.name,
+                selection.link,
+                event_id,
+                selection.market.name,
+            ),
         )
     modified_selection = dataclasses.replace(selection, id=str(cur.lastrowid))
     return modified_selection
@@ -206,15 +211,22 @@ def update_or_register_event_selections(
             _update_odds(sb, selection.id, selection.odds)
             return
 
-        unified_market_id = _get_unified_market_name(sb, selection.market_id)
+        unified_market_id = _get_unified_market_name(sb, selection.market.name)
 
         match = match_selection(
             selection,
             _get_selections(unified_event_id, unified_market_id),
         )
         if not match:
-            selection.market_id = unified_market_id
-            match = _register_selection(selection, unified_event_id)
+            unified_market = dataclasses.replace(
+                selection.market, name=unified_market_id
+            )
+            unified_market_selection = dataclasses.replace(
+                selection, market=unified_market
+            )
+            match = _register_selection(
+                unified_market_selection, unified_event_id
+            )
 
         _register_sb_selection(
             sb, selection.id, selection.odds, int(match.id), selection.name

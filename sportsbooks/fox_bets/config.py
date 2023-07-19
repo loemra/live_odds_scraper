@@ -1,7 +1,5 @@
 import json
-import urllib.parse
 from datetime import datetime
-from typing import Tuple
 
 from datastructures.market import MarketKind
 
@@ -23,14 +21,15 @@ def get_events_urls(date: datetime) -> list[str]:
     return event_urls
 
 
-def get_event_url(id: str, sport: str) -> str:
-    markets = ",".join(
-        [
-            urllib.parse.quote_plus(market)
-            for market in _config["sports"][sport]["markets"]
-        ]
-    )
-    return _config["get_event_url"].format(id, markets)
+def get_event_url(id: str) -> str:
+    return _config["get_event_url"].format(id)
+
+
+def is_market(market: str) -> bool:
+    for s in _config["sports"].values():
+        if market in s["markets"].keys():
+            return True
+    return False
 
 
 def get_market_kind(market_id: str) -> MarketKind:

@@ -1,5 +1,5 @@
 {
-  "get_events_url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description/{}?marketFilterId=def&eventsLimit=50&lang=en",
+  "get_events_url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description/{}?marketFilterId=def&eventsLimit=100&lang=en",
   "get_event_url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description{}",
   "headers": {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"

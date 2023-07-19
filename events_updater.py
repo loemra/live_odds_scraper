@@ -65,7 +65,7 @@ def _maybe_match_event(
     best_matches = process.extractBests(
         event,
         relevant_events,
-        lambda e: e.name,  # type: ignore
+        lambda e: e.name,
         fuzz.token_sort_ratio,
         score_cutoff=75,
     )
@@ -74,7 +74,7 @@ def _maybe_match_event(
         res = process.extract(
             event,
             relevant_events,
-            lambda e: e.name,  # type: ignore
+            lambda e: e.name,
             fuzz.token_sort_ratio,
         )
         _logger.debug(f"successful no match: {event}, {res}")
@@ -116,8 +116,8 @@ def _maybe_match_selection(
     best_matches = process.extractBests(
         selection,
         potential_selections,
-        lambda e: e.name,  # type: ignore
-        custom_scorer,  # type: ignore
+        lambda e: e.name,
+        custom_scorer,
         score_cutoff=79,
     )
 
@@ -125,8 +125,8 @@ def _maybe_match_selection(
         res = process.extract(
             selection,
             potential_selections,
-            lambda e: e.name,  # type: ignore
-            custom_scorer,  # type: ignore
+            lambda e: e.name,
+            custom_scorer,
         )
         _logger.debug(f"successful no match: {selection}, {res}")
         return None

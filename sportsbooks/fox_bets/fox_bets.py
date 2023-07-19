@@ -1,11 +1,12 @@
+import json
 import logging
 from datetime import datetime, timedelta
-from timeit import timeit
+from typing import Callable
 
 import requests
 
 from datastructures.event import Event
-from datastructures.market import MarketKind
+from datastructures.market import Market, MarketKind
 from datastructures.selection import Selection
 from sportsbooks.fox_bets import config
 
@@ -13,8 +14,8 @@ from sportsbooks.fox_bets import config
 def _setup_logger():
     logger = logging.getLogger("fox_bets")
     logger.propagate = False
+    logger.setLevel(logging.INFO)
     fh = logging.FileHandler("logs/fox_bets.log")
-    fh.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
         "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
     )
@@ -41,55 +42,84 @@ def _parse_events(j) -> list[Event]:
     for league in j:
         for event in league["event"]:
             date = datetime.fromtimestamp(float(event["eventTime"]) / 1000)
+            # TODO: handle live events.
+            if date < datetime.now():
+                continue
+
             events.append(
                 Event(
                     event["id"],
                     event["name"],
                     event["sport"],
                     date,
-                    config.get_event_url(event["id"], event["sport"]),
+                    config.get_event_url(event["id"]),
                 )
             )
     return events
 
 
-def _parse_odds(j) -> list[Selection]:
+def _modular_market_parser(
+    m,
+    market: Market,
+    skip_selection: Callable[[dict, dict], bool] = lambda *_: False,
+    make_name: Callable[[dict, dict], str] = lambda _, s: s["name"],
+    make_link: Callable[[dict, dict], str] = lambda *_: "0",
+) -> list[Selection]:
     selections = []
-    for market in j["markets"]:
-        market_id = market["type"]
-        market_kind = config.get_market_kind(market_id)
+    for selection in m["selection"]:
+        if skip_selection(m, selection):
+            continue
 
-        for selection in market["selection"]:
-            id = selection["id"]
-            try:
-                odds = float(selection["odds"]["dec"])
-            except ValueError:
-                continue
-            link = "0"
-            if market_kind is MarketKind.OVER_UNDER:
-                link = market["subtype"]
-            selections.append(
-                Selection(id, selection["name"], link, market_id, odds)
-            )
+        id = selection["id"]
+        name = make_name(m, selection)
+        link = make_link(m, selection)
+        try:
+            odds = float(selection["odds"]["dec"])
+        except ValueError:
+            continue
+        selections.append(Selection(id, name, link, market, odds))
+
     return selections
 
 
-# gets all upcoming events for fox_bets and returns: event name, sport, time, and fox_bet_event_id.
+def _parse_market(m, sport: str) -> list[Selection]:
+    id = m["type"]
+    if not config.is_market(id):
+        return []
+    kind = config.get_market_kind(id)
+    # TODO: config.get_market_period(m["period"], m["periodMarket"])
+    period = m["period"] if m["periodMarket"] else "full"
+
+    market = Market(id, period, kind)
+    _logger.info(market)
+
+    if kind is MarketKind.OVER_UNDER and sport == "SOCCER":
+        return _modular_market_parser(
+            m, market, make_link=lambda m, _: m["subtype"]
+        )
+
+    return _modular_market_parser(m, market)
+
+
+def _parse_odds(j) -> list[Selection]:
+    selections = []
+    sport = j["sport"]
+    for market in j["markets"]:
+        selections.extend(_parse_market(market, sport))
+    return selections
+
+
 def get_events() -> list[Event]:
     events = []
-    for date in [datetime.today() + timedelta(i) for i in range(3)]:
+    for date in [datetime.today() + timedelta(i) for i in range(10)]:
         for event_url in config.get_events_urls(date):
             events.extend(_parse_events(_get_event(event_url)))
     return events
 
 
-# gets initial odds for an upcoming event given fox_bet_event_id.
 def get_odds(url: str) -> list[Selection]:
-    time = timeit(lambda: _get_event(url), number=1)
-    _logger.info(f"time for get request {time} seconds")
     event = _get_event(url)
-
-    time = timeit(lambda: _parse_odds(event), number=1)
-    _logger.info(f"time for parse {time} seconds")
+    print(url)
+    with open("sportsbooks/fox_bets/data/events.json", "a") as f:
+        json.dump(event, f)
     return _parse_odds(event)
-    return _parse_odds(_get_event(url))

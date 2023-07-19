@@ -1,11 +1,11 @@
 import logging
 from datetime import datetime
-from timeit import timeit
+from typing import Callable
 
 import requests
 
 from datastructures.event import Event
-from datastructures.market import MarketKind
+from datastructures.market import Market, MarketKind
 from datastructures.selection import Selection
 from sportsbooks.bovada import config
 
@@ -33,7 +33,7 @@ def _get_event(url: str):
 
     if res.status_code != 200:
         _logger.error(
-            f"unable to _get_prematch_events status_code: {res.status_code},"
+            f"unable to _get_events status_code: {res.status_code} {url},"
             f" text: {res.text}"
         )
         return
@@ -45,6 +45,9 @@ def _parse_events(j) -> list[Event]:
     events = []
     for league in j:
         for event in league["events"]:
+            # TODO: handle live events
+            if event["live"]:
+                continue
             events.append(
                 Event(
                     event["id"],
@@ -57,52 +60,69 @@ def _parse_events(j) -> list[Event]:
     return events
 
 
+def _modular_market_parser(
+    m,
+    market: Market,
+    skip_selection: Callable[[dict, dict], bool] = lambda *_: False,
+    make_selection_name: Callable[[dict, dict], str] = lambda _, s: s[
+        "description"
+    ],
+    make_link: Callable[[dict, dict], str] = lambda *_: "0",
+) -> list[Selection]:
+    selections = []
+    for selection in m["outcomes"]:
+        if skip_selection(m, selection):
+            continue
+
+        id = selection["id"]
+        name = make_selection_name(m, selection)
+        link = make_link(m, selection)
+        odds = float(selection["price"]["decimal"])
+
+        selections.append(Selection(id, name, link, market, odds))
+
+    return selections
+
+
+def _parse_market(m, sport: str) -> list[Selection]:
+    id = m["marketTypeId"]
+    if not config.is_market(id):
+        return []
+    kind = config.get_market_kind(id)
+    period = m["period"]["description"]
+
+    market = Market(id, period, kind)
+    _logger.info(market)
+
+    # deal with special cases.
+    if kind is MarketKind.OVER_UNDER and sport == "SOCC":
+        if id != "G-2W-OU.Total Goals O/U.100":
+            return []
+
+        return _modular_market_parser(
+            m,
+            market,
+            skip_selection=lambda _, s: "handicap2" in s["price"],
+            make_selection_name=lambda _, s: f"{s['description']} {s['price']['handicap']}",
+            make_link=lambda _, s: s["price"]["handicap"],
+        )
+    if kind is MarketKind.OVER_UNDER and sport == "TENN":
+        pass
+
+    # default
+    return _modular_market_parser(m, market)
+
+
 def _parse_odds(j) -> list[Selection]:
     selections = []
     for league in j:
         for event in league["events"]:
+            sport = event["sport"]
+
             for display_group in event["displayGroups"]:
                 for market in display_group["markets"]:
-                    _logger.debug(
-                        "Market:"
-                        f" {market['description']} {market['descriptionKey']} {market['marketTypeId']} Period:"
-                        f" {market['period']['description']} {market['period']['main']}"
-                    )
-                    market_id = market["marketTypeId"]
-                    if (
-                        not config.is_market(market_id)
-                        or not market["period"]["main"]
-                    ):
-                        continue
-                    market_kind = config.get_market_kind(market_id)
+                    selections.extend(_parse_market(market, sport))
 
-                    # TODO: This needs to be more sport specific.
-                    # tennis does not have the same constraint as soccer.
-                    if market_kind is MarketKind.OVER_UNDER:
-                        if market["id"] != "G-2W-OU.Total Goals O/U.100":
-                            continue
-
-                    link = "0"
-                    for selection in market["outcomes"]:
-                        id = selection["id"]
-                        name = selection["description"]
-                        if market_kind is MarketKind.OVER_UNDER:
-                            handicap = selection["price"].get("handicap")
-                            if not handicap:
-                                raise Exception(
-                                    f"no handicap for over_under @ {market_id},"
-                                    f" {id} {event}"
-                                )
-                            if "handicap2" in selection["price"]:
-                                continue
-                            name = f"{name} {handicap}"
-                            link = handicap
-                            _logger.debug(f"{handicap} for selection: {id}")
-
-                        odds = float(selection["price"]["decimal"])
-                        selections.append(
-                            Selection(id, name, link, market_id, odds)
-                        )
     return selections
 
 
@@ -117,12 +137,8 @@ def get_events() -> list[Event]:
 
 
 def get_odds(url: str) -> list[Selection]:
-    time = timeit(lambda: _get_event(url), number=1)
-    _logger.info(f"time for get request {time} seconds")
     event = _get_event(url)
     if not event:
         return []
 
-    time = timeit(lambda: _parse_odds(event), number=1)
-    _logger.info(f"time for parse {time} seconds")
     return _parse_odds(event)
