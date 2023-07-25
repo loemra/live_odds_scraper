@@ -1,11 +1,12 @@
+import dataclasses
 import logging
 from datetime import datetime
-from typing import Callable
+from typing import Optional
 
 import requests
 
 from datastructures.event import Event
-from datastructures.market import Market, MarketKind
+from datastructures.market import Market
 from datastructures.selection import Selection
 from sportsbooks.bovada import config
 
@@ -52,7 +53,7 @@ def _parse_events(j) -> list[Event]:
                 Event(
                     event["id"],
                     event["description"],
-                    event["sport"],
+                    config.get_sport(event["sport"]),
                     datetime.fromtimestamp(event["startTime"] / 1000),
                     config.get_event_url(event["link"]),
                 )
@@ -60,70 +61,58 @@ def _parse_events(j) -> list[Event]:
     return events
 
 
-def _modular_market_parser(
-    m,
-    market: Market,
-    skip_selection: Callable[[dict, dict], bool] = lambda *_: False,
-    make_selection_name: Callable[[dict, dict], str] = lambda _, s: s[
-        "description"
-    ],
-    make_link: Callable[[dict, dict], str] = lambda *_: "0",
-) -> list[Selection]:
-    selections = []
-    for selection in m["outcomes"]:
-        if skip_selection(m, selection):
-            continue
+def _parse_selection(m, market: Market) -> list[Market]:
+    link = {}
 
-        id = selection["id"]
-        name = make_selection_name(m, selection)
-        link = make_link(m, selection)
-        odds = float(selection["price"]["decimal"])
-
-        selections.append(Selection(id, name, link, market, odds))
-
-    return selections
-
-
-def _parse_market(m, sport: str) -> list[Selection]:
-    id = m["marketTypeId"]
-    if not config.is_market(id):
-        return []
-    kind = config.get_market_kind(id)
-    period = m["period"]["description"]
-
-    market = Market(id, period, kind)
-    _logger.info(market)
-
-    # deal with special cases.
-    if kind is MarketKind.OVER_UNDER and sport == "SOCC":
-        if id != "G-2W-OU.Total Goals O/U.100":
-            return []
-
-        return _modular_market_parser(
-            m,
-            market,
-            skip_selection=lambda _, s: "handicap2" in s["price"],
-            make_selection_name=lambda _, s: f"{s['description']} {s['price']['handicap']}",
-            make_link=lambda _, s: s["price"]["handicap"],
+    for s in m["outcomes"]:
+        selection = Selection(
+            s["id"],
+            s["description"],
+            s["price"].get("decimal"),
         )
-    if kind is MarketKind.OVER_UNDER and sport == "TENN":
-        pass
 
-    # default
-    return _modular_market_parser(m, market)
+        if "handicap" in s["price"]:
+            if "handicap2" in s["price"]:
+                continue
+            if s["price"]["handicap"] not in link:
+                link[s["price"]["handicap"]] = dataclasses.replace(market)
+            link[s["price"]["handicap"]].selection.append(selection)
+        else:
+            if "0" not in link:
+                link["0"] = dataclasses.replace(market)
+            link["0"].selection.append(selection)
+
+    return [m for m in link.values()]
 
 
-def _parse_odds(j) -> list[Selection]:
-    selections = []
-    for league in j:
+def _parse_market(m, sport: str) -> Optional[Market]:
+    if not config.is_market(m["marketTypeId"]):
+        return None
+
+    try:
+        return Market(
+            m["id"],
+            config.get_name(sport, m["marketTypeId"]),
+            config.get_kind(sport, m["marketTypeId"]),
+            config.get_period(sport, m["period"]["abbreviation"]),
+        )
+    except Exception as err:
+        _logger.error(err)
+
+
+def _parse_markets(e) -> list[Market]:
+    markets = []
+    for league in e:
         for event in league["events"]:
             sport = event["sport"]
-
             for display_group in event["displayGroups"]:
-                for market in display_group["markets"]:
-                    selections.extend(_parse_market(market, sport))
+                for m in display_group["markets"]:
+                    market = _parse_market(m, sport)
+                    if not market:
+                        continue
+                    markets.extend(_parse_selection(m, market))
 
-    return selections
+    return markets
 
 
 def get_events() -> list[Event]:
@@ -136,9 +125,9 @@ def get_events() -> list[Event]:
     return events
 
 
-def get_odds(url: str) -> list[Selection]:
+def get_markets(url: str) -> list[Market]:
     event = _get_event(url)
     if not event:
         return []
 
-    return _parse_odds(event)
+    return _parse_markets(event)

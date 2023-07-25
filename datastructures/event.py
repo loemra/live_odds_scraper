@@ -1,13 +1,19 @@
 from dataclasses import dataclass, field
 from datetime import datetime
+from enum import Enum, auto
 from typing import Optional
+
+
+class Sport(Enum):
+    SOCCER = auto()
+    TENNIS = auto()
 
 
 @dataclass
 class Event:
     id: str
     name: str
-    sport: str
+    sport: Sport
     date: datetime
     url: Optional[str] = field(default=None)
 

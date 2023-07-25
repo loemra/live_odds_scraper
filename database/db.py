@@ -1,9 +1,10 @@
 import dataclasses
 import sqlite3
 from datetime import datetime
-from typing import Callable, Tuple
+from typing import Callable, Optional, Tuple
 
 from datastructures.event import Event
+from datastructures.market import Market
 from datastructures.selection import Selection
 
 conn = sqlite3.connect("database/events.db")
@@ -14,33 +15,6 @@ def _get_events() -> list[Event]:
     res = cur.execute("SELECT * FROM events")
     events = res.fetchall()
     return [Event(*event) for event in events]
-
-
-def _get_unified_sport_name(sb: str, sport: str) -> str:
-    res = cur.execute(
-        "SELECT sport FROM sb_sports WHERE sb = ? AND name = ?", (sb, sport)
-    )
-    unified_sport = res.fetchone()
-    if not unified_sport:
-        raise Exception(
-            f"_get_unified_sport_name unable to get sport name for {sb},"
-            f" {sport}"
-        )
-    return unified_sport[0]
-
-
-def _get_unified_market_name(sb: str, market: str) -> str:
-    res = cur.execute(
-        "SELECT market_id FROM sb_markets WHERE sb = ? AND name = ?",
-        (sb, market),
-    )
-    unified_market = res.fetchone()
-    if not unified_market:
-        raise Exception(
-            f"_get_unified_market_name unable to get market name for {sb},"
-            f" {market}"
-        )
-    return unified_market[0]
 
 
 def _register_event(event: Event) -> Event:
@@ -74,7 +48,7 @@ def _register_sb_event(
     with conn:
         cur.execute(
             "INSERT INTO sb_events VALUES (?, ?, ?, ?, ?)",
-            (sb_event_id, sb_event_url, sb_name, event_id, sb),
+            (sb_event_id, sb, sb_name, sb_event_url, event_id),
         )
 
 
@@ -90,7 +64,6 @@ def match_or_register_event(
 
         match = match_events(event, _get_events())
         if not match:
-            event.sport = _get_unified_sport_name(sb, event.sport)
             match = _register_event(event)
 
         if not event.url:
@@ -100,7 +73,7 @@ def match_or_register_event(
         _register_sb_event(sb, event.id, event.url, int(match.id), event.name)
 
 
-def get_sb_events(lock, sb: str) -> list[Tuple[str, str]]:
+def get_sb_events(lock, sb: str) -> list[Tuple[int, str]]:
     # return events that have not started.
     now = datetime.now().timestamp()
     with lock:
@@ -113,56 +86,118 @@ def get_sb_events(lock, sb: str) -> list[Tuple[str, str]]:
         return res.fetchall()
 
 
-def _update_odds(sb: str, id: str, odds: float):
+def _sb_market_exists(sb: str, market_id: str) -> Optional[int]:
+    res = cur.execute(
+        "SELECT market_id FROM sb_markets WHERE sb = ? AND id = ?",
+        (sb, market_id),
+    )
+    (unified_market_id,) = res.fetchone()
+    return unified_market_id
+
+
+def _get_markets(unified_event_id: int) -> list[Market]:
+    res = cur.execute(
+        "SELECT rowid, name, kind, period, player, line FROM markets WHERE"
+        " event_id = ?",
+        (unified_event_id,),
+    )
+    return [Market(*m) for m in res.fetchall()]
+
+
+def _register_market(unified_event_id: int, market: Market) -> Market:
     with conn:
         cur.execute(
-            "UPDATE sb_selections SET odds = ? WHERE sb = ? AND id = ?",
-            (str(odds), sb, id),
-        )
-        updated_rowid = cur.lastrowid
-        cur.execute(
-            "INSERT INTO history VALUES (?, ?, ?)",
+            "INSERT INTO markets VALUES (NULL, ?, ?, ?, ?, ?, ?)",
             (
-                odds,
-                int(datetime.now().timestamp()),
-                updated_rowid,
+                market.name,
+                market.kind,
+                market.period,
+                market.player,
+                market.line,
+                unified_event_id,
+            ),
+        )
+    if not cur.lastrowid:
+        raise Exception(f"_register_market, unable to get row_id for {market}")
+    return dataclasses.replace(market, id=cur.lastrowid)
+
+
+def _register_sb_market(sb: str, market: Market, unified_market_id: int):
+    with conn:
+        cur.execute(
+            "INSERT INTO markets VALUES (?, ?, ?, ?)",
+            (
+                market.id,
+                sb,
+                market.player,
+                unified_market_id,
             ),
         )
 
 
-def _sb_selection_exists(sb: str, id: str) -> bool:
+def match_or_register_market(
+    lock,
+    sb: str,
+    unified_event_id: int,
+    market: Market,
+    maybe_match_market: Callable[[Market, list[Market]], Market | None],
+) -> int:
+    with lock:
+        unified_market_id = _sb_market_exists(sb, market.id)
+        if unified_market_id is not None:
+            return unified_market_id
+
+        match = maybe_match_market(market, _get_markets(unified_event_id))
+        if not match:
+            match = _register_market(unified_event_id, market)
+
+        _register_sb_market(sb, market, int(match.id))
+
+        return int(match.id)
+
+
+def _update_odds(sb: str, id: str, odds: float):
+    with conn:
+        cur.execute(
+            "UPDATE sb_selections SET odds = ? WHERE sb = ? AND id = ?",
+            (odds, sb, id),
+        )
+        cur.execute(
+            "INSERT INTO history VALUES (?, ?, ?)",
+            (odds, int(datetime.now().timestamp()), id),
+        )
+
+
+def _sb_selection_exists(sb: str, id: str) -> Optional[int]:
     res = cur.execute(
-        "SELECT COUNT(id) FROM sb_selections WHERE sb = ? AND id = ?", (sb, id)
+        "SELECT selection_id FROM sb_selections WHERE sb = ? AND id = ?",
+        (sb, id),
     )
-    (exists,) = res.fetchone()
-    return bool(exists)
+    (selection_id,) = res.fetchone()
+    return selection_id
 
 
-def _get_selections(
-    unified_event_id: int, unified_market_id: str
-) -> list[Selection]:
+def _get_selections(unified_market_id: int) -> list[Selection]:
     res = cur.execute(
-        "SELECT id, name, link, market_id FROM selections WHERE event_id ="
-        " ? AND market_id = ?",
-        (unified_event_id, unified_market_id),
+        "SELECT rowid, name, FROM selections WHERE market_id = ?",
+        (unified_market_id,),
     )
     selections = res.fetchall()
     return [Selection(*selection) for selection in selections]
 
 
-def _register_selection(selection: Selection, event_id: int) -> Selection:
+def _register_selection(selection: Selection, unified_market_id: int) -> int:
     with conn:
         cur.execute(
-            "INSERT INTO selections VALUES (NULL, ?, ?, ?, ?)",
-            (
-                selection.name,
-                selection.link,
-                event_id,
-                selection.market.name,
-            ),
+            "INSERT INTO selections VALUES (NULL, ?, ?)",
+            (selection.name, unified_market_id),
         )
-    modified_selection = dataclasses.replace(selection, id=str(cur.lastrowid))
-    return modified_selection
+    unified_selection_id = cur.lastrowid
+    if not unified_selection_id:
+        raise Exception(
+            f"Couldn't register selection {selection}, {unified_market_id}"
+        )
+    return unified_selection_id
 
 
 def _register_sb_selection(
@@ -170,34 +205,27 @@ def _register_sb_selection(
     sb_selection_id: str,
     sb_odds: float | None,
     selection_id: int,
-    sb_name: str,
 ):
     with conn:
         cur.execute(
             "INSERT INTO sb_selections VALUES (?, ?, ?, ?, ?)",
             (
                 sb_selection_id,
-                (str(sb_odds) if sb_odds else "NULL"),
-                sb_name,
-                selection_id,
                 sb,
+                sb_odds,
+                selection_id,
             ),
         )
-        updated_rowid = cur.lastrowid
         cur.execute(
             "INSERT INTO history VALUES (?, ?, ?)",
-            (
-                sb_odds,
-                int(datetime.now().timestamp()),
-                updated_rowid,
-            ),
+            (sb_odds, int(datetime.now().timestamp()), sb_selection_id),
         )
 
 
-def update_or_register_event_selections(
+def update_or_register_event_selection(
     lock,
     sb: str,
-    unified_event_id: int,
+    unified_market_id: int,
     selection: Selection,
     match_selection: Callable[[Selection, list[Selection]], Selection | None],
 ):
@@ -211,23 +239,17 @@ def update_or_register_event_selections(
             _update_odds(sb, selection.id, selection.odds)
             return
 
-        unified_market_id = _get_unified_market_name(sb, selection.market.name)
-
         match = match_selection(
             selection,
-            _get_selections(unified_event_id, unified_market_id),
+            _get_selections(unified_market_id),
         )
         if not match:
-            unified_market = dataclasses.replace(
-                selection.market, name=unified_market_id
+            unified_selection_id = _register_selection(
+                selection, unified_market_id
             )
-            unified_market_selection = dataclasses.replace(
-                selection, market=unified_market
-            )
-            match = _register_selection(
-                unified_market_selection, unified_event_id
-            )
+        else:
+            unified_selection_id = int(match.id)
 
         _register_sb_selection(
-            sb, selection.id, selection.odds, int(match.id), selection.name
+            sb, selection.id, selection.odds, unified_selection_id
         )

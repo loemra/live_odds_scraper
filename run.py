@@ -23,7 +23,7 @@ _logger = _setup_logger()
 db_lock = multiprocessing.Lock()
 
 
-def _handle_sb(lock, sb: str, get_events, get_odds):
+def _handle_sb(lock, sb: str, get_events, get_markets):
     time = timeit.timeit(
         lambda: events_updater.match_or_register_events(lock, sb, get_events),
         number=1,
@@ -31,9 +31,7 @@ def _handle_sb(lock, sb: str, get_events, get_odds):
     _logger.info(f"finished events {sb} in {time} seconds")
 
     time = timeit.timeit(
-        lambda: events_updater.update_or_register_event_selections(
-            lock, sb, get_odds
-        ),
+        lambda: events_updater.match_or_register_markets(lock, sb, get_markets),
         number=1,
     )
     _logger.info(f"finished odds {sb} in {time} seconds")
@@ -41,8 +39,8 @@ def _handle_sb(lock, sb: str, get_events, get_odds):
 
 def run():
     args = [
-        (db_lock, "fox_bets", fox_bets.get_events, fox_bets.get_odds),
-        (db_lock, "bovada", bovada.get_events, bovada.get_odds),
+        (db_lock, "fox_bets", fox_bets.get_events, fox_bets.get_markets),
+        (db_lock, "bovada", bovada.get_events, bovada.get_markets),
     ]
     proc = []
     for arg in args:

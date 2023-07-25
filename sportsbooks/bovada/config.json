@@ -10,13 +10,21 @@
   ],
   "sports": {
     "SOCC": {
+      "name": "SOCCER",
       "markets": {
-        "1": "TEAM_NAME",
+        "1": {
+          "name": "",
+          "kind": "TEAM_NAME"
+        },
         "13": "OVER_UNDER",
         "350": "YES_NO"
+      },
+      "periods": {
+        "": ""
       }
     },
     "TENN": {
+      "name": "TENNIS",
       "markets": {
         "67": "SPREAD",
         "120755": "OVER_UNDER",

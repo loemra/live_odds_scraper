@@ -11,6 +11,15 @@ Data scraping plan:
 
 x Update the way that sportsbooks process specific market/sports combinations.
 Make markets more dynamic, different period types, first half + second half + ... these might have the same ids but should be treated as different markets.
+- Design a way to keep track of market periods, need to make seperate markets.
+- Honestly probably need a better unified way to keep track of selection names based on market kind.
+	- unify every market kind except for team names which can be pretty easily fuzzyd.
+
+- Probably want to focus on live odds next as that presents the biggest opportunity.
+
+- very future:
+	- want to focus on bot executed trades
+	- human like behavior (anti-bot detection patterns)
 
 DB updates:
 x create history of odds updates!

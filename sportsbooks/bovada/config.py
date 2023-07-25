@@ -1,6 +1,7 @@
 import json
 
-from datastructures.market import MarketKind
+from datastructures.event import Sport
+from datastructures.market import Kind, Name, Period
 
 
 def _get_config():
@@ -22,6 +23,10 @@ def get_event_url(link: str) -> str:
     return _config["get_event_url"].format(link)
 
 
+def get_sport(sport: str) -> Sport:
+    return Sport[_config["sports"][sport]]
+
+
 def is_market(market: str) -> bool:
     for s in _config["sports"].values():
         if market in s["markets"].keys():
@@ -29,13 +34,17 @@ def is_market(market: str) -> bool:
     return False
 
 
-def get_market_kind(id: str) -> MarketKind:
-    for s in _config["sports"].values():
-        kind = s["markets"].get(id)
-        if kind:
-            return MarketKind[kind]
-    raise Exception(f"Unable to find kind for id {id} bovada")
-
-
 def get_headers() -> dict[str, str]:
     return _config["headers"]
+
+
+def get_name(sport: str, id: str) -> Name:
+    return Name[_config["sports"][sport]["markets"][id]["name"]]
+
+
+def get_kind(sport: str, id: str) -> Kind:
+    return Kind[_config["sports"][sport]["markets"][id]["kind"]]
+
+
+def get_period(sport: str, period: str) -> Period:
+    return Period[_config["sports"][sport]["periods"][period]]

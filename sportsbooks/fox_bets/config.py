@@ -1,7 +1,8 @@
 import json
 from datetime import datetime
+from typing import Optional
 
-from datastructures.market import MarketKind
+from datastructures.market import Kind, Name, Period
 
 
 def _get_config():
@@ -32,9 +33,19 @@ def is_market(market: str) -> bool:
     return False
 
 
-def get_market_kind(market_id: str) -> MarketKind:
-    for s in _config["sports"].values():
-        kind = s["markets"].get(market_id)
-        if kind:
-            return MarketKind[kind]
-    raise Exception(f"Unable to find kind for id {market_id} fox_bets")
+def get_headers() -> dict[str, str]:
+    return _config["headers"]
+
+
+def get_name(sport: str, id: str) -> Name:
+    return Name[_config["sports"][sport]["markets"][id]["name"]]
+
+
+def get_kind(sport: str, id: str) -> Kind:
+    return Kind[_config["sports"][sport]["markets"][id]["kind"]]
+
+
+def get_period(sport: str, period: Optional[str]) -> Period:
+    if not period:
+        return Period.REGULAR
+    return Period[_config["sports"][sport]["periods"][period]]
