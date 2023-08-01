@@ -9,6 +9,9 @@ class Name(StrEnum):
     SOCCER_GAME_RESULT = auto()
     SOCCER_OVER_UNDER_TOTAL_GOALS = auto()
     SOCCER_BOTH_TEAMS_TO_SCORE = auto()
+    TENNIS_GAME_SPREAD = auto()
+    TENNIS_OVER_UNDER_TOTAL_GAMES = auto()
+    TENNIS_HEAD_TO_HEAD = auto()
 
 
 class Kind(StrEnum):
@@ -22,6 +25,10 @@ class Period(StrEnum):
     REGULAR = auto()
     FIRST_HALF = auto()
     SECOND_HALF = auto()
+
+    MATCH = auto()
+    FIRST_SET = auto()
+    SECOND_SET = auto()
 
 
 @dataclass

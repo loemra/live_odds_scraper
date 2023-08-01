@@ -1,10 +1,10 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from enum import Enum, auto
+from enum import StrEnum, auto
 from typing import Optional
 
 
-class Sport(Enum):
+class Sport(StrEnum):
     SOCCER = auto()
     TENNIS = auto()
 

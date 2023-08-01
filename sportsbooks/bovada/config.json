@@ -13,22 +13,44 @@
       "name": "SOCCER",
       "markets": {
         "1": {
-          "name": "",
+          "name": "SOCCER_GAME_RESULT",
           "kind": "TEAM_NAME"
         },
-        "13": "OVER_UNDER",
-        "350": "YES_NO"
+        "13": {
+          "name": "SOCCER_OVER_UNDER_TOTAL_GOALS",
+          "kind": "OVER_UNDER"
+        },
+        "350": {
+          "name": "SOCCER_BOTH_TEAMS_TO_SCORE",
+          "kind": "YES_NO"
+        }
       },
       "periods": {
-        "": ""
+        "RT": "REGULAR",
+        "1H": "FIRST_HALF",
+        "2H": "SECOND_HALF"
       }
     },
     "TENN": {
       "name": "TENNIS",
       "markets": {
-        "67": "SPREAD",
-        "120755": "OVER_UNDER",
-        "68": "TEAM_NAME"
+        "67": {
+          "name": "TENNIS_GAME_SPREAD",
+          "kind": "SPREAD"
+        },
+        "120755": {
+          "name": "TENNIS_OVER_UNDER_TOTAL_GAMES",
+          "kind": "OVER_UNDER"
+        },
+        "68": {
+          "name": "TENNIS_HEAD_TO_HEAD",
+          "kind": "TEAM_NAME"
+        }
+      },
+      "periods": {
+        "MT": "MATCH",
+        "S1": "FIRST_SET",
+        "S2": "SECOND_SET"
       }
     }
   }

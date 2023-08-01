@@ -128,6 +128,7 @@ def _maybe_match_selection(
 def match_or_register_events(
     lock, sb: str, sb_get_events: Callable[[], list[Event]]
 ):
+    log.info(f"match_or_register_events for {sb}")
     for event in sb_get_events():
         db.match_or_register_event(lock, sb, event, _maybe_match_event)
 
@@ -175,6 +176,7 @@ def _maybe_match_market(
 def match_or_register_markets(
     lock, sb: str, sb_get_markets: Callable[[str], list[Market]]
 ):
+    log.info(f"match_or_register_markets for {sb}")
     sb_events = db.get_sb_events(lock, sb)
     for unified_event_id, url in sb_events:
         markets = sb_get_markets(url)

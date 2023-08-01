@@ -24,7 +24,7 @@ def get_event_url(link: str) -> str:
 
 
 def get_sport(sport: str) -> Sport:
-    return Sport[_config["sports"][sport]]
+    return Sport[_config["sports"][sport]["name"]]
 
 
 def is_market(market: str) -> bool:
