@@ -1,4 +1,5 @@
 import dataclasses
+import logging
 import sqlite3
 from datetime import datetime
 from typing import Callable, Optional, Tuple
@@ -7,12 +8,14 @@ from datastructures.event import Event
 from datastructures.market import Market
 from datastructures.selection import Selection
 
+log = logging.getLogger(__name__)
+
 conn = sqlite3.connect("database/events.db")
 cur = conn.cursor()
 
 
 def _get_events() -> list[Event]:
-    res = cur.execute("SELECT * FROM events")
+    res = cur.execute("SELECT rowid, name, sport, date FROM events")
     events = res.fetchall()
     return [Event(*event) for event in events]
 
@@ -20,7 +23,7 @@ def _get_events() -> list[Event]:
 def _register_event(event: Event) -> Event:
     with conn:
         cur.execute(
-            "INSERT INTO events VALUES (NULL, ?, ?, ?)",
+            "INSERT INTO events VALUES (?, ?, ?)",
             (
                 event.name,
                 event.sport,
@@ -79,7 +82,7 @@ def get_sb_events(lock, sb: str) -> list[Tuple[int, str]]:
     with lock:
         res = cur.execute(
             "SELECT sb_events.event_id, sb_events.url FROM sb_events, events"
-            " WHERE sb_events.sb = ? AND events.id = sb_events.event_id AND"
+            " WHERE sb_events.sb = ? AND events.rowid = sb_events.event_id AND"
             " events.date > ?",
             (sb, now),
         )
@@ -91,7 +94,10 @@ def _sb_market_exists(sb: str, market_id: str) -> Optional[int]:
         "SELECT market_id FROM sb_markets WHERE sb = ? AND id = ?",
         (sb, market_id),
     )
-    (unified_market_id,) = res.fetchone()
+    r = res.fetchone()
+    if not r:
+        return None
+    (unified_market_id,) = r
     return unified_market_id
 
 
@@ -107,7 +113,7 @@ def _get_markets(unified_event_id: int) -> list[Market]:
 def _register_market(unified_event_id: int, market: Market) -> Market:
     with conn:
         cur.execute(
-            "INSERT INTO markets VALUES (NULL, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO markets VALUES (?, ?, ?, ?, ?, ?)",
             (
                 market.name,
                 market.kind,
@@ -125,7 +131,7 @@ def _register_market(unified_event_id: int, market: Market) -> Market:
 def _register_sb_market(sb: str, market: Market, unified_market_id: int):
     with conn:
         cur.execute(
-            "INSERT INTO markets VALUES (?, ?, ?, ?)",
+            "INSERT INTO sb_markets VALUES (?, ?, ?, ?)",
             (
                 market.id,
                 sb,
@@ -173,13 +179,16 @@ def _sb_selection_exists(sb: str, id: str) -> Optional[int]:
         "SELECT selection_id FROM sb_selections WHERE sb = ? AND id = ?",
         (sb, id),
     )
-    (selection_id,) = res.fetchone()
+    r = res.fetchone()
+    if not r:
+        return None
+    (selection_id,) = r
     return selection_id
 
 
 def _get_selections(unified_market_id: int) -> list[Selection]:
     res = cur.execute(
-        "SELECT rowid, name, FROM selections WHERE market_id = ?",
+        "SELECT rowid, name FROM selections WHERE market_id = ?",
         (unified_market_id,),
     )
     selections = res.fetchall()
@@ -189,7 +198,7 @@ def _get_selections(unified_market_id: int) -> list[Selection]:
 def _register_selection(selection: Selection, unified_market_id: int) -> int:
     with conn:
         cur.execute(
-            "INSERT INTO selections VALUES (NULL, ?, ?)",
+            "INSERT INTO selections VALUES (?, ?)",
             (selection.name, unified_market_id),
         )
     unified_selection_id = cur.lastrowid
@@ -208,7 +217,7 @@ def _register_sb_selection(
 ):
     with conn:
         cur.execute(
-            "INSERT INTO sb_selections VALUES (?, ?, ?, ?, ?)",
+            "INSERT INTO sb_selections VALUES (?, ?, ?, ?)",
             (
                 sb_selection_id,
                 sb,

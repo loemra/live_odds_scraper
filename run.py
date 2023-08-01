@@ -1,46 +1,28 @@
 import logging
-import multiprocessing
-import timeit
-from multiprocessing import Process
+import sys
+from multiprocessing import Lock, Process
 
 import events_updater
+import util.logger_setup as logger_setup
 from sportsbooks.bovada import bovada
 from sportsbooks.fox_bets import fox_bets
 
 
-def _setup_logger():
-    logging.basicConfig(
-        filename="logs/root.log",
-        level=logging.INFO,
-        force=True,
-        format="%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s",
-    )
-    return logging.getLogger()
+def _handle_sb(sb: str, get_events, get_markets, lock):
+    if lock is None:
+        lock = Lock()
+
+    events_updater.match_or_register_events(lock, sb, get_events)
+    events_updater.match_or_register_markets(lock, sb, get_markets)
 
 
-_logger = _setup_logger()
+def run_parallel():
+    logging.info("running in parallel...")
+    db_lock = Lock()
 
-db_lock = multiprocessing.Lock()
-
-
-def _handle_sb(lock, sb: str, get_events, get_markets):
-    time = timeit.timeit(
-        lambda: events_updater.match_or_register_events(lock, sb, get_events),
-        number=1,
-    )
-    _logger.info(f"finished events {sb} in {time} seconds")
-
-    time = timeit.timeit(
-        lambda: events_updater.match_or_register_markets(lock, sb, get_markets),
-        number=1,
-    )
-    _logger.info(f"finished odds {sb} in {time} seconds")
-
-
-def run():
     args = [
-        (db_lock, "fox_bets", fox_bets.get_events, fox_bets.get_markets),
-        (db_lock, "bovada", bovada.get_events, bovada.get_markets),
+        ("fox_bets", fox_bets.get_events, fox_bets.get_markets, db_lock),
+        ("bovada", bovada.get_events, bovada.get_markets, db_lock),
     ]
     proc = []
     for arg in args:
@@ -52,5 +34,20 @@ def run():
         p.join()
 
 
+def run_sequential():
+    logging.info("running sequentially...")
+    args = [
+        ("fox_bets", fox_bets.get_events, fox_bets.get_markets, None),
+        ("bovada", bovada.get_events, bovada.get_markets, None),
+    ]
+
+    for arg in args:
+        _handle_sb(*arg)
+
+
 if __name__ == "__main__":
-    run()
+    logger_setup.setup()
+    if len(sys.argv) == 2:
+        run_sequential()
+    else:
+        run_parallel()

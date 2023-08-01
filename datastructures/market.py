@@ -1,22 +1,24 @@
 from dataclasses import dataclass, field
-from enum import Enum, auto
+from enum import Enum, StrEnum, auto
 from typing import Optional
 
 from datastructures.selection import Selection
 
 
-class Name(Enum):
-    TOTAL_GOALS = auto()
+class Name(StrEnum):
+    SOCCER_GAME_RESULT = auto()
+    SOCCER_OVER_UNDER_TOTAL_GOALS = auto()
+    SOCCER_BOTH_TEAMS_TO_SCORE = auto()
 
 
-class Kind(Enum):
+class Kind(StrEnum):
     TEAM_NAME = auto()
     OVER_UNDER = auto()
     YES_NO = auto()
     SPREAD = auto()
 
 
-class Period(Enum):
+class Period(StrEnum):
     REGULAR = auto()
     FIRST_HALF = auto()
     SECOND_HALF = auto()

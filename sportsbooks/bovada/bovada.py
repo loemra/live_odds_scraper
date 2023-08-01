@@ -10,30 +10,15 @@ from datastructures.market import Market
 from datastructures.selection import Selection
 from sportsbooks.bovada import config
 
-
-def _setup_logger():
-    logging.basicConfig()
-    logger = logging.getLogger("bovada")
-    logger.setLevel(logging.INFO)
-    logger.propagate = False
-    fh = logging.FileHandler("logs/bovada.log")
-    fh.setLevel(logging.DEBUG)
-    formatter = logging.Formatter(
-        "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
-    )
-    fh.setFormatter(formatter)
-    logger.addHandler(fh)
-    return logger
-
-
-_logger = _setup_logger()
+log = logging.getLogger(__name__)
 
 
 def _get_event(url: str):
+    log.info(f"Getting event for {url}.")
     res = requests.get(url, headers=config.get_headers())
 
     if res.status_code != 200:
-        _logger.error(
+        log.error(
             f"unable to _get_events status_code: {res.status_code} {url},"
             f" text: {res.text}"
         )
@@ -96,8 +81,8 @@ def _parse_market(m, sport: str) -> Optional[Market]:
             config.get_kind(sport, m["marketTypeId"]),
             config.get_period(sport, m["period"]["abbreviation"]),
         )
-    except Exception as err:
-        _logger.error(err)
+    except Exception:
+        log.exception(f"Something went wrong parsing market for {sport}\n{m}")
 
 
 def _parse_markets(e) -> list[Market]:
@@ -116,6 +101,7 @@ def _parse_markets(e) -> list[Market]:
 
 
 def get_events() -> list[Event]:
+    log.info("Getting events.")
     events = []
     for url in config.get_events_urls():
         event = _get_event(url)
@@ -126,6 +112,7 @@ def get_events() -> list[Event]:
 
 
 def get_markets(url: str) -> list[Market]:
+    log.info(f"Getting markets for {url}.")
     event = _get_event(url)
     if not event:
         return []

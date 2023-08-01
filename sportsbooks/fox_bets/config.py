@@ -1,4 +1,5 @@
 import json
+import logging
 from datetime import datetime
 from typing import Optional
 
@@ -11,6 +12,7 @@ def _get_config():
 
 
 _config = _get_config()
+log = logging.getLogger(__name__)
 
 
 def get_events_urls(date: datetime) -> list[str]:

@@ -4,11 +4,30 @@
   "sports": {
     "SOCCER": {
       "markets": {
-        "SOCCER:FT:AXB": "TEAM_NAME",
-        "SOCCER:FT:OU": "OVER_UNDER",
-        "SOCCER:FT:BTS": "YES_NO",
-        "SOCCER:P:OU": "OVER_UNDER",
-        "SOCCER:P:BTS": "YES_NO"
+        "SOCCER:FT:AXB": {
+          "kind": "TEAM_NAME",
+          "name": "SOCCER_GAME_RESULT"
+        },
+        "SOCCER:FT:OU": {
+          "kind": "OVER_UNDER",
+          "name": "SOCCER_OVER_UNDER_TOTAL_GOALS"
+        },
+        "SOCCER:FT:BTS": {
+          "kind": "YES_NO",
+          "name": "SOCCER_BOTH_TEAMS_TO_SCORE"
+        },
+        "SOCCER:P:OU": {
+          "kind": "OVER_UNDER",
+          "name": "SOCCER_OVER_UNDER_TOTAL_GOALS"
+        },
+        "SOCCER:P:BTS": {
+          "kind": "YES_NO",
+          "name": "SOCCER_BOTH_TEAMS_TO_SCORE"
+        }
+      },
+      "periods": {
+        "H1": "FIRST_HALF",
+        "H2": "SECOND_HALF"
       }
     }
   },

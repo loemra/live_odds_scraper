@@ -57,15 +57,20 @@ def _maybe_create_history():
     )
 
 
-_maybe_create_events()
-_maybe_create_markets()
-_maybe_create_selections()
-_maybe_create_sb_events()
-_maybe_create_sb_markets()
-_maybe_create_sb_selections()
-_maybe_create_history()
+def run():
+    _maybe_create_events()
+    _maybe_create_markets()
+    _maybe_create_selections()
+    _maybe_create_sb_events()
+    _maybe_create_sb_markets()
+    _maybe_create_sb_selections()
+    _maybe_create_history()
 
-conn.commit()
+    conn.commit()
+
+
+if __name__ == "__main__":
+    run()
 '''
 _maybe_add_sbs(["fox_bets", "bovada"])
 _maybe_add_sports(["soccer", "tennis"])

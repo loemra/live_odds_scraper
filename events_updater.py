@@ -9,22 +9,7 @@ from datastructures.event import Event
 from datastructures.market import Market
 from datastructures.selection import Selection
 
-
-def _setup_logger():
-    logger = logging.getLogger("events_updater")
-    logger.setLevel(logging.INFO)
-    logger.propagate = False
-    fh = logging.FileHandler("logs/events_updater.log")
-    fh.setLevel(logging.DEBUG)
-    formatter = logging.Formatter(
-        "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
-    )
-    fh.setFormatter(formatter)
-    logger.addHandler(fh)
-    return logger
-
-
-_logger = _setup_logger()
+log = logging.getLogger(__name__)
 
 
 def _prompt_for_match(sportsbook_thing, unified_things: list):
@@ -78,13 +63,13 @@ def _maybe_match_event(
             lambda e: e.name,
             fuzz.token_sort_ratio,
         )
-        _logger.debug(f"successful no match: {event}, {res}")
+        log.debug(f"successful no match: {event}, {res}")
         return None
     if len(best_matches) == 1:
-        _logger.debug(f"successful match: {event}, {best_matches}")
+        log.debug(f"successful match: {event}, {best_matches}")
         return best_matches[0][0]
 
-    _logger.debug(f"{event} has multiple best matches {best_matches}")
+    log.debug(f"{event} has multiple best matches {best_matches}")
 
     return _prompt_for_match(event, relevant_events)
 
@@ -119,7 +104,7 @@ def _maybe_match_selection(
         potential_selections,
         lambda e: e.name,
         custom_scorer,
-        score_cutoff=79,
+        score_cutoff=85,
     )
 
     if not best_matches:
@@ -129,13 +114,13 @@ def _maybe_match_selection(
             lambda e: e.name,
             custom_scorer,
         )
-        _logger.debug(f"successful no match: {selection}, {res}")
+        log.debug(f"successful no match: {selection}, {res}")
         return None
     if len(best_matches) == 1:
-        _logger.debug(f"successful match: {selection}, {best_matches}")
+        log.debug(f"successful match: {selection}, {best_matches}")
         return best_matches[0][0]
 
-    _logger.debug(f"{selection} has multiple best matches {best_matches}")
+    log.debug(f"{selection} has multiple best matches {best_matches}")
 
     return _prompt_for_match(selection, potential_selections)
 
@@ -166,7 +151,7 @@ def _maybe_match_market(
     if market.player is None:
         equal_markets = [m for m in potential_equal_markets if m.player is None]
         if len(equal_markets) > 1:
-            _logger.error(
+            log.error(
                 f"There should not be more than one equal markets {market},"
                 f" {potential_markets}"
             )

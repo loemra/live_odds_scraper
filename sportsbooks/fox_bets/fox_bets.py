@@ -9,28 +9,15 @@ from datastructures.market import Market
 from datastructures.selection import Selection
 from sportsbooks.fox_bets import config
 
-
-def _setup_logger():
-    logger = logging.getLogger("fox_bets")
-    logger.propagate = False
-    logger.setLevel(logging.INFO)
-    fh = logging.FileHandler("logs/fox_bets.log")
-    formatter = logging.Formatter(
-        "%(asctime)s - %(levelname)s @ %(lineno)s == %(message)s"
-    )
-    fh.setFormatter(formatter)
-    logger.addHandler(fh)
-    return logger
-
-
-_logger = _setup_logger()
+log = logging.getLogger(__name__)
 
 
 def _get_event(url: str):
+    log.info(f"Getting event for {url}.")
     result = requests.get(url)
     if not result.status_code == 200:
-        _logger.error(
-            f"fox_bets: _get_event(): status code = {result.status_code}, url ="
+        log.error(
+            f"fox_bets: _get_event(): status code: {result.status_code}, url ="
             f" {url}, text = {result.text}"
         )
         return
@@ -65,7 +52,7 @@ def _parse_selection(m, market: Market):
             Selection(
                 s["id"],
                 s["name"],
-                s["odds"]["decimal"] if s["odds"]["decimal"] != "-" else None,
+                s["odds"]["dec"] if s["odds"]["dec"] != "-" else None,
             )
         )
     market.selection = selection
@@ -85,8 +72,8 @@ def _parse_market(m, sport: str) -> Optional[Market]:
             ),
             line=m.get("line"),
         )
-    except Exception as err:
-        _logger.error(err)
+    except Exception:
+        log.exception(f"Something went wrong parsing market for {sport}\n{m}")
 
 
 def _parse_markets(e) -> list[Market]:
@@ -102,6 +89,7 @@ def _parse_markets(e) -> list[Market]:
 
 
 def get_events() -> list[Event]:
+    log.info("Getting events.")
     events = []
     for date in [datetime.today() + timedelta(i) for i in range(10)]:
         for url in config.get_events_urls(date):
@@ -113,6 +101,7 @@ def get_events() -> list[Event]:
 
 
 def get_markets(url: str) -> list[Market]:
+    log.info(f"Getting markets for {url}.")
     event = _get_event(url)
     if not event:
         return []
