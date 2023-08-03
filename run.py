@@ -1,6 +1,6 @@
 import logging
 import sys
-from multiprocessing import Lock, Process
+from threading import Lock, Thread
 from typing import Optional
 
 import events_updater
@@ -8,14 +8,8 @@ import util.logger_setup as logger_setup
 from sportsbooks.bovada import bovada
 from sportsbooks.fox_bets import fox_bets
 
-# keep this global so that setup is run for every process.
-logger_setup.setup()
-
 
 def _handle_sb(sb: str, get_events, get_markets, lock):
-    if lock is None:
-        lock = Lock()
-
     events_updater.match_or_register_events(lock, sb, get_events)
     events_updater.match_or_register_markets(lock, sb, get_markets)
 
@@ -28,14 +22,14 @@ def run_parallel():
         ("fox_bets", fox_bets.get_events, fox_bets.get_markets, db_lock),
         ("bovada", bovada.get_events, bovada.get_markets, db_lock),
     ]
-    proc = []
+    threads = []
     for arg in args:
-        p = Process(target=_handle_sb, args=arg)
-        p.start()
-        proc.append(p)
+        t = Thread(target=_handle_sb, args=arg)
+        t.start()
+        threads.append(t)
 
-    for p in proc:
-        p.join()
+    for t in threads:
+        t.join()
 
 
 def run_sequential(index: Optional[int]):
@@ -54,6 +48,7 @@ def run_sequential(index: Optional[int]):
 
 
 if __name__ == "__main__":
+    logger_setup.setup()
     if len(sys.argv) == 2:
         try:
             index = int(sys.argv[1])

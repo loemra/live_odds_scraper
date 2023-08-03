@@ -10,7 +10,7 @@ from datastructures.selection import Selection
 
 log = logging.getLogger(__name__)
 
-conn = sqlite3.connect("database/events.db")
+conn = sqlite3.connect("database/events.db", check_same_thread=False)
 cur = conn.cursor()
 
 

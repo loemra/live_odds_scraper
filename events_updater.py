@@ -1,5 +1,4 @@
 import logging
-from timeit import timeit
 from typing import Callable
 
 from thefuzz import fuzz, process

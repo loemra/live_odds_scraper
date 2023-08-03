@@ -76,5 +76,3 @@ def setup():
 
     logging.config.dictConfig(config)
     logging.info("Logger setup complete.")
-
-    log = logging.getLogger("logger_setup.log")
