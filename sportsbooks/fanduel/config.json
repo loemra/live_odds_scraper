@@ -1,0 +1,51 @@
+{
+  "get_events_url": "https://sbapi.mi.sportsbook.fanduel.com/api/content-managed-page?page=SPORT&eventTypeId={}&_ak=FhMFpcPWXMeyZxOx&timezone=America/New_York",
+  "get_event_url": "https://sbapi.mi.sportsbook.fanduel.com/api/event-page?_ak=FhMFpcPWXMeyZxOx&eventId={}",
+  "date_format": "",
+  "sports": {
+    "1": {
+      "name": "SOCCER",
+      "markets": {
+        "1": {
+          "name": "SOCCER_GAME_RESULT",
+          "kind": "TEAM_NAME"
+        },
+        "13": {
+          "name": "SOCCER_OVER_UNDER_TOTAL_GOALS",
+          "kind": "OVER_UNDER"
+        },
+        "350": {
+          "name": "SOCCER_BOTH_TEAMS_TO_SCORE",
+          "kind": "YES_NO"
+        }
+      },
+      "periods": {
+        "RT": "REGULAR",
+        "1H": "FIRST_HALF",
+        "2H": "SECOND_HALF"
+      }
+    },
+    "2": {
+      "name": "TENNIS",
+      "markets": {
+        "67": {
+          "name": "TENNIS_GAME_SPREAD",
+          "kind": "SPREAD"
+        },
+        "120755": {
+          "name": "TENNIS_OVER_UNDER_TOTAL_GAMES",
+          "kind": "OVER_UNDER"
+        },
+        "68": {
+          "name": "TENNIS_HEAD_TO_HEAD",
+          "kind": "TEAM_NAME"
+        }
+      },
+      "periods": {
+        "MT": "MATCH",
+        "S1": "FIRST_SET",
+        "S2": "SECOND_SET"
+      }
+    }
+  }
+}

@@ -1,0 +1,5839 @@
+{
+  "layout": {
+    "defaultTab": 32,
+    "tabsDisplayOrder": [
+      32,
+      262,
+      212,
+      213,
+      249,
+      263,
+      61,
+      248,
+      123,
+      36,
+      34,
+      38
+    ],
+    "tabs": {
+      "32": {
+        "id": 32,
+        "title": "Popular",
+        "cards": [
+          {
+            "id": 32
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "34": {
+        "id": 34,
+        "title": "Race To",
+        "cards": [
+          {
+            "id": 34
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "36": {
+        "id": 36,
+        "title": "Alt Lines/Runs",
+        "cards": [
+          {
+            "id": 36
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "38": {
+        "id": 38,
+        "title": "Line/Total Parlays",
+        "cards": [
+          {
+            "id": 38
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "61": {
+        "id": 61,
+        "title": "Innings",
+        "cards": [
+          {
+            "id": 61
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "123": {
+        "id": 123,
+        "title": "Hits & Runs",
+        "cards": [
+          {
+            "id": 123
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "212": {
+        "id": 212,
+        "title": "Away Team PA",
+        "cards": [
+          {
+            "id": 212
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "213": {
+        "id": 213,
+        "title": "Home Team PA",
+        "cards": [
+          {
+            "id": 213
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "248": {
+        "id": 248,
+        "title": "Pitcher Props",
+        "cards": [
+          {
+            "id": 248
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "249": {
+        "id": 249,
+        "title": "Live Player Props",
+        "cards": [
+          {
+            "id": 249
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      },
+      "262": {
+        "id": 262,
+        "title": "Live SGP",
+        "cards": [
+          {
+            "id": 262
+          }
+        ],
+        "isSameGameMulti": true,
+        "description": null
+      },
+      "263": {
+        "id": 263,
+        "title": "Quick Bets",
+        "cards": [
+          {
+            "id": 263
+          }
+        ],
+        "isSameGameMulti": false,
+        "description": null
+      }
+    },
+    "cards": {
+      "32": {
+        "id": 32,
+        "type": "EVENT_CARD",
+        "title": "Popular",
+        "marketTypes": [
+          "BIG_3",
+          "TO_HIT_A_HOME_RUN",
+          "TO_HIT_2+_HOME_RUNS",
+          "PLAYER_TO_RECORD_A_HIT",
+          "PLAYER_TO_RECORD_2+_HITS",
+          "PLAYER_TO_RECORD_3+_HITS",
+          "PLAYER_TO_RECORD_4+_HITS",
+          "MONEY_LINE_/_TOTAL_RUNS_DOUBLE",
+          "FIRST_PITCH_RESULT_-_BOTTOM_6TH",
+          "FIRST_PITCH_RESULT_-_TOP_7TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_7TH",
+          "FIRST_PITCH_RESULT_-_TOP_8TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_8TH",
+          "ALTERNATE_RUN_LINES",
+          "ALTERNATE_TOTAL_RUNS",
+          "HOME_TOTAL_RUNS",
+          "AWAY_TOTAL_RUNS"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": true,
+        "display": [
+          {
+            "marketLayoutTemplate": "Gamelines",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037752",
+                  "726.70999696",
+                  "726.71037750"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037735"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71052976"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037732"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037733"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037730"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037734"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71037751"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "SingleSelection",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053109"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "SingleSelection",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053086"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "SingleSelection",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053033"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "SingleSelection",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71052990"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "SingleSelection",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71052993"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "MultiColumnMarketName",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053057"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "AlternateTotalPoints",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053068"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "OverUnder",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71053089"
+                ]
+              }
+            ]
+          },
+          {
+            "marketLayoutTemplate": "OverUnder",
+            "competitionId": 11196870,
+            "rows": [
+              {
+                "eventId": 32530968,
+                "marketIds": [
+                  "726.71052998"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "34": {
+        "id": 34,
+        "type": "EVENT_CARD",
+        "title": "Race To",
+        "marketTypes": [
+          "RACE_TO_5_RUNS",
+          "RACE_TO_6_RUNS",
+          "RACE_TO_7_RUNS"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "36": {
+        "id": 36,
+        "type": "EVENT_CARD",
+        "title": "Alt Lines/Runs",
+        "marketTypes": [
+          "ALTERNATE_RUN_LINES",
+          "ALTERNATE_TOTAL_RUNS"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "38": {
+        "id": 38,
+        "type": "EVENT_CARD",
+        "title": "Line/Total Parlays",
+        "marketTypes": [
+          "LINE/_TOTAL_DOUBLE_1",
+          "LINE/_TOTAL_DOUBLE_2",
+          "LINE/_TOTAL_DOUBLE_3",
+          "LINE/_TOTAL_DOUBLE_4",
+          "LINE/_TOTAL_DOUBLE_5",
+          "LINE/_TOTAL_DOUBLE_6",
+          "LINE/_TOTAL_DOUBLE_7",
+          "LINE/_TOTAL_DOUBLE_8",
+          "LINE/_TOTAL_DOUBLE_9",
+          "LINE/_TOTAL_DOUBLE_10",
+          "LINE/_TOTAL_DOUBLE_11",
+          "LINE/_TOTAL_DOUBLE_12"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "61": {
+        "id": 61,
+        "type": "EVENT_CARD",
+        "title": "Innings",
+        "marketTypes": [
+          "7TH_INNING_RESULT",
+          "7TH_INNING_RUN_LINE",
+          "7TH_INNING_TOTAL_RUNS",
+          "7TH_INNING_CORRECT_SCORE",
+          "7TH_INNING_RUNS_ODD/EVEN",
+          "***OVER/UNDER_0.5_RUNS_7TH_INNINGS",
+          "***OVER/UNDER_1.5_RUNS_8TH_INNINGS",
+          "***OVER/UNDER_1.5_RUNS_7TH_INNINGS",
+          "LEAD_AFTER_7TH_INNING",
+          "8TH_INNING_RESULT",
+          "8TH_INNING_RUN_LINE",
+          "8TH_INNING_TOTAL_RUNS",
+          "8TH_INNING_CORRECT_SCORE",
+          "8TH_INNING_RUNS_ODD/EVEN",
+          "***OVER/UNDER_0.5_RUNS_8TH_INNINGS",
+          "***OVER/UNDER_1.5_RUNS_9TH_INNINGS"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "123": {
+        "id": 123,
+        "type": "EVENT_CARD",
+        "title": "Hits & Runs",
+        "marketTypes": [
+          "AWAY_TOTAL_RUNS",
+          "HOME_TOTAL_RUNS",
+          "TOTAL_RUNS_(BANDS)",
+          "TOTAL_RUNS_ODD/EVEN",
+          "AWAY_TOTAL_RUNS_ODD/EVEN",
+          "HOME_TOTAL_RUNS_ODD/EVEN"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "212": {
+        "id": 212,
+        "type": "EVENT_CARD",
+        "title": "Away Team PA",
+        "marketTypes": [
+          "X_PLATE_APP_-_PLAYER_A",
+          "X_PLATE_APP_-_PLAYER_B",
+          "X_PLATE_APP_-_PLAYER_C",
+          "X_PLATE_APP_-_PLAYER_D",
+          "X_PLATE_APP_-_PLAYER_E",
+          "X_PLATE_APP_-_PLAYER_F",
+          "X_PLATE_APP_-_PLAYER_G",
+          "X_PLATE_APP_-_PLAYER_H",
+          "X_PLATE_APP_-_PLAYER_I",
+          "X_PLATE_APP_-_PLAYER_J"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "213": {
+        "id": 213,
+        "type": "EVENT_CARD",
+        "title": "Home Team PA",
+        "marketTypes": [
+          "X_PLATE_APP_-_PLAYER_N",
+          "X_PLATE_APP_-_PLAYER_O",
+          "X_PLATE_APP_-_PLAYER_P",
+          "X_PLATE_APP_-_PLAYER_Q",
+          "X_PLATE_APP_-_PLAYER_R",
+          "X_PLATE_APP_-_PLAYER_S",
+          "X_PLATE_APP_-_PLAYER_T",
+          "X_PLATE_APP_-_PLAYER_U",
+          "X_PLATE_APP_-_PLAYER_V"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "248": {
+        "id": 248,
+        "type": "EVENT_CARD",
+        "title": "Pitcher Props",
+        "marketTypes": [
+          "PLAYER_PROPS",
+          "PLAYER_X_TO_RECORD_A_WIN_SW",
+          "FIRST_PITCH_RESULT_-_BOTTOM_6TH",
+          "FIRST_PITCH_RESULT_-_TOP_7TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_7TH",
+          "FIRST_PITCH_RESULT_-_TOP_8TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_8TH"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "249": {
+        "id": 249,
+        "type": "EVENT_CARD",
+        "title": "Live Player Props",
+        "marketTypes": [
+          "TO_HIT_A_HOME_RUN",
+          "TO_HIT_2+_HOME_RUNS",
+          "PLAYER_TO_RECORD_A_HIT",
+          "PLAYER_TO_RECORD_2+_HITS",
+          "PLAYER_TO_RECORD_3+_HITS",
+          "PLAYER_TO_RECORD_4+_HITS",
+          "PLAYER_PROPS",
+          "PLAYER_X_TO_RECORD_A_WIN_SW"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "262": {
+        "id": 262,
+        "type": "EVENT_CARD",
+        "title": "Live SGP",
+        "marketTypes": [
+          "BIG_3",
+          "TO_HIT_A_HOME_RUN",
+          "TO_HIT_2+_HOME_RUNS",
+          "PLAYER_TO_RECORD_A_HIT",
+          "PLAYER_TO_RECORD_2+_HITS",
+          "PLAYER_TO_RECORD_3+_HITS",
+          "PLAYER_TO_RECORD_4+_HITS",
+          "ALTERNATE_RUN_LINES",
+          "ALTERNATE_TOTAL_RUNS",
+          "7TH_INNING_RESULT",
+          "8TH_INNING_RESULT",
+          "7TH_INNING_CORRECT_SCORE",
+          "8TH_INNING_CORRECT_SCORE",
+          "***OVER/UNDER_0.5_RUNS_7TH_INNINGS",
+          "***OVER/UNDER_0.5_RUNS_8TH_INNINGS",
+          "***OVER/UNDER_1.5_RUNS_7TH_INNINGS",
+          "***OVER/UNDER_1.5_RUNS_8TH_INNINGS"
+        ],
+        "isSameGameMulti": true,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      },
+      "263": {
+        "id": 263,
+        "type": "EVENT_CARD",
+        "title": "Quick Bets",
+        "marketTypes": [
+          "FIRST_PITCH_RESULT_-_BOTTOM_6TH",
+          "FIRST_PITCH_RESULT_-_TOP_7TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_7TH",
+          "FIRST_PITCH_RESULT_-_TOP_8TH",
+          "FIRST_PITCH_RESULT_-_BOTTOM_8TH"
+        ],
+        "isSameGameMulti": false,
+        "attachmentsDependent": true,
+        "attachmentsFullyLoaded": false
+      }
+    },
+    "marketBlurbs": {
+      "competitions": {
+        "11196870": {
+          "MONEY_LINE_AWAY_LISTED": [
+            "Listed pitcher bets will be void if selected pitcher does not start"
+          ],
+          "MONEY_LINE_HOME_LISTED": [
+            "Listed pitcher bets will be void if selected pitcher does not start"
+          ],
+          "1ST_HALF_MONEY_LINE": [
+            "Refers to the results from the first 5 innings only"
+          ],
+          "1ST_INNINGS_-_RUN_LINE": [
+            "Refers to the results from the specified inning only"
+          ],
+          "1ST_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only"
+          ],
+          "1ST_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "2ND_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "3RD_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "4TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "5TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "6TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "7TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "8TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "9TH_INNING_RUN_LINE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "2ND_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "3RD_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "4TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "5TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "6TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "7TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "8TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "9TH_INNING_RESULT": [
+            "Refers to the results from the specified inning only."
+          ],
+          "FIRST_HOME_RUN": [
+            "All bets action. Others available upon request."
+          ],
+          "TO_RECORD_2+_TOTAL_BASES": [
+            "Total Bases are recorded through hits by the listed player. They do not include walks, HBPs, stolen bases, reach on errors, or fielder's choices."
+          ],
+          "TO_RECORD_1+_TOTAL_BASES": [
+            "Total Bases are recorded through hits by the listed player. They do not include walks, HBPs, stolen bases, reach on errors, or fielder's choices."
+          ],
+          "TO_RECORD_3+_TOTAL_BASES": [
+            "Total Bases are recorded through hits by the listed player. They do not include walks, HBPs, stolen bases, reach on errors, or fielder's choices."
+          ],
+          "TO_RECORD_4+_TOTAL_BASES": [
+            "Total Bases are recorded through hits by the listed player. They do not include walks, HBPs, stolen bases, reach on errors, or fielder's choices."
+          ],
+          "TO_RECORD_5+_TOTAL_BASES": [
+            "Total Bases are recorded through hits by the listed player. They do not include walks, HBPs, stolen bases, reach on errors, or fielder's choices."
+          ],
+          "1ST_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "2ND_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "3RD_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "4TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "5TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "6TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "7TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "8TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "9TH_INNING_CORRECT_SCORE": [
+            "Refers to the results from the specified inning only."
+          ],
+          "POPULAR_MULTIS": [
+            "Unless unequivocally determined, listed players must record a plate appearance for bets to stand.",
+            "\"To Hit for Cycle\" is defined as a Single, Double, Triple, and HR in the same game.",
+            "Listed pitchers must start for bet to stand."
+          ],
+          "MLB_SAME_PROP_PARLAY": [
+            "Combine multiple selections into a parlay"
+          ],
+          "PLAYER_TO_HIT_THE_FIRST_HOME_RUN_OF_GAME": [
+            "Listed players must record a plate appearance for bets to stand. If a non-listed player is ruled the winner, bets on listed qualified players are action. All bets are void if no HRs are hit."
+          ],
+          "***OVER/UNDER_0.5_RUNS_1ST_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_2ND_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_3RD_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_4TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_5TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_6TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_7TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_8TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_0.5_RUNS_9TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_1ST_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_2ND_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_3RD_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_4TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_5TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_6TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_7TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_8TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "***OVER/UNDER_1.5_RUNS_9TH_INNINGS": [
+            "Refers to the result from the specified inning only."
+          ],
+          "MLB_SAME_PROP_PARLAY_2": [
+            "Combine multiple selections into a parlay"
+          ],
+          "MLB_SAME_PROP_PARLAY_3": [
+            "Combine multiple selections into a parlay"
+          ],
+          "MLB_SAME_PROP_PARLAY_4": [
+            "Combine multiple selections into a parlay"
+          ],
+          "FIRST_PITCH_RESULT": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "RESULT_OF_FIRST_PITCH": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "METHOD_OF_FIRST_HIT": [
+            "Market refers to the first hit of the game. Player must be in starting lineup for action."
+          ],
+          "PLAYER_TO_RECORD_FIRST_HIT_OF_THE_GAME": [
+            "Market refers to the first hit of the game. Player must be in starting lineup for action."
+          ],
+          "STARTING_PITCHER_STRIKEOUT_MATCHBET": [
+            "For SP Strikeout Matchbets, both listed pitchers must start the game for bets to stand. If the two listed pitchers record the same number of strikeouts, bets on the matchup will be voided."
+          ],
+          "STARTING_PITCHER_DAILY_STRIKEOUT_LEADER": [
+            "Most strikeouts on the listed day among the pitchers listed. Any listed pitcher that does not start will be voided. Dead Heat Rules will apply to ties."
+          ],
+          "STARTING_PITCHER_COMBINED_STRIKEOUT_TOTAL": [
+            "SP Combined Strikeout Total refers to the sum of strikeouts recorded between the two starting pitchers in a specific game. Both pitchers must start for bets to stand."
+          ],
+          "RESULT_OF_FIRST_PITCH_HOME": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "MOST_SERIES_RBIS": [
+            "Dead Heat Rules apply in the event of a tie."
+          ],
+          "LONGEST_HR_DISTANCE": [
+            "Home Run distances will be sourced from MLB Statcast."
+          ],
+          "SPEED_OF_X_PITCH": [
+            "The listed batter vs. pitcher matchup must occur in the listed inning for action. Otherwise bets will be void."
+          ],
+          "TEAM_TO_WIN_X+_GAMES": [
+            "Able to combine up to 8 selections into a parlay."
+          ],
+          "BEST_RECORD": [
+            "Winning selection will be decided based on winning percentage at the conclusion of the season. In case of tie, Dead Heat rules apply."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_A": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_B": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_C": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_D": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_E": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "PLATE_APPEARANCE_EXACT_PITCH_COUNT_-_PLAYER_F": [
+            "Should a pitcher/hitter violation result in an automatic ball/strike, that will count toward the total number of pitches in the plate appearance."
+          ],
+          "FIRST_PITCH_RESULT_-_BOTTOM_2ND": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_TOP_2ND": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_TOP_3RD": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_BOTTOM_3RD": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_TOP_4TH": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_BOTTOM_4TH": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_TOP_5TH": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "FIRST_PITCH_RESULT_-_BOTTOM_5TH": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "VELOCITY_OF_FIRST_PITCH_PREMATCH": [
+            "All bets will be settled based on the first pitch thrown in the listed plate appearance. Velocity sourced from baseballsavant.mlb.com."
+          ],
+          "PLAYER_TO_HIT_THE_MOST_HRS_IN_THE_SERIES": [
+            "Must Record a PA for Action. Dead Heat Rules Apply."
+          ],
+          "MOST_SERIES_HOME_RUNS": [
+            "Must Record a PA for Action. Dead Heat Rules Apply."
+          ],
+          "PLAYER_TO_RECORD_MOST_HITS_IN_THE_SERIES": [
+            "Must Record a PA for Action. Dead Heat Rules Apply."
+          ],
+          "EACH_STARTING_PITCHER_1+_STRIKEOUTS_IN_THE_FIRST_INNING": [
+            "All bets are action regardless of starting pitcher"
+          ],
+          "FIRST_PITCH_RESULT_B": [
+            "Batted balls that result in the at-bat ending (ex. hits/outs) are not regarded as strikes. Should a pitcher/hitter violation result in an automatic ball/strike, the market will be settled accordingly."
+          ],
+          "ANY_PLAYER_TO_HIT_X+_HOME_RUNS": [
+            "Market refers to amount of Home Runs hit on the listed date. Home Runs hit across multiple games will not count toward this market."
+          ],
+          "TO_RECORD_A_HIT_(MANUAL)": [
+            "Player must record 1 Plate Appearance for action."
+          ],
+          "PLAYER_A_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_B_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_C_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_D_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_E_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_F_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_G_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_H_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_I_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_J_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_K_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_L_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_M_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_N_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_O_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_P_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_Q_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_R_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_S_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "PLAYER_T_PLATE_APP": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_A": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_B": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_C": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_D": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_E": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_F": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_G": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_H": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_I": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_J": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_K": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_L": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_M": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_N": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_O": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_P": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_Q": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_R": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_S": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ],
+          "X_PLATE_APP_-_PLAYER_T": [
+            "A pitch must be thrown in the plate appearance for bets to be action."
+          ]
+        }
+      },
+      "markets": {}
+    },
+    "promotions": {},
+    "page": {
+      "eventTypeId": 7511,
+      "competitionId": "11196870",
+      "eventId": 32530968
+    }
+  },
+  "attachments": {
+    "eventTypes": {
+      "7511": {
+        "eventTypeId": 7511,
+        "name": "Baseball"
+      }
+    },
+    "events": {
+      "32530968": {
+        "competitionId": 11196870,
+        "inPlay": true,
+        "eventId": 32530968,
+        "key": "EVENT:32530968",
+        "name": "Los Angeles Dodgers (B Miller) @ San Diego Padres (Y Darvish)",
+        "eventTypeId": 7511,
+        "countryCode": "GB",
+        "timezone": "GMT",
+        "openDate": "2023-08-05T01:41:00.000Z",
+        "videoAvailable": false,
+        "primaryMarketId": "726.71037752"
+      }
+    },
+    "competitions": {
+      "11196870": {
+        "key": "COMP:11196870",
+        "name": "MLB",
+        "competitionId": 11196870,
+        "eventId": 28131314,
+        "eventTypeId": 7511
+      }
+    },
+    "markets": {
+      "726.71052976": {
+        "marketId": "726.71052976",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Hit 2+ Home Runs",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "TO_HIT_2+_HOME_RUNS",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 1765,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 47149125,
+            "handicap": 0,
+            "runnerName": "James Outman",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1800,
+                "americanOddsInt": 1800
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 19
+                },
+                "fractionalOdds": {
+                  "numerator": 18,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1700,
+                  "americanOddsInt": 1700
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 18
+                  },
+                  "fractionalOdds": {
+                    "numerator": 17,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300493"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71052998": {
+        "marketId": "726.71052998",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Los Angeles Dodgers Total Runs",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "AWAY_TOTAL_RUNS",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 1220,
+        "bettingType": "MOVING_HANDICAP",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 7017905,
+            "handicap": 2.5,
+            "runnerName": "Over",
+            "sortPriority": 1,
+            "result": {
+              "type": "OVER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 116,
+                "americanOddsInt": 116
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.16
+                },
+                "fractionalOdds": {
+                  "numerator": 116,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 120,
+                  "americanOddsInt": 120
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 120,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7017906,
+            "handicap": 2.5,
+            "runnerName": "Under",
+            "sortPriority": 2,
+            "result": {
+              "type": "UNDER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -154,
+                "americanOddsInt": -154
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.649350649350649
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 154
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -160,
+                  "americanOddsInt": -160
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.625
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 160
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300398"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053109": {
+        "marketId": "726.71053109",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "First Pitch Result - Bottom 6th",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "FIRST_PITCH_RESULT_-_BOTTOM_6TH",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 1811,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 49299342,
+            "handicap": 0,
+            "runnerName": "Taken Strike/Swinging Strike/Foul",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -140,
+                "americanOddsInt": -140
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.714285714285714
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 140
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -135,
+                  "americanOddsInt": -135
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.740740740740741
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 135
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47036957,
+            "handicap": 0,
+            "runnerName": "Ball/HBP",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 125,
+                "americanOddsInt": 125
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.25
+                },
+                "fractionalOdds": {
+                  "numerator": 125,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 130,
+                  "americanOddsInt": 130
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.3
+                  },
+                  "fractionalOdds": {
+                    "numerator": 130,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299344,
+            "handicap": 0,
+            "runnerName": "Any Other Out/Outcome",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1300,
+                "americanOddsInt": 1300
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 14
+                },
+                "fractionalOdds": {
+                  "numerator": 13,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1400,
+                  "americanOddsInt": 1400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 15
+                  },
+                  "fractionalOdds": {
+                    "numerator": 14,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299343,
+            "handicap": 0,
+            "runnerName": "Extra Base Hit (Double/Triple/Home Run)",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 6000,
+                "americanOddsInt": 6000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 61
+                },
+                "fractionalOdds": {
+                  "numerator": 60,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 7000,
+                  "americanOddsInt": 7000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 71
+                  },
+                  "fractionalOdds": {
+                    "numerator": 70,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11434224,
+            "handicap": 0,
+            "runnerName": "Single",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 4500,
+                "americanOddsInt": 4500
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 46
+                },
+                "fractionalOdds": {
+                  "numerator": 45,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3300,
+                  "americanOddsInt": 3300
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 34
+                  },
+                  "fractionalOdds": {
+                    "numerator": 33,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300577"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037750": {
+        "marketId": "726.71037750",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Total Runs",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "TOTAL_POINTS_(OVER/UNDER)",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 30,
+        "bettingType": "MOVING_HANDICAP",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 7017905,
+            "handicap": 5.5,
+            "runnerName": "Over",
+            "sortPriority": 1,
+            "result": {
+              "type": "OVER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -138,
+                "americanOddsInt": -138
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.72463768115942
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 138
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -140,
+                  "americanOddsInt": -140
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.714285714285714
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 140
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7017906,
+            "handicap": 5.5,
+            "runnerName": "Under",
+            "sortPriority": 2,
+            "result": {
+              "type": "UNDER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 108,
+                "americanOddsInt": 108
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.08
+                },
+                "fractionalOdds": {
+                  "numerator": 108,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 110,
+                  "americanOddsInt": 110
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.1
+                  },
+                  "fractionalOdds": {
+                    "numerator": 110,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271090"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.70999696": {
+        "marketId": "726.70999696",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Moneyline",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "MONEY_LINE",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 10,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 29171,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers",
+            "sortPriority": 1,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "logo": "https://assets.sportsbook.fanduel.com/images/team/mlb/los_angeles_dodgers.png",
+            "nameAbbr": "LA Dodgers",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 235,
+                "americanOddsInt": 235
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.35
+                },
+                "fractionalOdds": {
+                  "numerator": 235,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 225,
+                  "americanOddsInt": 225
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.25
+                  },
+                  "fractionalOdds": {
+                    "numerator": 225,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 29177,
+            "handicap": 0,
+            "runnerName": "San Diego Padres",
+            "sortPriority": 2,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "logo": "https://assets.sportsbook.fanduel.com/images/team/mlb/san_diego_padres.png",
+            "nameAbbr": "SD Padres",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -330,
+                "americanOddsInt": -330
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.303030303030303
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 33
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -320,
+                  "americanOddsInt": -320
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.3125
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 32
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391203951"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71052990": {
+        "marketId": "726.71052990",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "First Pitch Result - Top 8th",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "FIRST_PITCH_RESULT_-_TOP_8TH",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 1814,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 49299343,
+            "handicap": 0,
+            "runnerName": "Extra Base Hit (Double/Triple/Home Run)",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 4800,
+                "americanOddsInt": 4800
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 49
+                },
+                "fractionalOdds": {
+                  "numerator": 48,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 4600,
+                  "americanOddsInt": 4600
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 47
+                  },
+                  "fractionalOdds": {
+                    "numerator": 46,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11434224,
+            "handicap": 0,
+            "runnerName": "Single",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 3200,
+                "americanOddsInt": 3200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 33
+                },
+                "fractionalOdds": {
+                  "numerator": 32,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3100,
+                  "americanOddsInt": 3100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 32
+                  },
+                  "fractionalOdds": {
+                    "numerator": 31,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47036957,
+            "handicap": 0,
+            "runnerName": "Ball/HBP",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 155,
+                "americanOddsInt": 155
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.55
+                },
+                "fractionalOdds": {
+                  "numerator": 155,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 160,
+                  "americanOddsInt": 160
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.6
+                  },
+                  "fractionalOdds": {
+                    "numerator": 160,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299344,
+            "handicap": 0,
+            "runnerName": "Any Other Out/Outcome",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1000,
+                "americanOddsInt": 1000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 11
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1100,
+                  "americanOddsInt": 1100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 12
+                  },
+                  "fractionalOdds": {
+                    "numerator": 11,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299342,
+            "handicap": 0,
+            "runnerName": "Taken Strike/Swinging Strike/Foul",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -150,
+                "americanOddsInt": -150
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.666666666666667
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 150
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -145,
+                  "americanOddsInt": -145
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.689655172413793
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 145
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300580"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053089": {
+        "marketId": "726.71053089",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "San Diego Padres Total Runs",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "HOME_TOTAL_RUNS",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 30,
+        "bettingType": "MOVING_HANDICAP",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 7017905,
+            "handicap": 3.5,
+            "runnerName": "Over",
+            "sortPriority": 1,
+            "result": {
+              "type": "OVER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 104,
+                "americanOddsInt": 104
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.04
+                },
+                "fractionalOdds": {
+                  "numerator": 104,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 108,
+                  "americanOddsInt": 108
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.08
+                  },
+                  "fractionalOdds": {
+                    "numerator": 108,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7017906,
+            "handicap": 3.5,
+            "runnerName": "Under",
+            "sortPriority": 2,
+            "result": {
+              "type": "UNDER"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -138,
+                "americanOddsInt": -138
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.72463768115942
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 138
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -144,
+                  "americanOddsInt": -144
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.694444444444444
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 144
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300396"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053068": {
+        "marketId": "726.71053068",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Alternate Total Runs",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "ALTERNATE_TOTAL_RUNS",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 15,
+        "numberOfActiveRunners": 15,
+        "numberOfWinners": 1,
+        "sortPriority": 91,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 12493608,
+            "handicap": 0,
+            "runnerName": "Over (6.5)",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 118,
+                "americanOddsInt": 118
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.18
+                },
+                "fractionalOdds": {
+                  "numerator": 118,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 116,
+                  "americanOddsInt": 116
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.16
+                  },
+                  "fractionalOdds": {
+                    "numerator": 116,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493610,
+            "handicap": 0,
+            "runnerName": "Over (7.5)",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 225,
+                "americanOddsInt": 225
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.25
+                },
+                "fractionalOdds": {
+                  "numerator": 225,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 235,
+                  "americanOddsInt": 235
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.35
+                  },
+                  "fractionalOdds": {
+                    "numerator": 235,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493612,
+            "handicap": 0,
+            "runnerName": "Over (8.5)",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 320,
+                "americanOddsInt": 320
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 4.2
+                },
+                "fractionalOdds": {
+                  "numerator": 32,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 360,
+                  "americanOddsInt": 360
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 4.6
+                  },
+                  "fractionalOdds": {
+                    "numerator": 36,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493614,
+            "handicap": 0,
+            "runnerName": "Over (9.5)",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 580,
+                "americanOddsInt": 580
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 6.8
+                },
+                "fractionalOdds": {
+                  "numerator": 58,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 520,
+                  "americanOddsInt": 520
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 6.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 52,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493616,
+            "handicap": 0,
+            "runnerName": "Over (10.5)",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 750,
+                "americanOddsInt": 750
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 8.5
+                },
+                "fractionalOdds": {
+                  "numerator": 75,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 800,
+                  "americanOddsInt": 800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 9
+                  },
+                  "fractionalOdds": {
+                    "numerator": 80,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12810130,
+            "handicap": 0,
+            "runnerName": "Over (11.5)",
+            "sortPriority": 6,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1200,
+                "americanOddsInt": 1200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 13
+                },
+                "fractionalOdds": {
+                  "numerator": 120,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1100,
+                  "americanOddsInt": 1100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 12
+                  },
+                  "fractionalOdds": {
+                    "numerator": 110,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493609,
+            "handicap": 0,
+            "runnerName": "Under (6.5)",
+            "sortPriority": 7,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -158,
+                "americanOddsInt": -158
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.632911392405063
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 158
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -154,
+                  "americanOddsInt": -154
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.649350649350649
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 154
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493611,
+            "handicap": 0,
+            "runnerName": "Under (7.5)",
+            "sortPriority": 8,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -320,
+                "americanOddsInt": -320
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.3125
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 32
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -340,
+                  "americanOddsInt": -340
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.294117647058824
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 34
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493613,
+            "handicap": 0,
+            "runnerName": "Under (8.5)",
+            "sortPriority": 9,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -490,
+                "americanOddsInt": -490
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.204081632653061
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 49
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -500,
+                  "americanOddsInt": -500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 50
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493615,
+            "handicap": 0,
+            "runnerName": "Under (9.5)",
+            "sortPriority": 10,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -1200,
+                "americanOddsInt": -1200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.083333333333333
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 120
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -1000,
+                  "americanOddsInt": -1000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.1
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12493617,
+            "handicap": 0,
+            "runnerName": "Under (10.5)",
+            "sortPriority": 11,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -2000,
+                "americanOddsInt": -2000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.05
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 200
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -1800,
+                  "americanOddsInt": -1800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.055555555555556
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 180
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12810131,
+            "handicap": 0,
+            "runnerName": "Under (11.5)",
+            "sortPriority": 12,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -5000,
+                "americanOddsInt": -5000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.02
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 500
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -4500,
+                  "americanOddsInt": -4500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.022222222222222
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 450
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12821809,
+            "handicap": 0,
+            "runnerName": "Under (12.5)",
+            "sortPriority": 13,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -8000,
+                "americanOddsInt": -8000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.0125
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 800
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -10000,
+                  "americanOddsInt": -10000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.01
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 1000
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12833156,
+            "handicap": 0,
+            "runnerName": "Under (13.5)",
+            "sortPriority": 14,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -50000,
+                "americanOddsInt": -50000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.002
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 5000
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -20000,
+                  "americanOddsInt": -20000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.005
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 2000
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300476"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037732": {
+        "marketId": "726.71037732",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Record A Hit",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "PLAYER_TO_RECORD_A_HIT",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 10,
+        "numberOfActiveRunners": 10,
+        "numberOfWinners": 1,
+        "sortPriority": 72,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 11285770,
+            "handicap": 0,
+            "runnerName": "David Peralta",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 154,
+                "americanOddsInt": 154
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.54
+                },
+                "fractionalOdds": {
+                  "numerator": 154,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 162,
+                  "americanOddsInt": 162
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.62
+                  },
+                  "fractionalOdds": {
+                    "numerator": 162,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11604597,
+            "handicap": 0,
+            "runnerName": "Ji-Man Choi",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 182,
+                "americanOddsInt": 182
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.82
+                },
+                "fractionalOdds": {
+                  "numerator": 182,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 188,
+                  "americanOddsInt": 188
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.88
+                  },
+                  "fractionalOdds": {
+                    "numerator": 188,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 23494151,
+            "handicap": 0,
+            "runnerName": "Fernando Tatis Jr.",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 194,
+                "americanOddsInt": 194
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.94
+                },
+                "fractionalOdds": {
+                  "numerator": 194,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 188,
+                  "americanOddsInt": 188
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.88
+                  },
+                  "fractionalOdds": {
+                    "numerator": 188,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 14384440,
+            "handicap": 0,
+            "runnerName": "Amed Rosario",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 182,
+                "americanOddsInt": 182
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.82
+                },
+                "fractionalOdds": {
+                  "numerator": 182,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 178,
+                  "americanOddsInt": 178
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.78
+                  },
+                  "fractionalOdds": {
+                    "numerator": 178,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 26053645,
+            "handicap": 0,
+            "runnerName": "Trent Grisham",
+            "sortPriority": 6,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 220,
+                "americanOddsInt": 220
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.2
+                },
+                "fractionalOdds": {
+                  "numerator": 220,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 210,
+                  "americanOddsInt": 210
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.1
+                  },
+                  "fractionalOdds": {
+                    "numerator": 210,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 14311749,
+            "handicap": 0,
+            "runnerName": "Chris Taylor",
+            "sortPriority": 7,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 188,
+                "americanOddsInt": 188
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.88
+                },
+                "fractionalOdds": {
+                  "numerator": 188,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 194,
+                  "americanOddsInt": 194
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.94
+                  },
+                  "fractionalOdds": {
+                    "numerator": 194,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11284342,
+            "handicap": 0,
+            "runnerName": "Jason Heyward",
+            "sortPriority": 8,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 220,
+                "americanOddsInt": 220
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.2
+                },
+                "fractionalOdds": {
+                  "numerator": 220,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 210,
+                  "americanOddsInt": 210
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.1
+                  },
+                  "fractionalOdds": {
+                    "numerator": 210,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 19063462,
+            "handicap": 0,
+            "runnerName": "Juan Soto",
+            "sortPriority": 9,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 255,
+                "americanOddsInt": 255
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.55
+                },
+                "fractionalOdds": {
+                  "numerator": 255,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 250,
+                  "americanOddsInt": 250
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.5
+                  },
+                  "fractionalOdds": {
+                    "numerator": 25,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11285780,
+            "handicap": 0,
+            "runnerName": "Enrique Hernandez",
+            "sortPriority": 10,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 230,
+                "americanOddsInt": 230
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.3
+                },
+                "fractionalOdds": {
+                  "numerator": 230,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 235,
+                  "americanOddsInt": 235
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.35
+                  },
+                  "fractionalOdds": {
+                    "numerator": 235,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271071"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053057": {
+        "marketId": "726.71053057",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Alternate Run Lines",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "ALTERNATE_RUN_LINES",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 12,
+        "numberOfActiveRunners": 12,
+        "numberOfWinners": 1,
+        "sortPriority": 90,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 7679351,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers +3.5",
+            "sortPriority": 1,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -1200,
+                "americanOddsInt": -1200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.083333333333333
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 120
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -1400,
+                  "americanOddsInt": -1400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.071428571428571
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 140
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7679684,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers +2.5",
+            "sortPriority": 2,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -490,
+                "americanOddsInt": -490
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.204081632653061
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 49
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -500,
+                  "americanOddsInt": -500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 50
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7679355,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers +1.5",
+            "sortPriority": 3,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -210,
+                "americanOddsInt": -210
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.476190476190476
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 210
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -200,
+                  "americanOddsInt": -200
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.5
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 200
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7679577,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers -1.5",
+            "sortPriority": 4,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 520,
+                "americanOddsInt": 520
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 6.2
+                },
+                "fractionalOdds": {
+                  "numerator": 52,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 490,
+                  "americanOddsInt": 490
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 5.9
+                  },
+                  "fractionalOdds": {
+                    "numerator": 49,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7679353,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers -2.5",
+            "sortPriority": 5,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 920,
+                "americanOddsInt": 920
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 10.2
+                },
+                "fractionalOdds": {
+                  "numerator": 92,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 880,
+                  "americanOddsInt": 880
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 9.8
+                  },
+                  "fractionalOdds": {
+                    "numerator": 88,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7675595,
+            "handicap": 0,
+            "runnerName": "San Diego Padres -3.5",
+            "sortPriority": 7,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 580,
+                "americanOddsInt": 580
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 6.8
+                },
+                "fractionalOdds": {
+                  "numerator": 58,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 630,
+                  "americanOddsInt": 630
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 7.3
+                  },
+                  "fractionalOdds": {
+                    "numerator": 63,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7678633,
+            "handicap": 0,
+            "runnerName": "San Diego Padres -2.5",
+            "sortPriority": 8,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 320,
+                "americanOddsInt": 320
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 4.2
+                },
+                "fractionalOdds": {
+                  "numerator": 32,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 350,
+                  "americanOddsInt": 350
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 4.5
+                  },
+                  "fractionalOdds": {
+                    "numerator": 35,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7678706,
+            "handicap": 0,
+            "runnerName": "San Diego Padres -1.5",
+            "sortPriority": 9,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 154,
+                "americanOddsInt": 154
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.54
+                },
+                "fractionalOdds": {
+                  "numerator": 154,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 148,
+                  "americanOddsInt": 148
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.48
+                  },
+                  "fractionalOdds": {
+                    "numerator": 148,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7678658,
+            "handicap": 0,
+            "runnerName": "San Diego Padres +1.5",
+            "sortPriority": 10,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -1000,
+                "americanOddsInt": -1000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.1
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -900,
+                  "americanOddsInt": -900
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.111111111111111
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 90
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7675611,
+            "handicap": 0,
+            "runnerName": "San Diego Padres +2.5",
+            "sortPriority": 11,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -3500,
+                "americanOddsInt": -3500
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.028571428571429
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 350
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -3000,
+                  "americanOddsInt": -3000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.033333333333333
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 300
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7675617,
+            "handicap": 0,
+            "runnerName": "San Diego Padres +3.5",
+            "sortPriority": 12,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -10000,
+                "americanOddsInt": -10000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.01
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 1000
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -8000,
+                  "americanOddsInt": -8000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.0125
+                  },
+                  "fractionalOdds": {
+                    "numerator": 10,
+                    "denominator": 800
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300478"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037751": {
+        "marketId": "726.71037751",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Money Line / Total Runs Parlay",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "MONEY_LINE_/_TOTAL_RUNS_DOUBLE",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 4,
+        "numberOfActiveRunners": 4,
+        "numberOfWinners": 1,
+        "sortPriority": 50,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 13903814,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers / Over 8.5",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 850,
+                "americanOddsInt": 850
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 9.5
+                },
+                "fractionalOdds": {
+                  "numerator": 85,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 800,
+                  "americanOddsInt": 800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 9
+                  },
+                  "fractionalOdds": {
+                    "numerator": 80,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 13903815,
+            "handicap": 0,
+            "runnerName": "Los Angeles Dodgers / Under 8.5",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 410,
+                "americanOddsInt": 410
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 5.1
+                },
+                "fractionalOdds": {
+                  "numerator": 41,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 400,
+                  "americanOddsInt": 400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 5
+                  },
+                  "fractionalOdds": {
+                    "numerator": 40,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12821680,
+            "handicap": 0,
+            "runnerName": "San Diego Padres / Over 8.5",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 650,
+                "americanOddsInt": 650
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 7.5
+                },
+                "fractionalOdds": {
+                  "numerator": 65,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 700,
+                  "americanOddsInt": 700
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 8
+                  },
+                  "fractionalOdds": {
+                    "numerator": 70,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 12821681,
+            "handicap": 0,
+            "runnerName": "San Diego Padres / Under 8.5",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -195,
+                "americanOddsInt": -195
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.512820512820513
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 195
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -190,
+                  "americanOddsInt": -190
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.526315789473684
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 190
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271093"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037730": {
+        "marketId": "726.71037730",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Record 3+ Hits",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "PLAYER_TO_RECORD_3+_HITS",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 7,
+        "numberOfActiveRunners": 7,
+        "numberOfWinners": 1,
+        "sortPriority": 74,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 39052770,
+            "handicap": 0,
+            "runnerName": "Ha-Seong Kim",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 210,
+                "americanOddsInt": 210
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.1
+                },
+                "fractionalOdds": {
+                  "numerator": 21,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 200,
+                  "americanOddsInt": 200
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3
+                  },
+                  "fractionalOdds": {
+                    "numerator": 200,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7853421,
+            "handicap": 0,
+            "runnerName": "Xander Bogaerts",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 250,
+                "americanOddsInt": 250
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.5
+                },
+                "fractionalOdds": {
+                  "numerator": 25,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 240,
+                  "americanOddsInt": 240
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.4
+                  },
+                  "fractionalOdds": {
+                    "numerator": 24,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 24429392,
+            "handicap": 0,
+            "runnerName": "Will Smith",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1200,
+                "americanOddsInt": 1200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 13
+                },
+                "fractionalOdds": {
+                  "numerator": 12,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1400,
+                  "americanOddsInt": 1400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 15
+                  },
+                  "fractionalOdds": {
+                    "numerator": 14,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 35430553,
+            "handicap": 0,
+            "runnerName": "Jake Cronenworth",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1400,
+                "americanOddsInt": 1400
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 15
+                },
+                "fractionalOdds": {
+                  "numerator": 14,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1500,
+                  "americanOddsInt": 1500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 16
+                  },
+                  "fractionalOdds": {
+                    "numerator": 15,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 32582048,
+            "handicap": 0,
+            "runnerName": "Luis Campusano",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1700,
+                "americanOddsInt": 1700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 18
+                },
+                "fractionalOdds": {
+                  "numerator": 17,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1600,
+                  "americanOddsInt": 1600
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 17
+                  },
+                  "fractionalOdds": {
+                    "numerator": 16,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47149125,
+            "handicap": 0,
+            "runnerName": "James Outman",
+            "sortPriority": 6,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2700,
+                "americanOddsInt": 2700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 28
+                },
+                "fractionalOdds": {
+                  "numerator": 27,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 2800,
+                  "americanOddsInt": 2800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 29
+                  },
+                  "fractionalOdds": {
+                    "numerator": 28,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 9935294,
+            "handicap": 0,
+            "runnerName": "Manny Machado",
+            "sortPriority": 7,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 3500,
+                "americanOddsInt": 3500
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 36
+                },
+                "fractionalOdds": {
+                  "numerator": 35,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3900,
+                  "americanOddsInt": 3900
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 40
+                  },
+                  "fractionalOdds": {
+                    "numerator": 39,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271073"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037752": {
+        "marketId": "726.71037752",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "Run Line",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "MATCH_HANDICAP_(2-WAY)",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 20,
+        "bettingType": "MOVING_HANDICAP",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 29171,
+            "handicap": 1.5,
+            "runnerName": "Los Angeles Dodgers",
+            "sortPriority": 1,
+            "result": {
+              "type": "AWAY"
+            },
+            "runnerStatus": "ACTIVE",
+            "logo": "https://assets.sportsbook.fanduel.com/images/team/mlb/los_angeles_dodgers.png",
+            "nameAbbr": "LA Dodgers",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -200,
+                "americanOddsInt": -200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.5
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 200
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -192,
+                  "americanOddsInt": -192
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.520833333333333
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 192
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 29177,
+            "handicap": -1.5,
+            "runnerName": "San Diego Padres",
+            "sortPriority": 2,
+            "result": {
+              "type": "HOME"
+            },
+            "runnerStatus": "ACTIVE",
+            "logo": "https://assets.sportsbook.fanduel.com/images/team/mlb/san_diego_padres.png",
+            "nameAbbr": "SD Padres",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 154,
+                "americanOddsInt": 154
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.54
+                },
+                "fractionalOdds": {
+                  "numerator": 154,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 148,
+                  "americanOddsInt": 148
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.48
+                  },
+                  "fractionalOdds": {
+                    "numerator": 148,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271092"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71052993": {
+        "marketId": "726.71052993",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "First Pitch Result - Bottom 8th",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "FIRST_PITCH_RESULT_-_BOTTOM_8TH",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 1815,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 49299344,
+            "handicap": 0,
+            "runnerName": "Any Other Out/Outcome",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1300,
+                "americanOddsInt": 1300
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 14
+                },
+                "fractionalOdds": {
+                  "numerator": 13,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1200,
+                  "americanOddsInt": 1200
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 13
+                  },
+                  "fractionalOdds": {
+                    "numerator": 12,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299343,
+            "handicap": 0,
+            "runnerName": "Extra Base Hit (Double/Triple/Home Run)",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 4800,
+                "americanOddsInt": 4800
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 49
+                },
+                "fractionalOdds": {
+                  "numerator": 48,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 5500,
+                  "americanOddsInt": 5500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 56
+                  },
+                  "fractionalOdds": {
+                    "numerator": 55,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47036957,
+            "handicap": 0,
+            "runnerName": "Ball/HBP",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 130,
+                "americanOddsInt": 130
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.3
+                },
+                "fractionalOdds": {
+                  "numerator": 130,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 125,
+                  "americanOddsInt": 125
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.25
+                  },
+                  "fractionalOdds": {
+                    "numerator": 125,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11434224,
+            "handicap": 0,
+            "runnerName": "Single",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 3700,
+                "americanOddsInt": 3700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 38
+                },
+                "fractionalOdds": {
+                  "numerator": 37,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3400,
+                  "americanOddsInt": 3400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 35
+                  },
+                  "fractionalOdds": {
+                    "numerator": 34,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299342,
+            "handicap": 0,
+            "runnerName": "Taken Strike/Swinging Strike/Foul",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -140,
+                "americanOddsInt": -140
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.714285714285714
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 140
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -135,
+                  "americanOddsInt": -135
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.740740740740741
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 135
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300581"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037735": {
+        "marketId": "726.71037735",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Hit A Home Run",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "TO_HIT_A_HOME_RUN",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 16,
+        "numberOfActiveRunners": 16,
+        "numberOfWinners": 1,
+        "sortPriority": 70,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 23494151,
+            "handicap": 0,
+            "runnerName": "Fernando Tatis Jr.",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1000,
+                "americanOddsInt": 1000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 11
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1100,
+                  "americanOddsInt": 1100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 12
+                  },
+                  "fractionalOdds": {
+                    "numerator": 11,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 24429392,
+            "handicap": 0,
+            "runnerName": "Will Smith",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1000,
+                "americanOddsInt": 1000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 11
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1100,
+                  "americanOddsInt": 1100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 12
+                  },
+                  "fractionalOdds": {
+                    "numerator": 11,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 19063462,
+            "handicap": 0,
+            "runnerName": "Juan Soto",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1500,
+                "americanOddsInt": 1500
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 16
+                },
+                "fractionalOdds": {
+                  "numerator": 15,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1300,
+                  "americanOddsInt": 1300
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 14
+                  },
+                  "fractionalOdds": {
+                    "numerator": 13,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 26053645,
+            "handicap": 0,
+            "runnerName": "Trent Grisham",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1700,
+                "americanOddsInt": 1700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 18
+                },
+                "fractionalOdds": {
+                  "numerator": 17,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1600,
+                  "americanOddsInt": 1600
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 17
+                  },
+                  "fractionalOdds": {
+                    "numerator": 16,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 9935294,
+            "handicap": 0,
+            "runnerName": "Manny Machado",
+            "sortPriority": 6,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1400,
+                "americanOddsInt": 1400
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 15
+                },
+                "fractionalOdds": {
+                  "numerator": 14,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1500,
+                  "americanOddsInt": 1500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 16
+                  },
+                  "fractionalOdds": {
+                    "numerator": 15,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11604597,
+            "handicap": 0,
+            "runnerName": "Ji-Man Choi",
+            "sortPriority": 7,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1600,
+                "americanOddsInt": 1600
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 17
+                },
+                "fractionalOdds": {
+                  "numerator": 16,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1700,
+                  "americanOddsInt": 1700
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 18
+                  },
+                  "fractionalOdds": {
+                    "numerator": 17,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 35430553,
+            "handicap": 0,
+            "runnerName": "Jake Cronenworth",
+            "sortPriority": 8,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1600,
+                "americanOddsInt": 1600
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 17
+                },
+                "fractionalOdds": {
+                  "numerator": 16,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1800,
+                  "americanOddsInt": 1800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 19
+                  },
+                  "fractionalOdds": {
+                    "numerator": 18,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 14311749,
+            "handicap": 0,
+            "runnerName": "Chris Taylor",
+            "sortPriority": 9,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1400,
+                "americanOddsInt": 1400
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 15
+                },
+                "fractionalOdds": {
+                  "numerator": 14,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1500,
+                  "americanOddsInt": 1500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 16
+                  },
+                  "fractionalOdds": {
+                    "numerator": 15,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11285780,
+            "handicap": 0,
+            "runnerName": "Enrique Hernandez",
+            "sortPriority": 10,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1700,
+                "americanOddsInt": 1700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 18
+                },
+                "fractionalOdds": {
+                  "numerator": 17,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1900,
+                  "americanOddsInt": 1900
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 20
+                  },
+                  "fractionalOdds": {
+                    "numerator": 19,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11284342,
+            "handicap": 0,
+            "runnerName": "Jason Heyward",
+            "sortPriority": 11,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1900,
+                "americanOddsInt": 1900
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 20
+                },
+                "fractionalOdds": {
+                  "numerator": 19,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1700,
+                  "americanOddsInt": 1700
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 18
+                  },
+                  "fractionalOdds": {
+                    "numerator": 17,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 32582048,
+            "handicap": 0,
+            "runnerName": "Luis Campusano",
+            "sortPriority": 12,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2200,
+                "americanOddsInt": 2200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 23
+                },
+                "fractionalOdds": {
+                  "numerator": 22,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 2100,
+                  "americanOddsInt": 2100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 22
+                  },
+                  "fractionalOdds": {
+                    "numerator": 21,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11285770,
+            "handicap": 0,
+            "runnerName": "David Peralta",
+            "sortPriority": 13,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1700,
+                "americanOddsInt": 1700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 18
+                },
+                "fractionalOdds": {
+                  "numerator": 17,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1900,
+                  "americanOddsInt": 1900
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 20
+                  },
+                  "fractionalOdds": {
+                    "numerator": 19,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 39052770,
+            "handicap": 0,
+            "runnerName": "Ha-Seong Kim",
+            "sortPriority": 14,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2200,
+                "americanOddsInt": 2200
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 23
+                },
+                "fractionalOdds": {
+                  "numerator": 22,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 2300,
+                  "americanOddsInt": 2300
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 24
+                  },
+                  "fractionalOdds": {
+                    "numerator": 23,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 14384440,
+            "handicap": 0,
+            "runnerName": "Amed Rosario",
+            "sortPriority": 15,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2700,
+                "americanOddsInt": 2700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 28
+                },
+                "fractionalOdds": {
+                  "numerator": 27,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 2500,
+                  "americanOddsInt": 2500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 26
+                  },
+                  "fractionalOdds": {
+                    "numerator": 25,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7853421,
+            "handicap": 0,
+            "runnerName": "Xander Bogaerts",
+            "sortPriority": 16,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2600,
+                "americanOddsInt": 2600
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 27
+                },
+                "fractionalOdds": {
+                  "numerator": 26,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3000,
+                  "americanOddsInt": 3000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 31
+                  },
+                  "fractionalOdds": {
+                    "numerator": 30,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271070"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053086": {
+        "marketId": "726.71053086",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "First Pitch Result - Top 7th",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "FIRST_PITCH_RESULT_-_TOP_7TH",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 1812,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 49299342,
+            "handicap": 0,
+            "runnerName": "Taken Strike/Swinging Strike/Foul",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -160,
+                "americanOddsInt": -160
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.625
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 160
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -165,
+                  "americanOddsInt": -165
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.606060606060606
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 165
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47036957,
+            "handicap": 0,
+            "runnerName": "Ball/HBP",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 170,
+                "americanOddsInt": 170
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.7
+                },
+                "fractionalOdds": {
+                  "numerator": 170,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 175,
+                  "americanOddsInt": 175
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.75
+                  },
+                  "fractionalOdds": {
+                    "numerator": 175,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11434224,
+            "handicap": 0,
+            "runnerName": "Single",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 3600,
+                "americanOddsInt": 3600
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 37
+                },
+                "fractionalOdds": {
+                  "numerator": 36,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 3400,
+                  "americanOddsInt": 3400
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 35
+                  },
+                  "fractionalOdds": {
+                    "numerator": 34,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299344,
+            "handicap": 0,
+            "runnerName": "Any Other Out/Outcome",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1000,
+                "americanOddsInt": 1000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 11
+                },
+                "fractionalOdds": {
+                  "numerator": 10,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1100,
+                  "americanOddsInt": 1100
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 12
+                  },
+                  "fractionalOdds": {
+                    "numerator": 11,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299343,
+            "handicap": 0,
+            "runnerName": "Extra Base Hit (Double/Triple/Home Run)",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 5000,
+                "americanOddsInt": 5000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 51
+                },
+                "fractionalOdds": {
+                  "numerator": 50,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 6000,
+                  "americanOddsInt": 6000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 61
+                  },
+                  "fractionalOdds": {
+                    "numerator": 60,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300578"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037733": {
+        "marketId": "726.71037733",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Record 2+ Hits",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "PLAYER_TO_RECORD_2+_HITS",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 73,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 35430553,
+            "handicap": 0,
+            "runnerName": "Jake Cronenworth",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 140,
+                "americanOddsInt": 140
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.4
+                },
+                "fractionalOdds": {
+                  "numerator": 140,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 145,
+                  "americanOddsInt": 145
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.45
+                  },
+                  "fractionalOdds": {
+                    "numerator": 145,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 24429392,
+            "handicap": 0,
+            "runnerName": "Will Smith",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 130,
+                "americanOddsInt": 130
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.3
+                },
+                "fractionalOdds": {
+                  "numerator": 130,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 135,
+                  "americanOddsInt": 135
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.35
+                  },
+                  "fractionalOdds": {
+                    "numerator": 135,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 32582048,
+            "handicap": 0,
+            "runnerName": "Luis Campusano",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 160,
+                "americanOddsInt": 160
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.6
+                },
+                "fractionalOdds": {
+                  "numerator": 160,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 150,
+                  "americanOddsInt": 150
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.5
+                  },
+                  "fractionalOdds": {
+                    "numerator": 150,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 9935294,
+            "handicap": 0,
+            "runnerName": "Manny Machado",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 210,
+                "americanOddsInt": 210
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.1
+                },
+                "fractionalOdds": {
+                  "numerator": 21,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 220,
+                  "americanOddsInt": 220
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 22,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 47149125,
+            "handicap": 0,
+            "runnerName": "James Outman",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 250,
+                "americanOddsInt": 250
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 3.5
+                },
+                "fractionalOdds": {
+                  "numerator": 25,
+                  "denominator": 10
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 240,
+                  "americanOddsInt": 240
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 3.4
+                  },
+                  "fractionalOdds": {
+                    "numerator": 24,
+                    "denominator": 10
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271072"
+          }
+        ],
+        "hasCashout": true,
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71053033": {
+        "marketId": "726.71053033",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "First Pitch Result - Bottom 7th",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "FIRST_PITCH_RESULT_-_BOTTOM_7TH",
+        "bspMarket": false,
+        "sgmMarket": false,
+        "inPlay": true,
+        "numberOfRunners": 5,
+        "numberOfActiveRunners": 5,
+        "numberOfWinners": 1,
+        "sortPriority": 1813,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 47036957,
+            "handicap": 0,
+            "runnerName": "Ball/HBP",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 125,
+                "americanOddsInt": 125
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 2.25
+                },
+                "fractionalOdds": {
+                  "numerator": 125,
+                  "denominator": 100
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 120,
+                  "americanOddsInt": 120
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 2.2
+                  },
+                  "fractionalOdds": {
+                    "numerator": 120,
+                    "denominator": 100
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 11434224,
+            "handicap": 0,
+            "runnerName": "Single",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 4000,
+                "americanOddsInt": 4000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 41
+                },
+                "fractionalOdds": {
+                  "numerator": 40,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 4500,
+                  "americanOddsInt": 4500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 46
+                  },
+                  "fractionalOdds": {
+                    "numerator": 45,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299343,
+            "handicap": 0,
+            "runnerName": "Extra Base Hit (Double/Triple/Home Run)",
+            "sortPriority": 3,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 6000,
+                "americanOddsInt": 6000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 61
+                },
+                "fractionalOdds": {
+                  "numerator": 60,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 5000,
+                  "americanOddsInt": 5000
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 51
+                  },
+                  "fractionalOdds": {
+                    "numerator": 50,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299344,
+            "handicap": 0,
+            "runnerName": "Any Other Out/Outcome",
+            "sortPriority": 4,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 1300,
+                "americanOddsInt": 1300
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 14
+                },
+                "fractionalOdds": {
+                  "numerator": 13,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 1500,
+                  "americanOddsInt": 1500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 16
+                  },
+                  "fractionalOdds": {
+                    "numerator": 15,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 49299342,
+            "handicap": 0,
+            "runnerName": "Taken Strike/Swinging Strike/Foul",
+            "sortPriority": 5,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": -135,
+                "americanOddsInt": -135
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 1.740740740740741
+                },
+                "fractionalOdds": {
+                  "numerator": 100,
+                  "denominator": 135
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": -140,
+                  "americanOddsInt": -140
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 1.714285714285714
+                  },
+                  "fractionalOdds": {
+                    "numerator": 100,
+                    "denominator": 140
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391300579"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      },
+      "726.71037734": {
+        "marketId": "726.71037734",
+        "eventTypeId": 7511,
+        "competitionId": 11196870,
+        "eventId": 32530968,
+        "marketName": "To Record 4+ Hits",
+        "marketTime": "2023-08-05T01:41:00.000Z",
+        "marketType": "PLAYER_TO_RECORD_4+_HITS",
+        "bspMarket": false,
+        "sgmMarket": true,
+        "inPlay": true,
+        "numberOfRunners": 2,
+        "numberOfActiveRunners": 2,
+        "numberOfWinners": 1,
+        "sortPriority": 75,
+        "bettingType": "ODDS",
+        "marketStatus": "OPEN",
+        "runners": [
+          {
+            "selectionId": 39052770,
+            "handicap": 0,
+            "runnerName": "Ha-Seong Kim",
+            "sortPriority": 1,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 2700,
+                "americanOddsInt": 2700
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 28
+                },
+                "fractionalOdds": {
+                  "numerator": 27,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 2800,
+                  "americanOddsInt": 2800
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 29
+                  },
+                  "fractionalOdds": {
+                    "numerator": 28,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "selectionId": 7853421,
+            "handicap": 0,
+            "runnerName": "Xander Bogaerts",
+            "sortPriority": 2,
+            "result": {},
+            "runnerStatus": "ACTIVE",
+            "winRunnerOdds": {
+              "americanDisplayOdds": {
+                "americanOdds": 5000,
+                "americanOddsInt": 5000
+              },
+              "trueOdds": {
+                "decimalOdds": {
+                  "decimalOdds": 51
+                },
+                "fractionalOdds": {
+                  "numerator": 50,
+                  "denominator": 1
+                }
+              }
+            },
+            "previousWinRunnerOdds": [
+              {
+                "americanDisplayOdds": {
+                  "americanOdds": 5500,
+                  "americanOddsInt": 5500
+                },
+                "trueOdds": {
+                  "decimalOdds": {
+                    "decimalOdds": 56
+                  },
+                  "fractionalOdds": {
+                    "numerator": 55,
+                    "denominator": 1
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "canTurnInPlay": true,
+        "associatedMarkets": [
+          {
+            "eventId": 32530968,
+            "eventTypeId": 7511,
+            "externalMarketId": "42.391271074"
+          }
+        ],
+        "eachwayAvailable": false,
+        "legTypes": [
+          "SIMPLE_SELECTION"
+        ]
+      }
+    }
+  }
+}
