@@ -41,4 +41,7 @@ class EventMatcher:
             )
             # first one is just the message sent back.
             self.ws.recv()
-            return self._parse_results(self.ws.recv())
+            res = self._parse_results(self.ws.recv())
+            if res is None:
+                return
+            return unified_events[res]
