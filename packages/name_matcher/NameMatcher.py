@@ -7,7 +7,7 @@ import websocket
 from ..data.Event import Event
 
 
-class EventMatcher:
+class NameMatcher:
     def __init__(self, session_id, conversation):
         self.lock = Lock()
         self.ws = websocket.WebSocket()
@@ -32,16 +32,12 @@ class EventMatcher:
             return
         return int(j["text"])
 
-    def match(self, sb_event: Event, unified_events: List[Event]):
+    def match(self, to_be_matched, potential_matches):
         with self.lock:
-            self.ws.send(
-                self._format_message(
-                    sb_event.name, [e.name for e in unified_events]
-                )
-            )
+            self.ws.send(self._format_message(to_be_matched, potential_matches))
             # first one is just the message sent back.
             self.ws.recv()
             res = self._parse_results(self.ws.recv())
             if res is None:
                 return
-            return unified_events[res]
+            return res

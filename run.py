@@ -3,7 +3,7 @@ import json
 from packages.core.Aggregator import Aggregator
 from packages.core.Translater import Translater
 from packages.db.DB import DB
-from packages.event_matcher.EventMatcher import EventMatcher
+from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.MockSB import MockSB
 
 with open("secrets.json", "r") as f:
@@ -11,7 +11,7 @@ with open("secrets.json", "r") as f:
 
 Aggregator(
     [MockSB()],
-    DB(),
+    DB(secrets["db-name"]),
     Translater(),
-    EventMatcher(secrets["umgpt-session-id"], secrets["umgpt-conversation"]),
+    NameMatcher(secrets["umgpt-session-id"], secrets["umgpt-conversation"]),
 )

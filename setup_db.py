@@ -14,7 +14,8 @@ cur.executescript("""
         id INTEGER PRIMARY KEY,
         name TEXT NOT NULL,
         date INTEGER NOT NULL,
-        sport TEXT NOT NULL
+        sport TEXT NOT NULL,
+        UNIQUE (name, date, sport)
     );
 
     CREATE TABLE IF NOT EXISTS sb_events (
@@ -23,7 +24,7 @@ cur.executescript("""
         name TEXT NOT NULL,
         event_id INTEGER NOT NULL,
         PRIMARY KEY (id, sb),
-        FOREIGN KEY (event_id) REFERENCES events (id)
+        FOREIGN KEY (event_id) REFERENCES events (id),
     );
 
     CREATE TABLE IF NOT EXISTS markets (
@@ -34,15 +35,8 @@ cur.executescript("""
         participant TEXT,
         line REAL,
         event_id INTEGER NOT NULL,
-        FOREIGN KEY (event_id) REFERENCES events (id)
-    );
-
-    CREATE TABLE IF NOT EXISTS sb_markets (
-        id TEXT NOT NULL,
-        sb TEXT NOT NULL,
-        market_id INTEGER NOT NULL,
-        PRIMARY KEY (id, sb),
-        FOREIGN KEY (market_id) REFERENCES markets (id)
+        FOREIGN KEY (event_id) REFERENCES events (id),
+        UNIQUE (event_id, name, kind, period, participant, line)
     );
 
     CREATE TABLE IF NOT EXISTS selections (
