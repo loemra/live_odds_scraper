@@ -1,25 +1,20 @@
-from threading import Lock, Thread
+from threading import Thread
 
 
 class Aggregator:
-    def __init__(self, sbs, db, translater, event_matcher):
+    def __init__(self, sbs, db, name_matcher):
         self.db = db
-        self.translater = translater
-        self.event_matcher = event_matcher
-        self.lock = Lock()
+        self.name_matcher = name_matcher
 
         for sb in sbs:
             Thread(target=self.handleSBEvent, args=(sb,)).start()
 
     def handleSBEvent(self, sb):
-        for event, yieldOdds in sb.yieldEvents():
-            with self.lock:
-                ids = self.db.matchOrRegisterEvent(event, self.event_matcher)
-                self.translater.add_ids(*ids)
+        for event, yieldOddsUpdates in sb.yieldEvents():
+            self.db.match_or_make_event(event, sb.name, self.name_matcher)
 
-            Thread(target=self.handleOdds, args=(yieldOdds,)).start()
+            Thread(target=self.handleOdds, args=(yieldOddsUpdates,)).start()
 
-    def handleOdds(self, yieldOdds):
-        for odds in yieldOdds():
-            with self.lock:
-                print(odds)
+    def handleOdds(self, yieldOddsUpdates):
+        for update in yieldOddsUpdates():
+            self.db.update_odds(update)

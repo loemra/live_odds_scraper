@@ -2,8 +2,10 @@ import time
 from datetime import datetime
 from functools import partial
 
-from ..data.Event import Event
-from ..data.Sport import Sport
+from packages.data.Event import Event
+from packages.data.League import League
+from packages.data.OddsUpdate import OddsUpdate
+from packages.data.Sport import Sport
 
 
 class MockSB:
@@ -14,11 +16,17 @@ class MockSB:
         for i in range(10):
             time.sleep(1)
             yield (
-                Event(i + 1, f"Event {i+1}", datetime.now(), Sport.SOCCER),
-                partial(self.yieldOdds, f"Event {i+1}"),
+                Event(
+                    i + 1,
+                    f"Event {i+1}",
+                    datetime.now(),
+                    Sport.SOCCER,
+                    League.PREMIER,
+                ),
+                partial(self.yieldOddsUpdates, f"Event {i+1}"),
             )
 
-    def yieldOdds(self, eventID):
+    def yieldOddsUpdates(self, eventID):
         for i in range(10):
             time.sleep(1)
-            yield f"Odds {i} for {eventID} from {self.name}"
+            yield OddsUpdate(i + 1, self.name, 1.7, datetime.now())

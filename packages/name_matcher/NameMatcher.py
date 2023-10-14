@@ -1,14 +1,13 @@
 import json
 from threading import Lock
-from typing import List
 
 import websocket
 
-from ..data.Event import Event
+from packages.data.Match import Match
 
 
 class NameMatcher:
-    def __init__(self, session_id, conversation):
+    def __init__(self, session_id, conversation, db):
         self.lock = Lock()
         self.ws = websocket.WebSocket()
         self.ws.connect(
@@ -16,6 +15,7 @@ class NameMatcher:
             cookie=f"sessionid={session_id}",
         )
         self.conversation = conversation
+        self.db = db
 
     def _format_message(self, a, b):
         b = '["' + '", "'.join(b) + '"]'
@@ -38,6 +38,12 @@ class NameMatcher:
             # first one is just the message sent back.
             self.ws.recv()
             res = self._parse_results(self.ws.recv())
-            if res is None:
-                return
+
+            matches = []
+            for i, pm in enumerate(potential_matches):
+                matches.append(
+                    Match(to_be_matched, pm, res is not None and i == res)
+                )
+            self.db.record_match(matches)
+
             return res

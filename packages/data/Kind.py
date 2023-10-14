@@ -1,5 +1,6 @@
-from enum import Enum
+from enum import StrEnum, auto
 
 
-class Kind(Enum):
-    H2H = "head_2_head"
+class Kind(StrEnum):
+    H2H = auto()
+    OVER_UNDER = auto()

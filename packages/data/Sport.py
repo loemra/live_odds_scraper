@@ -1,5 +1,6 @@
-from enum import Enum
+from enum import StrEnum, auto
 
 
-class Sport(Enum):
-    SOCCER = "soccer"
+class Sport(StrEnum):
+    SOCCER = auto()
+    BASEBALL = auto()

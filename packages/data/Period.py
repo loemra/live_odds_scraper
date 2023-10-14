@@ -1,5 +1,5 @@
-from enum import Enum
+from enum import StrEnum, auto
 
 
-class Period(Enum):
-    FIRST_HALF = "first_half"
+class Period(StrEnum):
+    FIRST_HALF = auto()

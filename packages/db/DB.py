@@ -4,10 +4,8 @@ from datetime import timedelta
 from threading import Lock
 from typing import List
 
-from packages.data.EventRegistration import EventRegistration
 from packages.data.Market import Market
 from packages.data.Selection import Selection
-from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.MockSB import Event
 
 
@@ -16,9 +14,7 @@ class DB:
         self.con = sqlite3.connect(name)
         self.lock = Lock()
 
-    def match_or_make_event(
-        self, sb_event, sb, name_matcher: NameMatcher
-    ) -> EventRegistration:
+    def match_or_make_event(self, sb_event, sb, name_matcher):
         with self.lock:
             relevant_events = self._get_relevant_events(sb_event)
             unified_event_index = name_matcher.match(
@@ -31,30 +27,25 @@ class DB:
             else:
                 unified_event = relevant_events[unified_event_index]
 
-            self._make_sb_event(sb_event, sb, unified_event)
-
-            er = EventRegistration(sb_event.id, unified_event.id)
+            self._make_sb_event(unified_event.id, sb, sb_event)
 
             self._match_or_make_markets(
-                unified_event.id, sb_event.markets, sb, name_matcher, er
+                unified_event.id, sb_event.markets, sb, name_matcher
             )
-
-        return er
 
     def _get_relevant_events(
         self, event: Event, relevant_date_delta=timedelta(minutes=30)
     ) -> List[Event]:
         lower_bound_date = (event.date - relevant_date_delta).timestamp()
         upper_bound_date = (event.date + relevant_date_delta).timestamp()
-        sport = str(event.sport)
 
         cur = self.con.cursor()
         res = cur.execute(
             """
-        SELECT * FROM events e 
-        WHERE e.date >= ? AND e.date <= ? AND sport = ?
+        SELECT * FROM events
+        WHERE date >= ? AND date <= ? AND sport = ? AND league = ?
                     """,
-            (lower_bound_date, upper_bound_date, sport),
+            (lower_bound_date, upper_bound_date, event.sport, event.league),
         )
 
         relevant_events = []
@@ -70,18 +61,19 @@ class DB:
             cur.execute(
                 """
                 INSERT INTO events VALUES
-                    (NULL, ?, ?, ?)
+                    (NULL, ?, ?, ?, ?)
             """,
                 (
                     sb_event.name,
                     sb_event.date.timestamp(),
                     sb_event.sport,
+                    sb_event.league,
                 ),
             )
             unified_event_id = cur.lastrowid
 
         if unified_event_id is None:
-            raise Exception("Unable to make unified event.")
+            raise Exception(f"Unable to make event. {sb_event}")
         unified_event = dataclasses.replace(sb_event, id=unified_event_id)
 
         return unified_event
@@ -102,8 +94,7 @@ class DB:
         unified_event_id,
         sb_markets,
         sb,
-        name_matcher: NameMatcher,
-        er: EventRegistration,
+        name_matcher,
     ):
         for sb_market in sb_markets:
             relevant_markets = self._get_relevant_markets(
@@ -120,7 +111,7 @@ class DB:
                 market = relevant_markets[matched_market_index]
 
             self._match_or_make_selections(
-                market.id, sb_market.selection, sb, name_matcher, er
+                market.id, sb_market.selection, sb, name_matcher
             )
 
     def _get_relevant_markets(
@@ -131,8 +122,8 @@ class DB:
             """
             SELECT id, name, kind, period, participant, line
             FROM markets
-            WHERE name = ? AND kind = ? AND period = ?
-            AND line = ? AND event_id = ?
+            WHERE name = ? AND kind = ? AND period IS ?
+            AND line IS ? AND event_id = ?
         """,
             (
                 market.name,
@@ -181,10 +172,9 @@ class DB:
     def _match_or_make_selections(
         self,
         market_id,
-        sb_selections: List[Selection],
+        sb_selections,
         sb,
-        name_matcher: NameMatcher,
-        er: EventRegistration,
+        name_matcher,
     ):
         for sb_selection in sb_selections:
             relevant_selections = self._get_relevant_selections(market_id)
@@ -200,9 +190,6 @@ class DB:
 
             self._make_sb_selection(selection.id, sb_selection, sb)
 
-            er.sb_to_unified_selection[sb_selection.id] = selection.id
-            er.unified_to_sb_selection[selection.id] = sb_selection.id
-
     def _get_relevant_selections(self, market_id) -> List[Selection]:
         cur = self.con.cursor()
         res = cur.execute(
@@ -211,12 +198,12 @@ class DB:
             FROM selections
             WHERE market_id = ?
         """,
-            (market_id),
+            (market_id,),
         )
 
         relevant_selections = []
         for i in res:
-            relevant_selections.append(*i)
+            relevant_selections.append(Selection(*i))
 
         return relevant_selections
 
@@ -252,4 +239,44 @@ class DB:
         if cur.lastrowid is None:
             raise Exception(
                 f"Unable to make sb_selection. {selection_id}\n{sb_selection}"
+            )
+
+    def update_odds(self, update):
+        with self.lock:
+            with self.con:
+                cur = self.con.cursor()
+                cur.execute(
+                    """
+                    UPDATE sb_selections 
+                    SET odds = ?
+                    WHERE id = ? AND sb = ?
+                """,
+                    (update.odds, update.id, update.sb),
+                )
+
+                cur.execute(
+                    """
+                    INSERT INTO odds_history VALUES
+                        (?, ?, ?, ?)
+                """,
+                    (
+                        update.id,
+                        update.sb,
+                        update.odds,
+                        update.time.timestamp(),
+                    ),
+                )
+
+    def record_match(self, matches):
+        with self.con:
+            cur = self.con.cursor()
+            cur.executemany(
+                """
+                INSERT INTO matches VALUES
+                    (?, ?, ?)
+            """,
+                [
+                    (match.match, match.potential, match.result)
+                    for match in matches
+                ],
             )

@@ -6,6 +6,6 @@ from packages.data.Odds import Odds
 
 @dataclass
 class Selection:
-    id: int
+    id: Hashable
     name: str
     odds: Mapping[Hashable, Odds] = field(default_factory=dict)
