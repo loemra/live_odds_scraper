@@ -15,6 +15,8 @@ from packages.db.DB import DB
 from packages.db.MockDB import MockDB
 from packages.name_matcher.MockMatcher import MockMatcher
 from packages.name_matcher.NameMatcher import NameMatcher
+from packages.sbs.betmgm.Betmgm import Betmgm
+from packages.sbs.fanduel.Fanduel import Fanduel
 
 with open("secrets.json", "r") as f:
     secrets = json.load(f)
@@ -98,9 +100,24 @@ def test_db():
     db.match_or_make_event(e2, "bovada", mm)
 
 
+def test_mgm():
+    sb = Betmgm()
+
+    for event, yield_odds_updates in sb.yield_events():
+        print(event)
+
+
+def test_fanduel():
+    print("testing fanduel...")
+    sb = Fanduel()
+
+    for event, _ in sb.yield_events():
+        print(event)
+
+
 if __name__ == "__main__":
     if len(sys.argv) == 1:
-        tests = [test_name_matcher, test_db]
+        tests = [test_name_matcher, test_db, test_fanduel]
     else:
         tests = [eval(arg) for arg in sys.argv[1:]]
 

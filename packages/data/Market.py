@@ -18,6 +18,6 @@ class Market:
     selection: List[Selection] = field(default_factory=list)
 
     @staticmethod
-    def fromdb(id, name, kind, period, participant, line):
+    def fromstr(id, name, kind, period, participant, line):
         p = None if period is None else Period(period)
         return Market(id, MarketName(name), Kind(kind), p, participant, line)

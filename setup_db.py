@@ -10,17 +10,18 @@ if __name__ == "__main__":
         con = sqlite3.connect(secrets["db-name"])
     else:
         con = sqlite3.connect(secrets[sys.argv[1]])
-        con.executescript("""
-            BEGIN;
-            DROP TABLE events;
-            DROP TABLE sb_events;
-            DROP TABLE markets;
-            DROP TABLE selections;
-            DROP TABLE sb_selections;
-            DROP TABLE odds_history;
-            DROP TABLE matches;
-            COMMIT;
-        """)
+
+    con.executescript("""
+        BEGIN;
+        DROP TABLE events;
+        DROP TABLE sb_events;
+        DROP TABLE markets;
+        DROP TABLE selections;
+        DROP TABLE sb_selections;
+        DROP TABLE odds_history;
+        DROP TABLE matches;
+        COMMIT;
+    """)
 
     con.executescript("""
         BEGIN;

@@ -10,9 +10,9 @@ from packages.data.Sport import Sport
 
 class MockSB:
     def __init__(self):
-        self.name = "Mock"
+        self.name = "mock"
 
-    def yieldEvents(self):
+    def yield_events(self):
         for i in range(10):
             time.sleep(1)
             yield (
@@ -23,10 +23,10 @@ class MockSB:
                     Sport.SOCCER,
                     League.PREMIER,
                 ),
-                partial(self.yieldOddsUpdates, f"Event {i+1}"),
+                partial(self.yield_odds_updates, f"Event {i+1}"),
             )
 
-    def yieldOddsUpdates(self, eventID):
+    def yield_odds_updates(self, eventID):
         for i in range(10):
             time.sleep(1)
             yield OddsUpdate(i + 1, self.name, 1.7, datetime.now())

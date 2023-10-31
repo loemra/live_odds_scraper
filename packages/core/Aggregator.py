@@ -10,11 +10,10 @@ class Aggregator:
             Thread(target=self.handleSBEvent, args=(sb,)).start()
 
     def handleSBEvent(self, sb):
-        for event, yieldOddsUpdates in sb.yieldEvents():
+        for event, yieldOddsUpdates in sb.yield_events():
             self.db.match_or_make_event(event, sb.name, self.name_matcher)
 
             Thread(target=self.handleOdds, args=(yieldOddsUpdates,)).start()
 
     def handleOdds(self, yieldOddsUpdates):
-        for update in yieldOddsUpdates():
-            self.db.update_odds(update)
+        pass

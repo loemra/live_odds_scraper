@@ -2,6 +2,7 @@ import json
 from threading import Lock
 
 import websocket
+from ratelimit import limits, sleep_and_retry
 
 from packages.data.Match import Match
 
@@ -24,7 +25,7 @@ class NameMatcher:
             "text": f'"{a}" {b}',
             "role": "user",
         }
-        return json.dumps(j)
+        return json.dumps(j).encode()
 
     def _parse_results(self, r):
         j = json.loads(r)
@@ -32,12 +33,18 @@ class NameMatcher:
             return
         return int(j["text"])
 
+    @sleep_and_retry
+    @limits(calls=1, period=1)
     def match(self, to_be_matched, potential_matches):
         with self.lock:
+            if len(potential_matches) == 0:
+                return None
             self.ws.send(self._format_message(to_be_matched, potential_matches))
             # first one is just the message sent back.
             self.ws.recv()
             res = self._parse_results(self.ws.recv())
+
+            print(f"{to_be_matched} matched @ {res} for {potential_matches}")
 
             matches = []
             for i, pm in enumerate(potential_matches):

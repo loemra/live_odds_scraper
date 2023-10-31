@@ -11,7 +11,7 @@ from packages.sbs.MockSB import Event
 
 class DB:
     def __init__(self, name):
-        self.con = sqlite3.connect(name)
+        self.con = sqlite3.connect(name, check_same_thread=False)
         self.lock = Lock()
 
     def match_or_make_event(self, sb_event, sb, name_matcher):
@@ -100,9 +100,18 @@ class DB:
             relevant_markets = self._get_relevant_markets(
                 unified_event_id, sb_market
             )
-            matched_market_index = name_matcher.match(
-                sb_market.participant, [m.participant for m in relevant_markets]
-            )
+            if sb_market.participant is None:
+                try:
+                    matched_market_index = [
+                        rm.participant for rm in relevant_markets
+                    ].index(None)
+                except:
+                    matched_market_index = None
+            else:
+                matched_market_index = name_matcher.match(
+                    sb_market.participant,
+                    [m.participant for m in relevant_markets],
+                )
 
             # no match.
             if matched_market_index is None:
@@ -136,11 +145,11 @@ class DB:
 
         relevant_markets = []
         for i in res:
-            potential_market = Market.fromdb(*i)
+            potential_market = Market.fromstr(*i)
             if (market.participant is None) == (
                 potential_market.participant is None
             ):
-                relevant_markets.append(Market.fromdb(*i))
+                relevant_markets.append(Market.fromstr(*i))
 
         return relevant_markets
 
@@ -274,6 +283,7 @@ class DB:
                 """
                 INSERT INTO matches VALUES
                     (?, ?, ?)
+                    ON CONFLICT DO NOTHING
             """,
                 [
                     (match.match, match.potential, match.result)
