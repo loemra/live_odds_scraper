@@ -19,6 +19,7 @@ from packages.name_matcher.MockMatcher import MockMatcher
 from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.betmgm.Betmgm import Betmgm
 from packages.sbs.betrivers.Betrivers import Betrivers
+from packages.sbs.draftkings.DraftKings import DraftKings
 from packages.sbs.fanduel.Fanduel import Fanduel
 from packages.util.logs import setup_root_logging, setup_seleniumwire_logging
 
@@ -128,6 +129,13 @@ def test_fanduel():
 
 def test_betrivers():
     sb = Betrivers()
+
+    for event, yield_odds_updates in sb.yield_events():
+        print(event)
+
+
+def test_draftkings():
+    sb = DraftKings()
 
     for event, yield_odds_updates in sb.yield_events():
         print(event)

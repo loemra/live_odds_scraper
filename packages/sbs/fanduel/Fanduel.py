@@ -17,13 +17,14 @@ class Fanduel:
         buffer = queue.Queue()
         for handler in self.handlers:
             Thread(
-                target=Fanduel._event_producer, args=(buffer, handler)
+                target=Fanduel._event_producer,
+                args=(buffer, handler),
             ).start()
 
         while True:
             event = buffer.get()
-            if event == "DONE":
-                return
+            if event is None:
+                break
             yield (
                 event,
                 partial(self.yield_odd_updates, event.id),
@@ -33,7 +34,7 @@ class Fanduel:
     def _event_producer(buffer, handler):
         for event in handler.yield_events():
             buffer.put(event)
-        buffer.put("DONE")
+        buffer.put(None)
 
     def yield_odd_updates(self, eventID):
         pass

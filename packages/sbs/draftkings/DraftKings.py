@@ -2,19 +2,19 @@ import queue
 from functools import partial
 from threading import Thread
 
-from packages.sbs.betrivers.handlers.NFL import NFL
+from packages.sbs.draftkings.handlers.NFL import NFL
 
 
-class Betrivers:
+class DraftKings:
     def __init__(self):
-        self.name = "betrivers"
+        self.name = "draftkings"
         self.handlers = [NFL()]
 
     def yield_events(self):
         buffer = queue.Queue()
         for handler in self.handlers:
             Thread(
-                target=Betrivers._event_producer, args=(buffer, handler)
+                target=DraftKings._event_producer, args=(buffer, handler)
             ).start()
 
         while True:
