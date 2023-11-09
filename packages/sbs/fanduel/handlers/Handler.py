@@ -1,3 +1,4 @@
+import functools
 import json
 import re
 from datetime import datetime
@@ -7,17 +8,17 @@ from time import sleep
 
 import seleniumwire.undetected_chromedriver as uc
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 
 from packages.data.Event import Event
 from packages.data.League import League
 from packages.data.Selection import Selection
 from packages.data.Sport import Sport
-
-# from selenium.webdriver.chrome.service import Service as ChromeService
-# from webdriver_manager.chrome import ChromeDriverManager
+from packages.util.logs import setup_logging
 
 
-class FanDuelScraper:
+class Handler:
     def __init__(
         self, events_url, market_url, tabs, sport: Sport, league: League
     ):
@@ -31,7 +32,6 @@ class FanDuelScraper:
         options.add_argument("--ignore-ssl-errors=yes")
         options.add_argument("--ignore-certificate-errors")
         self.driver = uc.Chrome(
-            # service=ChromeService(ChromeDriverManager().install()),
             options=options,
             seleniumwire_options={
                 "disable_encoding": True,
@@ -41,6 +41,8 @@ class FanDuelScraper:
 
         self.grabbed_events = ThreadingEvent()
         self.grabbed_markets = ThreadingEvent()
+
+        self.logger = setup_logging(__name__)
 
     def __enter__(self):
         return self
@@ -68,12 +70,22 @@ class FanDuelScraper:
             self.grabbed_events.set()
             sleep(0.0001)
 
-    def _market_interceptor(self, request, response):
-        if re.match(
-            "https://sbapi.mi.sportsbook.fanduel.com/api/event-page",
-            request.url,
+    def _market_interceptor(self, tab, request, response):
+        if self.grabbed_markets.is_set():
+            return
+
+        if (
+            re.match(
+                "https://sbapi.mi.sportsbook.fanduel.com/api/event-page",
+                request.url,
+            )
+            and tab in request.url
         ):
-            self.markets = json.loads(response.body.decode())
+            try:
+                self.logger.debug(request.url)
+                self.markets = json.loads(response.body.decode())
+            except:
+                self.markets = None
             self.grabbed_markets.set()
             sleep(0.0001)
 
@@ -84,32 +96,46 @@ class FanDuelScraper:
         self._get_events(self.events_url)
         self.grabbed_events.wait()
 
-        self.driver.response_interceptor = self._market_interceptor
         for event in self._iterate_events(self.events):
-            if event.id < 29000000:
+            if event.id < 29000000 or event.id == 30327496:
                 continue
 
+            self.logger.debug(f"event {event.name}")
+
             for tab in self.tabs:
+                self.driver.response_interceptor = functools.partial(
+                    self._market_interceptor, tab
+                )
+
                 self.grabbed_markets.clear()
                 self._get_markets(
                     f"{self.market_url}{event.name.replace(' ', '-').lower()}-{event.id}?tab={tab}"
                 )
-                self.grabbed_markets.wait()
+                self.grabbed_markets.wait(timeout=5)
+
+                if self.markets is None:
+                    print(f"SOMETHING WENT WRONG... {event.id} {tab}")
+                    continue
 
                 event.markets.extend(
                     [market for market in self._iterate_markets(self.markets)]
                 )
 
-                sleep(0.5)
+                sleep(1)
+
+            for market in event.markets:
+                self.logger.debug(market)
 
             yield event
-            sleep(1)
+            sleep(5)
 
     def _get_events(self, url):
-        Thread(target=self.driver.get, args=(url,), daemon=True).start()
+        # Thread(target=self.driver.get, args=(url,), daemon=True).start()
+        self.driver.get(url)
 
     def _get_markets(self, url):
-        Thread(target=self.driver.get, args=(url,), daemon=True).start()
+        self.driver.get(url)
+        # Thread(target=self.driver.get, args=(url,), daemon=True).start()
 
     def _create_event(self, j):
         id = j["eventId"]
@@ -120,9 +146,9 @@ class FanDuelScraper:
     def _create_markets(self, j):
         raise NotImplementedError()
 
-    def _create_selection(self, j) -> Selection:
+    def _create_selection(self, j, market_id) -> Selection:
         return Selection(
-            str(j["selectionId"]),
+            f'{str(market_id)}:{str(j["selectionId"])}',
             j["runnerName"],
             j["winRunnerOdds"]["trueOdds"]["decimalOdds"]["decimalOdds"],
         )
@@ -138,4 +164,4 @@ class FanDuelScraper:
 
     def _iterate_selections(self, j):
         for selection in j["runners"]:
-            yield (selection, self._create_selection(selection))
+            yield (selection, self._create_selection(selection, j["marketId"]))

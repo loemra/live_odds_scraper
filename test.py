@@ -1,3 +1,4 @@
+import dataclasses
 import json
 import sys
 import timeit
@@ -13,13 +14,19 @@ from packages.data.Selection import Selection
 from packages.data.Sport import Sport
 from packages.db.DB import DB
 from packages.db.MockDB import MockDB
+from packages.name_matcher.FuzzMatcher import FuzzMatcher
 from packages.name_matcher.MockMatcher import MockMatcher
 from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.betmgm.Betmgm import Betmgm
+from packages.sbs.betrivers.Betrivers import Betrivers
 from packages.sbs.fanduel.Fanduel import Fanduel
+from packages.util.logs import setup_root_logging, setup_seleniumwire_logging
 
 with open("secrets.json", "r") as f:
     secrets = json.load(f)
+
+setup_root_logging()
+setup_seleniumwire_logging()
 
 
 def test_name_matcher():
@@ -112,7 +119,27 @@ def test_fanduel():
     sb = Fanduel()
 
     for event, _ in sb.yield_events():
+        with open("logs/fanduel.out", "w") as f:
+            d = dataclasses.asdict(event)
+            d["date"] = d["date"].timestamp()
+            json.dump(d, f)
+        break
+
+
+def test_betrivers():
+    sb = Betrivers()
+
+    for event, yield_odds_updates in sb.yield_events():
         print(event)
+
+
+def test_fuzz_matcher():
+    fm = FuzzMatcher(MockDB())
+    m = fm.match(
+        "San Francisco 49ers @ Jacksonville Jaguars",
+        ["San Francisco 49ers at Jacksonville Jaguars"],
+    )
+    print(f"m: {m}")
 
 
 if __name__ == "__main__":

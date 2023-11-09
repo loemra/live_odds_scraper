@@ -26,7 +26,7 @@ class NFL(Handler):
                     Kind.H2H,
                     selection=[s for _, s in self._iterate_selections(j)],
                 )
-            case "MATCH_HANDICAP_(2-WAY)" | "FIRST_QUARTER_HANDICAP" | "FIRST_HALF_HANDICAP":
+            case "MATCH_HANDICAP_(2-WAY)" | "1ST_QUARTER_HANDICAP" | "FIRST_HALF_HANDICAP":
                 yield Market(
                     j["marketId"],
                     MarketName.SPREAD,
@@ -35,7 +35,9 @@ class NFL(Handler):
                     *self._get_spread_attributes(j),
                 )
             case "ALTERNATE_HANDICAP":
+                self.logger.debug("Getting alternate handicap")
                 for a in self._group_alternate_spreads(j):
+                    self.logger.debug(a)
                     yield Market(
                         j["marketId"],
                         MarketName.SPREAD,
@@ -43,6 +45,8 @@ class NFL(Handler):
                         None,
                         *a,
                     )
+            case "":
+                pass
 
     def _get_period(self, marketType):
         match marketType:
@@ -79,20 +83,20 @@ class NFL(Handler):
         groups = {}
         for s, selection in self._iterate_selections(j):
             n = selection.name
-            line = (
-                float(n[n.find("(") + 1 : n.find(")")]) * 1
-                if s["result"]["type"] == "HOME"
-                else -1
-            )
-            if line not in groups:
-                groups[line] = []
-            groups[line].append(selection)
-            if s["result"]["type"] == "HOME":
+            line = float(n[n.find("(") + 1 : n.find(")")])
+            unified_line = line * (1 if s["result"]["type"] == "HOME" else -1)
+            if unified_line not in groups:
+                groups[unified_line] = {"selections": []}
+            groups[unified_line]["selections"].append(selection)
+            if line > 0:
                 participant = n[: n.find("(")].strip()
-                groups[line].insert(0, participant)
+                groups[unified_line]["participant"] = participant
 
+        self.logger.debug(groups)
         return [
-            (v[0], k, v[1:])
+            (v["participant"], abs(k), v["selections"])
             for k, v in groups.items()
-            if v[0] is not None and k is not None and len(v[1:]) == 2
+            if v["participant"] is not None
+            and k is not None
+            and len(v["selections"]) == 2
         ]

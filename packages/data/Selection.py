@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Hashable, Mapping
+from typing import Hashable, Mapping, Optional
 
 from packages.data.Odds import Odds
 
@@ -8,4 +8,4 @@ from packages.data.Odds import Odds
 class Selection:
     id: Hashable
     name: str
-    odds: Mapping[Hashable, Odds] = field(default_factory=dict)
+    odds: Optional[float] = field(default=None)

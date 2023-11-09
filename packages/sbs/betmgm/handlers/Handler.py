@@ -91,7 +91,7 @@ class Handler:
         return Selection(
             str(j["id"]),
             j["name"]["value"],
-            j["odds"],
+            j["price"]["odds"],
         )
 
     def _iterate_events(self, j):
@@ -99,12 +99,12 @@ class Handler:
             yield self._create_event(fixture)
 
     def _iterate_markets(self, j):
-        for game in j["fixture"]["games"]:
+        for game in j["fixture"]["optionMarkets"]:
             try:
                 yield (game, self._create_market(game))
             except:
                 continue
 
     def _iterate_selections(self, j):
-        for result in j["results"]:
+        for result in j["options"]:
             yield self._create_selection(result)

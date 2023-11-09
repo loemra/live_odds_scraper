@@ -1,3 +1,5 @@
+import re
+
 from requests import Session
 
 from packages.data.Kind import Kind
@@ -11,10 +13,10 @@ from packages.sbs.betmgm.handlers.Handler import Handler
 
 class NFL(Handler):
     def __init__(self, s: Session):
-        super().__init__(s, 11, "35,211", Sport.FOOTBALL, League.NFL)
+        super().__init__(s, 11, "35", Sport.FOOTBALL, League.NFL)
 
     def _create_market(self, j):
-        match j["categoryId"]:
+        match j["templateCategory"]["id"]:
             case 57 | 738 | 740:
                 # spread
                 return Market(
@@ -22,7 +24,7 @@ class NFL(Handler):
                     MarketName.SPREAD,
                     Kind.SPREAD,
                     self._get_period(j),
-                    line=self._get_spread_line(j),
+                    *self._get_spread_line(j),
                 )
             case 58:
                 # moneyline
@@ -47,7 +49,7 @@ class NFL(Handler):
         )
 
     def _get_period(self, j):
-        match j["categoryId"]:
+        match int(j["parameters"][1]["value"]):
             case 57 | 58 | 53:
                 return None
             case 737 | 740:
@@ -61,7 +63,13 @@ class NFL(Handler):
         )
 
     def _get_spread_line(self, j):
-        return int(j["results"][0]["attr"])
+        m = re.match(r"(.*?)\s*(?:\+|\-)?\d+", j["options"][0]["name"]["value"])
+        if m is None:
+            raise Exception(
+                "Unable to get spread line because there is no name match."
+            )
+
+        return (m.group(1), int(j["options"][0]["attr"]))
 
     def _get_over_under_line(self, j):
         return int(j["attr"])

@@ -1,8 +1,10 @@
 import json
-from threading import Lock
+from datetime import datetime
+from threading import Lock, Timer
 
 import websocket
 from ratelimit import limits, sleep_and_retry
+from ratelimit.exception import RateLimitException
 
 from packages.data.Match import Match
 
@@ -18,6 +20,22 @@ class NameMatcher:
         self.conversation = conversation
         self.db = db
 
+        self._ping()
+
+    def _ping(self):
+        with self.lock:
+            print(f"ping {datetime.now()}")
+            j = {
+                "conversation": self.conversation,
+                "text": "ping",
+                "role": "user",
+            }
+            self.ws.send(json.dumps(j).encode())
+            self.ws.recv()
+            self.ws.recv()
+
+            Timer(10, self._ping).start()
+
     def _format_message(self, a, b):
         b = '["' + '", "'.join(b) + '"]'
         j = {
@@ -29,12 +47,16 @@ class NameMatcher:
 
     def _parse_results(self, r):
         j = json.loads(r)
+        if j["text"] == "You have reached your rate limit":
+            raise RateLimitException(
+                "rate limited by the website, waiting one minute...", 60
+            )
         if j["text"] == "NO MATCH":
             return
         return int(j["text"])
 
     @sleep_and_retry
-    @limits(calls=1, period=1)
+    @limits(calls=20, period=60)
     def match(self, to_be_matched, potential_matches):
         with self.lock:
             if len(potential_matches) == 0:

@@ -7,12 +7,14 @@ from typing import List
 from packages.data.Market import Market
 from packages.data.Selection import Selection
 from packages.sbs.MockSB import Event
+from packages.util.logs import setup_logging
 
 
 class DB:
     def __init__(self, name):
         self.con = sqlite3.connect(name, check_same_thread=False)
         self.lock = Lock()
+        self.logger = setup_logging(__name__)
 
     def match_or_make_event(self, sb_event, sb, name_matcher):
         with self.lock:
@@ -83,7 +85,7 @@ class DB:
             cur = self.con.cursor()
             cur.execute(
                 """
-                INSERT INTO sb_events VALUES
+                INSERT OR REPLACE INTO sb_events VALUES
                     (?, ?, ?, ?)
             """,
                 (sb_event.id, sb, sb_event.name, unified_event_id),
@@ -197,7 +199,9 @@ class DB:
             else:
                 selection = relevant_selections[matched_selection_index]
 
-            self._make_sb_selection(selection.id, sb_selection, sb)
+            self._make_sb_selection(
+                selection.id, sb_selection, sb, sb_selection.odds
+            )
 
     def _get_relevant_selections(self, market_id) -> List[Selection]:
         cur = self.con.cursor()
@@ -234,15 +238,15 @@ class DB:
 
         return dataclasses.replace(sb_selection, id=cur.lastrowid)
 
-    def _make_sb_selection(self, selection_id, sb_selection, sb):
+    def _make_sb_selection(self, selection_id, sb_selection, sb, odds):
         with self.con:
             cur = self.con.cursor()
             cur.execute(
                 """
-                INSERT INTO sb_selections VALUES
-                    (?, ?, NULL, ?)
+                INSERT OR REPLACE INTO sb_selections VALUES
+                    (?, ?, ?, ?)
             """,
-                (sb_selection.id, sb, selection_id),
+                (sb_selection.id, sb, odds, selection_id),
             )
 
         if cur.lastrowid is None:
@@ -266,11 +270,12 @@ class DB:
                 cur.execute(
                     """
                     INSERT INTO odds_history VALUES
-                        (?, ?, ?, ?)
+                        (?, ?, ?, ?, ?)
                 """,
                     (
                         update.id,
                         update.sb,
+                        update.selection_id,
                         update.odds,
                         update.time.timestamp(),
                     ),
@@ -281,9 +286,8 @@ class DB:
             cur = self.con.cursor()
             cur.executemany(
                 """
-                INSERT INTO matches VALUES
+                INSERT OR IGNORE INTO matches VALUES
                     (?, ?, ?)
-                    ON CONFLICT DO NOTHING
             """,
                 [
                     (match.match, match.potential, match.result)
