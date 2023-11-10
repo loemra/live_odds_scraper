@@ -13,28 +13,18 @@ class NameMatcher:
     def __init__(self, session_id, conversation, db):
         self.lock = Lock()
         self.ws = websocket.WebSocket()
-        self.ws.connect(
-            f"wss://umgpt.umich.edu/ws/t1/conversations/{conversation}/messages/",
-            cookie=f"sessionid={session_id}",
-        )
+        self.session_id = session_id
+        self.conversation = conversation
         self.conversation = conversation
         self.db = db
 
-        self._ping()
+        self._connect()
 
-    def _ping(self):
-        with self.lock:
-            print(f"ping {datetime.now()}")
-            j = {
-                "conversation": self.conversation,
-                "text": "ping",
-                "role": "user",
-            }
-            self.ws.send(json.dumps(j).encode())
-            self.ws.recv()
-            self.ws.recv()
-
-            Timer(10, self._ping).start()
+    def _connect(self):
+        self.ws.connect(
+            f"wss://umgpt.umich.edu/ws/t1/conversations/{self.conversation}/messages/",
+            cookie=f"sessionid={self.session_id}",
+        )
 
     def _format_message(self, a, b):
         b = '["' + '", "'.join(b) + '"]'
@@ -58,21 +48,27 @@ class NameMatcher:
     @sleep_and_retry
     @limits(calls=20, period=60)
     def match(self, to_be_matched, potential_matches):
-        with self.lock:
-            if len(potential_matches) == 0:
-                return None
-            self.ws.send(self._format_message(to_be_matched, potential_matches))
-            # first one is just the message sent back.
-            self.ws.recv()
-            res = self._parse_results(self.ws.recv())
+        if len(potential_matches) == 0:
+            return None
 
-            print(f"{to_be_matched} matched @ {res} for {potential_matches}")
-
-            matches = []
-            for i, pm in enumerate(potential_matches):
-                matches.append(
-                    Match(to_be_matched, pm, res is not None and i == res)
+        try:
+            with self.lock:
+                self.ws.send(
+                    self._format_message(to_be_matched, potential_matches)
                 )
-            self.db.record_match(matches)
+                self.ws.recv()  # first one is just the message sent back.
+                res = self._parse_results(self.ws.recv())
+        except websocket.WebSocketConnectionClosedException:
+            self._connect()
+            return self.match(to_be_matched, potential_matches)
 
-            return res
+        print(f"{to_be_matched} matched @ {res} for {potential_matches}")
+
+        matches = []
+        for i, pm in enumerate(potential_matches):
+            matches.append(
+                Match(to_be_matched, pm, res is not None and i == res)
+            )
+        self.db.record_match(matches)
+
+        return res

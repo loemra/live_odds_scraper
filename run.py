@@ -1,5 +1,5 @@
 import json
-import logging
+import sys
 
 from packages.core.Aggregator import Aggregator
 from packages.db.DB import DB
@@ -11,25 +11,25 @@ from packages.sbs.betmgm.Betmgm import Betmgm
 from packages.sbs.betrivers.Betrivers import Betrivers
 from packages.sbs.fanduel.Fanduel import Fanduel
 from packages.sbs.MockSB import MockSB
-from packages.util.logs import setup_root_logging
+from packages.sbs.pointsbet.PointsBet import PointsBet
+from packages.util.logs import setup_root_logging, setup_seleniumwire_logging
 
 setup_root_logging()
-
-sw_handler = logging.FileHandler("logs/seleniumwire.log")
-sw_handler.setFormatter(
-    logging.Formatter("%(name)s - %(levelname)s - %(message)s")
-)
-sw_logger = logging.getLogger("seleniumwire")
-sw_logger.setLevel(logging.INFO)
-sw_logger.addHandler(sw_handler)
+setup_seleniumwire_logging()
 
 with open("secrets.json", "r") as f:
     secrets = json.load(f)
 
 db = DB(secrets["db-name"])
 
+if len(sys.argv) == 1:
+    sbs = [Betmgm(), Fanduel(), Betrivers(), PointsBet()]
+else:
+    sbs = [eval(sb)() for sb in sys.argv[1:]]
+
+
 Aggregator(
-    [Betmgm(), Fanduel(), Betrivers()],
+    sbs,
     db,
     FuzzMatcher(
         db,
@@ -37,5 +37,4 @@ Aggregator(
             secrets["umgpt-session-id"], secrets["umgpt-conversation"], MockDB()
         ),
     ),
-    # NameMatcher(secrets["umgpt-session-id"], secrets["umgpt-conversation"], db),
 )
