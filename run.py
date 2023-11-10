@@ -9,6 +9,7 @@ from packages.name_matcher.MockMatcher import MockMatcher
 from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.betmgm.Betmgm import Betmgm
 from packages.sbs.betrivers.Betrivers import Betrivers
+from packages.sbs.draftkings.DraftKings import DraftKings
 from packages.sbs.fanduel.Fanduel import Fanduel
 from packages.sbs.MockSB import MockSB
 from packages.sbs.pointsbet.PointsBet import PointsBet
@@ -23,7 +24,7 @@ with open("secrets.json", "r") as f:
 db = DB(secrets["db-name"])
 
 if len(sys.argv) == 1:
-    sbs = [Betmgm(), Fanduel(), Betrivers(), PointsBet()]
+    sbs = [Betmgm(), Fanduel(), Betrivers(), DraftKings(), PointsBet()]
 else:
     sbs = [eval(sb)() for sb in sys.argv[1:]]
 
