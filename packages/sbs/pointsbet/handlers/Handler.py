@@ -2,8 +2,6 @@ import http.client
 import json
 from datetime import datetime
 
-import requests
-
 from packages.data.Event import Event
 from packages.data.League import League
 from packages.data.Market import Market

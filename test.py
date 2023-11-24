@@ -1,3 +1,4 @@
+import asyncio
 import dataclasses
 import json
 import sys
@@ -18,6 +19,7 @@ from packages.name_matcher.FuzzMatcher import FuzzMatcher
 from packages.name_matcher.MockMatcher import MockMatcher
 from packages.name_matcher.NameMatcher import NameMatcher
 from packages.sbs.betmgm.Betmgm import Betmgm
+from packages.sbs.betmgm.sock_test import Tmp
 from packages.sbs.betrivers.Betrivers import Betrivers
 from packages.sbs.draftkings.DraftKings import DraftKings
 from packages.sbs.fanduel.Fanduel import Fanduel
@@ -110,10 +112,24 @@ def test_db():
 
 
 def test_mgm():
+    print("testing betmgm...")
     sb = Betmgm()
 
     for event, yield_odds_updates in sb.yield_events():
         print(event)
+
+
+def test_mgm_odds():
+    print("testing betmgm odds...")
+
+    async def tmp():
+        sb = Tmp()
+        async for update in sb.yield_odds_update(
+            "v1|en-us|15039480|v2|en-us|2:6363366_66_any|sbf"
+        ):
+            print(update)
+
+    asyncio.run(tmp())
 
 
 def test_fanduel():

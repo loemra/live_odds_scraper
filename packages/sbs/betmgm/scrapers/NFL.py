@@ -8,10 +8,10 @@ from packages.data.Market import Market
 from packages.data.MarketName import MarketName
 from packages.data.Period import Period
 from packages.data.Sport import Sport
-from packages.sbs.betmgm.handlers.Handler import Handler
+from packages.sbs.betmgm.scrapers.Scraper import Scraper
 
 
-class NFL(Handler):
+class NFL(Scraper):
     def __init__(self, s: Session):
         super().__init__(s, 11, "35", Sport.FOOTBALL, League.NFL)
 

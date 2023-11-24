@@ -9,7 +9,7 @@ from packages.data.Selection import Selection
 from packages.data.Sport import Sport
 
 
-class Handler:
+class Scraper:
     def __init__(
         self, s: Session, sportID, competitionIDs, sport: Sport, league: League
     ):

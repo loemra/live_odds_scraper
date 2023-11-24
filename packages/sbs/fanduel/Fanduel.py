@@ -2,10 +2,7 @@ import queue
 from functools import partial
 from threading import Thread
 
-import requests
-
 from packages.sbs.fanduel.handlers.NFL import NFL
-from packages.util.UserAgents import get_random_user_agent
 
 
 class Fanduel:
@@ -32,8 +29,10 @@ class Fanduel:
 
     @staticmethod
     def _event_producer(buffer, handler):
-        for event in handler.yield_events():
-            buffer.put(event)
+        # make sure that chrome driver exits.
+        with handler:
+            for event in handler.yield_events():
+                buffer.put(event)
         buffer.put(None)
 
     def yield_odd_updates(self, eventID):
