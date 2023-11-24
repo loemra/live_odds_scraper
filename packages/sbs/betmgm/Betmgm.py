@@ -1,19 +1,18 @@
-import asyncio
 import json
 import queue
-import threading
 from datetime import datetime
-from json import JSONDecodeError
+from functools import partial
 from threading import Thread
 
 import requests
-from websockets import ConnectionClosed
 from websockets.sync.client import connect
 
 from packages.data.OddsUpdate import OddsUpdate
 from packages.sbs.betmgm.scrapers.NFL import NFL
+from packages.util.CustomErrors import PingReceived
 from packages.util.logs import setup_logging
 from packages.util.UserAgents import get_random_user_agent
+from packages.util.WebsocketsApp import WebsocketsApp
 
 
 class Betmgm:
@@ -23,13 +22,19 @@ class Betmgm:
         self.s = self._establish_session()
         self.handlers = [NFL(self.s)]
 
-        self.lock = threading.Lock()
-        self.subscribers = {}
-
-        self.connection = self._establish_websocket()
-        self.MAX_RETRIES = 5
-        self.retries = 0
-        Thread(target=self._odds_receiver, daemon=True).start()
+        self.wsapp = WebsocketsApp(
+            connection=partial(
+                connect,
+                "wss://cds-push.mi.betmgm.com/ws-1-0?"
+                "lang=en-us&country=US&x-bwin-accessId="
+                "NmFjNmUwZjAtMGI3Yi00YzA3LTg3OTktNDgxMGIwM2YxZGVh&"
+                "appUpdates=false",
+            ),
+            handle_data=self._handle_data,
+            initial_registration=self._initial_registration,
+            pong=self._pong,
+            logger=self.logger,
+        )
 
     def yield_events(self):
         buffer = queue.Queue()
@@ -50,7 +55,11 @@ class Betmgm:
     def _establish_session(self):
         s = requests.Session()
         s.headers = {
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+            "Accept": (
+                "text/html,application/xhtml+xml,"
+                "application/xml;q=0.9,image/avif,"
+                "image/webp,*/*;q=0.8"
+            ),
             "Accept-Encoding": "gzip, deflate, br",
             "Accept-Language": "en-US,en;q=0.5",
             "Connection": "keep-alive",
@@ -68,47 +77,39 @@ class Betmgm:
 
         return s
 
-    def _establish_websocket(self):
-        self.logger.debug("establishing websocket...")
-        connection = connect(
-            "wss://cds-push.mi.betmgm.com/ws-1-0?lang=en-us&country=US&x-bwin-accessId=NmFjNmUwZjAtMGI3Yi00YzA3LTg3OTktNDgxMGIwM2YxZGVh&appUpdates=false"
+    async def yield_odd_updates(self, payload: str):
+        full_payload = (
+            b'{"arguments":[{"topics":["{'
+            + payload.encode()
+            + b'}"]}],"invocationId":"0","target":"Subscribe","type":1}\x1e'
         )
-        with connection as ws:
-            ws.send(b'{"protocol":"json","version":1}\x1e')
-            self.logger.debug(ws.recv())
-            self.logger.debug(ws.recv())
 
-        return connection
+        async for res in self.wsapp.subscribe(full_payload):
+            yield res
 
-    def _odds_receiver(self):
-        try:
-            for data in self.connection.recv():
-                with self.lock:
-                    self.retries = 0
-                for update, sub in self._handle_data(data):
-                    with self.lock:
-                        self.subscribers[sub].put(update)
-        except ConnectionClosed as _:
-            # there could be an additional error here that gets called if the underlying connection changes while receiving.
-            # for example if there is an error sending and the connection is reconnected.
-            pass
+    async def _initial_registration(self, ws):
+        self.logger.debug("sending registration...")
+        await ws.send(b'{"protocol":"json","version":1}\x1e')
+        self.logger.debug(await ws.recv())
+        self.logger.debug(await ws.recv())
 
-    # odds_payload = ["fixture][*]["context"]
-    def yield_odd_updates(self, odds_payload: str):
-        buffer = queue.Queue()
-        self._subscribe(odds_payload, buffer)
-
-        for update in iter(buffer.get, None):
-            yield update
+    async def _pong(self, ws):
+        self.logger.debug("sending pong...")
+        await ws.send(b'{"type":6}')
+        self.logger.debug("pong sent")
 
     def _handle_data(self, data):
-        self.logger.debug(f"received {data}")
+        self.logger.debug(f"handling data... {data}")
+        if isinstance(data, str):
+            data = data.encode()
         for r in data.split(b"\x1e"):
             try:
                 j = json.loads(r)
-            except JSONDecodeError as _:
+            except json.JSONDecodeError:
                 continue
 
+            if j["type"] == 6:
+                raise PingReceived()
             if j["type"] != 1:
                 continue
             for argument in j["arguments"]:
@@ -131,26 +132,3 @@ class Betmgm:
                                 ),
                                 argument["topic"],
                             )
-
-    def _subscribe(self, odds_payload: str, buffer):
-        self.logger.debug(f"sending subscribe payload...")
-        with self.lock:
-            self.subscribers[odds_payload] = buffer
-        try:
-            self.connection.send(
-                b'{"arguments":[{"topics":["{'
-                + odds_payload.encode()
-                + b'}"]}],"invocationId":"0","target":"Subscribe","type":1}\x1e'
-            )
-            with self.lock:
-                self.retries = 0
-        except ConnectionClosed as _:
-            with self.lock:
-                if self.retries > self.MAX_RETRIES:
-                    raise
-                self.logger.debug(
-                    "connection closed... retrying"
-                    f" {self.retries}/{self.MAX_RETRIES}"
-                )
-                self.connection = self._establish_websocket()
-                self.retries += 1
