@@ -1,19 +1,18 @@
 from datetime import datetime
 
-from requests import Session
+import requests
 
 from packages.data.Event import Event
 from packages.data.League import League
 from packages.data.Market import Market
 from packages.data.Selection import Selection
 from packages.data.Sport import Sport
+from packages.util.UserAgents import get_random_user_agent
 
 
 class Scraper:
-    def __init__(
-        self, s: Session, sportID, competitionIDs, sport: Sport, league: League
-    ):
-        self.s = s
+    def __init__(self, sportID, competitionIDs, sport: Sport, league: League):
+        self.s = self._establish_session()
         self.sportID = sportID
         self.competitionIDs = competitionIDs
         self.sport = sport
@@ -29,9 +28,35 @@ class Scraper:
                 event.markets.append(market)
             yield event
 
+    def _establish_session(self):
+        s = requests.Session()
+        s.headers = {
+            "Accept": (
+                "text/html,application/xhtml+xml,"
+                "application/xml;q=0.9,image/avif,"
+                "image/webp,*/*;q=0.8"
+            ),
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Connection": "keep-alive",
+            "Content-Type": "application/json",
+            "Host": "sports.mi.betmgm.com",
+            "Origin": "null",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "cross-site",
+            "TE": "trailers",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": get_random_user_agent(),
+        }
+        s.get("https://sports.mi.betmgm.com/")
+
+        return s
+
     def _get_events(self):
         r = self.s.post(
-            "https://sports.mi.betmgm.com/cds-api/random-multi-generator/random-events",
+            "https://sports.mi.betmgm.com/cds-api/"
+            "random-multi-generator/random-events",
             params={
                 "x-bwin-accessid": (
                     "NmFjNmUwZjAtMGI3Yi00YzA3LTg3OTktNDgxMGIwM2YxZGVh"
@@ -83,8 +108,8 @@ class Scraper:
         date = datetime.fromisoformat(j["startDate"])
         return Event(id, name, date, self.sport, self.league)
 
-    def _create_market(self, j) -> Market:
-        # to be implemented by the derived handler.
+    def _create_market(self, _) -> Market:
+        # to be implemented by the derived scraper.
         raise NotImplementedError()
 
     def _create_selection(self, j) -> Selection:
@@ -102,7 +127,7 @@ class Scraper:
         for game in j["fixture"]["optionMarkets"]:
             try:
                 yield (game, self._create_market(game))
-            except:
+            except Exception:
                 continue
 
     def _iterate_selections(self, j):

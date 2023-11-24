@@ -1,7 +1,5 @@
 import re
 
-from requests import Session
-
 from packages.data.Kind import Kind
 from packages.data.League import League
 from packages.data.Market import Market
@@ -12,8 +10,8 @@ from packages.sbs.betmgm.scrapers.Scraper import Scraper
 
 
 class NFL(Scraper):
-    def __init__(self, s: Session):
-        super().__init__(s, 11, "35", Sport.FOOTBALL, League.NFL)
+    def __init__(self):
+        super().__init__(11, "35", Sport.FOOTBALL, League.NFL)
 
     def _create_market(self, j):
         match j["templateCategory"]["id"]:
@@ -63,7 +61,9 @@ class NFL(Scraper):
         )
 
     def _get_spread_line(self, j):
-        m = re.match(r"(.*?)\s*(?:\+|\-)?\d+", j["options"][0]["name"]["value"])
+        m = re.match(
+            r"(.*?)\s*(?:\+|\-)?\d+", j["options"][0]["name"]["value"]
+        )
         if m is None:
             raise Exception(
                 "Unable to get spread line because there is no name match."

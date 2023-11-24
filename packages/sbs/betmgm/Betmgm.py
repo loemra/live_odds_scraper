@@ -4,14 +4,12 @@ from datetime import datetime
 from functools import partial
 from threading import Thread
 
-import requests
 from websockets.sync.client import connect
 
 from packages.data.OddsUpdate import OddsUpdate
 from packages.sbs.betmgm.scrapers.NFL import NFL
 from packages.util.CustomErrors import PingReceived
 from packages.util.logs import setup_logging
-from packages.util.UserAgents import get_random_user_agent
 from packages.util.WebsocketsApp import WebsocketsApp
 
 
@@ -19,8 +17,7 @@ class Betmgm:
     def __init__(self):
         self.logger = setup_logging(__name__, True)
         self.name = "betmgm"
-        self.s = self._establish_session()
-        self.handlers = [NFL(self.s)]
+        self.handlers = [NFL()]
 
         self.wsapp = WebsocketsApp(
             connection=partial(
@@ -51,31 +48,6 @@ class Betmgm:
         for event in handler.yield_events():
             buffer.put(event)
         buffer.put(None)
-
-    def _establish_session(self):
-        s = requests.Session()
-        s.headers = {
-            "Accept": (
-                "text/html,application/xhtml+xml,"
-                "application/xml;q=0.9,image/avif,"
-                "image/webp,*/*;q=0.8"
-            ),
-            "Accept-Encoding": "gzip, deflate, br",
-            "Accept-Language": "en-US,en;q=0.5",
-            "Connection": "keep-alive",
-            "Content-Type": "application/json",
-            "Host": "sports.mi.betmgm.com",
-            "Origin": "null",
-            "Sec-Fetch-Dest": "document",
-            "Sec-Fetch-Mode": "navigate",
-            "Sec-Fetch-Site": "cross-site",
-            "TE": "trailers",
-            "Upgrade-Insecure-Requests": "1",
-            "User-Agent": get_random_user_agent(),
-        }
-        s.get("https://sports.mi.betmgm.com/")
-
-        return s
 
     async def yield_odd_updates(self, payload: str):
         full_payload = (
