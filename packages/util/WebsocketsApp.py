@@ -41,6 +41,8 @@ class WebsocketsApp:
 
     async def subscribe(self, payload):
         if not self.running:
+            self.running = True
+            self.logger.debug("subscribing...")
             spawn(self._runner())
 
         q = asyncio.Queue()
@@ -53,7 +55,9 @@ class WebsocketsApp:
     async def _runner(self):
         async for ws in self.connection():
             try:
+                self.logger.debug("initial registation?")
                 if self.initial_registration is not None:
+                    self.logger.debug("attempting registration")
                     await self.initial_registration(ws)
                 await self._handler(ws)
             except websockets.ConnectionClosed:
