@@ -14,7 +14,50 @@ class DB:
     def __init__(self, name):
         self.con = sqlite3.connect(name, check_same_thread=False)
         self.lock = Lock()
+        self.callbacks = []
         self.logger = setup_logging(__name__)
+
+    def snapshot(self):
+        with self.lock:
+            cur = self.con.cursor()
+            res = cur.execute(
+                """
+SELECT e.name AS "event_name", m.name as "market_name", GROUP_CONCAT(s.name) AS "selections", GROUP_CONCAT(ss.odds) AS "odds"
+FROM events e
+JOIN markets m on m.event_id = e.id
+JOIN selections s ON s.market_id = m.id
+JOIN sb_selections ss ON ss.selection_id = s.id
+GROUP BY e.name, m.name;
+                                    """,
+            )
+
+            data = []
+            for i in res:
+                decimal_american = [
+                    (
+                        j,
+                        (
+                            int((float(j) - 1.0) * 100)
+                            if float(j) >= 2.0
+                            else int(-100 / (float(j) - 1.0))
+                        ),
+                    )
+                    for j in i[3].split(",")
+                ]
+                teams_odds = list(zip(i[2].split(","), decimal_american))
+                data.append({
+                    "name": i[0],
+                    "market": i[1],
+                    "selections": [
+                        {
+                            "team": team,
+                            "decimal": decimal,
+                            "american": american,
+                        }
+                        for team, (decimal, american) in teams_odds
+                    ],
+                })
+            return data
 
     def match_or_make_event(self, sb_event, sb, name_matcher):
         with self.lock:
@@ -257,29 +300,66 @@ class DB:
     def update_odds(self, update):
         with self.lock:
             with self.con:
+                self.logger.debug(f"Updating {update.id}@{update.sb}")
+
                 cur = self.con.cursor()
-                cur.execute(
+
+                res = cur.execute(
                     """
-                    UPDATE sb_selections 
+                    SELECT s.name, ss.odds FROM selections s
+                    JOIN sb_selections ss ON ss.selection_id = s.id
+                    WHERE ss.id = ? AND ss.sb = ?
+                """,
+                    (update.id, update.sb),
+                )
+
+                name_old_odds = res.fetchone()
+
+                res = cur.execute(
+                    """
+                    UPDATE OR ABORT sb_selections
                     SET odds = ?
                     WHERE id = ? AND sb = ?
                 """,
                     (update.odds, update.id, update.sb),
                 )
 
-                cur.execute(
+                self.logger.debug(f"Updated selection status: {res.rowcount}")
+
+                if res.rowcount == 0:
+                    return
+
+                self.logger.debug(
+                    f"{name_old_odds[0]}: {name_old_odds[1]} -> {update.odds}"
+                )
+
+                res = cur.execute(
                     """
-                    INSERT INTO odds_history VALUES
-                        (?, ?, ?, ?, ?)
+                    INSERT OR ABORT INTO odds_history VALUES
+                        (?, ?, ?, ?)
                 """,
                     (
                         update.id,
                         update.sb,
-                        update.selection_id,
                         update.odds,
                         update.time.timestamp(),
                     ),
                 )
+                self.logger.debug(f"Added to history status: {res.rowcount}")
+
+        # can't be locked to prevent dead lock.
+        self.broadcast_updates()
+
+    def broadcast_updates(self):
+        self.logger.debug("Broadcasting updates...")
+        for callback in self.callbacks:
+            callback()
+
+    def subscribe_to_updates(self, callback):
+        self.callbacks.append(callback)
+
+    def unsubscribe_from_updates(self, callback):
+        self.callbacks.remove(callback)
 
     def record_match(self, matches):
         with self.con:

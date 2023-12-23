@@ -10,8 +10,39 @@ from packages.sbs.betmgm.scrapers.Scraper import Scraper
 
 
 class NFL(Scraper):
-    def __init__(self):
-        super().__init__(11, "35", Sport.FOOTBALL, League.NFL)
+    def __init__(self, logger):
+        super().__init__(
+            11,
+            "35",
+            "/mobilesports-v1.0/layout/layout_us/"
+            "modules/competition/"
+            "defaultcontainer-eventsonly-redesign_no_header",
+            Sport.FOOTBALL,
+            League.NFL,
+            logger,
+        )
+
+    def _iterate_events(self, j):
+        try:
+            for widget in j["widgets"]:
+                for item in widget["payload"]["items"]:
+                    for active in item["activeChildren"]:
+                        for fixture in active["payload"]["fixtures"]:
+                            if fixture["source"] != "V1":
+                                self.logger.debug(
+                                    f"weird fixture: {fixture['source']}\n{j}"
+                                )
+                            self.logger.debug("creating event.")
+                            event = self._create_event(fixture)
+                            # these ids are two 'events' that have to do with 
+                            # the specific season
+                            if event.id in ["14371768", "14274402"]:
+                                continue
+                            yield event
+        except Exception as e:
+            self.logger.debug(
+                f"something went wrong retreiving events: {e}\n{j}"
+            )
 
     def _create_market(self, j):
         match j["templateCategory"]["id"]:

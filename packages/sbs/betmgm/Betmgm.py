@@ -4,9 +4,10 @@ from datetime import datetime
 from functools import partial
 from threading import Thread
 
-from websockets.sync.client import connect
+from websockets import connect
 
 from packages.data.OddsUpdate import OddsUpdate
+from packages.sbs.betmgm.scrapers.NBA import NBA
 from packages.sbs.betmgm.scrapers.NFL import NFL
 from packages.util.CustomErrors import PingReceived
 from packages.util.logs import setup_logging
@@ -15,10 +16,11 @@ from packages.util.WebsocketsApp import WebsocketsApp
 
 class Betmgm:
     def __init__(self):
-        self.logger = setup_logging(__name__, True)
+        self.logger = setup_logging(__name__)
         self.name = "betmgm"
-        self.handlers = [NFL()]
+        self.scrapers = [NFL(self.logger), NBA(self.logger)]
 
+        self.invocationID = -1
         self.wsapp = WebsocketsApp(
             connection=partial(
                 connect,
@@ -35,28 +37,39 @@ class Betmgm:
 
     def yield_events(self):
         buffer = queue.Queue()
-        for handler in self.handlers:
-            Thread(target=self._event_producer, args=(buffer, handler)).start()
+        for scraper in self.scrapers:
+            Thread(target=self._event_producer, args=(buffer, scraper)).start()
 
+        scrapers = len(self.scrapers)
         while True:
             event = buffer.get()
             if event is None:
-                break
-            yield (event, None)
+                scrapers -= 1
+                if scrapers == 0:
+                    break
+                continue
+            yield event
 
     def _event_producer(self, buffer, handler):
         for event in handler.yield_events():
             buffer.put(event)
         buffer.put(None)
 
-    async def yield_odd_updates(self, payload: str):
-        full_payload = (
-            b'{"arguments":[{"topics":["{'
+    def _encode_payload(self, payload):
+        self.invocationID += 1
+        return (
+            b'{"arguments":[{"topics":["'
             + payload.encode()
-            + b'}"]}],"invocationId":"0","target":"Subscribe","type":1}\x1e'
+            + b'"]}],"invocationId":"'
+            + str(self.invocationID).encode()
+            + b'","target":"Subscribe","type":1}\x1e'
         )
 
-        async for res in self.wsapp.subscribe(full_payload):
+    async def yield_odd_updates(self, payload: str):
+        self.logger.debug(f"Subscribing to payload {payload}")
+        async for res in self.wsapp.subscribe(
+            payload, self._encode_payload(payload)
+        ):
             yield res
 
     async def _initial_registration(self, ws):
@@ -71,7 +84,6 @@ class Betmgm:
         self.logger.debug("pong sent")
 
     def _handle_data(self, data):
-        self.logger.debug(f"handling data... {data}")
         if isinstance(data, str):
             data = data.encode()
         for r in data.split(b"\x1e"):
@@ -80,27 +92,29 @@ class Betmgm:
             except json.JSONDecodeError:
                 continue
 
+            self.logger.debug(f"received {j['type']}\n{data}")
+
             if j["type"] == 6:
                 raise PingReceived()
             if j["type"] != 1:
                 continue
             for argument in j["arguments"]:
-                if (
-                    not isinstance(argument, dict)
-                    or argument["messageType"] != "GameUpdate"
-                ):
+                if not isinstance(argument, dict):
                     continue
-                for payload in argument["payload"]:
-                    for game in payload["game"]:
-                        for result in game["results"]:
+                match argument["messageType"]:
+                    case "GameUpdate":
+                        for result in argument["payload"]["game"]["results"]:
                             yield (
                                 OddsUpdate(
                                     str(result["id"]),
                                     self.name,
                                     result["odds"],
-                                    datetime.fromisoformat(
-                                        argument["timestamp"]
-                                    ),
+                                    datetime.fromisoformat(argument["timestamp"]),
                                 ),
                                 argument["topic"],
                             )
+                    case "MainToLiveUpdate":
+                        pass
+                    case _:
+                        continue
+

@@ -11,12 +11,23 @@ from packages.util.UserAgents import get_random_user_agent
 
 
 class Scraper:
-    def __init__(self, sportID, competitionIDs, sport: Sport, league: League):
+    def __init__(
+        self,
+        sportID,
+        competitionID,
+        widgetID,
+        sport: Sport,
+        league: League,
+        logger,
+    ):
         self.s = self._establish_session()
         self.sportID = sportID
-        self.competitionIDs = competitionIDs
+        self.competitionID = competitionID
+        self.widgetID = widgetID
         self.sport = sport
         self.league = league
+
+        self.logger = logger
 
     def yield_events(self):
         events = self._get_events()
@@ -54,26 +65,24 @@ class Scraper:
         return s
 
     def _get_events(self):
-        r = self.s.post(
-            "https://sports.mi.betmgm.com/cds-api/"
-            "random-multi-generator/random-events",
+        self.logger.debug(f"getting events... {self.sportID}")
+
+        r = self.s.get(
+            "https://sports.mi.betmgm.com/en/sports/api/widget/widgetdata",
             params={
-                "x-bwin-accessid": (
-                    "NmFjNmUwZjAtMGI3Yi00YzA3LTg3OTktNDgxMGIwM2YxZGVh"
-                ),
-                "lang": "en-us",
-                "country": "US",
-                "userCountry": "US",
-                "subdivision": "US-Michigan",
-            },
-            json={
+                "layoutSize": "Small",
+                "page": "CompetitionLobby",
                 "sportId": self.sportID,
-                "minOdds": 1.01,
-                "maxOdds": 10,
-                "gridGroupId": "c6jgebjaf",
-                "competitionIds": self.competitionIDs,
+                "regionId": "9",
+                "competitionId": self.competitionID,
+                "widgetId": self.widgetID,
+                "shouldIncludePayload": "true",
+                "compoundCompetitionId": f"1:{self.competitionID}",
+                "forceFresh": "1",
             },
         )
+
+        self.logger.debug(f"got events... {r.status_code}")
 
         return r.json()
 
@@ -106,9 +115,10 @@ class Scraper:
         id = j["id"]
         name = j["name"]["value"]
         date = datetime.fromisoformat(j["startDate"])
-        return Event(id, name, date, self.sport, self.league)
+        payload = j["context"] + "|all"
+        return Event(id, name, date, self.sport, self.league, payload)
 
-    def _create_market(self, _) -> Market:
+    def _create_market(self, j) -> Market:
         # to be implemented by the derived scraper.
         raise NotImplementedError()
 
@@ -120,8 +130,21 @@ class Scraper:
         )
 
     def _iterate_events(self, j):
-        for fixture in j["fixtures"]:
-            yield self._create_event(fixture)
+        try:
+            for widget in j["widgets"]:
+                for item in widget["payload"]["items"]:
+                    for active in item["activeChildren"]:
+                        for fixture in active["payload"]["fixtures"]:
+                            if fixture["source"] != "V1":
+                                self.logger.debug(
+                                    f"weird fixture: {fixture['source']}\n{j}"
+                                )
+                            self.logger.debug("creating event.")
+                            yield self._create_event(fixture)
+        except Exception as e:
+            self.logger.debug(
+                f"something went wrong retreiving events: {e}\n{j}"
+            )
 
     def _iterate_markets(self, j):
         for game in j["fixture"]["optionMarkets"]:

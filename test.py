@@ -115,7 +115,18 @@ def test_mgm():
     sb = Betmgm()
 
     for event, _ in sb.yield_events():
-        print(event)
+        print(f"{event.name} @ {event.league}, markets: {len(event.markets)}")
+
+
+def test_mgm_odds():
+    sb = Betmgm()
+
+    async def tmp():
+        async for update in sb.yield_odd_updates("v1|en-us|15122677|all"):
+            print(update)
+
+    asyncio.run(tmp())
+
 
 
 def test_fanduel():
