@@ -1,8 +1,15 @@
+import asyncio
 import sys
 
 from packages.util.setup_logging import setup_root_logging
 
 logger = setup_root_logging()
+
+
+def betmgm_events():
+    from packages.sbs.betmgm.get_events import yield_events
+
+    asyncio.run(yield_events())
 
 
 def run():
