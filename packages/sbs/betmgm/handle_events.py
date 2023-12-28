@@ -9,8 +9,8 @@ _logger = setup_logging(__name__, True)
 
 async def handle_events(db):
     scrapers = [
-        NFL(setup_logging(f"{__name__} nfl")),
-        NBA(setup_logging(f"{__name__} nba")),
+        NFL(setup_logging(f"{__name__}.nfl")),
+        NBA(setup_logging(f"{__name__}.nba")),
     ]
     async with asyncio.TaskGroup() as tg:
         for scraper in scrapers:
