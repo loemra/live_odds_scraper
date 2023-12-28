@@ -1,15 +1,20 @@
 import asyncio
 import sys
 
+import motor.motor_asyncio as motor
+
 from packages.util.setup_logging import setup_root_logging
 
 logger = setup_root_logging()
 
 
 def betmgm_events():
-    from packages.sbs.betmgm.get_events import yield_events
+    from packages.sbs.betmgm.handle_events import handle_events
 
-    asyncio.run(yield_events())
+    client = motor.AsyncIOMotorClient("mongodb://localhost:27017/")
+    db = client.arb
+
+    asyncio.run(handle_events(db))
 
 
 def run():

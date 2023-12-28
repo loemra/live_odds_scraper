@@ -6,7 +6,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 
 class Scraper:
-    def __init__(self, payload, logger):
+    def __init__(self, league, payload, logger):
+        self.league = league
         self._payload = payload
         self._logger = logger
 
@@ -16,14 +17,14 @@ class Scraper:
 
     async def _yield_events(self, session):
         events = await self._get_events(session)
-        for event_coro in asyncio.as_completed([
-            self._process_event(session, event)
-            for event in self._iterate_events(events)
+        for event in asyncio.as_completed([
+            self._process_event(session, e)
+            for e in self._iterate_events(events)
         ]):
-            yield await event_coro
+            yield await event
 
     async def _process_event(self, session, event):
-        self._logger.debug(f"processing event {event['name']}")
+        self._logger.info(f"processing event {event['id']} {event['name']}")
         markets = await self._get_markets(session, event["id"])
         event["markets"] = []
         for j, market in self._iterate_markets(markets):
@@ -37,10 +38,9 @@ class Scraper:
                 for item in widget["payload"]["items"]:
                     for active in item["activeChildren"]:
                         for fixture in active["payload"]["fixtures"]:
-                            self._logger.debug("creating event.")
                             yield self._create_event(fixture)
         except Exception as e:
-            self._logger.debug(
+            self._logger.warning(
                 f"something went wrong iterating events: {e}\n{j}"
             )
 
@@ -51,7 +51,7 @@ class Scraper:
             except NotImplementedError:
                 pass
             except Exception as e:
-                self._logger.debug(
+                self._logger.warning(
                     f"something went wrong iterating markets: {e}\n{game}"
                 )
 
@@ -63,6 +63,7 @@ class Scraper:
         return {
             "id": str(j["id"]),
             "name": j["name"]["value"],
+            "league": self.league,
             "date": datetime.fromisoformat(j["startDate"]),
             "payload": j["context"] + "|all",
         }
@@ -95,7 +96,7 @@ class Scraper:
                 "forceFresh": "1",
             },
         ) as resp:
-            self._logger.debug(f"get events status: {resp.status}")
+            self._logger.info(f"get events status: {resp.status}")
             return await resp.json()
 
     @retry(stop=stop_after_attempt(5), wait=wait_exponential(min=5, max=30))
@@ -122,7 +123,7 @@ class Scraper:
                 "statisticsModes": "All",
             },
         ) as resp:
-            self._logger.debug(f"get market {event_id} status: {resp.status}")
+            self._logger.info(f"get market {event_id} status: {resp.status}")
             return await resp.json()
 
     @retry(stop=stop_after_attempt(5), wait=wait_exponential(min=5, max=30))
@@ -154,7 +155,6 @@ class Scraper:
         self._logger.debug("establishing session...")
         async with aiohttp.ClientSession(headers=headers) as session:
             async with session.get("https://sports.mi.betmgm.com/") as resp:
-                self._logger.debug(f"establish session status: {resp.status}")
-            self._logger.info("session established")
+                self._logger.info(f"establish session status: {resp.status}")
             async for r in async_generator_callback(session):
                 yield r

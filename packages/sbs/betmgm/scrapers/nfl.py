@@ -13,7 +13,7 @@ class NFL(Scraper):
                 "defaultcontainer-eventsonly-redesign_no_header"
             ),
         )
-        super().__init__(payload, logger)
+        super().__init__("NFL", payload, logger)
 
     def _create_market(self, j):
         match j["templateCategory"]["id"]:

@@ -4,28 +4,15 @@ from packages.sbs.betmgm.scrapers.scraper import Scraper
 class NBA(Scraper):
     def __init__(self, logger):
         payload = (
-            "https://sports.mi.betmgm.com/en/sports/api/widget",
+            "https://sports.mi.betmgm.com/en/sports/api/widget/widgetdata",
             7,
             "6004",
             (
-                "/mobilesports-v1.0/layout/layout_us/pages/"
-                "competitionlobby/redesign-nba"
+                "/mobilesports-v1.0/layout/layout_us/modules/basketball/"
+                "nba/nba-gamelines-complobby"
             ),
         )
-        super().__init__(payload, logger)
-
-    def _iterate_events(self, j):
-        try:
-            for widget in j["widgets"]:
-                for pod in widget["payload"]["pods"].values():
-                    for fixture in pod["fixtures"]:
-                        self._logger.debug("creating event.")
-                        yield self._create_event(fixture)
-                    break
-        except Exception as e:
-            self._logger.debug(
-                f"something went wrong iterating events: {e}\n{j}"
-            )
+        super().__init__("NBA", payload, logger)
 
     def _create_market(self, j):
         match j["templateCategory"]["id"]:
@@ -46,8 +33,12 @@ class NBA(Scraper):
         for game in j["fixture"]["games"]:
             try:
                 yield (game, self._create_market(game))
-            except Exception:
-                continue
+            except NotImplementedError:
+                pass
+            except Exception as e:
+                self._logger.warning(
+                    f"something went wrong iterating markets: {e}\n{game}"
+                )
 
     def _iterate_selections(self, j):
         for result in j["results"]:
@@ -59,3 +50,5 @@ class NBA(Scraper):
             "name": j["name"]["value"],
             "odds": j["odds"],
         }
+
+
