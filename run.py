@@ -8,13 +8,23 @@ from packages.util.setup_logging import setup_root_logging
 logger = setup_root_logging()
 
 
+def _get_db():
+    client = motor.AsyncIOMotorClient("mongodb://localhost:27017/")
+    return client.arb
+
+
 def betmgm_events():
     from packages.sbs.betmgm.handle_events import handle_events
 
-    client = motor.AsyncIOMotorClient("mongodb://localhost:27017/")
-    db = client.arb
-
+    db = _get_db()
     asyncio.run(handle_events(db))
+
+
+def event_unifier():
+    from packages.event_unifier.event_unifier import run
+
+    db = _get_db()
+    asyncio.run(run(db))
 
 
 def run():

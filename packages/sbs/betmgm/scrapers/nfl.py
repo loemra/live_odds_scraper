@@ -2,7 +2,7 @@ from packages.sbs.betmgm.scrapers.scraper import Scraper
 
 
 class NFL(Scraper):
-    def __init__(self, logger):
+    def __init__(self, sb, logger):
         payload = (
             "https://sports.mi.betmgm.com/en/sports/api/widget/widgetdata",
             11,
@@ -13,14 +13,13 @@ class NFL(Scraper):
                 "defaultcontainer-eventsonly-redesign_no_header"
             ),
         )
-        super().__init__("NFL", payload, logger)
+        super().__init__(sb, "NFL", payload, logger)
 
     def _create_market(self, j):
         match j["templateCategory"]["id"]:
             case 58:
                 # moneyline
                 return {
-                    "id": j["id"],
                     "name": "money_line",
                     "kind": "h2h",
                 }

@@ -6,10 +6,14 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 
 class Scraper:
-    def __init__(self, league, payload, logger):
-        self.league = league
+    def __init__(self, sb, league, payload, logger):
+        self._sb = sb
+        self._league = league
         self._payload = payload
         self._logger = logger
+
+    def __repr__(self) -> str:
+        return self._league
 
     async def yield_events(self):
         async for event in self._session_wrapper(self._yield_events):
@@ -62,8 +66,9 @@ class Scraper:
     def _create_event(self, j):
         return {
             "id": str(j["id"]),
+            "sb": self._sb,
             "name": j["name"]["value"],
-            "league": self.league,
+            "league": self._league,
             "date": datetime.fromisoformat(j["startDate"]),
             "payload": j["context"] + "|all",
         }
