@@ -1,8 +1,8 @@
 {
-  "db_sb_events": {
+  "sb_events": {
     "_id": "658cbb5f90fa12fb031b371d",
     "id": "15175181",
-    "unified_event_id": "...",
+    "unified_id": "...",
     "name": "Las Vegas Raiders at Indianapolis Colts",
     "league": "NFL",
     "date": "2023-12-31T18:00:00.000Z",
@@ -26,29 +26,32 @@
       }
     ]
   },
-  "db_unified_events": {
+  "unified_events": {
     "_id": "...",
     "name": "LA Lakers vs Nuggets",
     "league": "NBA",
     "date": "2023-12-31T18:00:00.000Z",
-    "markets": [
-      {
-        "_id": "...",
-        "name": "moneyline",
-        "kind": "h2h"
-      }
+    "market_ids": [
+      "id1",
+      "id2",
+      "..."
     ]
   },
-  "db_market_odds": {
+  "market_odds": {
     "_id": "...",
+    "event_id": "...",
+    "name": "moneyline",
+    "kind": "h2h",
     "selections": [
       {
         "name": "Lakers",
-        "odds": {
-          "id": "...",
-          "sb": "BETMGM",
-          "odds": 2.3
-        }
+        "odds": [
+          {
+            "id": "...",
+            "sb": "BETMGM",
+            "odds": 2.3
+          }
+        ]
       }
     ]
   }

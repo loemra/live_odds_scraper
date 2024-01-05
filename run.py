@@ -1,5 +1,6 @@
 import asyncio
 import sys
+from functools import partial
 
 import motor.motor_asyncio as motor
 
@@ -22,9 +23,23 @@ def betmgm_events():
 
 def event_unifier():
     from packages.event_unifier.event_unifier import run
+    from packages.event_unifier.name_matcher import FuzzMatcher, GPTMatcher
 
     db = _get_db()
-    asyncio.run(run(db))
+    match = partial(FuzzMatcher.match, unable_to_determine=GPTMatcher.match)
+
+    asyncio.run(run(db, match))
+
+def test_event_unifier():
+    from packages.event_unifier.test import run
+
+    asyncio.run(run())
+
+def gui():
+    from packages.gui.gui import run
+
+    db = _get_db()
+    run(db)
 
 
 def run():
