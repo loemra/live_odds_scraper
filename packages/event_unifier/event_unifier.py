@@ -16,11 +16,11 @@ class EventUnifier:
         self._logger = logger
 
     async def run(self):
-        # brief period between when reading ununified events and before listening
-        # to updates where an event can sneak through without being processed
-        # with the solution below, if an event is added after beginning to listen
-        # and before getting ununified events it will be handled twice, which is
-        # better than none
+        # brief period between when reading ununified events and before
+        # listeningto updates where an event can sneak through without
+        # being processedwith the solution below, if an event is added
+        # after beginning to listenand before getting ununified events it
+        # will be handled twice, which isbetter than none
 
         gen = self._watch_updates()
 
